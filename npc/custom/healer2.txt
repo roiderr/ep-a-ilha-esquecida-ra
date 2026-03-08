@@ -1,0 +1,71 @@
+//===== rAthena Script =======================================
+//= Healer
+//===== By: ==================================================
+//= Euphy
+//===== Current Version: =====================================
+//= 1.1
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Basic healer script.
+//===== Additional Comments: =================================
+//= 1.0 Initial script.
+//= 1.1 Aligned coordinates with @go.
+//============================================================
+
+-	script	Healer	-1,{
+
+	.@Price = 0;	// Zeny required for heal
+	.@Buffs = 1;	// Also buff players? (1: yes / 0: no)
+	.@Delay = 0;	// Heal delay, in seconds
+
+	if (@HD > gettimetick(2))
+		end;
+	if (.@Price) {
+		message strcharinfo(0), "Custo da cura " + callfunc("F_InsertComma",.@Price) + " Zeny.";
+		if (Zeny < .@Price)
+			end;
+		if (select("^0055FFCurar^000000:^777777Cancelar^000000") == 2)
+			end;
+		Zeny -= .@Price;
+	}
+	if (.@Buffs) {
+		specialeffect2 EF_INCAGILITY;
+		sc_start SC_INCREASEAGI,240000,10;
+		specialeffect2 EF_BLESSING;
+		sc_start SC_BLESSING,240000,10;
+	}
+	specialeffect2 EF_HEAL2;
+	percentheal 100,100;
+	if (.@Delay)
+		@HD = gettimetick(2) + .@Delay;
+	end;
+}
+
+
+// Duplicates
+//============================================================
+prontera,150,184,4	duplicate(Healer)	Curandeiro#prt	909
+morocc,153,97,6	duplicate(Healer)	Curandeiro#mor	909
+geffen,127,63,6	duplicate(Healer)	Curandeiro#gef	909
+payon,166,103,4	duplicate(Healer)	Curandeiro#pay	909
+alberta,26,240,6	duplicate(Healer)	Curandeiro#alb	909
+izlude,123,119,5	duplicate(Healer)	Curandeiro#izl	909
+aldebaran,135,119,6	duplicate(Healer)	Curandeiro#alde	909
+xmas,143,133,4	duplicate(Healer)	Curandeiro#xmas	909
+comodo,192,157,6	duplicate(Healer)	Curandeiro#com	909
+yuno,161,124,4	duplicate(Healer)	Curandeiro#yuno	909
+amatsu,120,155,4	duplicate(Healer)	Curandeiro#ama	909
+gonryun,162,127,6	duplicate(Healer)	Curandeiro#gon	909
+umbala,122,152,3	duplicate(Healer)	Curandeiro#umb	909
+niflheim,205,180,5	duplicate(Healer)	Curandeiro#nif	909
+louyang,223,101,4	duplicate(Healer)	Curandeiro#lou	909
+jawaii,233,201,4	duplicate(Healer)	Curandeiro#jaw	909
+ayothaya,213,196,6	duplicate(Healer)	Curandeiro#ayo	909
+einbroch,59,199,6	duplicate(Healer)	Curandeiro#einbr	909
+lighthalzen,154,94,6	duplicate(Healer)	Curandeiro#lhz	909
+einbech,163,134,6	duplicate(Healer)	Curandeiro#einbe	909
+hugel,89,150,6	duplicate(Healer)	Curandeiro#hug	909
+rachel,113,141,6	duplicate(Healer)	Curandeiro#rac	909
+veins,212,133,4	duplicate(Healer)	Curandeiro#ve	909
+moscovia,226,191,4	duplicate(Healer)	Curandeiro#mos	909
