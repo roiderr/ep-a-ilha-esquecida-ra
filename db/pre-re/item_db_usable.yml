@@ -536,7 +536,7 @@ Body:
       sc_start SC_Stun,3000,0,1500,0;
   - Id: 550
     AegisName: Popped_Rice
-    Name: Bolinho de Arroz
+    Name: Bolinhos de Arroz
     Type: Healing
     Buy: 10
     Weight: 10
@@ -851,7 +851,7 @@ Body:
       itemheal rand(10,20),rand(10,20);
   - Id: 583
     AegisName: KETUPAT_
-    Name: Ketupat Sayur
+    Name: KETUPAT SAYUR
     Type: Healing
     Buy: 7000
     Weight: 150
@@ -1038,7 +1038,6 @@ Body:
     Buy: 60
     Weight: 50
     Flags:
-      NoConsume: true
       BuyingStore: true
     Script: |
       itemskill "AL_TELEPORT",1;
@@ -1062,7 +1061,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_BlueBox,1);
+      getgroupitem(IG_BLUEBOX);
   - Id: 604
     AegisName: Branch_Of_Dead_Tree
     Name: Galho Seco
@@ -1104,6 +1103,9 @@ Body:
     Weight: 300
     Flags:
       BuyingStore: true
+    Delay:
+      Duration: 5000
+      Status: Reuse_Limit_F
     Script: |
       percentheal 100,100;
   - Id: 608
@@ -1114,11 +1116,14 @@ Body:
     Weight: 300
     Flags:
       BuyingStore: true
+    Delay:
+      Duration: 3000
+      Status: Reuse_Limit_G
     Script: |
       percentheal 50,50;
   - Id: 609
     AegisName: Amulet
-    Name: Amulet
+    Name: Amuleto
     Type: Usable
     Buy: 100
     Weight: 100
@@ -1194,7 +1199,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_CardAlbum,1);
+      getgroupitem(IG_CARDALBUM);
   - Id: 617
     AegisName: Old_Violet_Box
     Name: Velha Caixa Roxa
@@ -1205,7 +1210,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_VioletBox,1);
+      getgroupitem(IG_VIOLETBOX);
   - Id: 618
     AegisName: Worn_Out_Scroll
     Name: Pergaminho Desgastado
@@ -1226,7 +1231,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1002;
+      pet;
   - Id: 620
     AegisName: Orange_Juice
     Name: Suco de Laranja
@@ -1238,7 +1243,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1113;
+      pet;
   - Id: 621
     AegisName: Bitter_Herb
     Name: Erva Amarga
@@ -1250,7 +1255,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1031;
+      pet;
   - Id: 622
     AegisName: Rainbow_Carrot
     Name: Cenoura Arco-Íris
@@ -1262,7 +1267,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1063;
+      pet;
   - Id: 623
     AegisName: Earthworm_The_Dude
     Name: Minhoca Boa-Pinta
@@ -1274,7 +1279,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1049;
+      pet;
   - Id: 624
     AegisName: Rotten_Fish
     Name: Peixe Podre
@@ -1286,7 +1291,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1011;
+      pet;
   - Id: 625
     AegisName: Lusty_Iron
     Name: Ferro Enferrujado
@@ -1298,7 +1303,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1042;
+      pet;
   - Id: 626
     AegisName: Monster_Juice
     Name: Suco de Monstro
@@ -1310,7 +1315,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1035;
+      pet;
   - Id: 627
     AegisName: Sweet_Milk
     Name: Leite Doce
@@ -1322,7 +1327,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1167;
+      pet;
   - Id: 628
     AegisName: Well_Dried_Bone
     Name: Osso Seco
@@ -1334,7 +1339,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1107;
+      pet;
   - Id: 629
     AegisName: Singing_Flower
     Name: Flor Cantante
@@ -1346,7 +1351,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1052;
+      pet;
   - Id: 630
     AegisName: Dew_Laden_Moss
     Name: Musgo Encharcado
@@ -1358,7 +1363,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1014;
+      pet;
   - Id: 631
     AegisName: Deadly_Noxious_Herb
     Name: Erva Letal
@@ -1370,7 +1375,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1077;
+      pet;
   - Id: 632
     AegisName: Fatty_Chubby_Earthworm
     Name: Minhoca Gorducha
@@ -1382,7 +1387,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1019;
+      pet;
   - Id: 633
     AegisName: Baked_Yam
     Name: Batata Assada
@@ -1394,7 +1399,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1056;
+      pet;
   - Id: 634
     AegisName: Tropical_Banana
     Name: Banana Tropical
@@ -1406,7 +1411,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1057;
+      pet;
   - Id: 635
     AegisName: Horror_Of_Tribe
     Name: Horror da Tribo
@@ -1418,7 +1423,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1023;
+      pet;
   - Id: 636
     AegisName: No_Recipient
     Name: Sem Destinatário
@@ -1430,7 +1435,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1026;
+      pet;
   - Id: 637
     AegisName: Old_Broom
     Name: Vassoura Velha
@@ -1442,7 +1447,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1110;
+      pet;
   - Id: 638
     AegisName: Silver_Knife_Of_Chaste
     Name: Faca de Prata da Castidade
@@ -1454,7 +1459,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1170;
+      pet;
   - Id: 639
     AegisName: Armlet_Of_Obedience
     Name: Bracelete da Obediência
@@ -1466,7 +1471,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1029;
+      pet;
   - Id: 640
     AegisName: Shining_Stone
     Name: Pedra Brilhante
@@ -1478,7 +1483,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1155;
+      pet;
   - Id: 641
     AegisName: Contracts_In_Shadow
     Name: Contratos das Sombras
@@ -1490,7 +1495,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1109;
+      pet;
   - Id: 642
     AegisName: Book_Of_Devil
     Name: Livro do Diabo
@@ -1502,7 +1507,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1101;
+      pet;
   - Id: 643
     AegisName: Pet_Incubator
     Name: Incubadora
@@ -1523,7 +1528,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_GiftBox,1);
+      getgroupitem(IG_GIFTBOX);
   - Id: 645
     AegisName: Center_Potion
     Name: Poção da Concentração
@@ -1614,7 +1619,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1188;
+      pet;
   - Id: 660
     AegisName: Prohibition_Red_Candle
     Name: Vela do Marquês de Sade
@@ -1626,7 +1631,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1200;
+      pet;
   - Id: 661
     AegisName: Sway_Apron
     Name: Avental Elegante
@@ -1638,7 +1643,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1275;
+      pet;
   - Id: 662
     AegisName: Inspector_Certificate
     Name: Emblema Oficial
@@ -1669,7 +1674,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_GiftBox_1,1);
+      getgroupitem(IG_GIFTBOX_1);
   - Id: 665
     AegisName: Gift_Box_2
     Name: Caixa de Presente 2
@@ -1680,7 +1685,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_GiftBox_2,1);
+      getgroupitem(IG_GIFTBOX_2);
   - Id: 666
     AegisName: Gift_Box_3
     Name: Caixa de Presente 3
@@ -1691,7 +1696,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_GiftBox_3,1);
+      getgroupitem(IG_GIFTBOX_3);
   - Id: 667
     AegisName: Gift_Box_4
     Name: Caixa de Presente 4
@@ -1702,7 +1707,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_GiftBox_4,1);
+      getgroupitem(IG_GIFTBOX_4);
   - Id: 668
     AegisName: Handsei
     Name: Envelope Vermelho
@@ -2199,7 +2204,7 @@ Body:
       itemheal 0,5;
   - Id: 11519
     AegisName: Beef_Toast
-    Name: Beef Toast
+    Name: Torrada de Carne
     Type: Healing
     Buy: 650
     Weight: 40
@@ -2353,7 +2358,7 @@ Body:
       itemheal 0,rand(25,35);
   - Id: 11704
     AegisName: KETUPAT_F
-    Name: Ketupat
+    Name: KETUPAT
     Type: Healing
     Buy: 2
     Weight: 10
@@ -2366,7 +2371,7 @@ Body:
     Buy: 1
     Weight: 10
     Script: |
-      itemheal rand(425,425),0;
+      itemheal 425,0;
   - Id: 11706
     AegisName: Steak
     Name: Steak
@@ -2608,7 +2613,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      sc_start SC_SlowDown,5000,0;
+      sc_start SC_SLOWDOWN,5000,100;
   - Id: 12018
     AegisName: Fire_Cracker
     Name: Fogo de Artifício
@@ -2658,7 +2663,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_GiftBoxChina,1);
+      getgroupitem(IG_GIFTBOXCHINA);
   - Id: 12024
     AegisName: Red_Pouch_Of_Surprise
     Name: Bolsa Vermelha
@@ -2678,7 +2683,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_EggBoy,1);
+      getgroupitem(IG_EGGBOY);
   - Id: 12026
     AegisName: Egg_Girl
     Name: Ovo do Festival de Dano
@@ -2688,7 +2693,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_EggGirl,1);
+      getgroupitem(IG_EGGGIRL);
   - Id: 12027
     AegisName: Giggling_Box
     Name: Caixa Risonha
@@ -2816,7 +2821,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_LottoBox,1);
+      getgroupitem(IG_LOTTOBOX);
   - Id: 12039
     AegisName: Lotto_Box05
     Name: Lotto Box 05
@@ -3531,7 +3536,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_Quiver,1);
+      getgroupitem(IG_QUIVER);
   - Id: 12105
     AegisName: Set_Of_Taiming_Item
     Name: Kit de Domesticação
@@ -3542,9 +3547,9 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_Taming,1);
-      getrandgroupitem(IG_Taming,1);
-      getrandgroupitem(IG_Taming,1);
+      getgroupitem(IG_TAMING);
+      getgroupitem(IG_TAMING);
+      getgroupitem(IG_TAMING);
   - Id: 12106
     AegisName: Accessory_Box
     Name: Caixa de Jóias
@@ -3555,7 +3560,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_Accesory,1);
+      getgroupitem(IG_ACCESORY);
   - Id: 12107
     AegisName: Wrapped_Mask
     Name: Máscara Embrulhada
@@ -3566,7 +3571,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_Mask,1);
+      getgroupitem(IG_MASK);
   - Id: 12108
     AegisName: Bundle_Of_Magic_Scroll
     Name: Pacote de Pergaminho
@@ -3577,11 +3582,11 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_Scroll,1);
-      getrandgroupitem(IG_Scroll,1);
-      getrandgroupitem(IG_Scroll,1);
-      getrandgroupitem(IG_Scroll,1);
-      getrandgroupitem(IG_Scroll,1);
+      getgroupitem(IG_SCROLL);
+      getgroupitem(IG_SCROLL);
+      getgroupitem(IG_SCROLL);
+      getgroupitem(IG_SCROLL);
+      getgroupitem(IG_SCROLL);
   - Id: 12109
     AegisName: Poring_Box
     Name: Caixa Poring
@@ -3603,11 +3608,11 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_FirstAid,1);
-      getrandgroupitem(IG_FirstAid,1);
-      getrandgroupitem(IG_FirstAid,1);
-      getrandgroupitem(IG_FirstAid,1);
-      getrandgroupitem(IG_FirstAid,1);
+      getgroupitem(IG_FIRSTAID);
+      getgroupitem(IG_FIRSTAID);
+      getgroupitem(IG_FIRSTAID);
+      getgroupitem(IG_FIRSTAID);
+      getgroupitem(IG_FIRSTAID);
   - Id: 12111
     AegisName: Food_Package
     Name: Trouxa de Comida
@@ -3618,9 +3623,9 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_FoodBag,1);
-      getrandgroupitem(IG_FoodBag,1);
-      getrandgroupitem(IG_FoodBag,1);
+      getgroupitem(IG_FOODBAG);
+      getgroupitem(IG_FOODBAG);
+      getgroupitem(IG_FOODBAG);
   - Id: 12112
     AegisName: Tropical_Sograt
     Name: Sograt Tropical
@@ -3643,7 +3648,7 @@ Body:
       sc_start SC_Stun,10000,1;
   - Id: 12114
     AegisName: Elemental_Fire
-    Name: Conversor Elemental Fogo
+    Name: Conversor de Fogo
     Type: Delayconsume
     Buy: 2
     Weight: 10
@@ -3653,7 +3658,7 @@ Body:
       itemskill "ITEM_ENCHANTARMS",4;
   - Id: 12115
     AegisName: Elemental_Water
-    Name: Conversor Elemental Água
+    Name: Conversor de Água
     Type: Delayconsume
     Buy: 2
     Weight: 10
@@ -3663,8 +3668,8 @@ Body:
       itemskill "ITEM_ENCHANTARMS",2;
   - Id: 12116
     AegisName: Elemental_Earth
-    Name: Conversor Elemental Terra
-    Type: DelayConsume
+    Name: Conversor de Terra
+    Type: Delayconsume
     Buy: 2
     Weight: 10
     Flags:
@@ -3673,7 +3678,7 @@ Body:
       itemskill "ITEM_ENCHANTARMS",3;
   - Id: 12117
     AegisName: Elemental_Wind
-    Name: Conversor Elemental Vento
+    Name: Conversor de Vento
     Type: Delayconsume
     Buy: 2
     Weight: 10
@@ -3812,17 +3817,15 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_CookieBag,1);
-      getrandgroupitem(IG_CookieBag,1);
-      getrandgroupitem(IG_CookieBag,1);
+      getgroupitem(IG_COOKIEBAG);
+      getgroupitem(IG_COOKIEBAG);
+      getgroupitem(IG_COOKIEBAG);
   - Id: 12131
     AegisName: Lucky_Potion
     Name: Poção da Sorte
     Type: Healing
     Buy: 2
     Weight: 100
-    Script: |
-      sc_start SC_LUKFOOD,180000,15;
   - Id: 12132
     AegisName: Red_Bag
     Name: Bolsa de Papai Noel
@@ -4394,7 +4397,7 @@ Body:
       mercenary_create 6031,1800000;
   - Id: 12178
     AegisName: SpearMercenary_Scroll6
-    Name: Pergaminho de Lanceiro 6
+    Name: Spearman Scroll 6
     Type: Usable
     Buy: 2
     Weight: 100
@@ -4511,7 +4514,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_RedBox,1);
+      getgroupitem(IG_REDBOX);
   - Id: 12187
     AegisName: Green_Box
     Name: Old Green Box
@@ -4521,7 +4524,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_GreenBox,1);
+      getgroupitem(IG_GREENBOX);
   - Id: 12188
     AegisName: Magical_Moon_Cake
     Name: Bolo Mágico Lunar
@@ -4539,24 +4542,19 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_RedBox_2,1);
+      getgroupitem(IG_REDBOX_2);
   - Id: 12190
     AegisName: Moon_Cake
     Name: Bolo Lunar
     Type: Usable
     Buy: 2
     Weight: 300
-    Script: |
-      sc_start SC_SPEEDUP1,180000,50;
   - Id: 12191
     AegisName: Special_Moon_Cake
     Name: Bolo Especial Lunar
     Type: Usable
     Buy: 2
     Weight: 500
-    Script: |
-      sc_start SC_SPEEDUP1,600000,50;
-      sc_start SC_ATKPOTION,600000,10;
   - Id: 12192
     AegisName: Pumpkin_Pie
     Name: Torta de Abóbora
@@ -4581,9 +4579,9 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_HometownGift,1);
-      getrandgroupitem(IG_HometownGift,1);
-      getrandgroupitem(IG_HometownGift,1);
+      getgroupitem(IG_HOMETOWNGIFT);
+      getgroupitem(IG_HOMETOWNGIFT);
+      getgroupitem(IG_HOMETOWNGIFT);
   - Id: 12195
     AegisName: Plain_Rice_Cake
     Name: Plain Rice Cake
@@ -4645,7 +4643,6 @@ Body:
     Weight: 50
     Script: |
       itemskill "PR_MAGNIFICAT",3;
-      percentheal 3,0;
   - Id: 12201
     AegisName: Red_Box_C
     Name: Commonplace Red Box
@@ -4688,7 +4685,7 @@ Body:
       percentheal 15,5;
   - Id: 12204
     AegisName: Int_Dish10_
-    Name: Coquetel do Dragão
+    Name: Coquetel Sopro do Dragão
     Type: Healing
     Buy: 2
     Weight: 10
@@ -5020,7 +5017,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1245;
+      pet;
   - Id: 12226
     AegisName: Examination1
     Name: Examination 1
@@ -5188,7 +5185,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_YellowBox,1);
+      getgroupitem(IG_YELLOWBOX);
   - Id: 12241
     AegisName: M_Center_Potion
     Name: Poção da Concentração para Assistentes
@@ -5228,7 +5225,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_OldGiftBox,1);
+      getgroupitem(IG_OLDGIFTBOX);
   - Id: 12245
     AegisName: Green_Ale_US
     Name: Líquido Verde
@@ -5236,7 +5233,7 @@ Body:
     Buy: 5000
     Weight: 500
     Script: |
-      percentheal 50,0;
+      percentheal 100,0;
   - Id: 12246
     AegisName: Magic_Card_Album
     Name: Álbum Mágico de Cartas
@@ -5247,7 +5244,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_MagicCardAlbum,1);
+      getgroupitem(IG_MAGICCARDALBUM);
   - Id: 12247
     AegisName: Halohalo
     Name: Salada de Frutas Tropicais
@@ -5266,7 +5263,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_Masquerade,1);
+      getgroupitem(IG_MASQUERADE);
   - Id: 12249
     AegisName: Payroll_Of_Kafra_
     Name: Payment Statement for Kafra Employee
@@ -5283,7 +5280,7 @@ Body:
       percentheal 20,20;
   - Id: 12251
     AegisName: Agi_Dish10_M
-    Name: Escorpiões no Vapor
+    Name: Escorpião no Vapor
     Type: Usable
     Weight: 10
     Script: |
@@ -5315,7 +5312,7 @@ Body:
       percentheal 14,8;
   - Id: 12255
     AegisName: Vit_Dish10_M
-    Name: Cozido Imortal
+    Name: Sopa da Imortalidade
     Type: Usable
     Weight: 10
     Script: |
@@ -5409,7 +5406,7 @@ Body:
       sc_start SC_SPEEDUP0,540000,25;
   - Id: 12263
     AegisName: Comp_Battle_Manual
-    Name: Manual de Campo
+    Name: '[Evento] Manual de Combate'
     Type: Usable
     Buy: 2
     Weight: 10
@@ -5425,7 +5422,7 @@ Body:
       sc_start SC_EXPBOOST,1800000,50;
   - Id: 12264
     AegisName: Comp_Bubble_Gum
-    Name: Chiclete
+    Name: '[Evento] Goma de Mascar'
     Type: Usable
     Buy: 2
     Weight: 10
@@ -5441,7 +5438,7 @@ Body:
       sc_start SC_ITEMBOOST,1800000,100;
   - Id: 12265
     AegisName: Comp_Insurance
-    Name: Ticket Seguro
+    Name: '[Evento] Seguro de Vida'
     Type: Usable
     Buy: 2
     Weight: 10
@@ -5491,7 +5488,7 @@ Body:
       sc_start SC_FLEEFOOD,180000,30;
   - Id: 12268
     AegisName: Rainbow_Cake_
-    Name: Bolo Arco-Íris
+    Name: Rainbow Cake
     Type: Usable
     Buy: 2
     Weight: 70
@@ -5666,7 +5663,7 @@ Body:
       sc_start4 SC_ARMOR_RESIST,300000,20,20,20,20;
   - Id: 12280
     AegisName: Holy_Element_Scroll
-    Name: Pergaminho Elemental Sagrado
+    Name: Holy Elemental Scroll
     Type: Usable
     Weight: 10
     Script: |
@@ -5681,7 +5678,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_Tresure_Box_WoE,1);
+      getgroupitem(IG_TRESURE_BOX_WOE);
   - Id: 12282
     AegisName: Internet_Cafe1
     Name: Internet Cafe1
@@ -5731,7 +5728,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_Masquerade_2,1);
+      getgroupitem(IG_MASQUERADE_2);
   - Id: 12287
     AegisName: Love_Angel
     Name: Love Angel Magic Powder
@@ -5785,7 +5782,7 @@ Body:
       setfont 0;
   - Id: 12290
     AegisName: Mysterious_Can
-    Name: Mysterious Can Magic Powder
+    Name: Bênção Enlatada
     Type: Usable
     Buy: 10
     Weight: 100
@@ -5836,8 +5833,17 @@ Body:
     Name: PC-Room Coin Box
     Type: Usable
     Weight: 10
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     Script: |
-      changebase roclass(eaclass()|EAJL_THIRD);
+      getitem 2740,1;
   - Id: 12295
     AegisName: PC_Bang_Coin_Box2
     Name: PC-Room Coin Box
@@ -6335,7 +6341,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_Cherish_Box,1);
+      getgroupitem(IG_CHERISH_BOX);
   - Id: 12335
     AegisName: Yummy_Skewered_Dish
     Name: Grilled Delicious Skewer
@@ -6346,7 +6352,7 @@ Body:
       percentheal 60,60;
   - Id: 12336
     AegisName: Baked_Mushroom
-    Name: Grilled Mushroom
+    Name: Shimeji Assado
     Type: Healing
     Buy: 500
     Weight: 300
@@ -6378,7 +6384,7 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_Cherish_Box_Ori,1);
+      getgroupitem(IG_CHERISH_BOX_ORI);
   - Id: 12340
     AegisName: Mysterious_Rice_Powder
     Name: Chewy Rice Powder
@@ -6395,7 +6401,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1815;
+      pet;
   - Id: 12341
     AegisName: Special_Alloy_Trap_Box
     Name: Caixa de Armadilhas Especiais
@@ -6617,7 +6623,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_Xmas_Gift,1);
+      getgroupitem(IG_XMAS_GIFT);
   - Id: 12356
     AegisName: Louise_Costume_Box
     Name: Caixa de Fantasia da Louise
@@ -6628,7 +6634,7 @@ Body:
       BuyingStore: true
       Container: true
     Script: |
-      getrandgroupitem(IG_Louise_Costume_Box,1);
+      getgroupitem(IG_LOUISE_COSTUME_BOX);
   - Id: 12357
     AegisName: Shiny_Wing_Gown
     Name: Shiny Wing Gown
@@ -6636,7 +6642,7 @@ Body:
     Buy: 20
     Weight: 50
     Script: |
-      pet 1630;
+      pet;
   - Id: 12358
     AegisName: Fan_Of_Wind
     Name: Leque dos Ventos
@@ -6648,7 +6654,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1513;
+      pet;
   - Id: 12359
     AegisName: Very_Soft_Plant
     Name: Folha Macia
@@ -6660,7 +6666,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1586;
+      pet;
   - Id: 12360
     AegisName: Very_Red_Juice
     Name: Suco Vermelho-Sangue
@@ -6672,15 +6678,24 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1505;
+      pet;
   - Id: 12361
     AegisName: Delicious_Shaved_Ice
     Name: Taça Nevada
     Type: Usable
     NoUse:
       Sitting: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     Script: |
-      pet 1143;
+      pet;
   - Id: 12362
     AegisName: Kuloren
     Name: Kuloren
@@ -6692,15 +6707,24 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1401;
+      pet;
   - Id: 12363
     AegisName: Fit_Pipe
     Name: Caixão Tenebroso
     Type: Usable
     NoUse:
       Sitting: true
+    Trade:
+      NoDrop: true
+      NoTrade: true
+      NoSell: true
+      NoCart: true
+      NoStorage: true
+      NoGuildStorage: true
+      NoMail: true
+      NoAuction: true
     Script: |
-      pet 1179;
+      pet;
   - Id: 12364
     AegisName: Staff_Of_Leader
     Name: Cajado do Líder
@@ -6712,7 +6736,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1299;
+      pet;
   - Id: 12365
     AegisName: Charming_Lotus
     Name: Flor de Lótus
@@ -6724,7 +6748,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1416;
+      pet;
   - Id: 12366
     AegisName: Gril_Doll
     Name: Bonequinha Oriental
@@ -6736,7 +6760,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1404;
+      pet;
   - Id: 12367
     AegisName: Luxury_Whisky_Bottle
     Name: Garrafa de Bebida
@@ -6748,7 +6772,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1504;
+      pet;
   - Id: 12368
     AegisName: Splendid_Mirror
     Name: Espelho de Mão
@@ -6760,7 +6784,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1148;
+      pet;
   - Id: 12369
     AegisName: Oilpalm_Coconut
     Name: Óleo de Coco
@@ -6772,7 +6796,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1495;
+      pet;
   - Id: 12370
     AegisName: Gril's_Naivety
     Name: Carta de Amor
@@ -6789,7 +6813,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1374;
+      pet;
   - Id: 12371
     AegisName: Magical_Lithography
     Name: Tábula Mágica
@@ -6801,7 +6825,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1040;
+      pet;
   - Id: 12372
     AegisName: Hell_Contract
     Name: Contrato Infernal
@@ -6813,7 +6837,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1379;
+      pet;
   - Id: 12373
     AegisName: Boy's_Naivety
     Name: Coração Puro
@@ -6825,7 +6849,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1370;
+      pet;
   - Id: 12374
     AegisName: Flaming_Ice
     Name: Chama Azulada
@@ -6837,7 +6861,7 @@ Body:
     NoUse:
       Sitting: true
     Script: |
-      pet 1837;
+      pet;
   - Id: 12375
     AegisName: Acaraje
     Name: Acarajé
@@ -6851,10 +6875,10 @@ Body:
       NoAuction: true
     Script: |
       specialeffect2 EF_STEAL;
-      bonus_script "{ bonus bHit,5; bonus bAspdRate,10; }",1200,0,0,EFST_ACARAJE;
+      sc_start2 SC_ACARAJE,1200000,10,5;
   - Id: 12376
     AegisName: Mysterious_Can2
-    Name: Mysterious Can2
+    Name: Glória Enlatada
     Type: Usable
     Buy: 10
     Weight: 100
@@ -6867,7 +6891,7 @@ Body:
       itemskill "PR_GLORIA",2;
   - Id: 12377
     AegisName: Mysterious_PET_Bottle2
-    Name: Mysterious PET Bottle2
+    Name: Magnificat Engarrafado
     Type: Usable
     Buy: 10
     Weight: 100
@@ -7116,7 +7140,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      pet 1519;
+      pet;
   - Id: 12396
     AegisName: Fools_Day_Box
     Name: Caixa Surpresa
@@ -7271,12 +7295,6 @@ Body:
     Name: PCBang Coupon Box
     Type: Usable
     Weight: 10
-  - Id: 12408
-    AegisName: Leaf_Cat_Ball
-    Name: Esfera de Captura
-    Type: Usable
-    Script: |
-      pet 2081;
   - Id: 12409
     AegisName: Pork_Belly_H
     Name: Carne de Porco 1a Classe
@@ -8092,28 +8110,28 @@ Body:
     Weight: 10
   - Id: 12507
     AegisName: E_WOB_Rune
-    Name: Yellow Butterfly Wing
+    Name: Asa de Borboleta Amarela
     Type: Usable
     Weight: 10
     Script: |
       callfunc "F_CashCity",1;
   - Id: 12508
     AegisName: E_WOB_Schwaltz
-    Name: Green Butterfly Wing
+    Name: Asa de Borboleta Verde
     Type: Usable
     Weight: 10
     Script: |
       callfunc "F_CashCity",2;
   - Id: 12509
     AegisName: E_WOB_Rachel
-    Name: Red Butterfly Wing
+    Name: Asa de Borboleta Vermelha
     Type: Usable
     Weight: 10
     Script: |
       callfunc "F_CashCity",3;
   - Id: 12510
     AegisName: E_WOB_Local
-    Name: Blue Butterfly Wing
+    Name: Asa de Borboleta Azul
     Type: Usable
     Weight: 10
     Script: |
@@ -8135,17 +8153,17 @@ Body:
     Weight: 10
   - Id: 12514
     AegisName: E_Abrasive
-    Name: E Abrasive
+    Name: '[Evento] Abrasivo'
     Type: Usable
     Weight: 10
   - Id: 12515
     AegisName: E_Med_Life_Potion
-    Name: E Med Life Potion
+    Name: '[Evento] Poção Média de Vida'
     Type: Usable
     Weight: 10
   - Id: 12516
     AegisName: E_Small_Life_Potion
-    Name: E Small Life Potion
+    Name: '[Evento] Poção Menor de Vida'
     Type: Usable
     Weight: 10
   - Id: 12517
@@ -8613,21 +8631,21 @@ Body:
     Type: Usable
     Weight: 10
     Script: |
-      searchstores 10,0;
+      searchstores 10, SEARCHSTORE_EFFECT_NORMAL;
   - Id: 12581
     AegisName: Vending_Search_Scroll2
     Name: Catálogo de Vendas Ouro
     Type: Usable
     Weight: 10
     Script: |
-      searchstores 10,1;
+      searchstores 10, SEARCHSTORE_EFFECT_REMOTE;
   - Id: 12591
     AegisName: Uni_Catalog_Bz
     Name: Catálogo de Vendas Bronze
     Type: Usable
     Weight: 10
     Script: |
-      searchstores 10,1;
+      searchstores 10, SEARCHSTORE_EFFECT_REMOTE;
   - Id: 12609
     AegisName: Old_Ore_Box
     Name: Caixa de Pedra Antiga
@@ -8654,8 +8672,8 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_BleuBox,1);
-      getrandgroupitem(IG_BleuBox,1);
+      getgroupitem(IG_BLEUBOX);
+      getgroupitem(IG_BLEUBOX);
   - Id: 12703
     AegisName: Holy_Egg_2
     Name: Holy Egg
@@ -8772,7 +8790,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getrandgroupitem(IG_Easter_Scroll,1);
+      getgroupitem(IG_EASTER_SCROLL);
   - Id: 12715
     AegisName: Black_Treasure_Box
     Name: Black Treasure Box
@@ -9157,7 +9175,7 @@ Body:
       BuyingStore: true
   - Id: 12740
     AegisName: Inc_Str_Scroll
-    Name: Pergaminho de Amplificação Mística
+    Name: Amplification Scroll
     Type: Usable
     Buy: 1
     Trade:
@@ -9187,7 +9205,7 @@ Body:
     Type: Usable
   - Id: 12745
     AegisName: Skull_Scroll
-    Name: Skull Scroll
+    Name: Anotação Vívida
     Type: Usable
     Buy: 20
     Weight: 10
@@ -9285,7 +9303,7 @@ Body:
       NoAuction: true
     Script: |
       specialeffect2 EF_POK_JAP;
-      itemskill "MO_CALLSPIRITS",3; itemskill "MO_FINGEROFFENSIVE",5;
+      /* itemskill "MO_CALLSPIRITS",3; itemskill "MO_FINGEROFFENSIVE",5; */
   - Id: 12756
     AegisName: New_Gift_Envelope
     Name: Envelope do Ano Novo Chinês
@@ -9441,7 +9459,7 @@ Body:
       NoAuction: true
   - Id: 12831
     AegisName: Potion_Box
-    Name: Potion Box
+    Name: Caixa de Compactas
     Type: Usable
     Weight: 50
     Classes:
@@ -9453,7 +9471,7 @@ Body:
       Third_Baby: true
   - Id: 12848
     AegisName: Falcon_Flute
-    Name: Falcon Flute
+    Name: Flauta de Ave
     Type: Delayconsume
     Weight: 10
     Script: |
@@ -9673,7 +9691,7 @@ Body:
       getitem 12216,10;
   - Id: 12915
     AegisName: Aspersio_5_Scroll_Box
-    Name: Caixa de Aspersio Especial [10]
+    Name: Caixa de Aspersio[20]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -9687,7 +9705,7 @@ Body:
       getitem 12217,10;
   - Id: 12916
     AegisName: Assumptio_5_Scroll_Box
-    Name: Caixa de Assumptio[10]
+    Name: Caixa de Assumptio[20]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -9743,7 +9761,7 @@ Body:
       getitem 12221,10;
   - Id: 12920
     AegisName: Enriched_Elunium_Box
-    Name: Cx Elunium Enriquecido [10]
+    Name: Elunium Enriquecido[1]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -9757,7 +9775,7 @@ Body:
       getitem 7619,10;
   - Id: 12921
     AegisName: Enriched_Oridecon_Box
-    Name: Cx Oridecon Enriquecido [10]
+    Name: Oridecon Enriquecido[1]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -9841,7 +9859,7 @@ Body:
       NoAuction: true
   - Id: 12927
     AegisName: J_Aspersio_5_Scroll_Box
-    Name: Caixa de Aspersio Especial [10]
+    Name: Aspersio Scroll Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -10407,7 +10425,7 @@ Body:
       getitem 12968,1;
   - Id: 12966
     AegisName: Emergency_Box2
-    Name: Caixa de Chamado Urgente
+    Name: Emergency Level 2 Scroll Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -10415,7 +10433,7 @@ Body:
       getitem 12969,1;
   - Id: 12967
     AegisName: Emergency_Box3
-    Name: Caixa de Chamado Urgente
+    Name: Emergency Level 3 Scroll Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -10434,7 +10452,7 @@ Body:
       unitskilluseid getcharid(3),"GD_ITEMEMERGENCYCALL",1;
   - Id: 12969
     AegisName: Emergency_Scroll2
-    Name: Pergaminho de Chamado Urgente
+    Name: Emergency Level 2 Scroll
     Type: Usable
     Buy: 2
     Weight: 10
@@ -10445,7 +10463,7 @@ Body:
       unitskilluseid getcharid(3),"GD_ITEMEMERGENCYCALL",2;
   - Id: 12970
     AegisName: Emergency_Scroll3
-    Name: Pergaminho de Chamado Urgente
+    Name: Emergency Level 3 Scroll
     Type: Usable
     Buy: 2
     Weight: 10
@@ -10662,7 +10680,7 @@ Body:
       NoAuction: true
   - Id: 12991
     AegisName: Pet_Egg_Scroll8
-    Name: Party Hard Pack
+    Name: Pacote de Batalha
     Type: Delayconsume
     Weight: 10
     Trade:
@@ -10675,7 +10693,7 @@ Body:
       NoAuction: true
   - Id: 12992
     AegisName: Pet_Egg_Scroll9
-    Name: Adventurer Pack
+    Name: Pacote de Aventuras
     Type: Delayconsume
     Weight: 10
     Trade:
@@ -10730,7 +10748,7 @@ Body:
       getitem 510,15;
   - Id: 12997
     AegisName: Elunium_Box
-    Name: Caixa de Elunium
+    Name: Elunium Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -10738,7 +10756,7 @@ Body:
       getitem 985,5;
   - Id: 12998
     AegisName: Oridecon_Box
-    Name: Caixa de Oridecon
+    Name: Oridecon Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -10864,7 +10882,7 @@ Body:
       rentitem 13026,604800;
   - Id: 13514
     AegisName: Spanner_Box
-    Name: Wrench Box
+    Name: Spaner Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -10952,7 +10970,7 @@ Body:
       getitem 13564,1;
   - Id: 13525
     AegisName: Zeny_Scroll_Box
-    Name: Zeny Pet Egg Scroll Box
+    Name: Caixa de Ovo da Fortuna
     Type: Cash
     Buy: 20
     Weight: 10
@@ -11310,7 +11328,7 @@ Body:
       getitem 14528,10;
   - Id: 13570
     AegisName: Giant_Fly_Wing_Box50
-    Name: Cx Asas de Mosca Gigantes[50]
+    Name: Giant Fly Wing 50 Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -11454,7 +11472,7 @@ Body:
       getitem 12220,50;
   - Id: 13588
     AegisName: Assumptio_5_Box30
-    Name: Assumptio Scroll 30 Box
+    Name: Caixa de Assumptio [30]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -11806,7 +11824,7 @@ Body:
     Weight: 10
   - Id: 13634
     AegisName: Vigorgra_Package1
-    Name: 1 Hour Package Vol. 1
+    Name: 1 Hour Package Vol 1
     Type: Cash
     Buy: 20
     Weight: 10
@@ -11820,7 +11838,7 @@ Body:
       getitem 7621,1;
   - Id: 13635
     AegisName: Vigorgra_Package2
-    Name: 1 Hour Package Vol. 2
+    Name: 1 Hour Package Vol 2
     Type: Cash
     Buy: 20
     Weight: 10
@@ -12371,7 +12389,7 @@ Body:
       rentitem 2533,604800;
   - Id: 13694
     AegisName: Freyja_Crown_Box
-    Name: Freya's Crown Box
+    Name: Caixa de Coroa de Freya
     Type: Cash
     Weight: 10
     Script: |
@@ -12487,7 +12505,7 @@ Body:
     Weight: 10
   - Id: 13709
     AegisName: BRO_Package_1
-    Name: BRO Package Box
+    Name: Caixa Especial de Pergaminhos
     Type: Usable
     Buy: 20
     Weight: 10
@@ -13017,7 +13035,7 @@ Body:
       getitem 713,500;
   - Id: 13762
     AegisName: In_Royal_Jelly_Box
-    Name: Caixa de Geléia Real
+    Name: Royal Jelly Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -13033,7 +13051,7 @@ Body:
       getitem 2709,1;
   - Id: 13764
     AegisName: Battle_Manual_Box_TW
-    Name: Beginner's Field Manual 5 Box
+    Name: 5Novice BattleManual Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -13055,7 +13073,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      getitem 7804,1;
+      getitem 2713,1;
   - Id: 13766
     AegisName: Nagan_Box
     Name: Caixa de Nagan
@@ -13098,7 +13116,7 @@ Body:
       rentitem 1378,604800;
   - Id: 13771
     AegisName: Bloody_Roar_Box
-    Name: Refined Bloody Roar Box
+    Name: Caixa de Rugido Sangrento
     Type: Cash
     Buy: 20
     Weight: 10
@@ -13851,7 +13869,7 @@ Body:
       getitem 14586,5;
   - Id: 13858
     AegisName: Spark_Candy_Box10
-    Name: Cx Doce Hiper Açucarado [10]
+    Name: Doce Hiper Açucarado [10]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -13859,7 +13877,7 @@ Body:
       getitem 14586,10;
   - Id: 13859
     AegisName: Directive_A_Envelope
-    Name: Directive Envelope de Ordem Oficial A A
+    Name: Envelope de Ordem Oficial A
     Type: Cash
     Buy: 20
     Weight: 10
@@ -14647,7 +14665,7 @@ Body:
       getitem 5229,1;
   - Id: 13909
     AegisName: MVP_Hunt_Box
-    Name: MVP Hunting Box
+    Name: XM Mvphunt Set Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15012,7 +15030,7 @@ Body:
       getitem 5187,1;
   - Id: 13940
     AegisName: Siege_Tele_Scroll_Box
-    Name: WoE Teleport Scroll 100 Box
+    Name: Caixa para Feudos[100]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15028,7 +15046,7 @@ Body:
       getitem 14591,100;
   - Id: 13941
     AegisName: Valentine_Scroll_TW
-    Name: Taiwan Valentine Scroll
+    Name: Ovo dos Namorados
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15090,7 +15108,7 @@ Body:
       getitem 14011,1;
   - Id: 13945
     AegisName: Br_SwordPackage
-    Name: Brazil Swordsman Package
+    Name: Caixa de Espadachim
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15114,7 +15132,7 @@ Body:
       getitem 2266,1;
   - Id: 13946
     AegisName: Br_MagePackage
-    Name: Brazil Magician Package
+    Name: Caixa de Mago
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15137,7 +15155,7 @@ Body:
       getitem 5027,1;
   - Id: 13947
     AegisName: Br_AcolPackage
-    Name: Brazil Acolyte Package
+    Name: Caixa de Noviço
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15160,7 +15178,7 @@ Body:
       getitem 2217,1;
   - Id: 13948
     AegisName: Br_ArcherPackage
-    Name: Brazil Archer package
+    Name: Caixa de Arqueiro
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15183,7 +15201,7 @@ Body:
       getitem 2285,1;
   - Id: 13949
     AegisName: Br_MerPackage
-    Name: Brazil Merchant Package
+    Name: Caixa de Mercador
     Type: Cash
     Buy: 20
     Weight: 10
@@ -15206,7 +15224,7 @@ Body:
       getitem 5021,1;
   - Id: 13950
     AegisName: Br_ThiefPackage
-    Name: Brazil Thief Package
+    Name: Caixa de Gatuno
     Type: Cash
     Buy: 20
     Weight: 10
@@ -18055,7 +18073,7 @@ Body:
       rentitem 2687,1209600;
   - Id: 14132
     AegisName: F_Critical_Ring_Box
-    Name: Critical Ring Box
+    Name: Caixa do Anel Crítico Aprimorado
     Type: Cash
     Buy: 20
     Weight: 10
@@ -19682,7 +19700,7 @@ Body:
       getitem 604,10;
   - Id: 14234
     AegisName: Dead_Tree_Branch_Box2
-    Name: Caixa de Galhos Secos
+    Name: Dead Branch 25 Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -20068,7 +20086,7 @@ Body:
     Weight: 10
   - Id: 14274
     AegisName: Amplification_10_Scroll_Box2
-    Name: Mystical Amplification Scroll 10 Box
+    Name: Amplificação Mística [10]
     Type: Cash
     Buy: 20
     Weight: 10
@@ -20140,7 +20158,7 @@ Body:
       getitem 6026,1;
   - Id: 14287
     AegisName: Baricade_Repair_Kit
-    Name: Barricade Repair Kit
+    Name: Kit Reparo de Barricada
     Type: Cash
     Buy: 20
     Weight: 10
@@ -20230,7 +20248,7 @@ Body:
       NoGuildStorage: true
   - Id: 14300
     AegisName: Mask_Of_Ifrit_Box
-    Name: Mask Of Ifrit Box
+    Name: Mask of Ifrit Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -20242,7 +20260,7 @@ Body:
       getitem 5420,1;
   - Id: 14301
     AegisName: Ifrit's_Ear_Box
-    Name: Ears Of Ifrit Box
+    Name: Ears of Ifrit Box
     Type: Cash
     Buy: 20
     Weight: 10
@@ -20654,7 +20672,7 @@ Body:
       sc_start SC_ASPDPOTION0,1800000,0;
   - Id: 14510
     AegisName: Light_Awakening_Pot
-    Name: Poção do Dispertar Leve
+    Name: Light Awakening Potion
     Type: Usable
     Buy: 1500
     Weight: 20
@@ -20765,7 +20783,7 @@ Body:
       unitskilluseid getcharid(3),"AM_CP_ARMOR",5;
   - Id: 14520
     AegisName: CP_Weapon_Scroll
-    Name: Chemical Protection Weapon Scroll
+    Name: Perg. Revestir Arma
     Type: Usable
     Weight: 10
     Script: |
@@ -20867,7 +20885,7 @@ Body:
       sc_start SC_HITFOOD,1800000,30;
   - Id: 14532
     AegisName: Battle_Manual25
-    Name: Field Manual 25%
+    Name: Basic Field Manual
     Type: Usable
     Buy: 2
     Weight: 10
@@ -21283,7 +21301,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1122;
+      pet;
   - Id: 14570
     AegisName: Flail_Goblin_Ring
     Name: Anel de Goblin (Mangual)
@@ -21298,7 +21316,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1123;
+      pet;
   - Id: 14571
     AegisName: Hammer_Goblin_Ring
     Name: Anel de Goblin (Martelo)
@@ -21313,7 +21331,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1125;
+      pet;
   - Id: 14572
     AegisName: Holy_Marble
     Name: Cristal de Âmbar
@@ -21328,7 +21346,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1385;
+      pet;
   - Id: 14573
     AegisName: Red_Burning_Stone
     Name: Pedra Incandescente
@@ -21343,7 +21361,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1382;
+      pet;
   - Id: 14574
     AegisName: Skull_Of_Vagabond
     Name: Crânio do Andarilho
@@ -21358,7 +21376,7 @@ Body:
       NoMail: true
       NoAuction: true
     Script: |
-      pet 1208;
+      pet;
   - Id: 14575
     AegisName: Str_Dish05_
     Name: Lutie Lady's Pancake
@@ -21422,28 +21440,28 @@ Body:
       callfunc "F_CashDungeon",2;
   - Id: 14582
     AegisName: WOB_Rune
-    Name: Asa de Borboleta Amarela
+    Name: Yellow Butterfly Wing
     Type: Usable
     Weight: 10
     Script: |
       callfunc "F_CashCity",1;
   - Id: 14583
     AegisName: WOB_Schwaltz
-    Name: Asa de Borboleta Verde
+    Name: Green Butterfly Wing
     Type: Usable
     Weight: 10
     Script: |
       callfunc "F_CashCity",2;
   - Id: 14584
     AegisName: WOB_Rachel
-    Name: Asa de Borboleta Vermelha
+    Name: Red Butterfly Wing
     Type: Usable
     Weight: 10
     Script: |
       callfunc "F_CashCity",3;
   - Id: 14585
     AegisName: WOB_Local
-    Name: Asa de Borboleta Azul
+    Name: Blue Butterfly Wing
     Type: Usable
     Weight: 10
     Script: |
@@ -21598,15 +21616,15 @@ Body:
     Flags:
       Container: true
     Script: |
-      getrandgroupitem(IG_Pierre_Treasurebox,1);
-      getrandgroupitem(IG_Pierre_Treasurebox,1);
-      getrandgroupitem(IG_Pierre_Treasurebox,1);
-      getrandgroupitem(IG_Pierre_Treasurebox,1);
-      getrandgroupitem(IG_Pierre_Treasurebox,1);
-      getrandgroupitem(IG_Pierre_Treasurebox,1);
+      getgroupitem(IG_PIERRE_TREASUREBOX);
+      getgroupitem(IG_PIERRE_TREASUREBOX);
+      getgroupitem(IG_PIERRE_TREASUREBOX);
+      getgroupitem(IG_PIERRE_TREASUREBOX);
+      getgroupitem(IG_PIERRE_TREASUREBOX);
+      getgroupitem(IG_PIERRE_TREASUREBOX);
   - Id: 14597
     AegisName: PhreeoniS
-    Name: Phreeoni Scroll
+    Name: Pergaminho de Freeoni
     Type: Usable
     Weight: 10
     Trade:
