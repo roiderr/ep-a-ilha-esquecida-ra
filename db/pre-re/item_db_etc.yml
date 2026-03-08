@@ -109,7 +109,7 @@ Body:
     Weight: 400
   - Id: 673
     AegisName: Copper_Coin
-    Name: Sacola de Moedas de Bronze
+    Name: Moeda de Bronze
     Type: Etc
     Buy: 100
     Weight: 40
@@ -371,7 +371,7 @@ Body:
       BuyingStore: true
   - Id: 730
     AegisName: Crystal_Jewel
-    Name: Diamante de 1 Quilate
+    Name: Diamante de 1 quilate
     Type: Etc
     Buy: 10000
     Weight: 100
@@ -379,7 +379,7 @@ Body:
       BuyingStore: true
   - Id: 731
     AegisName: Crystal_Jewel_
-    Name: Diamante de 2 Quilate
+    Name: Diamante de 2 quilates
     Type: Etc
     Buy: 25000
     Weight: 100
@@ -387,7 +387,7 @@ Body:
       BuyingStore: true
   - Id: 732
     AegisName: Crystal_Jewel__
-    Name: Diamante de 3 Quilate
+    Name: Diamante de 3 quilates
     Type: Etc
     Buy: 55000
     Weight: 100
@@ -2669,7 +2669,7 @@ Body:
       bonus bMaxSP,80;
   - Id: 4011
     AegisName: Picky__Card
-    Name: Carta Picky com Casca
+    Name: Carta Picky com casca
     Type: Card
     Buy: 20
     Weight: 10
@@ -4765,7 +4765,7 @@ Body:
       bonus2 bAddEffWhenHit,Eff_Sleep,600;
   - Id: 4174
     AegisName: Deviling_Card
-    Name: Carta Devilingc
+    Name: Carta Deviling
     Type: Card
     Buy: 20
     Weight: 10
@@ -5311,7 +5311,7 @@ Body:
       bonus2 bCriticalAddRace,RC_Insect,7;
   - Id: 4215
     AegisName: Blazzer_Card
-    Name: Carta Brasa
+    Name: Carta Labareda
     Type: Card
     Buy: 20
     Weight: 10
@@ -5320,7 +5320,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      bonus2 bAddMonsterDropItemGroup,IG_Food,600;
+      bonus2 bAddMonsterDropItemGroup,IG_Food,10000;
   - Id: 4216
     AegisName: Sasquatch_Card
     Name: Carta Sasquatch
@@ -5641,7 +5641,7 @@ Body:
       bonus2 bExpAddRace,RC_Formless,10;
   - Id: 4240
     AegisName: Arclouse_Card
-    Name: Arclouze Card
+    Name: Carta Arclouse
     Type: Card
     Buy: 20
     Weight: 10
@@ -6230,7 +6230,7 @@ Body:
     Flags:
       BuyingStore: true
     Script: |
-      bonus2 bAddMonsterDropItemGroup,IG_Recovery,600;
+      bonus2 bAddMonsterDropItemGroup,IG_Recovery,10000;
   - Id: 4283
     AegisName: Greatest_General_Card
     Name: Carta Guardião da Floresta
@@ -8423,97 +8423,6 @@ Body:
       bonus2 bMagicAddRace,RC_Angel,50;
       bonus2 bMagicAddRace,RC_DemiHuman,50;
       bonus2 bMagicAddRace,RC_Player_Human,50;
-  - Id: 4442
-    AegisName: Tatacho_Card
-    Name: Carta Tatacho
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus2 bSubEle,Ele_Neutral,20;
-      bonus2 bAddEle,Ele_Neutral,5;
-  - Id: 4443
-    AegisName: Aqua_Elemental_Card
-    Name: Carta Elemental da Água
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus2 bSubEle,Ele_Water,20;
-      bonus2 bAddEle,Ele_Water,5;
-  - Id: 4444
-    AegisName: Draco_Card
-    Name: Carta Draco
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus2 bSubEle,Ele_Earth,20;
-      bonus2 bAddEle,Ele_Earth,5;
-  - Id: 4445
-    AegisName: Luciola_Vespa_Card
-    Name: Carta Vespa Vagalume
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus2 bSubEle,Ele_Wind,20;
-      bonus2 bAddEle,Ele_Wind,5;
-  - Id: 4447
-    AegisName: Centipede_Card
-    Name: Carta Centopéia
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus2 bSubEle,Ele_Poison,20;
-      bonus2 bAddEle,Ele_Poison,5;
-  - Id: 4448
-    AegisName: Cornus_Card
-    Name: Carta Cornus
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus2 bSubEle,Ele_Holy,20;
-      bonus2 bAddEle,Ele_Holy,5;
-  - Id: 4449
-    AegisName: Dark_Shadow_Card
-    Name: Carta Sombra Obscura
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Left_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus2 bSubEle,Ele_Dark,20;
-      bonus2 bAddEle,Ele_Dark,5;
   - Id: 4450
     AegisName: Banshee_Master_Card
     Name: Carta Banshee Master
@@ -8527,46 +8436,9 @@ Body:
     Script: |
       bonus bInt,1;
       bonus bMatk,10;
-  - Id: 4451
-    AegisName: Ant_Buyanne_Card
-    Name: Carta Entweihen Crothen
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Armor: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus bMatk,100;
-  - Id: 4452
-    AegisName: Centipede_Larva_Card
-    Name: Carta Larva de Centopéia
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Right_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus bInt,1;
-      bonus bMatk,3;
-  - Id: 4453
-    AegisName: Hilsrion_Card
-    Name: Carta Leão da Montanha
-    Type: Card
-    Buy: 20
-    Weight: 10
-    Locations:
-      Right_Hand: true
-    Flags:
-      BuyingStore: true
-    Script: |
-      bonus bBaseAtk,25;
   - Id: 4700
     AegisName: Strength1
-    Name: STR+1
+    Name: FOR +1
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8575,7 +8447,7 @@ Body:
       bonus bStr,1;
   - Id: 4701
     AegisName: Strength2
-    Name: STR+2
+    Name: FOR +2
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8584,7 +8456,7 @@ Body:
       bonus bStr,2;
   - Id: 4702
     AegisName: Strength3
-    Name: STR+3
+    Name: FOR +3
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8593,7 +8465,7 @@ Body:
       bonus bStr,3;
   - Id: 4703
     AegisName: Strength4
-    Name: STR+4
+    Name: FOR +4
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8602,7 +8474,7 @@ Body:
       bonus bStr,4;
   - Id: 4704
     AegisName: Strength5
-    Name: STR+5
+    Name: FOR +5
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8611,7 +8483,7 @@ Body:
       bonus bStr,5;
   - Id: 4705
     AegisName: Strength6
-    Name: STR+6
+    Name: FOR +6
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8620,7 +8492,7 @@ Body:
       bonus bStr,6;
   - Id: 4706
     AegisName: Strength7
-    Name: STR+7
+    Name: FOR +7
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8629,7 +8501,7 @@ Body:
       bonus bStr,7;
   - Id: 4707
     AegisName: Strength8
-    Name: STR+8
+    Name: FOR +8
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8638,7 +8510,7 @@ Body:
       bonus bStr,8;
   - Id: 4708
     AegisName: Strength9
-    Name: STR+9
+    Name: FOR +9
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8647,7 +8519,7 @@ Body:
       bonus bStr,9;
   - Id: 4709
     AegisName: Strength10
-    Name: STR+10
+    Name: FOR +10
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8656,7 +8528,7 @@ Body:
       bonus bStr,10;
   - Id: 4710
     AegisName: Inteligence1
-    Name: INT+1
+    Name: INT +1
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8665,7 +8537,7 @@ Body:
       bonus bInt,1;
   - Id: 4711
     AegisName: Inteligence2
-    Name: INT+2
+    Name: INT +2
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8674,7 +8546,7 @@ Body:
       bonus bInt,2;
   - Id: 4712
     AegisName: Inteligence3
-    Name: INT+3
+    Name: INT +3
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8683,7 +8555,7 @@ Body:
       bonus bInt,3;
   - Id: 4713
     AegisName: Inteligence4
-    Name: INT+4
+    Name: INT +4
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8692,7 +8564,7 @@ Body:
       bonus bInt,4;
   - Id: 4714
     AegisName: Inteligence5
-    Name: INT+5
+    Name: INT +5
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8701,7 +8573,7 @@ Body:
       bonus bInt,5;
   - Id: 4715
     AegisName: Inteligence6
-    Name: INT+6
+    Name: INT +6
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8710,7 +8582,7 @@ Body:
       bonus bInt,6;
   - Id: 4716
     AegisName: Inteligence7
-    Name: INT+7
+    Name: INT +7
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8719,7 +8591,7 @@ Body:
       bonus bInt,7;
   - Id: 4717
     AegisName: Inteligence8
-    Name: INT+8
+    Name: INT +8
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8728,7 +8600,7 @@ Body:
       bonus bInt,8;
   - Id: 4718
     AegisName: Inteligence9
-    Name: INT+9
+    Name: INT +9
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8737,7 +8609,7 @@ Body:
       bonus bInt,9;
   - Id: 4719
     AegisName: Inteligence10
-    Name: INT+10
+    Name: INT +10
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8746,7 +8618,7 @@ Body:
       bonus bInt,10;
   - Id: 4720
     AegisName: Dexterity1
-    Name: DEX+1
+    Name: DES +1
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8755,7 +8627,7 @@ Body:
       bonus bDex,1;
   - Id: 4721
     AegisName: Dexterity2
-    Name: DEX+2
+    Name: DES +2
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8764,7 +8636,7 @@ Body:
       bonus bDex,2;
   - Id: 4722
     AegisName: Dexterity3
-    Name: DEX+3
+    Name: DES +3
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8773,7 +8645,7 @@ Body:
       bonus bDex,3;
   - Id: 4723
     AegisName: Dexterity4
-    Name: DEX+4
+    Name: DES +4
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8782,7 +8654,7 @@ Body:
       bonus bDex,4;
   - Id: 4724
     AegisName: Dexterity5
-    Name: DEX+5
+    Name: DES +5
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8791,7 +8663,7 @@ Body:
       bonus bDex,5;
   - Id: 4725
     AegisName: Dexterity6
-    Name: DEX+6
+    Name: DES +6
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8800,7 +8672,7 @@ Body:
       bonus bDex,6;
   - Id: 4726
     AegisName: Dexterity7
-    Name: DEX+7
+    Name: DES +7
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8809,7 +8681,7 @@ Body:
       bonus bDex,7;
   - Id: 4727
     AegisName: Dexterity8
-    Name: DEX+8
+    Name: DES +8
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8818,7 +8690,7 @@ Body:
       bonus bDex,8;
   - Id: 4728
     AegisName: Dexterity9
-    Name: DEX+9
+    Name: DES +9
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8827,7 +8699,7 @@ Body:
       bonus bDex,9;
   - Id: 4729
     AegisName: Dexterity10
-    Name: DEX+10
+    Name: DES +10
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8836,7 +8708,7 @@ Body:
       bonus bDex,10;
   - Id: 4730
     AegisName: Agility1
-    Name: AGI+1
+    Name: AGI +1
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8845,7 +8717,7 @@ Body:
       bonus bAgi,1;
   - Id: 4731
     AegisName: Agility2
-    Name: AGI+2
+    Name: AGI +2
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8854,7 +8726,7 @@ Body:
       bonus bAgi,2;
   - Id: 4732
     AegisName: Agility3
-    Name: AGI+3
+    Name: AGI +3
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8863,7 +8735,7 @@ Body:
       bonus bAgi,3;
   - Id: 4733
     AegisName: Agility4
-    Name: AGI+4
+    Name: AGI +4
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8872,7 +8744,7 @@ Body:
       bonus bAgi,4;
   - Id: 4734
     AegisName: Agility5
-    Name: AGI+5
+    Name: AGI +5
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8881,7 +8753,7 @@ Body:
       bonus bAgi,5;
   - Id: 4735
     AegisName: Agility6
-    Name: AGI+6
+    Name: AGI +6
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8890,7 +8762,7 @@ Body:
       bonus bAgi,6;
   - Id: 4736
     AegisName: Agility7
-    Name: AGI+7
+    Name: AGI +7
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8899,7 +8771,7 @@ Body:
       bonus bAgi,7;
   - Id: 4737
     AegisName: Agility8
-    Name: AGI+8
+    Name: AGI +8
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8908,7 +8780,7 @@ Body:
       bonus bAgi,8;
   - Id: 4738
     AegisName: Agility9
-    Name: AGI+9
+    Name: AGI +9
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8917,7 +8789,7 @@ Body:
       bonus bAgi,9;
   - Id: 4739
     AegisName: Agility10
-    Name: AGI+10
+    Name: AGI +10
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8926,7 +8798,7 @@ Body:
       bonus bAgi,10;
   - Id: 4740
     AegisName: Vitality1
-    Name: VIT+1
+    Name: VIT +1
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8935,7 +8807,7 @@ Body:
       bonus bVit,1;
   - Id: 4741
     AegisName: Vitality2
-    Name: VIT+2
+    Name: VIT +2
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8944,7 +8816,7 @@ Body:
       bonus bVit,2;
   - Id: 4742
     AegisName: Vitality3
-    Name: VIT+3
+    Name: VIT +3
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8953,7 +8825,7 @@ Body:
       bonus bVit,3;
   - Id: 4743
     AegisName: Vitality4
-    Name: VIT+4
+    Name: VIT +4
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8962,7 +8834,7 @@ Body:
       bonus bVit,4;
   - Id: 4744
     AegisName: Vitality5
-    Name: VIT+5
+    Name: VIT +5
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8971,7 +8843,7 @@ Body:
       bonus bVit,5;
   - Id: 4745
     AegisName: Vitality6
-    Name: VIT+6
+    Name: VIT +6
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8980,7 +8852,7 @@ Body:
       bonus bVit,6;
   - Id: 4746
     AegisName: Vitality7
-    Name: VIT+7
+    Name: VIT +7
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8989,7 +8861,7 @@ Body:
       bonus bVit,7;
   - Id: 4747
     AegisName: Vitality8
-    Name: VIT+8
+    Name: VIT +8
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -8998,7 +8870,7 @@ Body:
       bonus bVit,8;
   - Id: 4748
     AegisName: Vitality9
-    Name: VIT+9
+    Name: VIT +9
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9007,7 +8879,7 @@ Body:
       bonus bVit,9;
   - Id: 4749
     AegisName: Vitality10
-    Name: VIT+10
+    Name: VIT +10
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9016,7 +8888,7 @@ Body:
       bonus bVit,10;
   - Id: 4750
     AegisName: Luck1
-    Name: LUK+1
+    Name: SOR +1
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9025,7 +8897,7 @@ Body:
       bonus bLuk,1;
   - Id: 4751
     AegisName: Luck2
-    Name: LUK+2
+    Name: SOR +2
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9034,7 +8906,7 @@ Body:
       bonus bLuk,2;
   - Id: 4752
     AegisName: Luck3
-    Name: LUK+3
+    Name: SOR +3
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9043,7 +8915,7 @@ Body:
       bonus bLuk,3;
   - Id: 4753
     AegisName: Luck4
-    Name: LUK+4
+    Name: SOR +4
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9052,7 +8924,7 @@ Body:
       bonus bLuk,4;
   - Id: 4754
     AegisName: Luck5
-    Name: LUK+5
+    Name: SOR +5
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9061,7 +8933,7 @@ Body:
       bonus bLuk,5;
   - Id: 4755
     AegisName: Luck6
-    Name: LUK+6
+    Name: SOR +6
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9070,7 +8942,7 @@ Body:
       bonus bLuk,6;
   - Id: 4756
     AegisName: Luck7
-    Name: LUK+7
+    Name: SOR +7
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9079,7 +8951,7 @@ Body:
       bonus bLuk,7;
   - Id: 4757
     AegisName: Luck8
-    Name: LUK+8
+    Name: SOR +8
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9088,7 +8960,7 @@ Body:
       bonus bLuk,8;
   - Id: 4758
     AegisName: Luck9
-    Name: LUK+9
+    Name: SOR +9
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9097,7 +8969,7 @@ Body:
       bonus bLuk,9;
   - Id: 4759
     AegisName: Luck10
-    Name: LUK+10
+    Name: SOR +10
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9106,7 +8978,7 @@ Body:
       bonus bLuk,10;
   - Id: 4760
     AegisName: Matk1
-    Name: MATK+1%
+    Name: ATQM +1%
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9115,7 +8987,7 @@ Body:
       bonus bMatkRate,1;
   - Id: 4761
     AegisName: Matk2
-    Name: MATK+2%
+    Name: ATQM +2%
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9124,7 +8996,7 @@ Body:
       bonus bMatkRate,2;
   - Id: 4762
     AegisName: Evasion6
-    Name: FLEE+6
+    Name: Esquiva +6
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9133,7 +9005,7 @@ Body:
       bonus bFlee,6;
   - Id: 4763
     AegisName: Evasion12
-    Name: FLEE+12
+    Name: Esquiva +12
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9160,7 +9032,7 @@ Body:
       bonus bCritical,7;
   - Id: 4766
     AegisName: Atk2
-    Name: ATK+2%
+    Name: ATQ+2%
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9169,7 +9041,7 @@ Body:
       bonus2 bAddClass,Class_All,2;
   - Id: 4767
     AegisName: Atk3
-    Name: ATK+3%
+    Name: ATQ+3%
     Type: Card
     SubType: Enchant
     Buy: 20
@@ -9382,7 +9254,7 @@ Body:
       NoAuction: true
   - Id: 6008
     AegisName: Wood
-    Name: Wood
+    Name: Madeira de Reparos
     Type: Etc
     Weight: 10
     Flags:
@@ -9408,12 +9280,12 @@ Body:
       BuyingStore: true
   - Id: 6011
     AegisName: Blue_Card_B
-    Name: Blue B Card
+    Name: Cartão B
     Type: Etc
     Weight: 10
   - Id: 6012
     AegisName: Blue_Card_C
-    Name: Blue C Card
+    Name: Cartão C
     Type: Etc
     Weight: 10
   - Id: 6013
@@ -9423,7 +9295,7 @@ Body:
     Weight: 10
   - Id: 6015
     AegisName: Blue_Card_M
-    Name: Blue M Card
+    Name: Cartão M
     Type: Etc
     Weight: 10
   - Id: 6016
@@ -9433,12 +9305,12 @@ Body:
     Weight: 10
   - Id: 6017
     AegisName: Blue_Card_T
-    Name: Blue T Card
+    Name: Cartão T
     Type: Etc
     Weight: 10
   - Id: 6018
     AegisName: Blue_Card_V
-    Name: Blue V Card
+    Name: Cartão V
     Type: Etc
     Weight: 10
   - Id: 6019
@@ -9634,7 +9506,7 @@ Body:
       NoAuction: true
   - Id: 6052
     AegisName: Ornamental_Hairpin
-    Name: Presilha Ornamental	
+    Name: Presilha Ornamental
     Type: Etc
     Buy: 1
     Trade:
@@ -10894,7 +10766,7 @@ Body:
       BuyingStore: true
   - Id: 6201
     AegisName: Magic_Book_ES
-    Name: Spell Book (Earth Spike)
+    Name: Grimório de Coluna de Pedra
     Type: Etc
     Flags:
       BuyingStore: true
@@ -11057,10 +10929,6 @@ Body:
     Name: Mysterious Dyestuff
     Type: Etc
     Weight: 10
-  - Id: 6221
-    AegisName: Mystic_Leaf_Cat_Ball
-    Name: Esfera Mística
-    Type: Etc
   - Id: 6222
     AegisName: Shining_Beads
     Name: Conta Brilhante
@@ -11096,8 +10964,8 @@ Body:
       NoMail: true
       NoAuction: true
   - Id: 6226
-    AegisName: Bradium Perfeito
-    Name: HD Bradium
+    AegisName: HD_Bradium
+    Name: Bradium Perfeito
     Type: Etc
     Weight: 10
     Trade:
@@ -12053,7 +11921,7 @@ Body:
       NoAuction: true
   - Id: 6346
     AegisName: Seagate_Mark
-    Name: SEAGATE Logo
+    Name: Seagate Mark
     Type: Etc
   - Id: 6347
     AegisName: Bless_Word_Paper1
@@ -12308,7 +12176,7 @@ Body:
     Type: Etc
   - Id: 6379
     AegisName: 7Star_Board
-    Name: 7Star Board
+    Name: Moeda de Carta
     Type: Etc
     Buy: 20
     Weight: 10
@@ -12369,7 +12237,7 @@ Body:
     Buy: 20
   - Id: 6390
     AegisName: Small_Pocket
-    Name: Small Pocket
+    Name: Saco Pequeno
     Type: Etc
     Buy: 20
   - Id: 6391
@@ -12519,7 +12387,7 @@ Body:
       BuyingStore: true
   - Id: 7005
     AegisName: Skull
-    Name: Caveira
+    Name: Crânio
     Type: Etc
     Buy: 1044
     Weight: 10
@@ -13460,7 +13328,7 @@ Body:
       BuyingStore: true
   - Id: 7127
     AegisName: Alcol_Create_Book
-    Name: Manual de Criação Vol.2: Álcool
+    Name: Manual de Álcool
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -13468,7 +13336,7 @@ Body:
       BuyingStore: true
   - Id: 7128
     AegisName: FireBottle_Create_Book
-    Name: Manual de Criação: Vol.3: Fogo Grego
+    Name: Manual de Fogo Grego
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -13476,7 +13344,7 @@ Body:
       BuyingStore: true
   - Id: 7129
     AegisName: Acid_Create_Book
-    Name: Manual de Criação: Vol.4: Ácidos
+    Name: Manual de Ácidos
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -13484,7 +13352,7 @@ Body:
       BuyingStore: true
   - Id: 7130
     AegisName: Plant_Create_Book
-    Name: Manual de Criação: Vol.4: Ácidos
+    Name: Manual de Plantas
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -13492,7 +13360,7 @@ Body:
       BuyingStore: true
   - Id: 7131
     AegisName: Mine_Create_Book
-    Name: Manual de Criação: Vol.6: Explosivos
+    Name: Manual de Explosivos
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -13500,7 +13368,7 @@ Body:
       BuyingStore: true
   - Id: 7132
     AegisName: Coating_Create_Book
-    Name: Manual de Criação: Vol.7: Revestimentos
+    Name: Manual de Revestimentos
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -13508,7 +13376,7 @@ Body:
       BuyingStore: true
   - Id: 7133
     AegisName: Slim_Potion_Create_Book
-    Name: Manual de Criação: Vol.8: Poções Compactas
+    Name: Manual de Compactas
     Type: Etc
     Buy: 240000
     Weight: 10
@@ -13536,7 +13404,7 @@ Body:
     Weight: 10
   - Id: 7137
     AegisName: MenEater_Plant_Bottle
-    Name: Frasco de Planta Carnívora
+    Name: Frasco de Planta
     Type: Etc
     Buy: 200
     Weight: 10
@@ -13584,7 +13452,7 @@ Body:
       BuyingStore: true
   - Id: 7144
     AegisName: Normal_Potion_Book
-    Name: Manual de Criação: Vol.1: Poções Comuns
+    Name: Manual de Criação
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -13875,7 +13743,7 @@ Body:
     Weight: 10
   - Id: 7182
     AegisName: Cacao
-    Name: Cacao
+    Name: Cacau
     Type: Etc
     Buy: 200
     Weight: 20
@@ -14001,7 +13869,7 @@ Body:
       BuyingStore: true
   - Id: 7199
     AegisName: Coupon
-    Name: Cupom
+    Name: Moeda de Celebração
     Type: Etc
     Weight: 10
   - Id: 7200
@@ -14301,7 +14169,7 @@ Body:
     Weight: 10
   - Id: 7241
     AegisName: Soul_Of_Agreement
-    Name: Espírito da União
+    Name: Ticket do Sindicato
     Type: Etc
     Weight: 10
   - Id: 7242
@@ -15243,12 +15111,12 @@ Body:
     Weight: 10
   - Id: 7362
     AegisName: Lotto02
-    Name: Esfera de 500 Milhões
+    Name: Lotto Ball 02
     Type: Etc
     Weight: 10
   - Id: 7363
     AegisName: Lotto03
-    Name: Esfera de 100 Milhões
+    Name: Lotto Ball 03
     Type: Etc
     Weight: 10
   - Id: 7364
@@ -15428,13 +15296,13 @@ Body:
     Weight: 10
   - Id: 7399
     AegisName: Word_Card01
-    Name: Selamat
+    Name: selamat
     Type: Etc
     Buy: 2
     Weight: 10
   - Id: 7400
     AegisName: Word_Card02
-    Name: Hari
+    Name: hari
     Type: Etc
     Buy: 2
     Weight: 10
@@ -15458,7 +15326,7 @@ Body:
     Weight: 10
   - Id: 7404
     AegisName: Word_Card06
-    Name: Ke-60
+    Name: ke-60
     Type: Etc
     Buy: 2
     Weight: 10
@@ -15738,7 +15606,7 @@ Body:
       BuyingStore: true
   - Id: 7434
     AegisName: Elemental_Potion_Book
-    Name: Guia de Criação de Poções Elementais
+    Name: Manual de Anti-Poções
     Type: Etc
     Buy: 100000
     Weight: 10
@@ -15948,37 +15816,37 @@ Body:
     Weight: 10
   - Id: 7461
     AegisName: BlueCard_A
-    Name: Carta com a letra A
+    Name: Cartão A
     Type: Etc
     Weight: 10
   - Id: 7462
     AegisName: BlueCard_E
-    Name: Passe do Calabouço Especial
+    Name: Cartão E
     Type: Etc
     Weight: 10
   - Id: 7463
     AegisName: BlueCard_F
-    Name: Carta com a letra F
+    Name: Cartão F
     Type: Etc
     Weight: 10
   - Id: 7464
     AegisName: BlueCard_H
-    Name: Carta com a letra H
+    Name: Cartão H
     Type: Etc
     Weight: 10
   - Id: 7465
     AegisName: BlueCard_L
-    Name: Carta com a letra L
+    Name: Cartão L
     Type: Etc
     Weight: 10
   - Id: 7466
     AegisName: BlueCard_N
-    Name: Carta com a letra N
+    Name: Cartão N
     Type: Etc
     Weight: 10
   - Id: 7467
     AegisName: BlueCard_O
-    Name: Espólio de Guerra
+    Name: Cartão O
     Type: Etc
     Weight: 10
   - Id: 7468
@@ -15993,7 +15861,7 @@ Body:
     Weight: 10
   - Id: 7470
     AegisName: BlueCard_W
-    Name: Carta Azul W
+    Name: Cartão W
     Type: Etc
     Weight: 10
   - Id: 7471
@@ -16491,7 +16359,7 @@ Body:
       NoAuction: true
   - Id: 7517
     AegisName: Gold_Coin_
-    Name: Moeda de Ouro
+    Name: Gold Coin
     Type: Etc
     Buy: 1000
     Weight: 100
@@ -16825,7 +16693,7 @@ Body:
       NoAuction: true
   - Id: 7552
     AegisName: Ticket03
-    Name: Nota com Horários dos Jogos
+    Name: Passe Dimensional
     Type: Etc
     Buy: 20
     Weight: 10
@@ -18175,7 +18043,7 @@ Body:
       NoAuction: true
   - Id: 7801
     AegisName: Girl_Fan_Letter
-    Name: Girl's Letter
+    Name: Fan Letter
     Type: Etc
     Trade:
       NoDrop: true
@@ -19351,7 +19219,7 @@ Body:
     Buy: 10
   - Id: 7948
     AegisName: Box
-    Name: Box
+    Name: Caixa
     Type: Etc
     Buy: 10
     Weight: 10
@@ -19820,7 +19688,7 @@ Body:
       NoAuction: true
   - Id: 7991
     AegisName: Spring_Stanza14
-    Name: Cartão Chinês  14
+    Name: Cartão Chinês 14
     Type: Etc
     Buy: 2
     Weight: 10
@@ -20296,7 +20164,7 @@ Body:
     Weight: 10
   - Id: 11056
     AegisName: Elemental_Spirit_Guide
-    Name: Elemental Spirit Guide
+    Name: Guia do Espiritualista
     Type: Etc
     Buy: 1000
     Weight: 10
