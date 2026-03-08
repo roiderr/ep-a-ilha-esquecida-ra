@@ -612,7 +612,7 @@ yuno,162,191,4	script	Equipe de votação Kafra#yuno	861,{
 prontera,164,125,4	script	Equipe de votação Kafra#prt	116,{
 	callfunc "F_VoteKafra",2;
 }
-moc_ruins,104,133,4	script	Equipe de votação Kafra#moc	116,{
+morocc,164,114,4	script	Equipe de votação Kafra#moc	116,{
 	callfunc "F_VoteKafra",2;
 }
 geffen,122,37,4	script	Equipe de votação Kafra#gef	116,{
@@ -1025,7 +1025,7 @@ lighthalzen,163,60,4	script	Equipe de votação Kafra#lght	861,{
 
 yuno,153,191,6	duplicate(VotingStaffCCE)	Equipe de  evento#yuno	874
 prontera,147,125,6	duplicate(VotingStaffCCE)	Equipe de  evento#prt	874
-moc_ruins,97,133,6	duplicate(VotingStaffCCE)	Equipe de  evento#moc	874
+morocc,155,114,6	duplicate(VotingStaffCCE)	Equipe de  evento#moc	874
 geffen,117,37,6	duplicate(VotingStaffCCE)	Equipe de  evento#gef	874
 payon,153,182,6	duplicate(VotingStaffCCE)	Equipe de  evento#pay	874
 alberta,114,70,6	duplicate(VotingStaffCCE)	Equipe de  evento#alb	874
