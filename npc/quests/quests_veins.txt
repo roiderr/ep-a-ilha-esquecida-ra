@@ -948,7 +948,7 @@ prt_church,89,108,6	script	Bard#sch	741,{
 	}
 }
 
-morocc,53,87,7	script	Prison Ward#sch	707,{
+moc_castle,137,88,2	script	Prison Ward#sch	707,{
 	if (que_sch < 4) {
 		mes "[Jessé]";
 		mes "Apenas autorizado";
@@ -1068,7 +1068,7 @@ morocc,53,87,7	script	Prison Ward#sch	707,{
 	close;
 }
 
-morocc_in,79,163,0	script	Public Security Officer	748,{
+moc_castle,173,122,0	script	Public Security Officer	748,{
 	if (que_sch < 7) {
 		mes "[Krieg]";
 		mes "Eu sou responsável pelo público";
@@ -1150,7 +1150,7 @@ morocc_in,79,163,0	script	Public Security Officer	748,{
 	close;
 }
 
-ra_in01,48,352,0	warp	que_sch_jail	1,1,morocc,56,89
+ra_in01,48,352,0	warp	que_sch_jail	1,1,moc_castle,136,86
 
 ra_in01,50,387,4	script	Upset Looking Bard#sch	51,{
 	if (que_sch < 10) {
@@ -7346,4 +7346,3 @@ ve_in,239,107,1	script	Male Customer#ve2	943,{
 	specialeffect EF_ASPERSIO;
 	close;
 }
-
