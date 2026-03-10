@@ -2201,7 +2201,7 @@ ra_temple,168,54,3	script	Sippie#ss	917,{
 
 // Peace to the Arunafeltz :: aruna_em
 //============================================================
-moc_ruins,77,167,4	script	Comerciante Estrangeiro#aru1	880,5,5,{
+morocc,167,106,3	script	Comerciante Estrangeiro#aru1	880,5,5,{
 	if (aru_vol == 27) {
 		if (aru_em == 0) {
 			emotion ET_THINK;
@@ -2390,7 +2390,7 @@ OnTouch:
 	end;
 }
 
-moc_ruins,86,149,0	script	#ForeignMerchant1	-1,3,3,{
+morocc,159,142,0	script	#ForeignMerchant1	-1,3,3,{
 OnTouch:
 	if (aru_em == 4) {
 		set aru_em,5;
@@ -2398,7 +2398,7 @@ OnTouch:
 	end;
 }
 
-moc_ruins,88,136,0	script	#ForeignMerchant2	-1,3,3,{
+morocc,147,151,0	script	#ForeignMerchant2	-1,3,3,{
 OnTouch:
 	if (aru_em == 1) {
 		set aru_em,2;
@@ -2415,7 +2415,7 @@ OnTouch:
 	end;
 }
 
-moc_ruins,106,133,0	script	#ForeignMerchant3	-1,3,3,{
+morocc,160,160,0	script	#ForeignMerchant3	-1,3,3,{
 OnTouch:
 	if (aru_em == 2) {
 		set aru_em,3;
@@ -2423,7 +2423,7 @@ OnTouch:
 	end;
 }
 
-moc_ruins,115,147,0	script	#ForeignMerchant4	-1,3,3,{
+morocc,151,5,0	script	#ForeignMerchant4	-1,3,3,{
 OnTouch:
 	if (aru_em == 3) {
 		set aru_em,4;
@@ -2431,7 +2431,7 @@ OnTouch:
 	end;
 }
 
-moc_ruins,101,133,7	script	Comerciante Estrangeiro#aru2	929,{
+morocc,140,160,7	script	Comerciante Estrangeiro#aru2	929,{
 	if ((aru_em > 1) && (aru_em < 7)) {
 		mes "["+ strcharinfo(0) +"]";
 		mes "Desculpe, mas ouvi";
@@ -8963,7 +8963,7 @@ OnInit:
 
 // Unlucky Emerald
 //============================================================
-morocc,143,63,3	script	Ragged Man#nd	929,{
+morocc,143,63,3	script	Homem Esfarrapado#nd	929,{
 	if (treasure_nd == 0) {
 		mes "[Homem Esfarrapado]";
 		mes "Olá? ";
@@ -12993,4 +12993,3 @@ morocc,116,39,3	script	Rogue Guild Agent#nd4	779,{
 		close;
 	}
 }
-
