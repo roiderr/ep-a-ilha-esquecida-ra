@@ -13,7 +13,7 @@
 	mes "Esta é a Assistência Sorriso.";
 	mes "Como posso ajudá-lo ?";
 	next;
-	switch(select("^3355FFMr. ")) {
+	switch(select("O que é uma ^0099FFMáscara Feliz^000000?:Eu quero fazer uma ^0099FFMáscara Feliz^000000.:Por que você tem esse nome?")) {
 	case 1:
 		mes "[Garota sorridente]";
 		mes "Evento Nacional realizado pelo comando de ^5577FFSua Majestade Tristram III^000000,";
@@ -88,12 +88,12 @@
 }
 
 // Additional Smile Assistance staff
-alberta,113,53,4	duplicate(SmileHelper)	Smile Assistance#alb	92
-aldebaran,136,135,4	duplicate(SmileHelper)	Smile Assistance#alde	92
-geffen,119,107,4	duplicate(SmileHelper)	Smile Assistance#gef	92
-moc_ruins,59,154,3	duplicate(SmileHelper)	Smile Assistance#moc	92
-payon,186,104,5	duplicate(SmileHelper)	Smile Assistance#pay	92
-//prontera,157,187,4	duplicate(SmileHelper)	Smile Assistance#prt	92
+alberta,113,53,4	duplicate(SmileHelper)	Garota sorridente#alb	92
+aldebaran,136,135,4	duplicate(SmileHelper)	Garota sorridente#alde	92
+geffen,119,107,4	duplicate(SmileHelper)	Garota sorridente#gef	92
+morocc,158,97,4	duplicate(SmileHelper)	Garota sorridente#moc	92
+payon,186,104,5	duplicate(SmileHelper)	Garota sorridente#pay	92
+prontera,157,187,4	duplicate(SmileHelper)	Garota sorridente#prt	92
 
 //============================================================ 
 // Old changelog
