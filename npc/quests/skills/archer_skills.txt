@@ -7,7 +7,7 @@
 //================== www.souleat.com.br =====================\\
 //======================= by: Guru ==========================//
 
-moc_ruins,118,99,5	script	Roberto	88,{
+morocc,121,109,5	script	Roberto	88,{
 	if (BaseClass == Job_Archer) {
 		if (getskilllv("AC_MAKINGARROW") == 1) {
 			mes "[Roberto]";
