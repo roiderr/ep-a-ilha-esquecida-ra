@@ -1,13 +1,31 @@
-//===========================================================\\
-//          ____   __   _  _  __    ____   __   ____         //
-//         / ___) /  \ / )( \(  )  (  __) / _\ (_  _)        \\
-//         \___ \(  O )) \/ (/ (_/\ ) _) /    \  )(          //
-//         (____/ \__/ \____/\____/(____)\_/\_/ (__)         \\
-//                                                           //
-//================== www.souleat.com.br =====================\\
-//======================= by: Guru ==========================//
+//===== rAthena Script ======================================= 
+//= Rogue Job Quest
+//===== By: ================================================== 
+//= kobra_k88
+//===== Current Version: ===================================== 
+//= 2.9
+//===== Compatible With: ===================================== 
+//= rAthena Project
+//===== Description: ========================================= 
+//= [Official Conversion]
+//= Job quest for Rogue classes
+//===== Additional Comments: ================================= 
+//= 2.4 Rescripted to Aegis 10.3 stadards. [L0ne_W0lf]
+//=     No longer uses function "F_BlockHigh"
+//= 2.4a Deleted unused variables. [Samuray22]
+//= 2.4b Changed a Problem with JobLevel what made 
+//=     impossible get a Gladius [3]. (bugreport:481) [Samuray22]
+//= 2.4c Corrected a Typo error ";;" and a typo error with "rouge". (bugreport:909) [Samuray22]
+//= 2.5 Added dummy "OnMyMobDead" labels. (bugreport:1100) [L0ne_W0lf]
+//= 2.6 Fixed a few bugs in the Rogue Guildsman. [L0ne_W0lf]
+//= 2.7 Fixed a bug on Markie question 5, bugreport:1600 [Brainstorm]
+//= 2.8 Moved "Thug" to Morocc Ruins. [L0ne_W0lf]
+//= 2.9 Added Quest Log commands. [Kisuka]
+//= 2.9a Traduzido. [Mara, Squall, Frizz, XStriker e RoM]
+//= 2.9b Revisado. [Asus]
+//============================================================ 
 
-morocc,100,104,1	script	Sujeito Estranho#rg	2_M_THIEFMASTER,{
+morocc,100,104,1	script	Sujeito Estranho#rg	118,{
 	mes "[Sujeito Estranho]";
 	mes "*Sigh...*";
 	mes "O que é a vida?";
@@ -38,7 +56,7 @@ morocc,100,104,1	script	Sujeito Estranho#rg	2_M_THIEFMASTER,{
 	close;
 }
 
-in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
+in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 	if (Upper == 1) {
 		mes "[Markie]";
 		mes "Eh? Você...você...?!";
@@ -68,7 +86,7 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 				mes "[Arruaceira da Guilda]";
 				mes "Então o que uma criança";
 				mes "igual a você está fazendo aqui?";
-				if (Sex == 1) {
+				if (Sex == SEX_MALE) {
 					mes "Oh, eu vou pegar agora...";
 					mes "O que o pivete quer";
 				}
@@ -154,7 +172,7 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 					mes "Você";
 					mes "está fazendo um bom trabalho~";
 				}
-				.@jlevel = JobLevel;
+				set .@jlevel,JobLevel;
 				callfunc "Job_Change",Job_Rogue;
 				callfunc "F_ClearJobVar";
 				completequest 2027;
@@ -198,110 +216,110 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 				mes "1. Que habilidade é necessária para se aprender a Habilidade de Arruaceiro, ^880000Túnel de Fuga^000000?";
 				next;
 				if (select("^880000Esconderijo^000000:^880000Furto^000000:^880000Perícia em Esquiva^000000:^880000Golpe Fuminante^000000") == 1)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "2. A habilidade de Arruaceiro ^880000Extorquir^000000 obtém quanto desconto a mais do que a habilidade ^880000Desconto^000000 dos Mercadores?";
 				next;
 				if (select("3 %:2 %:1 %:0 %") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "3. O que a habilidade ^880000Afanar^000000 faz?";
 				next;
 				if (select("Rouba Item de um jogador:Rouba Item de um monstro:Rouba Zeny de um monstro:Rouba Zeny de um jogador") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "4. Quantas pessoas são necessárias pra que a habilidade ^880000Malandragem^000000 funcione?";
 				next;
 				if (select("2 Arruaceiros:1 Gatuno + 2 Arruaceiros:4 Gatunos:2 Arruaceiros + 1 Mercenário") == 4)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "5. Que habilidade você pode aprender após ^880000Remover Capacete^000000 Nível 5?";
 				next;
 				if (select("^880000Envenenar^000000:^880000Recuar^000000:^880000Explosão Tóxica^000000:^880000Remover Escudo^000000") == 4)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "6. Que habilidade faz com que você possa andar sem que ninguém te veja?";
 				next;
 				if (select("^880000Esconderijo^000000:^880000Recuar^000000:^880000Túnel de Fuga^000000:^880000Chutar Areia^000000") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "7. Que carta aumenta sua chance de acerto num ataque?";
 				next;
 				if (select("Carta André.:Carta Familiar.:Carta Múmia.:Carta Poring.") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "8. Se você usar uma arma equipada com a carta Vadon (20% de dano extra em monstros de propriedade fogo), qual desses monstros será mais fácil de matar?";
 				next;
 				if (select("Vadon:Deviruchi:Salgueiro Ancião:Baphomet") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "9. Quanto SP a habilidade ^880000Ataque Duplo^000000 gasta, se você estiver equipando uma adaga?";
 				next;
 				if (select("15: 0, pois é uma habilidade passiva.:Habilidade Passiva, 10 SP:54") == 2)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "10. Que adaga com propriedades especiais é mais útil no Túnel Subterrâneo de Byalan?";
 				next;
 				if (select("Main-Gauche de Vento:Main-Gauche de Gelo:Main-Gauche de Terra:Main-Gauche de Fogo") == 1)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 				break;
 			case 2:
 				mes "[Markie]";
 				mes "1. Que monstro pode deixar cair um Gladius com vagas para cartas (slots)?";
 				next;
 				if (select("Besouro Ladrão:Peco Peco:Lobo do Deserto:Kobold") == 4)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "2. Que monstro pode deixar cair uma Main Gauche com vagas para cartas (slots)?";
 				next;
 				if (select("Zangão:Lobo do Deserto:Marionete:Lunático") == 1)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "3. Qual classe é capaz de criar poções?";
 				next;
 				if (select("Mercador:Alquimista:Ferreiro:Noviço") == 2)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "4. Qual destes itens não é equipável por um Arruaceiro?";
 				next;
 				if (select("Gakkung:Besta:Gladius:Katar") == 4)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "5. O 'Hode' é um monstro de qual propriedade?";
 				next;
 				if (select("Água:Fogo:Vento:Terra") == 4)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "6. Qual destes monstros não pode ser um bichinho de estimação?";
 				next;
 				if (select("Poporing:Creamy:Orc:Esporo Venenoso") == 2)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "7. Qual destes monstros é mais resistente à propriedade fogo?";
 				next;
 				if (select("Goblin (Adaga):Goblin (Mangual):Goblin (Machado):Goblin (Maça)") == 4)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "8. Escolha a cidade que não tem nenhum Feudo.";
 				next;
 				if (select("Prontera:Al De Baran:Alberta:Payon") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "9. Escolha uma planta que dá Ervas Azuis.";
@@ -310,54 +328,54 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 				default:
 					break;
 				case 3:
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 					break;
 				case 4:
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 					break;
 				}
 				mes "[Markie]";
 				mes "10. Qual destes monstros não é Amaldiçoado?";
 				next;
 				if (select("Zumbi:Megalodon:Familiar:Khalitzburg") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 				break;
 			case 3:
 				mes "[Markie]";
 				mes "1. Quanta esquiva a mais é obtida maximizando a habilidade ^880000Perícia em Esquiva^000000?";
 				next;
 				if (select("30:40:160:20") == 1)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "2. Qual destes monstros é capaz de detectar um Gatuno usando a habilidade Esconderijo?";
 				next;
 				if (select("Talo de Verme:Argos:Múmuia:Esqueleto Operário") == 2)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "3. Onde fica a Guilda para a mudança de classe para Arruaceiro?";
 				next;
 				if (select("Comodo:Praia Kokomo:Ilha Pharos:Morroc") == 3)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "4. Onde fica a Guilda para a mudança de classe para Gatuno?";
 				next;
 				if (select("Comodo:Lutie:Alberta:Morroc") == 4)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "5. Qual destas cartas não tem relação com Destreza?";
 				next;
 				if (select("Carta Rocker:Carta Múmia:Carta Zerom:Carta Drops") == 2)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "6. Diga porque você gosta de Arruaceiros?";
 				next;
 				select("Para ser Fera.:As roupas, o estilo.:Para falar assim com os outros: 'foo'':Excelente força de ataque");
-				.@assassin_t += 10;
+				set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "7. Com qual nível de classe um Gatuno pode se tornar um Arruaceiro?";
@@ -366,17 +384,17 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 				default:
 					break;
 				case 3:
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 					break;
 				case 4:
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 					break;
 				}
 				mes "[Markie]";
 				mes "8. Se você quiser pintar seu cabelo de azul, onde você deve levar sua tintura azul?";
 				next;
 				if (select("Morroc, a nordeste do centro:Prontera,a nordeste do centro:Morroc, a nordeste do centro:Prontera, a nordeste do centro") == 2)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "9. Se um aprendiz quiser se tornar um Gatuno, que cogumelo terá que colher?";
@@ -386,14 +404,14 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 					break;
 				case 1:
 				case 3:
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 					break;
 				}
 				mes "[Markie]";
 				mes "10. Que carta é inútil para Arruaceiros?";
 				next;
 				if (select("Cata Sussurro:Carta Salgueiro Ancião:Carta Zerom:Carta Matyr") == 2)
-					.@assassin_t += 10;
+					set .@assassin_t,.@assassin_t+10;
 			}
 			mes "[Markie]";
 			mes "*Whew~*";
@@ -405,22 +423,22 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 			mes "Você conseguiu...";
 			mes "" + .@assassin_t + " pontos.";
 			if (.@assassin_t > 80) {
-				ROGUE_Q = 2;
+				set ROGUE_Q,2;
 				setquest 2017;
-				mes "Good. You passed.";
-				mes "We don't gotta";
-				mes "do that again.";
+				mes "Bom. Você passou.";
+				mes "Nós não teremos que";
+				mes "fazer isso denovo.";
 				next;
 				mes "[Markie]";
-				mes "But don't get too comfortable just yet, you got more o' these tests. Your next one will be from Smith.";
+				mes "Mais não se afobe, você têm mais uns testes. O próximo vai ser do Smith.";
 				next;
 				mes "[Markie]";
-				mes "So...";
-				mes "Go find Smith and finish up this test, yeah? Be careful though, Smith's a pretty anal guy.";
+				mes "Então...";
+				mes "Vai procurar o Smith e termine este teste, beleza? Cuidado, o Smith é um pé no saco.";
 				close;
 			}
 			else {
-				ROGUE_Q = 1;
+				set ROGUE_Q,1;
 				mes "Que merda... Você se ferrou!";
 				next;
 				mes "[Markie]";
@@ -473,7 +491,7 @@ in_rogue,363,122,4	script	Rogue Guildsman#rg	4_F_ROGUE,{
 	}
 }
 
-in_rogue,376,23,1	script	Sr. Smith#rg	1_M_LIBRARYMASTER,{
+in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 	if (ROGUE_Q == 2) {
 		mes "[Sr. Smith]";
 		mes "Seja bem vindo";
@@ -492,14 +510,14 @@ in_rogue,376,23,1	script	Sr. Smith#rg	1_M_LIBRARYMASTER,{
 		mes "[Sr. Smith]";
 		mes "O que você tem que entender é que a Guilda dos Arruaceiros faz um monte de negócios, ^666666algumas vezes ilegais^000000, que necessita de apoio financeiro.";
 		next;
-		.@item_need = rand(1,15);
+		set .@item_need,rand(1,15);
 		if (.@item_need > 0 && .@item_need < 6) callsub S_Req,"10 Ossos","6 Ervas Azuis","10 Unhas Apodrecidas","10 Mandíbulas Horrendas",3;
 		else if (.@item_need > 5 && .@item_need < 11) callsub S_Req,"10 Ervas Verdes","10 Cascos de Caranguejo","10 Escamas de Cobra","10 Garletas",4;
 		else if (.@item_need > 10 && .@item_need < 15) callsub S_Req,"10 Ervas Amarelas","10 Cascas","10 Pernas de Gafanhoto","10 Patas de Urso",5;
 		else if (.@item_need == 15) {
 			mes "[Sr. Smith]";
 			mes "Eu vou deixar você saber...";
-			ROGUE_Q = 6;
+			set ROGUE_Q,6;
 			changequest 2017,2021;
 			next;
 			mes "[Sr. Smith]";
@@ -647,7 +665,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	1_M_LIBRARYMASTER,{
 			countitem(908) > 4 && countitem(945) > 4) {
 				mes "[Sr. Smith]";
 				mes "Hmmm...vamos ver...";
-				Zeny -= 10000;
+				set Zeny, Zeny-10000;
 				delitem 915,5; //Chrysalis
 				delitem 713,5; //Empty_Bottle
 				delitem 1002,5; //Iron_Ore
@@ -665,14 +683,14 @@ in_rogue,376,23,1	script	Sr. Smith#rg	1_M_LIBRARYMASTER,{
 				delitem 917,5; //Talon
 				delitem 908,5; //Spawn
 				delitem 945,5; //Raccoon_Leaf
-				ROGUE_Q = 8;
+				set ROGUE_Q,8;
 				next;
 				mes "[Sr. Smith]";
 				mes "Wow, você trouxe cara coisa que eu lhe pedi para trazer. Bom trabalho... Eu lhe saúdo.";
 				next;
 				mes "^CCCCCC- Dedo Médio -^000000'";
 				mes "*Grins*";
-				ROGUE_Q = 8;
+				set ROGUE_Q,8;
 				changequest 2021,2025;
 				next;
 				mes "[Sr. Smith]";
@@ -742,7 +760,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	1_M_LIBRARYMASTER,{
 			mes "deveria lhe mandar...?";
 			switch(rand(1,3)) {
 			case 1:
-				ROGUE_Q = 9;
+				set ROGUE_Q,9;
 				if(checkquest(2018) != -1) {
 					changequest 2018,2022;
 				}
@@ -779,7 +797,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	1_M_LIBRARYMASTER,{
 				mes "Bem, lhe desejo sorte. O lugar não é tão longe daqui, então volte o mais rápido possivel. Seja ligeiro... Esse é o espírito do Arruaceiro.";
 				close;
 			case 2:
-				ROGUE_Q = 10;
+				set ROGUE_Q,10;
 				if(checkquest(2018) != -1) {
 					changequest 2018,2023;
 				}
@@ -815,7 +833,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	1_M_LIBRARYMASTER,{
 				mes "Ah, você terá que lembrar da senha para conhece-lo. A senha é ^0000FFAntonio não gosta de quebrar o material de forja^000000.";
 				close;
 			case 3:
-				ROGUE_Q = 11;
+				set ROGUE_Q,11;
 				if(checkquest(2018) != -1) {
 					changequest 2018,2024;
 				}
@@ -930,11 +948,12 @@ S_Req:
 	mes "^FF0000"+getarg(1)+"^000000,";
 	mes "^FF0000"+getarg(2)+"^000000 e";
 	mes "^FF0000"+getarg(3)+"^000000.";
-	ROGUE_Q = getarg(4);
-	if(getarg(4) == 3) {
+	.@var = getarg(4);
+	ROGUE_Q = .@var;
+	if (.@var == 3) {
 		changequest 2017,2018;
 	}
-	else if(getarg(4) == 4) {
+	else if (.@var == 4) {
 		changequest 2017,2019;
 	}
 	else {
@@ -957,21 +976,24 @@ S_Req:
 
 
 S_CheckItems:
-	if (Zeny > 9999 && countitem(getarg(0)) >= getarg(1) && countitem(getarg(2)) >= getarg(3) && countitem(getarg(4)) >= getarg(5) && countitem(getarg(6)) >= getarg(7)) {
+	setarray .@item_req[0], getarg(0), getarg(2), getarg(4), getarg(6);
+	setarray .@amount[0], getarg(1), getarg(3), getarg(5), getarg(7);
+
+	if (Zeny > 9999 && countitem(.@item_req[0]) >= .@amount[0] && countitem(.@item_req[1]) >= .@amount[1] && countitem(.@item_req[2]) >= .@amount[2] && countitem(.@item_req[3]) >= .@amount[3]) {
 		mes "[Sr. Smith]";
 		mes "Ok, temos a taxa de pedido de, ^FF000010,000 zeny^000000, "+getarg(1)+" "+getitemname(getarg(0))+", "+getarg(3)+" "+getitemname(getarg(2))+", "+getarg(5)+" "+getitemname(getarg(4))+" e "+getarg(7)+" "+getitemname(getarg(6))+"...";
-		Zeny -= 10000;
-		delitem getarg(0),getarg(1);
-		delitem getarg(2),getarg(3);
-		delitem getarg(4),getarg(5);
-		delitem getarg(6),getarg(7);
-		ROGUE_Q = 7;
+		set Zeny, Zeny-10000;
+		delitem .@item_req[0],.@amount[0];
+		delitem .@item_req[1],.@amount[1];
+		delitem .@item_req[2],.@amount[2];
+		delitem .@item_req[3],.@amount[3];
+		set ROGUE_Q,7;
 		next;
 		mes "[Sr. Smith]";
 		mes "Bom, bom...";
 		mes "Eu acho que você";
 		mes "trouxe tudo.";
-		ROGUE_Q = 7;
+		set ROGUE_Q,7;
 		next;
 		mes "[Sr. Smith]";
 		mes "Muito bem, espere um momemto enquanto";
@@ -995,8 +1017,8 @@ S_CheckItems:
 	close;
 }
 
-cmd_fild09,106,195,0	script	Warp#1	WARPNPC,1,1,{
-OnTouch:
+cmd_fild09,106,195,0	script	Warp#1	45,1,1,{
+OnTouch_:
 	mes "[???]";
 	mes "Quem está aí?!";
 	mes "Quem ousa";
@@ -1010,7 +1032,7 @@ OnTouch:
 	case 2:
 		mes "[" + strcharinfo(0) + "]";
 		mes "Aragham";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 3:
 		mes "[" + strcharinfo(0) + "]";
@@ -1026,7 +1048,7 @@ OnTouch:
 	case 2: mes "não gosta"; break;
 	case 3:
 		mes "não";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 4: mes "sempre"; break;
 	}
@@ -1034,7 +1056,7 @@ OnTouch:
 	case 1: mes "recebe"; break;
 	case 2:
 		mes "roubou";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 3: mes "se escondeu"; break;
 	case 4: mes "examinou"; break;
@@ -1043,7 +1065,7 @@ OnTouch:
 	switch(select("o material de forja.:itens roubados.:material refinado:equipamentos.")) {
 	case 1:
 		mes "o material de forja.";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 2: mes "itens roubados."; break;
 	case 3: mes "material refinado."; break;
@@ -1065,8 +1087,8 @@ OnTouch:
 	}
 }
 
-cmd_fild09,335,143,0	script	Warp#2	WARPNPC,1,1,{
-OnTouch:
+cmd_fild09,335,143,0	script	Warp#2	45,1,1,{
+OnTouch_:
 	mes "[???]";
 	mes "Quem está aí?!";
 	mes "Quem ousa";
@@ -1076,7 +1098,7 @@ OnTouch:
 	case 1:
 		mes "[" + strcharinfo(0) + "]";
 		mes "Meu pai";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 2:
 		mes "[" + strcharinfo(0) + "]";
@@ -1096,7 +1118,7 @@ OnTouch:
 	case 2: mes "não gosta"; break;
 	case 3:
 		mes "não";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 4: mes "sempre"; break;
 	}
@@ -1107,13 +1129,13 @@ OnTouch:
 	case 4: mes "examinou"; break;
 	case 5:
 		mes "roubou";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	}
 	switch(select("o material de forja.:itens roubados.:material refinado:equipamentos.")) {
 	case 1:
 		mes "o material de forja.";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 2: mes "itens roubados."; break;
 	case 3: mes "material refinado."; break;
@@ -1124,7 +1146,7 @@ OnTouch:
 		mes "^3355FF*Creeeeak*";
 		mes "A porta abre lentamente.^000000";
 		close2;
-		warp "in_rogue",246,25;
+		warp "in_rogue",169,34;
 		end;
 	}
 	else {
@@ -1135,8 +1157,8 @@ OnTouch:
 	}
 }
 
-cmd_fild04,304,180,0	script	Warp#3	WARPNPC,1,1,{
-OnTouch:
+cmd_fild04,304,180,0	script	Warp#3	45,1,1,{
+OnTouch_:
 	mes "[???]";
 	mes "Quem está aí?!";
 	mes "Quem ousa";
@@ -1154,7 +1176,7 @@ OnTouch:
 	case 3:
 		mes "[" + strcharinfo(0) + "]";
 		mes "Antonio";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 4:
 		mes "[" + strcharinfo(0) + "]";
@@ -1165,7 +1187,7 @@ OnTouch:
 	case 1: mes "gosta"; break;
 	case 2:
 		mes "não gosta";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 3: mes "prefere"; break;
 	case 4: mes "não prefere"; break;
@@ -1174,7 +1196,7 @@ OnTouch:
 	case 1: mes "de danificar"; break;
 	case 2:
 		mes "de quebrar";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 3: mes "de consertar"; break;
 	case 4: mes "de forjar"; break;
@@ -1184,7 +1206,7 @@ OnTouch:
 	case 2: mes "os itens refinados."; break;
 	case 3:
 		mes "o material de forja.";
-		.@rogue_t += 10;
+		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 4: mes "os itens aprimorados."; break;
 	case 5: mes "os itens reforçados."; break;
@@ -1205,7 +1227,7 @@ OnTouch:
 	}
 }
 
-in_rogue,272,135,1	script	Hermanthorn Jr#rg	4_M_03,{
+in_rogue,272,135,1	script	Hermanthorn Jr#rg	85,{
 	if (ROGUE_Q == 8) {
 		mes "[Hermanthorn Jr.]";
 		mes "Eu vejo...";
@@ -1236,7 +1258,7 @@ in_rogue,272,135,1	script	Hermanthorn Jr#rg	4_M_03,{
 		mes "[Hermanthorn Jr.]";
 		mes "Bem...";
 		mes "Apenas tente voltar para a Guilda dos Arruaceiros são e salvo. É tudo o que precisa fazer!";
-		ROGUE_Q = 12;
+		set ROGUE_Q,12;
 		changequest 2025,2026;
 		close;
 	}
@@ -1246,7 +1268,7 @@ in_rogue,272,135,1	script	Hermanthorn Jr#rg	4_M_03,{
 		close;
 	}
 	else {
-		mes "[HermanthornJr.]";
+		mes "[Hermanthorn Jr.]";
 		mes "Huh...?";
 		mes "O que diabos";
 		mes "você está fazendo aqui.";
@@ -1255,15 +1277,15 @@ in_rogue,272,135,1	script	Hermanthorn Jr#rg	4_M_03,{
 	}
 }
 
-in_rogue,270,130,0	script	he_to_rogue#rg	WARPNPC,1,1,{
-OnTouch:
+in_rogue,270,130,0	script	he_to_rogue#rg	45,1,1,{
+OnTouch_:
 	mes "^3355FFA porta está trancada. Você deve inserir a combinação de quatro números para abri-lá.^000000";
 	next;
 	input .@input;
 	if (.@input < 1 || .@input > 10000) {
 		if (ROGUE_Q == 12)
 			mes "^3355FFNão funcionou. Por favor redigite a combinação de quatro dígitos.^000000";
-		else
+		else 
 			mes "^3355FFPor favor digite a combinação de quatro números.^000000";
 		close;
 	}
@@ -1273,7 +1295,7 @@ OnTouch:
 			mes "está aberta.^000000";
 			close2;
 			warp "in_rogue",10,21;
-			ROGUE_Q = 12;
+			set ROGUE_Q,12;
 			end;
 		}
 		else {
@@ -1293,7 +1315,7 @@ OnTouch:
 }
 
 in_rogue,200,389,0	script	gen_ro#1	-1,3,3,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",200,389,"Zumbi",1015,1,"gen_ro#1::OnMyMobDead";
 		monster "in_rogue",201,389,"Zumbi",1015,1,"gen_ro#1::OnMyMobDead";
@@ -1314,7 +1336,7 @@ OnMyMobDead:
 }
 
 in_rogue,100,389,0	script	gen_ro#2	-1,3,3,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",100,389,"Múmia",1041,1,"gen_ro#2::OnMyMobDead";
 		donpcevent "gen_ro#1::OnDisable";
@@ -1332,7 +1354,7 @@ OnMyMobDead:
 }
 
 in_rogue,150,389,0	script	gen_ro#3	-1,3,3,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",145,389,"Zumbi",1015,1,"gen_ro#3::OnMyMobDead";
 		monster "in_rogue",143,389,"Múmia",1041,1,"gen_ro#3::OnMyMobDead";
@@ -1351,7 +1373,7 @@ OnMyMobDead:
 }
 
 in_rogue,250,389,0	script	gen_ro#4	-1,3,3,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",200,389,"Cavaleiro do Abismo",1219,1,"gen_ro#4::OnMyMobDead";
 		donpcevent "gen_ro#3::OnDisable";
@@ -1368,15 +1390,15 @@ OnMyMobDead:
 	end;
 }
 
-in_rogue,9,389,0	script	oneway_to_gu	WARPNPC,1,1,{
-OnTouch:
+in_rogue,9,389,0	script	oneway_to_gu	45,1,1,{
+OnTouch_:
 	donpcevent "gen_ro#4::OnDisable";
-	ROGUE_Q = 17;
+	set ROGUE_Q,17;
 	warp "in_rogue",367,10;
 	end;
 }
 
-in_rogue,244,39,1	script	Aragham Junior#rg	4W_M_03,{
+in_rogue,244,39,1	script	Aragham Junior#rg	99,{
 	if (ROGUE_Q == 9) {
 		mes "[Aragham Jr.]";
 		mes "Oh, você deve ter";
@@ -1409,7 +1431,7 @@ in_rogue,244,39,1	script	Aragham Junior#rg	4W_M_03,{
 			mes "Boa sorte, então.";
 			close2;
 			warp "in_rogue",15,105;
-			ROGUE_Q = 13;
+			set ROGUE_Q,13;
 			changequest 2022,2026;
 			end;
 		}
@@ -1462,7 +1484,7 @@ in_rogue,244,39,1	script	Aragham Junior#rg	4W_M_03,{
 	}
 }
 
-in_rogue,160,34,1	script	Hollgrehenn junior#rg	4_M_03,{
+in_rogue,160,34,1	script	Hollgrehenn junior#rg	85,{
 	if (ROGUE_Q == 11) {
 		mes "[Hollgrehenn Jr.]";
 		mes "Hmm...";
@@ -1490,7 +1512,7 @@ in_rogue,160,34,1	script	Hollgrehenn junior#rg	4_M_03,{
 			mes "Boa sorte.";
 			close2;
 			warp "in_rogue",15,105;
-			ROGUE_Q = 15;
+			set ROGUE_Q,15;
 			changequest 2024,2026;
 			end;
 		}
@@ -1548,7 +1570,7 @@ in_rogue,160,34,1	script	Hollgrehenn junior#rg	4_M_03,{
 	}
 }
 
-in_rogue,177,109,1	script	Antonio junior#rg	4_M_ORIENT01,{
+in_rogue,177,109,1	script	Antonio junior#rg	88,{
 	if (ROGUE_Q == 10) {
 		mes "[Antonio Jr.]";
 		mes "Você é do";
@@ -1577,7 +1599,7 @@ in_rogue,177,109,1	script	Antonio junior#rg	4_M_ORIENT01,{
 			mes "Arruaceiro se passar...";
 			close2;
 			warp "in_rogue",15,105;
-			ROGUE_Q = 14;
+			set ROGUE_Q,14;
 			changequest 2023,2026;
 			end;
 		}
@@ -1633,15 +1655,15 @@ in_rogue,177,109,1	script	Antonio junior#rg	4_M_ORIENT01,{
 	}
 }
 
-in_rogue,370,320,0	script	quest_out	WARPNPC,1,1,{
-OnTouch:
-	ROGUE_Q = 16;
+in_rogue,370,320,0	script	quest_out	45,1,1,{
+OnTouch_:
+	set ROGUE_Q,16;
 	warp "in_rogue",378,113;
 	end;
 }
 
 in_rogue,15,184,0	script	mob_rogue#1	-1,8,1,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",14,187,"Zumbi",1015,1,"mob_rogue#1::OnMyMobDead";
 		monster "in_rogue",15,188,"Zumbi",1015,1,"mob_rogue#1::OnMyMobDead";
@@ -1663,7 +1685,7 @@ OnMyMobDead:
 }
 
 in_rogue,15,273,0	script	mob_rogue#2	-1,8,1,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",15,276,"Múmia",1041,1,"mob_rogue#2::OnMyMobDead";
 		monster "in_rogue",13,276,"Múmia",1041,1,"mob_rogue#2::OnMyMobDead";
@@ -1682,7 +1704,7 @@ OnMyMobDead:
 }
 
 in_rogue,15,333,0	script	mob_rogue#3	-1,8,1,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",15,336,"Zumbi",1015,1,"mob_rogue#3::OnMyMobDead";
 		monster "in_rogue",15,336,"Zumbi",1015,1,"mob_rogue#3::OnMyMobDead";
@@ -1705,7 +1727,7 @@ OnMyMobDead:
 }
 
 in_rogue,39,341,0	script	mob_rogue#4	-1,1,8,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",39,341,"Múmia",1041,1,"mob_rogue#4::OnMyMobDead";
 		monster "in_rogue",40,341,"Carniçal",1036,1,"mob_rogue#4::OnMyMobDead";
@@ -1725,7 +1747,7 @@ OnMyMobDead:
 }
 
 in_rogue,102,334,0	script	mob_rogue#5	-1,1,4,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",92,334,"Khalitzburg",1132,1,"mob_rogue#5::OnMyMobDead";
 		donpcevent "mob_rogue#1::OnDisable";
@@ -1745,7 +1767,7 @@ OnMyMobDead:
 }
 
 in_rogue,58,309,0	script	mob_rogue#6	-1,4,1,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",57,301,"Khalitzburg",1132,1,"mob_rogue#6::OnMyMobDead";
 		donpcevent "mob_rogue#1::OnDisable";
@@ -1765,7 +1787,7 @@ OnMyMobDead:
 }
 
 in_rogue,101,264,0	script	mob_rogue#7	-1,5,5,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",101,264,"Cavaleiro do Abismo",1219,1,"mob_rogue#7::OnMyMobDead";
 		monster "in_rogue",102,264,"Cavaleiro do Abismo",1219,1,"mob_rogue#7::OnMyMobDead";
@@ -1783,7 +1805,7 @@ OnMyMobDead:
 }
 
 in_rogue,140,312,0	script	mob_rogue#8	-1,5,5,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief)
 		monster "in_rogue",140,312,"Cavaleiro do Abismo",1219,1,"mob_rogue#8::OnMyMobDead";
 	else
@@ -1799,7 +1821,7 @@ OnMyMobDead:
 }
 
 in_rogue,139,246,0	script	mob_rogue#9	-1,4,4,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",139,246,"Zumbi",1015,1,"mob_rogue#9::OnMyMobDead";
 		monster "in_rogue",149,246,"Zumbi",1015,1,"mob_rogue#9::OnMyMobDead";
@@ -1821,7 +1843,7 @@ OnMyMobDead:
 }
 
 in_rogue,197,249,0	script	mob_rogue#10	-1,1,8,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",176,211,"Carniçal",1036,1,"mob_rogue#10::OnMyMobDead";
 		monster "in_rogue",176,212,"Zumbi",1015,1,"mob_rogue#10::OnMyMobDead";
@@ -1856,7 +1878,7 @@ OnMyMobDead:
 }
 
 in_rogue,96,205,0	script	mob_rogue#11	-1,1,8,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		donpcevent "mob_rogue#7::OnDisable";
 		donpcevent "mob_rogue#8::OnDisable";
@@ -1869,7 +1891,7 @@ OnTouch:
 }
 
 in_rogue,86,187,0	script	mob_rogue#12	-1,1,8,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",90,187,"Múmia",1041,1,"mob_rogue#12::OnMyMobDead";
 		monster "in_rogue",90,183,"Múmia",1041,1,"mob_rogue#12::OnMyMobDead";
@@ -1888,7 +1910,7 @@ OnMyMobDead:
 }
 
 in_rogue,223,187,0	script	mob_rogue#13	-1,1,8,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",236,186,"Cavaleiro do Abismo",1219,1,"mob_rogue#13::OnMyMobDead";
 		monster "in_rogue",238,186,"Cavaleiro do Abismo",1219,1,"mob_rogue#13::OnMyMobDead";
@@ -1908,7 +1930,7 @@ OnMyMobDead:
 }
 
 in_rogue,233,207,0	script	mob_rogue#14	-1,8,3,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief)
 		donpcevent "mob_rogue#13::OnDisable";
 	else
@@ -1917,13 +1939,13 @@ OnTouch:
 }
 
 in_rogue,244,319,0	script	mob_rogue#15	-1,1,8,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief) {
 		monster "in_rogue",240,319,"Múmia",1041,1,"mob_rogue#15::OnMyMobDead";
-		monster "in_rogue",259,319,"Archer Skeleton",1016,1,"mob_rogue#15::OnMyMobDead";
+		monster "in_rogue",259,319,"Esqueleto Arqueiro",1016,1,"mob_rogue#15::OnMyMobDead";
 		monster "in_rogue",259,320,"Carniçal",1036,1,"mob_rogue#15::OnMyMobDead";
 		monster "in_rogue",240,319,"Múmia",1041,1,"mob_rogue#15::OnMyMobDead";
-		monster "in_rogue",259,319,"Archer Skeleton",1016,1,"mob_rogue#15::OnMyMobDead";
+		monster "in_rogue",259,319,"Esqueleto Arqueiro",1016,1,"mob_rogue#15::OnMyMobDead";
 		monster "in_rogue",259,320,"Carniçal",1036,1,"mob_rogue#15::OnMyMobDead";
 	}
 	else
@@ -1939,7 +1961,7 @@ OnMyMobDead:
 }
 
 in_rogue,334,319,0	script	mob_rogue#16	-1,8,8,{
-OnTouch:
+OnTouch_:
 	if (BaseJob == Job_Thief)
 		donpcevent "mob_rogue#15::OnDisable";
 	else
@@ -1974,7 +1996,7 @@ OnInit:
 	end;
 }
 
-in_rogue,399,286,1	script	switch#rogreset	4_M_ORIENT01,{
+in_rogue,399,286,1	script	switch#rogreset	88,{
 	mes "^F08080Tah dah~";
 	mes "Monstros para a";
 	mes "Mudança de Classe para Arruaceiro";
@@ -1995,3 +2017,21 @@ in_rogue,399,286,1	script	switch#rogreset	4_M_ORIENT01,{
 	donpcevent "resetter#rogue::OnEnable";
 	close;
 }
+
+//============================================================ 
+// Old changelog
+//============================================================ 
+//= 1.1 fixed 3 wrong questions, added missing lines [Lupus]
+//= 1.3 Baby Class Support + 40/50 JobLevel Item fix [Lupus]
+//= 1.5 Fixed possible EXP abuse [Lupus]
+//= 1.6 Added a func which prevent advanced classes passing
+//=     2nd Job Quests again. It also guides adv classes where
+//=     to go. [Lupus]
+//= 2.0 Changed numbers to constants. [Vicious]
+//= 2.1 Removed Duplicates [Silent]
+//= 2.2 Merged JFunc [Lupus]
+//= 2.3 Added a possibility for players doing Meginjyard quest
+//=     to enter Rogue guild as there's a NPC inside [SinSloth]
+//= 2.3a fixed test4 person interaction, let BABY thieves pass
+//=     the test, too [Lupus]
+//============================================================ 
