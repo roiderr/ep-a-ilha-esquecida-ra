@@ -37,18 +37,15 @@ aldeba_in,96,181,4	script	Serviço Kafra	113,{
 	switch(select("Salvar Ponto de Retorno.:Usar armazém.:Alugar Carrinho.:Cancelar.")) {
 	case 1:
 		mes "[Kafra Leila]";
-		mes "Seu ponto de retorno";
-		mes "foi salvo aqui na";
-		mes "sede da Corporação Kafra.";
+		mes "Seu ponto de retorno foi salvo aqui na sede da Corporação Kafra.";
 		mes "Muito obrigado!";
 		next;
 		savepoint "aldeba_in",96,179,1,1;
 		mes "[Kafra Leila]";
-		mes "Por favor, faça";
-		mes "uso dos serviços da Kafra que estão";
-		mes "disponíveis em toda a";
-		mes "Rune-Midgard. Muito obrigado por visitar";
-		mes "a sede da Corporação Kafra.";
+		mes "Por favor, faça uso";
+		mes "dos serviços da Kafra";
+		mes "que estão disponíveis em toda a Rune-Midgard.";
+		mes "Muito obrigado por visitar a sede da Corporação Kafra.";
 		close2;
 		break;
 	case 2:
@@ -71,9 +68,8 @@ aldeba_in,96,181,4	script	Serviço Kafra	113,{
 		set RESRVPTS, RESRVPTS + (20/5);
 		mes "[Kafra Leila]";
 		mes "Na próxima vez, favor";
-		mes "pergunte a qualquer funcionário";
-		mes "da Corporação Kafra";
-		mes "sobre qualquer um de nossos serviços.";
+		mes "pergunte a qualquer funcionária";
+		mes "da Corporação Kafra sobre qualquer um de nossos serviços.";
 		mes "Obrigado por usar nossos serviços.";
 		callfunc("F_CheckKafCode");    //check your storage password, if set
 		close2;
@@ -81,29 +77,27 @@ aldeba_in,96,181,4	script	Serviço Kafra	113,{
 		break;
 	case 3:
 		mes "[Kafra Leila]";
-		mes "Minhas desculpas, mas";
-		mes "mas eu estou de plantão, se eu pudesse";
-		mes "eu te ajudaria, mas infelizmente";
-		mes "não possuo carrinhos de mão disponíveis.";
-		mes "Porque não procura outro funcionário";
-		mes "da Corporação Kafra?";
+		mes "Minhas desculpas, mas não";
+		mes "estou em serviço. Eu te ajudaria";
+		mes "se pudesse, mas na verdade não";
+		mes "tenho carrinhos disponíveis.";
+		mes "Por que você não pergunta a outra funcionária da Corporação Kafra?";
 		next;
 		mes "[Kafra Leila]";
-		mes "Os funcionários da Corporação Kafra";
-		mes "estão por todo o";
+		mes "As funcionárias da Corporação";
+		mes "Kafra estão por todo o";
 		mes "continente de Rune-Midgard";
-		mes "e você pode encontrá-los em abundância";
-		mes "fora de Aldebaran.";
+		mes "e você pode encontrá-las em abundância fora de Aldebaran.";
 		close2;
 		break;
 	case 4:
 		mes "[Kafra Leila]";
 		mes "^666666*Ufa...*^000000";
-		mes "Ótimo, porque eu";
-		mes "atualmente, estou descansando.";
-		mes "Agora a escolha da opção";
+		mes "Ótimo, porque estou";
+		mes "no meu descanso agora.";
+		mes "Escolher a opção";
 		mes "''Cancelar'' foi um bom";
-		mes "movimento vindo de sua parte.";
+		mes "movimento vindo da sua parte.";
 		close2;
 		break;
 	}
@@ -205,7 +199,7 @@ pay_arche,55,123,0	script	Funcionária Kafra::kaf_payon3	4_F_KAFRA1,{
 	mes "Como posso ajudar?";
 	callfunc "F_Kafra",5,5,1,90,1200;
 	savepoint "pay_arche",49,144,1,1;
-	callfunc "F_KafEnd",0,1,"na cidade de Payon";
+	callfunc "F_KafEnd",0,1,"na área de Payon";
 }
 
 // Prontera
@@ -305,10 +299,10 @@ yuno,277,221,4	script	Funcionária Kafra::kaf_yuno3	861,{
 
 // Alberta
 //============================================================
-alberta,28,229,0	script	Kafra Recepcionista::kaf_alberta	116,{
+alberta,28,229,0	script	Funcionária Kafra::kaf_alberta	116,{
 	cutin "kafra_02",2;
 	callfunc "F_KafSet";
-	mes "[Kafra Recepcionista]";
+	mes "[Funcionária Kafra]";
 	mes "Bem-vindo à Corporação Kafra.";
 	mes "As funcionárias da corporação sempre estarão aqui para servi-lo.";
 	mes "Como posso ajudá-lo hoje?";
@@ -582,7 +576,7 @@ moc_ruins,59,157,7	script	Funcionária Kafra::moc_ruins	114,{
 	mes "Como posso ajudá-lo hoje?";
 	callfunc "F_Kafra",5,2,1,90,1200;
 	savepoint "moc_ruins",41,141,1,1;
-	callfunc "F_KafEnd",0,1," nas Pirâmides";
+	callfunc "F_KafEnd",0,1,"nas Pirâmides";
 }
 
 // - Orc Dungeon
