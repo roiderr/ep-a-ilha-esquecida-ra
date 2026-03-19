@@ -90,7 +90,7 @@ OnInit:
 	end;
 }
 
-cmd_in02,174,89,7	script	Homem ordinário#pc1	97,{
+cmd_in02,174,89,7	script	Larjes#pc1	97,{
 	if (aru_monas < 2) {
 		mes "[Larjes]";
 		mes "Droga, perdi de novo!";
@@ -133,7 +133,7 @@ cmd_in02,174,89,7	script	Homem ordinário#pc1	97,{
 	}
 }
 
-cmd_in02,111,52,3	script	Homem ordinário#pc2	97,{
+cmd_in02,111,52,3	script	Larjes#pc2	97,{
 	if (aru_monas < 3) {
 		mes "[Larjes]";
 		mes "^666666*Ai, ai...*^00000";
@@ -216,7 +216,7 @@ ra_in01,308,59,1	script	Garçom#pc	930,{
 	close;
 }
 
-ra_in01,301,50,3	script	Homem olhando	927,{
+ra_in01,301,50,3	script	Homem Faminto	927,{
 	mes "[Homem]";
 	mes "Nham-nham!";
 	mes "Adoro a comida deste restaurante!";
@@ -231,7 +231,7 @@ ra_in01,301,52,3	script	Homem Comum	927,{
 	close;
 }
 
-ra_in01,297,50,7	script	Homem Suspeito	926,{
+ra_in01,297,50,7	script	Suspeito	926,{
 	mes "[Suspeito]";
 	mes "Cada prato tem seu gosto único, que você deve aprender a apreciar.";
 	mes "É claro, aqueles lanches gordurosos não contam...";
@@ -520,7 +520,7 @@ ve_in,81,296,3	script	Soldado#Aru	946,{
 	}
 }
 
-ve_in,239,115,0	script	Bêbedo#Aru	943,{
+ve_in,239,115,0	script	Bêbado#Aru	943,{
 	if (aru_monas < 14) {
 		mes "[Bêbado]";
 		mes "Cara, que legal! Ha ha!";
@@ -564,8 +564,8 @@ ve_in,239,115,0	script	Bêbedo#Aru	943,{
 	}
 }
 
-ve_in,238,120,4	script	Bêbedo#Aru1	940,{
-	mes "[Bêbado]";
+ve_in,238,120,4	script	Bêbada#Aru1	940,{
+	mes "[Bêbada]";
 	mes "Hohohoho~";
 	mes "Oh~ Hohohoho~";
 	next;
@@ -703,7 +703,7 @@ OnInit:
 	end;
 }
 
-nameless_i,212,184,0	script	Outside Island#Aru	-1,2,3,{
+nameless_i,212,184,0	script	Fora da Ilha#Aru	-1,2,3,{
 	end;
 
 OnTouch:
@@ -718,7 +718,7 @@ OnTouch:
 	end;
 }
 
-nameless_in,21,176,0	script	Inside Island#Aru	-1,2,2,{
+nameless_in,21,176,0	script	Dentro da Ilha#Aru	-1,2,2,{
 	end;
 
 OnTouch:
@@ -730,7 +730,7 @@ OnTouch:
 	end;
 }
 
-nameless_i,129,218,0	script	Grass Behind#Aru	-1,4,3,{
+nameless_i,129,218,0	script	Atrás da Grama#Aru	-1,4,3,{
 	end;
 
 OnTouch:
@@ -776,7 +776,7 @@ nameless_i,127,207,0	script	Corvo Morto#Aru	111,{
 	end;
 }
 
-nameless_in,15,61,0	script	Pass Out#Aru	-1,2,3,{
+nameless_in,15,61,0	script	Desmaiar#Aru	-1,2,3,{
 	end;
 
 OnTouch:
@@ -818,7 +818,7 @@ OnTouch:
 		mes "Não eram, definitivamente.";
 		mes "Quando as matei, elas viraram areia.";
 		next;
-		hideoffnpc "Creature#Monas";
+		hideoffnpc "Criatura#Monas";
 		emotion ET_HUK, playerattached();
 		emotion ET_HUK, getnpcid(0, "Larjes#Monastery");
 		mes "[Larjes]";
@@ -850,20 +850,20 @@ OnInit:
 	end;
 }
 
-nameless_in,13,53,1	script	Creature#Monas	1864,3,1,{
+nameless_in,13,53,1	script	Criatura#Monas	1864,3,1,{
 	end;
 
 OnInit:
-	hideonnpc "Creature#Monas";
+	hideonnpc "Criatura#Monas";
 	end;
 
 OnTouch:
-	if (aru_monas == 19 && mobcount("nameless_in","Creature#Monas::OnMyMobDead") < 1 && !@aru_monas_kill) {
+	if (aru_monas == 19 && mobcount("nameless_in","Criatura#Monas::OnMyMobDead") < 1 && !@aru_monas_kill) {
 		mes "[???????]";
 		mes "Grrr~!!!";
 		close2;
-		monster "nameless_in",13,53,"Zombie",1864,1,"Creature#Monas::OnMyMobDead";
-		hideonnpc "Creature#Monas";
+		monster "nameless_in",13,53,"Zombie",1864,1,"Criatura#Monas::OnMyMobDead";
+		hideonnpc "Criatura#Monas";
 	}
 	end;
 
@@ -902,7 +902,7 @@ OnTouch:
 	close;
 }
 
-nameless_n,169,254,0	script	Night#Aru2	-1,3,3,{
+nameless_n,169,254,0	script	Noite#Aru2	-1,3,3,{
 	end;
 
 OnTouch:
@@ -1085,14 +1085,14 @@ abbey03,232,233,4	script	Homem#King	956,{
 		mes "^3355FFVocê leva o ouvido mais perto da boca dele:";
 		mes "Parece que ele ainda respira, mas está quase morto.^000000";
 		next;
-		if (select("Toque-o:Ignore-o") == 1) {
+		if (select("Tocar Nele:Ignorá-lo") == 1) {
 			mes "[" + strcharinfo(0) + "]";
 			mes "Este homem...";
 			mes "Ele parece familiar, por algum motivo.";
 			next;
 			mes "^3355FFQuando você toca nele, o homem se levanta de repente, com um gemido alucinado.^000000";
 			set aru_monas,23;
-			monster "abbey03",232,232,"Dead King",1875,1,"Homem#King::OnMyMobDead";
+			monster "abbey03",232,232,"Homem Morto",1875,1,"Homem#King::OnMyMobDead";
 			initnpctimer;
 			hideonnpc "Homem#King";
 			close;
@@ -1182,7 +1182,7 @@ OnTouch_:
 sec_in02,15,15,4	script	boss::boss_aru_monas	809,{
 	callfunc "F_GM_NPC";
 	mes "[Patch]";
-	mes "Input.";
+	mes "Digite.";
 	next;
 	switch(select("Agora:Quanto?:P-Quanto?:Outros")) {
 	case 1:
@@ -1225,7 +1225,7 @@ ra_temple,165,57,5	script	Niren#ss	915,{
 	mes "Estou muito cansada agora, mas posso conceder um minutinho.";
 	mes "O que gostaria de saber?";
 	next;
-	switch(select("Falaar sobre Contrabandistas:Perguntar sobre Zhed")) {
+	switch(select("Perguntar sobre Contrabandistas:Perguntar sobre Zhed")) {
 	case 1:
 		if (aru_monas == 12) {
 			mes "[Niren]";
@@ -1756,30 +1756,30 @@ ra_temple,168,54,3	script	Sippie#ss	917,{
 
 // Peace to the Arunafeltz :: aruna_em
 //============================================================
-morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
+morocc,167,106,3	script	Mercador Estrangeiro#aru1	880,5,5,{
 	if (aru_vol == 27) {
 		if (aru_em == 0) {
 			emotion ET_THINK;
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Nunca pensei que o deserto seria tão quente!";
 			mes "E construíram uma cidade aqui!";
 			mes "Como podem chamar este lugar de habitável!";
 			mes "E pior, a multidão deixa tudo muito mais quente!";
 			next;
 			emotion ET_THINK;
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Ouvi dizer que podia ficar rico de uma vez só em Morroc, e por isso transferi meus negócios para cá.";
 			mes "Mas parece que esse tempo vai é me deixar morto de uma vez só!";
 			next;
 			select("Como você ouviu falar de Morroc?");
 			emotion ET_THINK;
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Eu... É como eu disse.";
 			mes "Ouvi dizer que Morroc é cheia de clientes dispostos a pagar caro por bons artigos.";
 			mes "Ugh, mas a cidade está em ruínas!";
 			next;
 			emotion ET_SWEAT;
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Nem ligo mais se não ganhar dinheiro!";
 			mes "Só queria ficar em algum lugar fresco, bebendo algo gostoso e gelado!";
 			mes "Sabe, posso muito bem ir embora amanhã.";
@@ -1787,7 +1787,7 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 			next;
 			emotion ET_CRY;
 			emotion ET_SWEAT, playerattached();
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Ei, é isso!";
 			mes "Não vendem uma bebida docinha e gelada por aqui?";
 			mes "Sabe, perto do oásis nos arredores de Morroc?";
@@ -1797,11 +1797,11 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 			close;
 		}
 		else if ((aru_em > 0) && (aru_em < 7)) {
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Diz aí, não tem um vendedor ambulante perto do lago no centro de Morroc?";
 			mes "Oh, eu faria tudo para provar a tal bebida deliciosa dele...";
 			next;
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Ah, o calor está acabando comigo...";
 			mes "E já estou ficando sem suor para suar...";
 			mes "Acho que vou desmaiar!";
@@ -1809,13 +1809,13 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 			close;
 		}
 		else if (aru_em == 7) {
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "*Ofegante*";
 			mes "*Suando*";
 			next;
 			switch(select("Dar Vinho de Frutas:Assistir em Silêncio")) {
 			case 1:
-				mes "[Comerciante estrangeiro]";
+				mes "[Mercador Estrangeiro]";
 				mes "Ah, obrigado!";
 				mes "Isto tem um cheiro tão bom...";
 				mes "Essa é a tal bebida de que tanto falam?";
@@ -1827,13 +1827,13 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 				mes "^3355FF*Gulp Gulp Gulp Gulp*^000000";
 				next;
 				emotion ET_THROB;
-				mes "[Comerciante estrangeiro]";
+				mes "[Mercador Estrangeiro]";
 				mes "Ahhh! Estava deliciosa!";
 				mes "É tão refrescante e tão exótica, como... como...";
 				mes "Aquelas odaliscas em Comodo! Ahhhh!";
 				mes "Muito obrigado, amigo!";
 				next;
-				mes "[Comerciante estrangeiro]";
+				mes "[Mercador Estrangeiro]";
 				mes "Deve haver algum jeito de recompensar você.";
 				mes "Ah, aqui está. Tome.";
 				mes "Seu nome é "+strcharinfo(0)+", não é?";
@@ -1868,7 +1868,7 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 				mes "Ah, bem, obrigado por trazer o bilhete.";
 				mes "Mas não compro mais bebida nenhuma, ouviu?";
 				next;
-				mes "[Comerciante estrangeiro]";
+				mes "[Mercador Estrangeiro]";
 				mes "He, entendi.";
 				mes "Agora, por que não vai falar com ele?";
 				mes "Boa sorte!";
@@ -1876,13 +1876,13 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 				changequest 2130,2131;
 				close;
 			case 2:
-				mes "[Comerciante estrangeiro]";
+				mes "[Mercador Estrangeiro]";
 				mes "Mas o que... você está gostando de me ver secar até a morte?";
 				close;
 			}
 		}
 		else {
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "Bem, já que estou aqui...";
 			mes "Acho que posso aproveitar e passear por Morroc.";
 			mes "*Ofegante*";
@@ -1891,7 +1891,7 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 		}
 	}
 	else {
-		mes "[Comerciante estrangeiro]";
+		mes "[Mercador Estrangeiro]";
 		mes "Nunca pensei que o deserto seria tão quente!";
 		mes "E construíram uma cidade aqui!";
 		mes "Como podem chamar este lugar de habitável!";
@@ -1902,7 +1902,7 @@ morocc,167,106,3	script	Comerciante estrangeiro#aru1	880,5,5,{
 OnTouch:
 	if (aru_vol == 27) {
 		if (aru_em == 0) {
-			mes "[Comerciante estrangeiro]";
+			mes "[Mercador Estrangeiro]";
 			mes "*Gargarejo*";
 			mes "Cara, eu acho que vou morrer com todo esse calor!";
 			close;
@@ -1927,7 +1927,7 @@ OnTouch:
 	else if (aru_em == 5) {
 		set .@nawara,rand(1,10);
 		if (.@nawara < 5) {
-			hideoffnpc "Comerciante estrangeiro#aru2";
+			hideoffnpc "Mercador Estrangeiro#aru2";
 		}
 		else {
 			set aru_em,2;
@@ -1952,13 +1952,13 @@ OnTouch:
 	end;
 }
 
-morocc,140,160,7	script	Comerciante estrangeiro#aru2	929,{
+morocc,140,160,7	script	Mercador Estrangeiro#aru2	929,{
 	if ((aru_em > 1) && (aru_em < 7)) {
 		mes "["+ strcharinfo(0) +"]";
 		mes "Com licença, mas me disseram que eu poderia comprar uma boa bebida por aqui.";
 		mes "Por acaso é você quem a vende?";
 		next;
-		mes "[Comerciante estrangeiro]";
+		mes "[Mercador Estrangeiro]";
 		mes "Ah, está falando do meu vinho de frutas?";
 		mes "Devo dizer que não é tão bom quanto o pessoal diz por aí.";
 		mes "É só uma bebidinha que eu preparo em casa e compartilho com os amigos depois do jantar.";
@@ -1968,21 +1968,21 @@ morocc,140,160,7	script	Comerciante estrangeiro#aru2	929,{
 		mes "mercador que quer muito provar esse seu vinho.";
 		mes "Você poderia me vender um pouco?";
 		next;
-		mes "[Comerciante estrangeiro]";
+		mes "[Mercador Estrangeiro]";
 		mes "Ah, desculpe, mas meu estoque acabou por hoje.";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "Oh, não!...";
 		emotion ET_OTL, playerattached();
 		next;
-		mes "[Comerciante estrangeiro]";
+		mes "[Mercador Estrangeiro]";
 		mes "...............................";
 		mes "...............................";
 		mes "...............................";
 		emotion ET_PROFUSELY_SWEAT;
 		next;
 		emotion ET_HUK, playerattached();
-		mes "[Comerciante estrangeiro]";
+		mes "[Mercador Estrangeiro]";
 		mes "Sabe, eu guardei uma garrafinha para mim, mas acho que posso dá-la a você.";
 		mes "Posso fazer mais depois, e estou lisonjeado por seu amigo se interessar tanto por meu vinho.";
 		next;
@@ -1990,7 +1990,7 @@ morocc,140,160,7	script	Comerciante estrangeiro#aru2	929,{
 		mes " É mesmo? Obrigado!";
 		mes "Sei que ele vai apreciar sua generosidade.";
 		next;
-		mes "[Comerciante estrangeiro]";
+		mes "[Mercador Estrangeiro]";
 		mes "Ah, não é nada.";
 		mes "Bem, preciso ir para casa agora.";
 		mes "Vou me lembrar de guardar uma garrafa extra, caso você queira mais da próxima vez.";
@@ -2000,19 +2000,19 @@ morocc,140,160,7	script	Comerciante estrangeiro#aru2	929,{
 		mes "^3355FFVocê recebeu uma garrafa do famoso vinho de frutas do velho vendedor.";
 		mes "Esse cara é muito legal!^000000";
 		set aru_em,7;
-		hideonnpc "Comerciante estrangeiro#aru2";
+		hideonnpc "Mercador Estrangeiro#aru2";
 		changequest 2129,2130;
 		close;
 	}
 	else {
-		mes "[Comerciante estrangeiro]";
+		mes "[Mercador Estrangeiro]";
 		mes "Desculpe, mas vendi todo o meu vinho hoje.";
 		mes "Espero que não seja um inconveniente.";
 		close;
 	}
 
 OnInit:
-	hideonnpc "Comerciante estrangeiro#aru2";
+	hideonnpc "Mercador Estrangeiro#aru2";
 	end;
 }
 
@@ -3484,7 +3484,7 @@ OnTouch:
 						mes "As vibrações da máquina estão um pouco mais estáveis agora.";
 						mes "Qual botão você vai apertar?^000000";
 						next;
-						switch(select("Red Switch:Blue Switch:Yellow Switch:Green Switch")) {
+						switch(select("Botão Vermelho:Botão Azul:Botão Amarelo:Botão Verde")) {
 						default:
 							mes "^3355FF*Whiz Whiz*^000000";
 							mes "^3355FF*Whiz Whiz*^000000";
@@ -4742,7 +4742,7 @@ in_rogue,366,46,3	script	Investigador#rogue1	828,{
 		mes "Ahn, não posso simplesmente dar essa informação se você não é membro da nossa guilda.";
 		mes "Mas já que estamos juntos nisso, só vou pedir 10.000 zenys.";
 		next;
-		switch(select("Órtimo!:Esqueça...")) {
+		switch(select("Ótimo!:Esqueça...")) {
 		case 1:
 			if (Zeny > 9999) {
 				set Zeny, Zeny-10000;
@@ -4973,7 +4973,7 @@ OnDisable:
 	end;
 }
 
-prontera,148,326,3	script	Oficial principal#edq	734,{
+prontera,148,326,3	script	Chefe da Polícia#edq	734,{
 	if (checkweight(907,200) == 0) {
 		mes "[Chefe da Polícia]";
 		mes "Você está carregando coisas demais agora.";
@@ -6330,10 +6330,10 @@ S_Quest:
 }
 moc_ruins,75,171,3	duplicate(Homem Suspeito#1)	Homem Suspeito#2	4W_M_03,4,4
 
-moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
+moc_fild17,209,235,0	script	Laje Estranha	111,4,4,{
 	if (((zdan_edq == 15) || (zdan_edq == 16) || (zdan_edq == 17)) && ($@door2 == 0)) {
-		mes "[Laje estranha]";
-		mes "[Laje estranha]";
+		mes "[Laje Estranha]";
+		mes "[Laje Estranha]";
 		mes "^FF0000*range range*";
 		mes "Idigti a eshan.^000000";
 		next;
@@ -6343,7 +6343,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 		mes "Eu... acho.";
 		mes "Agora, onde eu já ouvi alguma coisa assim?";
 		next;
-		mes "[Laje estranha]";
+		mes "[Laje Estranha]";
 		mes "^FF0000*range range*";
 		mes "Idigti a eshan.^000000";
 		next;
@@ -6353,7 +6353,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 		mes "Ela continua soando como...";
 		mes "Uma porcaria de idioma para mim.";
 		next;
-		mes "[Laje estranha]";
+		mes "[Laje Estranha]";
 		mes "^FF0000*range range*";
 		mes "Idigti a eshan.^000000";
 		next;
@@ -6363,7 +6363,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 		next;
 		input .@input$;
 		if (.@input$ == "Weii arr prowd Z G gna") {
-			mes "[Laje estranha]";
+			mes "[Laje Estranha]";
 			mes "^FF0000*range range*";
 			mes "Idigti a a.2 eshan.^000000";
 			next;
@@ -6374,7 +6374,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 			next;
 			input .@input$;
 			if (.@input$ == "Aynoen hwo sspotp uys") {
-				mes "[Laje estranha]";
+				mes "[Laje Estranha]";
 				mes "^FF0000*range range*";
 				mes "Idigti a a.3 eshan.^000000";
 				next;
@@ -6384,7 +6384,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 				next;
 				input .@input$;
 				if (.@input$ == "wlil eb kckide on htier ssa!") {
-					mes "[Laje estranha]";
+					mes "[Laje Estranha]";
 					mes "*Creak Creak*";
 					mes "*Creak Creak*";
 					next;
@@ -6410,7 +6410,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 						mes "Hum? Eu fiz alguma coisa errada?";
 						mes "Ela parou de funcionar de repente.";
 						next;
-						mes "[Laje estranha]";
+						mes "[Laje Estranha]";
 						mes "^FF0000Rrsoy, rrsoy.";
 						mes "Ai cn'at elt yoo ni ofr nwo.";
 						mes "Plzea ecmo ckba tela.^000000";
@@ -6424,7 +6424,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 					}
 				}
 				else {
-					mes "[Laje estranha]";
+					mes "[Laje Estranha]";
 					mes "^666666*Pzzzzz*^000000";
 					next;
 					mes "[" + strcharinfo(0) + "]";
@@ -6436,7 +6436,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 				}
 			}
 			else {
-				mes "[Laje estranha]";
+				mes "[Laje Estranha]";
 				mes "^666666*Pzzzzz*^000000";
 				next;
 				mes "[" + strcharinfo(0) + "]";
@@ -6449,7 +6449,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 			}
 		}
 		else {
-			mes "[Laje estranha]";
+			mes "[Laje Estranha]";
 			mes "^666666*Pzzzzz*^000000";
 			next;
 			mes "[" + strcharinfo(0) + "]";
@@ -6461,7 +6461,7 @@ moc_fild17,209,235,0	script	Laje estranha	111,4,4,{
 		}
 	}
 	if (((zdan_edq == 15) || (zdan_edq == 16) || (zdan_edq == 17)) && ($@door2 > 0)) {
-		mes "[Laje estranha]";
+		mes "[Laje Estranha]";
 		mes "*Creak Creak*";
 		next;
 		mes "[" + strcharinfo(0) + "]";
@@ -6582,7 +6582,7 @@ OnDisable:
 
 OnTimer3000:
 	killmonster "z_agit","#ZGuard::OnMyMobDead";
-	mapannounce "z_agit","Catfoii: Hein? Ouvi alguma coisa! Parece que estamos sob ataque!",bc_map,"0xFFFF00";
+	mapannounce "z_agit","Catfoii: Hein? Ouvi alguma coisa, miau! Parece que estamos sob ataque!",bc_map,"0xFFFF00";
 	end;
 
 OnTimer5000:
@@ -6598,7 +6598,7 @@ OnTimer9000:
 	end;
 
 OnTimer11000:
-	mapannounce "z_agit","Catfoii: Impossível! Tenho uma memória fotográfica!",bc_map,"0xFFFF00";
+	mapannounce "z_agit","Catfoii: Impossível, miau! Tenho uma memória fotográfica!",bc_map,"0xFFFF00";
 	end;
 
 OnTimer13000:
@@ -6610,7 +6610,7 @@ OnTimer15000:
 	end;
 
 OnTimer18000:
-	mapannounce "z_agit","Catfoii: Não sei o quanto eles são fortes, mas... OK. Pessoal, à luta!",bc_map,"0xFFFF00";
+	mapannounce "z_agit","Catfoii: Não sei o quanto eles são fortes, mas... Miau, OK. Pessoal, à luta!",bc_map,"0xFFFF00";
 	end;
 
 OnTimer21000:
@@ -7008,7 +7008,7 @@ OnInit:
 
 // Unlucky Emerald
 //============================================================
-morocc,143,63,3	script	Homem Atormentado#nd	929,{
+morocc,143,63,3	script	Maltrapilho#nd	929,{
 	if (treasure_nd == 0) {
 		mes "[Homem Atormentado]";
 		mes "O-olá? Pode me ajudar?";
@@ -7711,100 +7711,100 @@ moc_fild18,108,116,0	script	#treasure	844,{
 	}
 }
 
-comodo,139,184,3	script	Estudante#zgang	742,{
+comodo,139,184,3	script	Sábio#zgang	742,{
 	if (jewel_nd < 9) {
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Sou um avaliador de antiguidades.";
 		mes "Você pode me achar parecido com avaliadores de jóias.";
 		mes "Mas posso avaliar o valor histórico de antiguidades, além do seu valor monetário e artístico.";
 		close;
 	}
 	else if (jewel_nd == 9) {
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Oooh. Você deve ser quem Ibrahim mandou, certo?";
 		mes "Foi você quem encontrou a esmeralda rara, uma das jóias malditas?";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Estou muito interessado nas Jóias Malditas, e estive pesquisando-as.";
 		mes "Você veio à pessoa certa se quiser aprender mais sobre a esmeralda que encontrou.";
 		set jewel_nd,11;
 		close;
 	}
 	else if (jewel_nd == 10) {
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Olá, em que posso ajudar você?";
 		next;
 		select("Perguntar sobre Jóia Maldita");
 		mes "[" + strcharinfo(0) + "]";
 		mes "Vim aqui perguntar sobre uma Jóia Maldita.";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Vejamos... Ah, você veio saber sobre o Diamante da Destruição?";
 		next;
 		select("Não, sobre a Esmeralda do Azar.");
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Ah, a Esmeralda do Azar?";
 		mes "Sim, essa foi a mais recente Jóia Maldita a ser descoberta.";
 		mes "Vamos, ver, onde coloquei minhas anotações?";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Será que você se importa em voltar depois?";
 		mes "Não sei bem onde deixei minhas anotações...";
 		set jewel_nd,11;
 		close;
 	}
 	else if (jewel_nd == 11) {
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Ah, agora vamos ver.";
 		mes "Há um registro aqui chamado \"A História da Jóia Maldita\".";
 		mes "De acordo com ele, ninguém sabe onde essa jóia foi encontrada pela primeira vez.";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "O primeiro incidente com a jóia envolveu um morador de Comodo que usou a jóia para pagar uma dívida de jogo.";
 		mes "Ele cometeu suicídio depois de pagar sua dívida, uma pena.";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Ele não contou a ninguém onde havia encontrado a jóia antes de morrer.";
 		mes "Então não temos como determinar a sua verdadeira origem.";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Depois de vendida, a jóia se tornou propriedade de um homem rico.";
 		mes "Mas ele perdeu sua fortuna e ficou totalmente arruinado depois de obtê-la.";
 		mes "Daí vem seu nome, a \"Esmeralda do Azar\".";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Então, a esmeralda caiu nas mãos de uma dama da nobreza que morreu misteriosamente ainda jovem.";
 		mes "A esmeralda teve milhares de donos que simplesmente...";
 		mes "Morreram.";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "O mais perturbador é que a maldição da esmeralda parece ficar mais forte a cada vida que tira.";
 		mes "Hum, e sua jóia se encaixa perfeitamente nas descrições, então, hum...";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Você é o novo dono da Esmeralda do Azar.";
 		mes "Ninguém vai comprá-la de você enquanto estiver amaldiçoada.";
 		mes "Pelo bem de sua vida, você deve romper a maldição.";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Bem, feitiços sagrados não vão funcionar com esse tipo de maldição.";
 		mes "Você precisa falar com um xamã.";
 		mes "Acho que ele vive em... Alberta?";
 		mes "Ele pode invocar os mortos e agir como médium.";
 		next;
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "A idéia é que você fale com os espíritos mortos por essa esmeralda, através do xamã.";
 		mes "E sei que ele vai ficar muito empolgado em ver que você está com a Esmeralda do Azar.";
 		set jewel_nd,12;
 		close;
 	}
 	else if (jewel_nd == 12) {
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Por favor, encontre o xamã em Alberta, e pergunte se ele pode ajudar a quebrar a maldição da Esmeralda do Azar.";
 		close;
 	}
 	else if (jewel_nd > 28) {
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Espere, está me dizendo que a esmeralda foi amaldiçoada pelo espírito vingador de um guerreiro?";
 		mes "Interessante...";
 		mes "Devo registrar isso em minhas anotações de pesquisa.";
@@ -7812,7 +7812,7 @@ comodo,139,184,3	script	Estudante#zgang	742,{
 		close;
 	}
 	else {
-		mes "[Estudante]";
+		mes "[Sábio]";
 		mes "Algumas jóias são possuídas por fantasmas ou espíritos malignos.";
 		mes "Que trazem desgraça para seus donos os levam à morte ou à loucura, esse tipo de coisa.";
 		close;
@@ -9021,7 +9021,7 @@ in_rogue,355,28,5	script	Agente Arruaceiro	118,{
 	}
 }
 
-aldebaran,114,56,5	script	Agente Arruaceiroe#nd0	828,{
+aldebaran,114,56,5	script	Agente Arruaceiro#nd0	828,{
 	if (rumour_nd < 3) {
 		mes "[Agente]";
 		mes "Escute, estou trabalhando em uma tarefa importante para a Guilda de Arruaceiros.";
