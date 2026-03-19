@@ -65,7 +65,7 @@
 			next;
 			mes "A nota mencionada acima";
 			mes "foi anunciada pelo";
-			mes "o Gabinete de Informação Pública do Reino de Rune-Midgard.";
+			mes "Gabinete de Informação Pública do Reino de Rune-Midgard.";
 			close;
 		}
 		else {

@@ -1,13 +1,27 @@
-//===========================================================\\
-//          ____   __   _  _  __    ____   __   ____         //
-//         / ___) /  \ / )( \(  )  (  __) / _\ (_  _)        \\
-//         \___ \(  O )) \/ (/ (_/\ ) _) /    \  )(          //
-//         (____/ \__/ \____/\____/(____)\_/\_/ (__)         \\
-//                                                           //
-//================== www.souleat.com.br =====================\\
-//======================= by: Guru ==========================//
+//===== rAthena Script =======================================
+//= Bulletin Boards
+//===== Description: ========================================= 
+//= Bulletin Boards for beginners.
+//===== Changelogs: ==========================================
+//= 1.0 Added Alberta, Prontera, Izlude, Payon, Byalan Island,
+//=     Archer Village, Payon Cave and Coal Mine. [MasterOfMuppets]
+//= 1.1 Geffen, Orc Dungeon
+//= 1.2 Added 5 more Boards [MasterOfMuppets]
+//= 1.3 Fixed spelling mistakes. [Nexon]
+//= 1.3a Fixed a missing close; [Nexon]
+//= 1.4 Added more BBS MasterOfMuppets
+//= 1.5 Added the last of the bulletin boards, I think... [MasterOfMuppets]
+//= 1.5a Fixed a small screw up with the color codes in the Glastheim BB [MasterOfMuppets]
+//= 1.5b Fixed another small screw up with the color codes in the Glastheim BB [Kayla]
+//= 1.6 Removed Duplicates [Silent]
+//= 1.7 Updated Morocc NPCs to reflect episode 12.1 changes. [L0ne_W0lf]
+//= 1.8 Updated Payon Cave Bulletion Board Locations. [Masao]
+//= 1.9 Moved Izlude NPC to Pre-RE path. [Euphy]
+//= 2.0 Moved some NPC to Pre-re path. [Capuche]
+//= 2.0b Traduzido [Cardoso]
+//============================================================
 
-alberta,111,59,5	script	Quadro de Avisos#1	2_BULLETIN_BOARD,{
+alberta,111,59,5	script	Quadro de Avisos#1	837,{
 	mes "[Alberta: A Cidade Portuária]";
 	mes "Bem-vindo a Alberta, a cidade portuária!";
 	next;
@@ -28,11 +42,11 @@ alberta,111,59,5	script	Quadro de Avisos#1	2_BULLETIN_BOARD,{
 	next;
 	mes "[Alberta: A Cidade Portuária]";
 	mes "De Alberta, ^1F3A11Payon^000000 é localizada a noroeste. Você pode ir a um navio no porto que eles te levarão a ^5E5C69Izlude^000000.";
-	mes "Aproveite sua viajem."; 
+	mes "Aproveite sua viajem.";
 	close;
 }
 
-geffen,124,65,5	script	Quadro de Avisos#2	2_BULLETIN_BOARD,{
+geffen,124,65,5	script	Quadro de Avisos#2	837,{
 	mes "[Geffen: A Cidade da Magia]";
 	mes "Bem-vindo a Geffen, a cidade da magia! Geffen é o local ideal para se descobrir os segredos da magia.";
 	next;
@@ -50,23 +64,7 @@ geffen,124,65,5	script	Quadro de Avisos#2	2_BULLETIN_BOARD,{
 	close;
 }
 
-gef_fild10,69,340,5	script	Quadro de Avisos#3	2_BULLETIN_BOARD,{
-	mes "[Vila dos Orcs]";
-	mes "^6B1312Cuidado!^000000";
-	mes "A Vila dos Orcs é composta de 2 níveis. Como não são muito fortes, os monstros daqui atacam em grupo. Tenha cuidado.";
-	next;
-	mes "[Vila dos Orcs]";
-	mes "Apenas nessa caverna você poderá encontrar Orcs Esqueletos, Zenorcs e Orcs Zumbis.";
-	next;
-	mes "[Vila dos Orcs]";
-	mes "Alguns tipos de armas podem te ajudar nessa caverna, já que muitos monstros da caverna são mortos-vivos.";
-	next;
-	mes "[Vila dos Orcs]";
-	mes "Se você não tem uma arma com propriedade Sagrada procure um Noviço, a habilidade Aspersio pode ser de grande ajuda.";
-	close;
-}
-
-izlu2dun,104,92,5	script	Quadro de Avisos#4	2_BULLETIN_BOARD,{
+izlu2dun,104,92,5	script	Quadro de Avisos#4	837,{
 	mes "[Ilha Byalan]";
 	mes "^6B1312Cuidado!^000000";
 	mes "A Ilha Byalan possui 5 níveis. O primeiro é recomendado para novos aventureiros.";
@@ -79,7 +77,7 @@ izlu2dun,104,92,5	script	Quadro de Avisos#4	2_BULLETIN_BOARD,{
 	close;
 }
 
-payon,178,108,5	script	Quadro de Avisos#06	2_BULLETIN_BOARD,{
+payon,178,108,5	script	Quadro de Avisos#06	837,{
 	mes "[Payon: A Cidade das Montanhas]";
 	mes "Bem-vindo a Payon, a cidade das montanhas. Payon recentemente foi renovada, agora está mais limpa, melhores ruas e construções.";
 	next;
@@ -97,12 +95,12 @@ payon,178,108,5	script	Quadro de Avisos#06	2_BULLETIN_BOARD,{
 	next;
 	mes "[Payon: A cidade das Montanhas]";
 	mes "De Payon, ^123972Alberta^000000 está a sudoeste, ^866C4BMorroc^000000 ao oeste. ^5E5C69Izlude^000000 e ^6D6FE0Prontera^000000 ao norte.";
-	mes "Aproveite suas viagens."; 
+	mes "Aproveite suas viagens.";
 	close;
 }
 
-pay_arche,79,31,5	script	Quadro de Avisos#07	2_BULLETIN_BOARD,{
-	mes "[Vila dos Arqueiros]"; 
+pay_arche,79,31,5	script	Quadro de Avisos#07	837,{
+	mes "[Vila dos Arqueiros]";
 	mes "Bem-vindo a Vila dos Arqueiros onde aprendizes podem virar Arqueiros.";
 	next;
 	mes "[Vila dos Arqueiros]";
@@ -113,17 +111,7 @@ pay_arche,79,31,5	script	Quadro de Avisos#07	2_BULLETIN_BOARD,{
 	close;
 }
 
-pay_arche,39,134,5	script	Quadro de Avisos#08	2_BULLETIN_BOARD,{
-	mes "[Caverna de Payon]";
-	mes "^6B1312Cuidado!^000000";
-	mes "A Caverna de Payon possui 5 níveis todos eles com monstros do tipo morto-vivo ou demônio. Você pode encontrar Hidras no terceiro e quarto nível.";
-	next;
-	mes "[Caverna de Payon]";
-	mes "No nível 5, tenha cuidado, você pode encontrar a ^6B1312Flor do Luar^000000 que aparece em certos momentos, todo cuidado é pouco.";
-	close;
-}
-
-prontera,148,49,5	script	Quadro de Avisos#09	2_BULLETIN_BOARD,{
+prontera,148,49,5	script	Quadro de Avisos#09	837,{
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
 	mes "Bem-vindo a Prontera, a capital do Reino de Rune-Midgard.";
@@ -155,17 +143,7 @@ prontera,148,49,5	script	Quadro de Avisos#09	2_BULLETIN_BOARD,{
 	close;
 }
 
-mjolnir_02,76,362,5	script	Quadro de Avisos#10	2_BULLETIN_BOARD,{
-	mes "[Mina de Carvão]";
-	mes "^6B1312tCuidado!^000000";
-	mes "A Mina de Carvão possui 3 níveis. Esta mina é recomendada tanto a novos jogadores quando a jogadores mais experientes, varia pelo nível que você irá ir.";
-	next;
-	mes "[Mina de Carvão]";
-	mes "No terceiro nível, os monstros tendem a atacar em grupos, então não tome muito cuidado. Desde quando era uma mina ativa, algumas pedras preciosas podem ser encontradas aqui.";
-	close;
-}
-
-morocc,152,110,5	script	Quadro de Avisos#11	2_BULLETIN_BOARD,{
+morocc,152,110,5	script	Quadro de Avisos#11	837,{
 	mes "[Morroc: A Cidade da Fronteira]";
 	mes "Bem-vindo a Morroc, a cidade do";
 	mes "Deserto. Morroc foi construída em";
@@ -193,7 +171,7 @@ morocc,152,110,5	script	Quadro de Avisos#11	2_BULLETIN_BOARD,{
 	close;
 }
 
-comodo,210,148,5	script	Quadro de Avisos#12	2_BULLETIN_BOARD,{
+comodo,210,148,5	script	Quadro de Avisos#12	837,{
 	mes "[Comodo: A Cidade do Mar]";
 	mes "Bem-vindo! A cidade de Comodo é";
 	mes "rodeada por relíquias passadas";
@@ -234,7 +212,7 @@ comodo,210,148,5	script	Quadro de Avisos#12	2_BULLETIN_BOARD,{
 	close;
 }
 
-umbala,137,94,5	script	Quadro de Avisos#13	2_BULLETIN_BOARD,{
+umbala,137,94,5	script	Quadro de Avisos#13	837,{
 	mes "[Umbala: Casa da Tribo Utan]";
 	mes "Bem-vindo a Umbala,";
 	mes "a vila da tribo Utan.";
@@ -266,7 +244,7 @@ umbala,137,94,5	script	Quadro de Avisos#13	2_BULLETIN_BOARD,{
 	close;
 }
 
-gef_fild09,227,29,4	script	Quadro de Avisos::OrcsBoard	2_BOARD1,{
+gef_fild09,227,29,4	script	Quadro de Avisos::OrcsBoard	835,{
 	mes "[Vila dos Orcs]";
 	mes "^6B1312Cuidado!^000000";
 	mes "Depois desse ponto";
@@ -281,9 +259,10 @@ gef_fild09,227,29,4	script	Quadro de Avisos::OrcsBoard	2_BOARD1,{
 	close;
 }
 
-gef_fild13,202,31,5	duplicate(OrcsBoard)	Quadro de Avisos#orc1	2_BOARD1
+gef_fild13,202,31,5	duplicate(OrcsBoard)	Quadro de Avisos#orc1	835
 
-gef_fild13,29,206,5	script	Quadro de Avisos::KoboldsBoard	2_BOARD2,{
+gef_fild13,29,206,5	script	Quadro de Avisos::KoboldsBoard	836,{
+
 	mes "[Vila dos Kobolds]";
 	mes "^6B1312Cuidado!^000000";
 	mes "Você está entrando na Vila dos Kobolds.";
@@ -291,9 +270,10 @@ gef_fild13,29,206,5	script	Quadro de Avisos::KoboldsBoard	2_BOARD2,{
 	close;
 }
 
-gef_fild08,211,24,5	duplicate(KoboldsBoard)	Quadro de Avisos#kb1	2_BOARD2
+gef_fild08,211,24,5	duplicate(KoboldsBoard)	Quadro de Avisos#kb1	836
 
-gef_fild10,109,23,5	script	Quadro de Avisos#15	2_BOARD2,{
+gef_fild10,109,23,5	script	Quadro de Avisos#15	836,{
+
 	mes "[Vila dos Goblins]";
 	mes "^6B1312Cuidado!^000000";
 	mes "Você está entrando na Vila dos Goblins.";
@@ -301,28 +281,7 @@ gef_fild10,109,23,5	script	Quadro de Avisos#15	2_BOARD2,{
 	close;
 }
 
-prt_fild05,278,220,5	script	Quadro de Avisos#16	2_BULLETIN_BOARD,{
-	mes "[Esgoto de Prontera]";
-	mes "O Esgoto de Prontera possui 4 níveis,";
-	mes "e é um bom local para novos aventureiros";
-	mes "testarem suas habilidades.";
-	next;
-	mes "[Esgoto de Prontera]";
-	mes "Para que você tenha acesso ao";
-	mes "Esgotos de Prontera, você deve";
-	mes "se registrar na cavalaria de Prontera.";
-	mes "Lembre que os grupos daqui atacam";
-	mes "em grupos!";
-	next;
-	mes "[Esgoto de Prontera]";
-	mes "No quarto nível deste esgoto você pode";
-	mes "encontrar monstros mais fortes como";
-	mes "^6B1312Besouro Ladrão Dourado^000000.";
-	mes "Novos aventureiros devem ter cuidado.";
-	close;
-}
-
-yuno,154,112,5	script	Quadro de Avisos#17	2_BULLETIN_BOARD,{
+yuno,154,112,5	script	Quadro de Avisos#17	837,{
 	mes "[Juno: Capital da]";
 	mes "[República de Schwartzwald]";
 	mes "Bem-vindo a Juno, a cidade dos Sábios.";
@@ -363,7 +322,7 @@ yuno,154,112,5	script	Quadro de Avisos#17	2_BULLETIN_BOARD,{
 	close;
 }
 
-aldebaran,145,105,5	script	Quadro de Avisos#18	2_BULLETIN_BOARD,{
+aldebaran,145,105,5	script	Quadro de Avisos#18	837,{
 	mes "[Al De Baran: A Cidade dos Canais]";
 	mes "Bem-vindo a Al De Baran, a cidade dos";
 	mes "canais do Reino de Rune-Midgard.";
@@ -392,66 +351,7 @@ aldebaran,145,105,5	script	Quadro de Avisos#18	2_BULLETIN_BOARD,{
 	close;
 }
 
-aldebaran,136,133,5	script	Quadro de Avisos#19	2_BULLETIN_BOARD,{
-	mes "[Torre do Relógio]";
-	mes "^6B1312Cuidado!^000000";
-	mes "Apenas aventureiros experientes";
-	mes "devem se considerar prontos para entrarem";
-	mes "na torre. Existe no total 8 níveis, são:";
-	mes "4 subindo e 4 no subsolo.";
-	next;
-	mes "[Torre do Relógio]";
-	mes "A maioria dos monstros da Torre do";
-	mes "Relógio são: Relógios, Alarmes e";
-	mes "Bathorys. Além de outros que";
-	mes "variam por nível.";
-	next;
-	mes "[Torre do Relógio]";
-	mes "Alguns locais da Torre do Relógio são";
-	mes "confusos e complicados, então tenha";
-	mes "cuidado para não se perder.";
-	close;
-}
-
-moc_fild19,107,101,5	script	Quadro de Avisos#20	2_BULLETIN_BOARD,{
-	mes "[Esfinje]";
-	mes "^6B1312Cuidado!^000000";
-	mes "A Esfinje é constituída por 5 níveis.";
-	mes "Esta caverna é recomendada para";
-	mes "aventureiros com experiência.";
-	next;
-	mes "[Esfinje]";
-	mes "Existem muitos monstros agressivos";
-	mes "dentro da Esfinje, e este é um";
-	mes "aviso para que você corra quando";
-	mes "um grupo deles juntarem em você.";
-	next;
-	mes "[Esfinje]";
-	mes "No quinto nível, o chefe";
-	mes "^6B1312Faraó^000000 poderá aparecer";
-	mes "a qualquer momento. Lutar com ele sozinho";
-	mes "pode ser um grande prejuízo.";
-	close;
-}
-
-gef_tower,55,142,5	script	Quadro de Avisos#21	2_BULLETIN_BOARD,{
-	mes "[Torre de Geffen]";
-	mes "^6B1312Cuidado!^000000"; 
-	mes "A Torre de Geffen possui 3 níveis,";
-	mes "é muito difícil para novos aventureiros.";
-	mes "Os monstros que você poderá encontrar,";
-	mes "são ^6B1312Mosca Caçadora000000, ^6B1312Pesadelo^000000 e ^6B1312Jakk^000000.";
-	mes "Pesadelos e Jakks só existem nessa torre.";
-	next;
-	mes "[Torre de Geffen]";
-	mes "No segundo nível dessa torre,";
-	mes "^6B1312Tirfing^000000, a criatura da espada sanguinária e ^6B1312Drácula^000000,";
-	mes "podem aparecer sem aviso prévio...";
-	mes "No terceiro nível, ^6B1312Doppelganger^000000 é o monstro mais forte da torre e aparece de tempos em tempos.";
-	close;
-}
-
-xmas_fild01,75,80,5	script	Quadro de Avisos#22	2_BULLETIN_BOARD,{
+xmas_fild01,75,80,5	script	Quadro de Avisos#22	837,{
 	mes "[Cidade do Papai Noel, Lutie]";
 	mes "Bem-vindo a Lutie, a cidade da neve.";
 	mes "A produção de brinquedos na Fábrica de Brinquedos";
@@ -466,35 +366,7 @@ xmas_fild01,75,80,5	script	Quadro de Avisos#22	2_BULLETIN_BOARD,{
 	close;
 }
 
-xmas,147,311,5	script	Quadro de Avisos#23	2_BULLETIN_BOARD,{
-	mes "[Fábrica de Brinquedos]";
-	mes "^6B1312Cuidado!^000000";
-	mes "A Fábrica de Brinquedos possui 2 níveis.";
-	mes "Este local não é tão difícil para aventureiros iniciantes,";
-	mes "porém existem 3 monstros chefes que aparecem sem aviso prévio.";
-	next;
-	mes "[Fábrica de Brinquedos]";
-	mes "No primeiro nível, você pode encontrar o monstro-chefe: ^6B1312Angeling^000000.";
-	mes "No segundo nível, você poderá encontrar 2 monstros-chefes que são:";
-	mes "^6B1312Cavaleiro das Trevas^000000 e ^6B1312Hatii^000000. Tenha atenção e cuidado.";
-	mes "Além disso, ^6B1312Presente^000000, ^6B1312Soldadinho de Chumbo^000000 e ^6B1312Cookies^000000 só existem nessa fábrica.";
-	close;
-}
-
-yuno_fild03,37,143,5	script	Quadro de Avisos#24	2_BULLETIN_BOARD,{
-	mes "[Caverna de Magma, Labirinto Nogg]";
-	mes "^6B1312Cuidado!^000000";
-	mes "No Labirinto Nogg você pode encontrar criaturas fortes.";
-	mes "Ela é limitada apenas para jogadores experientes.";
-	next;
-	mes "[Caverna de Magma, Labirinto Nogg]";
-	mes "Parte dos monstros dessa caverna são";
-	mes "^6B1312Kahos^000000 e ^6B1312Pesadelos Noturnos^000000.";
-	mes "Tenha atenção!";
-	close;
-}
-
-niflheim,200,191,5	script	Quadro de Avisos#25	2_BULLETIN_BOARD,{
+niflheim,200,191,5	script	Quadro de Avisos#25	837,{
 	mes "[Cidade Morta, Nifflheim]";
 	mes "Bem-vindo a Nifflheim, a cidade da Morte.";
 	mes "Nifflheim era um local diferente do que é hoje";
@@ -518,34 +390,21 @@ niflheim,200,191,5	script	Quadro de Avisos#25	2_BULLETIN_BOARD,{
 	close;
 }
 
-moc_fild15,267,264,5	script	Quadro de Avisos#26	2_BULLETIN_BOARD,{
+moc_fild15,267,264,5	script	Quadro de Avisos#26	837,{
 	mes "[Formigueiro Infernal]";
 	mes "^6B1312Cuidado!^000000";
 	mes "O Formigueiro Infernal possui 2 níveis.";
 	mes "Como o nome diz, este formigueiros possui uma variedade grande";
-	mes "de formigas, e é um bom lugar pa novos aventureiros.";
+	mes "de formigas, e é um bom lugar para novos aventureiros.";
 	next;
 	mes "[Formigueiro Infernal]";
 	mes "Porém, cuidado com o ^6B1312Maya Macho^000000 que aparece no primeiro nível,";
 	mes "e ^6B1312Maya^000000 que aparece no segundo nível. Eles são os pais das formigas.";
-	mes "Um Mvp chamado ^6B1312Freeoni^000000 pode aparecer a qualquer momento.";
+	mes "Um chefe chamado ^6B1312Freeoni^000000 pode aparecer a qualquer momento.";
 	close;
 }
 
-moc_ruins,61,164,5	script	Quadro de Avisos#27	2_BULLETIN_BOARD,{
-	mes "[Pirâmide]";
-	mes "^6B1312Cuidado!^000000";
-	mes "Essa pirâmide possui 7 níveis, 4 para cima e 3 no subterrâneo.";
-	mes "Os primeiros níveis são recomendados a novos aventureiros, mas se você decer para o subterrâneo, você encontrará monstros fortes.";
-	next;
-	mes "[Pirâmide]";
-	mes "No primeiro nível, existe a Guilda dos Gatunos, onde aprendizes podem se tornar Gatunos.";
-	mes "No quarto nível, um monstro chamado ^6B1312Osíris^000000 aparece de vez em quando.";
-	mes "No terceiro nível subterrâneo, ^6B1312Amon-Ra^000000 aparece de vez em quando.";
-	close;
-}
-
-glast_01,369,308,5	script	Quadro de Avisos#28	2_BULLETIN_BOARD,{
+glast_01,369,308,5	script	Quadro de Avisos#28	837,{
 	mes "[Glast Heim]";
 	mes "Glast Heim é uma enorme cidade com várias cavernas.";
 	mes "Esta cidade definitivamente não é apropriada para novos ou";
