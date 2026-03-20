@@ -1,11 +1,20 @@
-//===========================================================\\
-//          ____   __   _  _  __    ____   __   ____         //
-//         / ___) /  \ / )( \(  )  (  __) / _\ (_  _)        \\
-//         \___ \(  O )) \/ (/ (_/\ ) _) /    \  )(          //
-//         (____/ \__/ \____/\____/(____)\_/\_/ (__)         \\
-//                                                           //
-//================== www.souleat.com.br =====================\\
-//======================= by: Guru ==========================//
+//===== rAthena Script =======================================
+//= Archer Skill Quest
+//===== By: ==================================================
+//= rAthena Dev Team
+//===== Current Version: =====================================
+//= 1.7
+//===== Compatible With: ===================================== 
+//= rAthena Project
+//===== Description: ========================================= 
+//= Quest for skills: Arrow Crafting, Arrow Repel
+//===== Additional Comments: ================================= 
+//= 1.5 Rescripted to Aegis 10.3 stadards. [L0ne_W0lf]
+//= 1.6 Updated to latest available official file.
+//=     also fixed Item issue [bugreport:5607]. [Masao]
+//= 1.7 Fixed JobLevel requirements. [Euphy]
+//= 1.7b Tradução: www.souleat.com.br [by: Guru]
+//============================================================
 
 morocc,121,109,5	script	Roberto	88,{
 	if (BaseClass == Job_Archer) {
@@ -14,22 +23,21 @@ morocc,121,109,5	script	Roberto	88,{
 			mes "Ooh, você é da minha cidade natal!";
 			mes "É bom te ver!";
 			mes "Como vai você?";
-			mes "Ah! ";
+			mes "Ah! Esta flecha!";
 			mes "Você conseguiu, não foi!";
 			next;
 			mes "[Roberto]";
 			mes "Haha...!";
-			mes "Você acha que é muito melhor?";
+			mes "Não é muito melhor?";
 			mes "Haha... de qualquer forma, estou feliz.";
-			mes "Volte de vez em quando";
-			mes "com notícias de casa.";
+			mes "Volte de vez em quando com notícias de casa.";
 			mes "Então tchau~";
 			close;
 		}
 		else if (JobLevel >= 30 || (BaseJob == Job_Hunter || BaseJob == Job_Bard || BaseJob == Job_Dancer)) {
 			mes "[Roberto]";
 			mes "Eh!";
-			mes "";
+			mes " ";
 			mes "Você é...";
 			next;
 			if ((countitem(907) > 19) && (countitem(921) > 6) && (countitem(906) > 40) && (countitem(1019) > 12) && (countitem(501) > 0)) {
@@ -46,73 +54,62 @@ morocc,121,109,5	script	Roberto	88,{
 				skill "AC_MAKINGARROW",1,SKILL_PERM;
 				mes "[Roberto]";
 				mes "Não há necessidade de se preocupar com flechas agora.";
-				mes "Ah, e por acaso você viu";
-				mes "alguém chamado Jason em Payon?";
-				mes "Tome cuidado. ";
-				mes "feroz.";
+				mes "Ah, e por acaso você viu alguém chamado Jason em Payon?";
+				mes "Tome cuidado. Ele é feroz.";
 				next;
 				mes "[Roberto]";
 				mes "Você só precisa ter cuidado com Jason em Payon.";
-				mes "Lembrar.";
+				mes "Lembre-se.";
 				mes "Então, adeus~ Obrigado pelos presentes~";
 				close;
 			}
 			mes "[Roberto]";
-			mes "Um arqueiro em Marrocos!?";
-			mes "É bom te ver! ";
-			mes "arqueiro em um lugar como este! ";
-			mes "Vim sozinho para Marrocos..";
-			mes "mas eu era um novato, e a pressão... waaah~";
+			mes "Um arqueiro em Morroc!?";
+			mes "Bom te ver! Encontrar outro arqueiro em um lugar como este! *sniffsniff*!";
+			mes "Vim sozinho para Morroc.. mas eu era um novato, e a pressão... waaah~";
 			mes "Eu estava muito sozinho ~";
 			next;
-			switch (select("Deve ser difícil. ")) {
+			switch (select("Deve ser difícil. Tudo bem, tenha fé.:Continue sofrendo.")) {
 			case 1:
 				mes "[Roberto]";
-				mes "Sim. ";
-				mes "Você deve estar passando por uma situação difícil";
-				mes "tempo em um lugar como este.";
+				mes "Sim. Obrigado...";
+				mes "Você deve estar passando por uma situação difícil em um lugar como este.";
 				mes "Não é difícil encontrar flechas?";
-				mes "É por isso que faço o meu.";
+				mes "É por isso que faço as minhas.";
 				next;
 				select("Ei, sério?!");
 				mes "[Roberto]";
-				mes "Sim! ";
-				mes "e faça flechas usando-as.";
-				mes "É uma habilidade útil para me ajudar";
-				mes "sobreviver sozinho neste mundo difícil.";
+				mes "Sim! Eu reúno itens diferentes para fazer flechas.";
+				mes "É uma habilidade útil quando estou sozinho neste mundo difícil.";
 				mes "Se você quiser, posso te ensinar.";
 				next;
 				select("Isso seria maravilhoso.");
 				mes "[Roberto]";
 				mes "Mas... não posso fazer isso de graça.";
 				mes "Nada é de graça neste mundo~";
-				mes "Mmm... Que tal isso?";
-				mes "Você me traz o que eu peço.";
-				mes "Então vou te ensinar a habilidade.";
+				mes "Mmm... O que acha disso?";
+				mes "Você me traz o que eu peço. Então te ensinarei a habilidade.";
 				next;
 				mes "[Roberto]";
 				mes "Tenho estado muito sozinho desde que deixei minha cidade natal.";
-				mes "Eu gostaria de tratar minha saudade";
-				mes "com coisas de lá.";
-				mes "Traga-me 20 resinas das árvores do";
-				mes "Floresta Payon e 1 Poção Vermelha";
-				mes "vendido na loja.";
+				mes "Gostaria de matar a saudade de casa com as coisas de lá.";
+				mes "Me traga 20 Resinas das árvores da floresta de Payon e 1 Poção Vermelha, que é vendida nas lojas.";
 				next;
 				mes "[Roberto]";
-				mes "Além disso, 13 Troncos dos Salgueiros que";
-				mes "morar perto da Floresta Payon,";
-				mes "41 escala pontiaguda,";
-				mes "7 esporos de cogumelos.";
+				mes "Além disso,";
+				mes "13 Troncos dos Salgueiros, que vivem perto da Floresta Payon,";
+				mes "41 Escamas Afiadas,";
+				mes "7 Esporos de Cogumelos.";
 				mes "Se você me trouxer tudo isso,";
 				next;
 				mes "[Roberto]";
-				mes "Eu vou te ensinar a habilidade.";
+				mes "Vou te ensinar a habilidade.";
 				mes "Então.. Estarei esperando.";
-				mes "Para notícias de nossa casa.";
+				mes "Por notícias de nossa casa.";
 				close;
 			case 2:
 				mes "[Roberto]";
-				mes "...ei"+((Sex == SEX_MALE)?"senhor":"perder")+".";
+				mes "...ei"+((Sex == SEX_MALE)?"senhor":"senhorita")+".";
 				mes "...tenha cuidado à noite.";
 				close;
 			}
@@ -121,95 +118,80 @@ morocc,121,109,5	script	Roberto	88,{
 		mes "Hmm... você";
 		mes "Tem algo a dizer?";
 		mes "Eu não tenho nada.";
-		mes "Diferença de níveis";
-		mes "interrompe as conversas.";
+		mes "Diferença de níveis interrompe as conversas.";
 		close;
 	}
 	mes "[?]";
-	mes "Eh... É a primeira vez que vejo um arqueiro ou algo assim?";
+	mes "Eh... É a primeira vez que você vê um arqueiro ou algo assim?";
 	mes "Apenas vá para onde você estava indo.";
-	mes "Só falo com arqueiros de alto nível.";
-	mes "Não vou abrir minha boca caso contrário!";
+	mes "Eu só falo com arqueiros de alto nível. Não vou abrir minha boca caso contrário!";
 	close;
 }
 
 payon,103,63,3	script	Jason	88,3,3,{
 	if (BaseClass == Job_Archer) {
 		if (getskilllv("AC_CHARGEARROW") == 1) {
-			mes "[Jasão]";
+			mes "[Jason]";
 			mes "Ah, nos encontramos novamente.";
-			mes "Ehhhh que estranho.";
+			mes "Ehhhh bem estranho.";
 			mes "Sempre que vejo alguém novamente";
 			mes "Eu começo a pensar muito.";
-			mes "Ehhh... de qualquer forma, é bom ver você de novo.";
+			mes "Ehhh... de qualquer forma, bom te ver novamente.";
 			mes "Ehhhh... não venha mais ehh...";
 			close;
 		}
 		else if (JobLevel >= 35 || (BaseJob == Job_Hunter || BaseJob == Job_Bard || BaseJob == Job_Dancer)) {
-			mes "[Jasão]";
+			mes "[Jason]";
 			mes "Droga... minha ferida não está cicatrizando.";
-			mes "Bleh.. fui muito descuidado...";
-			mes "ficar assim.. err...";
-			mes "Mas ainda assim, me machucando assim";
-			mes "me dando tantos ferimentos...";
+			mes "Bleh.. fui muito descuidado... para ficar assim.. err...";
+			mes "E continuo me machucando assim, causando vários ferimentos...";
 			next;
-			mes "O que devo fazer com Roberto.";
+			mes "O que devo fazer em relação ao Roberto.";
 			mes "Humm... Ah!";
-			mes "Você? ";
+			mes "Você? Há quanto tempo você está aí?";
 			mes "Mmm... nível muito alto.";
-			mes "Alguém como você definitivamente seria";
-			mes "capaz de saber como usar o Arrow Repel.";
+			mes "Alguém como você definitivamente deveria saber como usar o Disparo Violento.";
 			next;
-			switch (select("O que é isso?:Ensine-me.")) {
+			switch (select("O que é isso?:Me ensine.")) {
 			case 1:
-				mes "[Jasão]";
+				mes "[Jason]";
 				mes "...Ta brincando né?";
-				mes "Oh meu Deus, você nem sabe";
-				mes "Arrow Repel nesse nível?";
+				mes "Oh meu Deus, você nem sabe Disparo Violento com este nível?";
 				mes "Você é uma pessoa estranha.";
 				next;
-				mes "[Jasão]";
+				mes "[Jason]";
 				mes "(Jason estava na terra lala.)";
 				next;
-				mes "[Jasão]";
-				mes "Bem ok. ";
-				mes "Repelir flecha é.";
+				mes "[Jason]";
+				mes "Tudo bem. Vou te ensinar o quê é Disparo Violento.";
 				next;
-				mes "[Jasão]";
-				mes "Arrow Repel é uma habilidade que permite que você";
-				mes "empurre o oponente para longe assim que você atacar.";
-				mes "Você só pode usá-lo quando mirar exatamente";
-				mes "no alvo. ";
-				mes "não desortifica.";
+				mes "[Jason]";
+				mes "Disparo Violento é uma habilidade que permite que você empurre o oponente para longe assim que você atacar.";
+				mes "Você só pode usá-lo quando mirar exatamente no alvo. ";
+				mes "Diferente de magias, ela não pode ser refletida.";
 				next;
-				mes "[Jasão]";
-				mes "É muito útil para um arqueiro";
-				mes "isso é fraco em distâncias curtas.";
-				mes "Se você gostaria de aprender,";
-				mes "venha me encontrar novamente.";
+				mes "[Jason]";
+				mes "É muito útil para um arqueiro mas é fraco em distâncias curtas.";
+				mes "Caso queira aprender, venha me encontrar novamente.";
 				mes "Existem alguns materiais necessários.";
 				next;
-				mes "[Jasão]";
-				mes "Primeiro, porque você deve modificar um arco";
-				mes "traga uma besta que você não usa.";
-				mes "10 tentáculos, 10 bicos de pássaros,";
-				mes "3 Yoyo Tails.. estes são muito elásticos.";
-				mes "Além disso, 2 esmeraldas. ";
-				mes "36 garrafas de Suco de Banana que adoro!";
+				mes "[Jason]";
+				mes "Primeiro, porque você precisa de um arco modificado. Traga uma besta que você não usa.";
+				mes "10 Tentáculos, 10 Bicos de Aves, 3 Caudas de Yoyos.. são bastante elásticas.";
+				mes "Além disso, 2 Esmeraldas. E por último... 36 garrafas de Suco de Banana que eu adoro!";
 				next;
-				mes "[Jasão]";
+				mes "[Jason]";
 				mes "......Eh!";
 				mes "Se você trouxer tudo isso,";
-				mes "Eu vou te ensinar Arrow Repel.";
+				mes "Eu vou te ensinar Disparo Violento.";
 				mes "Então, vejo você novamente.";
 				mes "(Vou ficar bravo se você não trouxer o suco de banana.)";
 				close;
 			case 2:
 				if ((countitem(721) > 1) && (countitem(942) > 2) && (countitem(962) > 9) && (countitem(925) > 9) && (countitem(532) > 35)) {
-					mes "[Jasão]";
-					mes "OK! ";
-					mes "Eu vou te ensinar o nacionalmente";
-					mes "habilidade renomada, Arrow Repel!";
+					mes "[Jason]";
+					mes "OK! Perfeito!";
+					mes "Vou te ensinar a habilidade renomada nacionalmente, Disparo Violento!";
 					next;
 					delitem 721,2; //Azure_Jewel
 					delitem 942,3; //Yoyo_Tail
@@ -217,44 +199,41 @@ payon,103,63,3	script	Jason	88,3,3,{
 					delitem 925,10; //Bill_Of_Birds
 					delitem 532,36; //Banana_Juice
 					skill "AC_CHARGEARROW",1,SKILL_PERM;
-					mes "[Jasão]";
-					mes "Ah, funciona melhor do que eu esperava!";
-					mes "Não será necessário modificar o arco!";
-					mes "Você pode retirar isso ~";
-					mes "E divirta-se usando seu recém-herdado";
-					mes "habilidade em campos e masmorras!";
+					mes "[Jason]";
+					mes "Ah, funcionou melhor do que eu esperava!";
+					mes "Não será necessário modificar o arco! Pode retirar isso ~";
+					mes "Aproveite a habilidade usando em campos e calabouços!";
 					mes "Ele~heh~!";
 					close;
 				}
-				mes "[Jasão]";
+				mes "[Jason]";
 				mes "Hum... que pena.";
-				mes "Você está perdendo algumas coisas.";
+				mes "Está faltando alguns itens.";
 				mes "Mais uma vez, você precisa de 2 Esmeraldas,";
-				mes "3 caudas de ioiô, 10 tentáculos,";
-				mes "10 Bill of Birds, e por último mas";
-				mes "pelo menos 36 garrafas de suco de banana!";
+				mes "3 Caudas de Yoyo, 10 Tentáculos,";
+				mes "10 Bicos de Aves, e por último";
+				mes "36 garrafas de Suco de Banana!";
 				next;
-				mes "[Jasão]";
+				mes "[Jason]";
 				mes "Certifique-se de ter todos eles e volte!";
 				close;
 			}
 		}
-		mes "[Jasão]";
+		mes "[Jason]";
 		mes "Ooh... você é um arqueiro.";
 		mes "Se você tentar um pouco mais";
-		mes "você terá um ótimo";
+		mes "você terá uma ótima";
 		mes "reputação como arqueiro!";
 		mes "Esforce-se!";
 		close;
 	}
 	mes "[?]";
-	mes "Do que a vida precisa";
-	mes "um rapaz solitário como eu?";
+	mes "O que a vida quer de um rapaz solitário como eu?";
 	close;
 
 OnTouch_:
 	mes "[???]";
-	mes "Errrrr...";
+	mes "Errrrrrr...";
 	close;
 }
 
@@ -272,4 +251,3 @@ OnTouch_:
 //= 1.4a Fixed some typos [IVBela]
 //= 1.4b changed perm. variables to temp ones [Lupus]
 //============================================================
-
