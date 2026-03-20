@@ -1,11 +1,34 @@
-//===========================================================\\
-//          ____   __   _  _  __    ____   __   ____         //
-//         / ___) /  \ / )( \(  )  (  __) / _\ (_  _)        \\
-//         \___ \(  O )) \/ (/ (_/\ ) _) /    \  )(          //
-//         (____/ \__/ \____/\____/(____)\_/\_/ (__)         \\
-//                                                           //
-//================== www.souleat.com.br =====================\\
-//======================= by: Guru ==========================//
+//===== rAthena Script ======================================= 
+//= Cash Shop Functions
+//===== By: ================================================== 
+//= L0ne_W0lf
+//===== Current Version: ===================================== 
+//= 1.8
+//===== Compatible With: ===================================== 
+//= rAthena Project
+//===== Description: ========================================= 
+//= Used for Cash shop items:
+//= - Kafra Card
+//= - Giant Fly Wing
+//= - Neuralizer
+//= - Dungeon Teleport Scroll
+//= Also included are functions related to the VIP system.
+//===== Additional Comments: ================================= 
+//= 1.0 First version. [L0ne_W0lf]
+//=     F_CashPartyCall Optimized by Trancid.
+//= 1.1 Updated Dungeon Teleport Scroll. [L0ne_W0lf]
+//=     Added Town Teleport Scroll Function
+//=     Added Seige Teleport Scroll Function
+//= 1.2 Updated the dungeon teleport scroll menu. [L0ne_w0lf]
+//= 1.3 Implemented Aozi Giant Flywing Fix. (bugreport:4242) [L0ne_w0lf]
+//= 1.4 Simplified Giant Flywing function using warpparty. [L0ne_w0lf]
+//= 1.5 Neuralizer is no longer consumed upon failure. [Euphy]
+//= 1.6 Updated Teleport functions and added Curious_Snowball. [Euphy]
+//= 1.7 Added Dungeon Teleport Scroll II maps. [Euphy]
+//= 1.8 Added VIP function. [Euphy]
+//= 1.9 Added checkdragon() in F_CashReset. [Capuche]
+//= 2.0 Moved VIP_Third_Class function into other/re/CashShop_Functions. [Capuche]
+//============================================================ 
 
 // Kafra Card
 //============================================================ 
@@ -13,9 +36,9 @@
 // - No arguments.
 function	script	F_CashStore	{
 	cutin "kafra_01",2;
-	mes "[Kafra Employee]";
-	mes "Welcome to the Kafra Corporation.";
-	mes "Here, let me open your Storage for you.";
+	mes "[Funcionária Kafra]";
+	mes "Bem-vindo à Corporação Kafra.";
+	mes "Deixe-me abrir seu Armazém para você.";
 	close2;
 	openstorage;
 	cutin "",255;
@@ -55,7 +78,7 @@ function	script	F_CashReset	{
 function	script	F_CashDungeon	{
 	switch(getarg(0)) {
 	case 1:
-		switch(select("Nogg Road:Mjolnir Dead Pit:"+((checkre(0))?"":"Umbala Dungeon")+":Einbroch Mine Dungeon:Payon Dungeon:Toy Dungeon:Glast Heim Underprison:Luoyang Dungeon:Hermit's Checkers:Izlude Dungeon:Turtle Island Dungeon:Clock Tower B3f:Clock Tower 3f:Glast Heim Culvert 2f:Sphinx Dungeon 4f:Inside Pyramid 4f:Prontera Culvert 3f:Amatsu Dungeon 1f (Tatami Maze):Somatology Laboratory 1st floor:Ayothya Ancient Shrine 2nd floor")) {
+		switch(select("Calabouço de Magma:Monte Mjolnir (02):"+((checkre(0))?"":"Loja de Carpintaria")+":Calabouço da Mina:Caverna de Payon (0):Depósito da Fábrica de Brinquedos:Prisão Subterrânea de Glast Heim (0):A Tumba Real:Tabuleiro de Go:Túnel Submarino (0):Calabouço da Ilha da Tartaruga:Torre do Relógio (s3):Torre do Relógio (1):Esgoto de Glast Heim (2):Esfinges (4):Dentro da Pirâmide (4):Esgotos de Prontera (3):Labirinto de Tatames:Laboratório de Somatologia (1):Templo de Ayothaya (2)")) {
 		case 1: warp "mag_dun01",125,71; end;	// Nogg Road
 		case 2: warp "mjo_dun02",80,297; end;	// Mjolnir Dead Pit
 		case 3: warp "um_dun02",125,122; end;	// Umbala Dungeon (Pre-Renewal only)
@@ -78,7 +101,7 @@ function	script	F_CashDungeon	{
 		case 20: warp "ayo_dun02",70,240; end;	// Ayothaya Dungeon 2F
 		}
 	case 2: // Menu names are not official.
-		switch(select("Thor Volcano 2f:Ice Dungeon Entrance:Nameless Island Entrance:Niflheim:Labyrinth Forest 2f:Ruins of Juperos Entrance:Ant Hell 2f:Kiel Hyre's Academy Entrance:Thanatos Tower Entrance:Abyss Lake Entrance:Rachel Sanctuary Entrance:Odin Temple 2f")) {
+		switch(select("Vulcão de Thor (02):Entrada da Caverna de Gelo:Entrada da Ilha Esquecida:Niflheim:Labirinto da Floresta (02):Entrada das Ruínas de Juperos:Formigueiro Infernal (02):Entrada da Academia Kiel Hyre:Entrada da Torre de Thanatos:Entrada do Lago do Abismo:Entrada do Santuário de Rachel:Templo de Odin (02)")) {
 		case 1: warp "thor_v02",77,208; end;	// Thor Volcano 2F
 		case 2: warp "ra_fild01",237,333; end;	// Ice Dungeon
 		case 3: warp "ve_fild07",127,131; end;	// Nameless Island
@@ -93,7 +116,7 @@ function	script	F_CashDungeon	{
 		case 12: warp "odin_tem02",257,374; end;	// Odin Temple F2
 		}
 	case 3:
-		switch(select("Bio Lab (2nd Floor):Ice Dungeon (3rd Floor):Odin Temple (3rd Floor):Thor Volcano (3rd Floor):Abyss Lake (3rd Floor):Juperos Ruins (2nd Floor)")) {
+		switch(select("Laboratório de Somatologia (02):Caverna de Gelo (03):Templo de Odin (03):Vulcão de Thor (03):Lago do Abismo (03):Ruínas de Juperos (02)")) {
 		case 1: warp "lhz_dun02",145,149; end;	// Somatology Laboratory 2F
 		case 2: warp "ice_dun03",150,176; end;	// Ice Dungeon 3F
 		case 3: warp "odin_tem03",278,235; end;	// Odin Temple 3F
@@ -160,7 +183,7 @@ function	script	F_CashCity	{
 function	script	F_CashTele	{
 	switch(getarg(0)) {
 	case 1:
-		switch(select("Prontera:Geffen:Al de Baran:Izlude:Savepoint")) {
+		switch(select("Prontera:Geffen:Al de Baran:Izlude:Ponto de Retorno")) {
 		case 1: warp "prontera",119,77; end;
 		case 2: warp "geffen",119,39; end;
 		case 3: warp "aldebaran",165,107; end;
@@ -168,7 +191,7 @@ function	script	F_CashTele	{
 		case 5: warp "SavePoint",0,0; end;
 		}
 	case 2:
-		switch(select("Payon:Alberta:Morocc:Comodo:Savepoint")) {
+		switch(select("Payon:Alberta:Morocc:Comodo:Ponto de Retorno")) {
 		case 1: warp "payon",158,55; end;
 		case 2: warp "alberta",115,57; end;
 		case 3: warp "morocc",158,48; end;
@@ -176,7 +199,7 @@ function	script	F_CashTele	{
 		case 5: warp "SavePoint",0,0; end;
 		}
 	case 3:
-		switch(select("Luoyang:Amatsu:Kunlun Field:Ayothaya:Savepoint")) {
+		switch(select("Luoyang:Amatsu:Kunlun Field:Ayothaya:Ponto de Retorno")) {
 		case 1: warp "louyang",214,101; end;
 		case 2: warp "amatsu",112,145; end;
 		case 3: warp "gonryun",160,118; end;
@@ -184,14 +207,14 @@ function	script	F_CashTele	{
 		case 5: warp "SavePoint",0,0; end;
 		}
 	case 4:
-		switch(select("Lutie Field:Umbala:Niflheim:Savepoint")) {
+		switch(select("Lutie Field:Umbala:Niflheim:Ponto de Retorno")) {
 		case 1: warp "xmas",148,131; end;
 		case 2: warp "umbala",93,154; end;
 		case 3: warp "niflheim",187,189; end;
 		case 4: warp "SavePoint",0,0; end;
 		}
 	case 5:
-		switch(select("Juno:Einbroch:Lighthalzen:Hugel:Savepoint")) {
+		switch(select("Juno:Einbroch:Lighthalzen:Hugel:Ponto de Retorno")) {
 		case 1: warp "yuno",157,124; end;
 		case 2: warp "einbroch",230,192; end;
 		case 3: warp "lighthalzen",158,94; end;
@@ -199,7 +222,7 @@ function	script	F_CashTele	{
 		case 5: warp "SavePoint",0,0; end;
 		}
 	case 6:
-		switch(select("Rachel:Veins:Savepoint")) {
+		switch(select("Rachel:Veins:Ponto de Retorno")) {
 		case 1: warp "rachel",118,132; end;
 		case 2: warp "veins",214,125; end;
 		case 3: warp "SavePoint",0,0; end;
@@ -238,32 +261,52 @@ function	script	F_CashSiegeTele	{
 	return;
 }
 
+// Siege Teleport Scroll 2 (WoE 1.5)
+//============================================================ 
+// - Warp player to selected guild castle.
+// - No arguments.
+function	script	F_CashSiegeTele2	{
+	switch(select("Mardoll (arug_cas01):Cyr (arug_cas02):Horn (arug_cas03):Gefn (arug_cas04):Badanis (arug_cas05):Himinn (schg_cas01):Andlangr (schg_cas02):Vidblainn (schg_cas03):Hljod (schg_cas04):Schatirnil (schg_cas05)")) {
+	case 1: warp "aru_gld",159,272; end;
+	case 2: warp "aru_gld",86,50; end;
+	case 3: warp "aru_gld",63,157; end;
+	case 4: warp "aru_gld",307,354; end;
+	case 5: warp "aru_gld",298,110; end;
+	case 6: warp "sch_gld",300,100; end;
+	case 7: warp "sch_gld",284,249; end;
+	case 8: warp "sch_gld",102,196; end;
+	case 9: warp "sch_gld",140,83; end;
+	case 10: warp "sch_gld",70,320; end;
+	}
+	return;
+}
+
 // Curious Snowball
 //============================================================ 
 // - You can get an effect of Restore, Endure, or Wing of Butterfly.
 // - No arguments.
 function	script	F_Snowball	{
 	cutin "rutie_snownow03",2;
-	mes "[Snowman]";
-	mes "Merry Christmas!";
-	switch(select("Restore Some HP/SP:Strengthen My Body!:Restore My SP Fully.:Return to Savepoint")) {
+	mes "[Boneco de Neve]";
+	mes "Feliz Natal!";
+	switch(select("Restaurar HP/SP:Fortalecer Meu Corpo!:Restaurar SP Completamente.:Retornar ao Ponto de Retorno")) {
 	case 1:
 		mes "Aha!";
-		mes "Quiet night~";
+		mes "Noite tranquila~";
 		percentheal 70,70;
 		close2;
 		cutin "",255;
 		break;
 	case 2:
-		mes "Blessings.";
-		mes "Holy night~";
+		mes "Bênçãos.";
+		mes "Noite sagrada~";
 		unitskilluseid getcharid(3),"SM_ENDURE",10;
 		close2;
 		cutin "",255;
 		break;
 	case 3:
 		mes "Hey!";
-		mes "White Christmas~";
+		mes "Natal Branco~";
 		percentheal 0,100;
 		close2;
 		cutin "",255;
