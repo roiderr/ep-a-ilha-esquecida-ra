@@ -4,8 +4,6 @@
 //= [Official Conversion]
 //= Quest NPCs related to Morocc.
 //===== Changelogs: ==========================================
-//= 1.0 Succession of the Prince removed in ep16.1 [Capuche]
-//= 1.1 Moved renewal specific npcs [zackdreaver]
 //============================================================
 
 // Stop Post Quest
