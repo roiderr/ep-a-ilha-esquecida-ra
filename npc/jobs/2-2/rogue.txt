@@ -3,7 +3,7 @@
 //===== By: ================================================== 
 //= kobra_k88
 //===== Current Version: ===================================== 
-//= 2.9
+//= 2.8a
 //===== Compatible With: ===================================== 
 //= rAthena Project
 //===== Description: ========================================= 
@@ -19,10 +19,8 @@
 //= 2.5 Added dummy "OnMyMobDead" labels. (bugreport:1100) [L0ne_W0lf]
 //= 2.6 Fixed a few bugs in the Rogue Guildsman. [L0ne_W0lf]
 //= 2.7 Fixed a bug on Markie question 5, bugreport:1600 [Brainstorm]
-//= 2.8 Moved "Thug" to Morocc Ruins. [L0ne_W0lf]
-//= 2.9 Added Quest Log commands. [Kisuka]
-//= 2.9a Traduzido. [Mara, Squall, Frizz, XStriker e RoM]
-//= 2.9b Revisado. [Asus]
+//= 2.8 Added Quest Log commands. [Kisuka]
+//= 2.8a Traduzido. [Mara, Squall, Frizz, XStriker e RoM]
 //============================================================ 
 
 morocc,100,104,1	script	Sujeito Estranho#rg	118,{

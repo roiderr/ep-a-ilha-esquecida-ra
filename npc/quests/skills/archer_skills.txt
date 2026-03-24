@@ -3,7 +3,7 @@
 //===== By: ==================================================
 //= rAthena Dev Team
 //===== Current Version: =====================================
-//= 1.7
+//= 1.7a
 //===== Compatible With: ===================================== 
 //= rAthena Project
 //===== Description: ========================================= 
@@ -13,7 +13,7 @@
 //= 1.6 Updated to latest available official file.
 //=     also fixed Item issue [bugreport:5607]. [Masao]
 //= 1.7 Fixed JobLevel requirements. [Euphy]
-//= 1.7b Tradução: www.souleat.com.br [by: Guru]
+//= 1.7a Tradução: www.souleat.com.br [by: Guru]
 //============================================================
 
 morocc,121,109,5	script	Roberto	88,{

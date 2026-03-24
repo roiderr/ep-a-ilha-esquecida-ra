@@ -3,7 +3,7 @@
 //===== By: ==================================================
 //= Syrus22 (1.1) dafide18 (1.4) Skotlex (1.5)
 //===== Current Version: =====================================
-//= 3.4
+//= 3.5a
 //===== Compatible With: =====================================
 //= rAthena Project
 //===== Description: =========================================
@@ -17,7 +17,7 @@
 //= 3.3 Some official script updates. [Euphy]
 //= 3.4 Added VIP features. [Euphy]
 //= 3.5 Added Refine UI [Atemo, Lemongrass]
-//= 3.5b Tradução: www.souleat.com.br [by: Guru]
+//= 3.5a Tradução: www.souleat.com.br [by: Guru]
 //============================================================
 
 // Christopher: Geffen Blacksmith

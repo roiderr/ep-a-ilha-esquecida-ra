@@ -58,7 +58,7 @@
 //= 2.4 Moved Dorian to pre-re/re paths. [Euphy]
 //= 2.5 Updated Nameless Island quests and added questlog support. [Euphy]
 //= 2.6 Commented custom quest log support for the Nameless Island Quest [Everade]
-// - Tradução: [Spell Master], [Revisões do Cronus]
+//= 2.6a Tradução: [Spell Master], [Revisões do Cronus]
 //============================================================
 
 // Nameless Island and Cursed Monestary Access Quest :: aru_monas
