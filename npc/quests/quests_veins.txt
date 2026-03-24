@@ -1,12 +1,7 @@
 //===== rAthena Script =======================================
 //= Veins Quests
-//===== Por: =================================================
-//= L0ne_W0lf
-//===== Versão Atual: ========================================
-//= 1.7b CR/1.7eA
-//===== Compatível com: ======================================
-//= Cronus SVN
-//===== Descrição: ===========================================
+//===== Description: =========================================
+//= [Official Conversion]
 //= Collection of Veins Quests 
 //= Stone Quest:
 //= - Help an Old Man with his job.
@@ -420,9 +415,9 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 			mes "Você não tem que";
 			mes "esperar muito para ver";
 			mes "minha grande invenção!";
-			delitem 999,5; //Aço
-			delitem 1033,5; //Raiz de Planta Carnívora
-			delitem 7561,2; //Coração Glacial
+			delitem 999,5; //Steel
+			delitem 1033,5; //Root_Of_Maneater
+			delitem 7561,2; //Ice_Heart
 			set veins_stone,3;
 			close2;
 			specialeffect EF_FIRESPLASHHIT;
@@ -953,14 +948,14 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "saber que tudo que eu pedi para";
 		mes "você fazer era parte de um plano";
 		mes "para confirmar a culpa Vitre.";
-		next;   
+		next;
 		mes "[Lasda]";
 		mes "Nós o prendemos assim que";
 		mes "soubemos de que ele era";
 		mes "um espião de Arunafeltz, mas nós";
 		mes "não poderíamos o prender uma vez que";
 		mes "faltavam provas concretas.";
-		next;   
+		next;
 		mes "[Lasda]";
 		mes "É por isso que deixamos";
 		mes "ele escapar: nós planejamos";
@@ -968,7 +963,7 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "a prova de que precisamos. Nosso";
 		mes "aguilhão foi mesmo capaz de voltar-se";
 		mes "contra todos os compatriotas";
-		next;   
+		next;
 		mes "[Lasda]";
 		mes "Peço desculpas por manter";
 		mes "você sem saber, mas era";
@@ -1021,7 +1016,7 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 		mes "se você me fizer um favor,";
 		mes "eu o deixarei entrar. Traga-me";
 		mes "1 porção de ^FF0000Caudas de Macaco Fritas^000000.";
-		next;   
+		next;
 		mes "[Jesse]";
 		mes "Obviamente, só posso deixar";
 		mes "você aí dentro. Se eles";
@@ -1128,7 +1123,7 @@ moc_castle,173,122,0	script	Funcionário de Segurança	748,{
 		mes "[Krieg]";
 		mes "Olá, aventureiro.";
 		mes "Como posso ajudá-lo?";
-		next;   
+		next;
 		select("Eu gostaria de ver um prisioneiro, o Sr. Vitre.");
 		mes "[Krieg]";
 		mes "Vitre? Eu sinto muito, mas";
@@ -1345,7 +1340,7 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "Vamos dar o fora daqui!";
 			next;
 			delitem 1901,1; //Violin
-			delitem 7040,1; //Megafone
+			delitem 7040,1; //Megaphone
 			set que_sch,19;
 			close2;
 			disablenpc "Jesse#sch";
@@ -1586,7 +1581,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 			mes "por aí, aventureiro~";
 			set Zeny, Zeny-500000;
 			set que_sch,18;
-			getitem 7040,1; //Megafone
+			getitem 7040,1; //Megaphone
 			close;
 		}
 		mes "[Hianna]";
@@ -1631,7 +1626,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 				mes "você tenha isto. Não deixe que";
 				mes "ninguém saiba quem lhe deu este!";
 				set Zeny, Zeny-500000;
-				getitem 7040,1; //Megafone
+				getitem 7040,1; //Megaphone
 				close;
 			}
 			mes "[Hianna]";
