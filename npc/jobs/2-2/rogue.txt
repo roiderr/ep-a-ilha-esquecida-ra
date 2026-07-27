@@ -196,8 +196,8 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "Preparado...?";
 				mes "Bom, bom.";
 				mes "Use seu precioso";
-				mes "tempo, porque você não fez isso?"; //
-				mes "Mais anda rápido";
+				mes "tempo, porque você não fez isso?";
+				mes "Mas ande rápido";
 				mes "e volte, beleza?";
 				close;
 			}
@@ -979,7 +979,7 @@ S_CheckItems:
 
 	if (Zeny > 9999 && countitem(.@item_req[0]) >= .@amount[0] && countitem(.@item_req[1]) >= .@amount[1] && countitem(.@item_req[2]) >= .@amount[2] && countitem(.@item_req[3]) >= .@amount[3]) {
 		mes "[Sr. Smith]";
-		mes "Ok, temos a taxa de pedido de, ^FF000010,000 zeny^000000, "+getarg(1)+" "+getitemname(getarg(0))+", "+getarg(3)+" "+getitemname(getarg(2))+", "+getarg(5)+" "+getitemname(getarg(4))+" e "+getarg(7)+" "+getitemname(getarg(6))+"...";
+		mes "Ok, temos a taxa de pedido de, ^FF000010,000 zeny^000000, "+ .@amount[0] +" "+ getitemname(.@item_req[0]) +", "+ .@amount[1] +" "+ getitemname(.@item_req[1]) +", "+ .@amount[2] +" "+ getitemname(.@item_req[2]) +" e "+ .@amount[3] +" "+ getitemname(.@item_req[3]) +"...";
 		set Zeny, Zeny-10000;
 		delitem .@item_req[0],.@amount[0];
 		delitem .@item_req[1],.@amount[1];
@@ -1007,10 +1007,10 @@ S_CheckItems:
 	mes "e os seguintes itens...";
 	next;
 	mes "[Sr. Smith]";
-	mes "^FF0000 "+getarg(1)+" "+getitemname(getarg(0))+"^000000,";
-	mes "^FF0000 "+getarg(3)+" "+getitemname(getarg(2))+"^000000,";
-	mes "^FF0000 "+getarg(5)+" "+getitemname(getarg(4))+"^000000,";
-	mes "^FF0000 "+getarg(7)+" "+getitemname(getarg(6))+"^000000,";
+	mes "^FF0000 "+ .@amount[0] +" "+ getitemname(.@item_req[0]) +"^000000,";
+	mes "^FF0000 "+ .@amount[1] +" "+ getitemname(.@item_req[1]) +"^000000,";
+	mes "^FF0000 "+ .@amount[2] +" "+ getitemname(.@item_req[2]) +"^000000,";
+	mes "^FF0000 "+ .@amount[3] +" "+ getitemname(.@item_req[3]) +"^000000,";
 	mes "Você entendeu desta vez?";
 	close;
 }
