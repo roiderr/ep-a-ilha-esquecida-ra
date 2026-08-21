@@ -53,7 +53,7 @@
 -	script	::WincingOldMan_veins	-1,{
 	if ((MaxWeight - Weight) < 2000 || checkweight(1201,1) == 0) {
 		mes "- Espere um momento -";
-		mes "- Atualmente você está transportando -";
+		mes "- Atualmente você está carregando -";
 		mes "- muitos itens com você. -";
 		mes "- Por favor volte depois -";
 		mes "- que colocar alguns itens no armazém. -";
@@ -76,18 +76,18 @@
 			close;
 		case 2:
 			mes "[Zabaroo]";
-			mes "Oh, Isto dói tanto, que";
-			mes "quase aleijam. Mas eu não";
-			mes "tenho escolha. Eu preciso de";
-			mes "conseguir o bastante para pagar";
-			mes "esta dívida que eu quero";
-			mes "pagar. Arrrrgh, que droga!";
+			mes "Oh, dói tanto, que";
+			mes "é quase paralisante. Mas eu não tenho escolha.";
+			mes "Eu preciso fazer";
+			mes "o bastante para preencher";
+			mes "esta lacuna para receber.";
+			mes "Arrrrgh, que droga!";
 			next;
 			mes "[Zabaroo]";
 			mes "Se eu não conseguir o";
 			mes "dinheiro para pagar pelo";
 			mes "medicamento de minha neta,";
-			mes "Eu não poderei comprar nenhum";
+			mes "eu não poderei comprar nenhum";
 			mes "medicamento para minha neta!";
 			mes "E isso será horrível! Ag!";
 			next;
@@ -299,7 +299,7 @@
 		mes "Graças a você e Absar,";
 		mes "minhas costas não estão me";
 		mes "atrapalhando em tudo ultimamente.";
-		mes "Eu deveria tomar conta de mim ";
+		mes "Eu deveria tomar conta de mim";
 		mes "mesmo na minha idade...";
 		close;
 	}
@@ -315,9 +315,8 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 	}
 	else if (veins_stone == 1) {
 		mes "[Absar]";
-		mes "Estou tão perto da";
-		mes "conclusão. Agora, se";
-		mes "Acabei de ligar este aqui ...";
+		mes "Estou quase terminando.";
+		mes "Agora, se eu apenas girar isto aqui...";
 		next;
 		if (select("Com licença...:........") == 1) {
 			mes "[Absar]";
@@ -394,10 +393,9 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		mes "[Absar]";
 		mes "^4D4DFF5 Raizes de Planta Carnívora^000000,";
 		mes "^4D4DFF2 Corações Glaciais^000000, e";
-		mes "^4D4DFF5 Aços^000000. Se você não";
-		mes "voltar logo, depois";
-		mes "Eu não irei ajudá-lo. Eu tenho";
-		mes "projetos em que eu estou trabalhando!";
+		mes "^4D4DFF5 Aços^000000.";
+		mes "Se você não voltar logo, não irei ajudá-lo.";
+		mes "Eu tenho projetos em que estou trabalhando!";
 		set veins_stone,2;
 		close;
 	}
@@ -446,8 +444,8 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		next;
 		mes "[Absar]";
 		mes "...............................";
-		mes "Você pode usar isto para pegar";
-		mes "coisas. De uma certa distância.";
+		mes "Você pode usar isso para pegar";
+		mes "coisas de uma certa distância.";
 		next;
 		mes "[Absar]";
 		mes "De qualquer maneira, quando você voltar";
@@ -472,9 +470,9 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 	if (veins_stone && veins_stone < 5) {
 		mes "[Mirhen]";
 		mes "Ei, somente funcionários depois deste ponto!";
-		mes "Droga,nós não temos idéia do que isto significa?";
+		mes "Droga,nós não temos ideia do que isto significa?";
 		mes "Nós deveriamos saber...";
-		mes "De qualquer forma,saia daqui.";
+		mes "De qualquer forma, saia daqui.";
 		close2;
 		warp "veins",269,221;
 		end;
@@ -483,10 +481,10 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 		mes "[Mirhen]";
 		mes "Ei, somente funcionários";
 		mes "depois deste ponto!";
-		mes "Droga,nós não temos";
-		mes "idéia do que isto significa?";
+		mes "Droga, nós não temos";
+		mes "ideia do que isto significa?";
 		mes "Nós deveríamos saber...";
-		mes "De qualquer forma,saia daqui.";
+		mes "De qualquer forma, saia daqui.";
 		next;
 		if (select("Sinto muito.:Eu trouxe estes...") == 1) {
 			mes "[Mirhen]";
@@ -534,8 +532,8 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 ve_in02,54,49,2	script	Empregado#ve1	943,{
 	if (veins_stone < 6) {
 		mes "[Bahed]";
-		mes "Ultimamente, eu tenho me sentido tão fraco...";
-		mes "Ouvi que o cara antes de mim teve de sair porque ele também começou a se sentir fraco.";
+		mes "Ultimamente, tenho me sentido tão fraco...";
+		mes "Ouvi que o cara antes de mim teve que sair porque ele também começou a se sentir fraco.";
 		next;
 		mes "[Bahed]";
 		mes "Não pode ser...";
@@ -573,7 +571,7 @@ ve_in02,54,49,2	script	Empregado#ve1	943,{
 		mes "o que eu sei. Eu acho que,";
 		mes "você ajudou Zabaroo, assim...";
 		next;
-		select("O que é iste Hetarium??");
+		select("O que é este Hetarium??");
 		mes "[Bahed]";
 		mes "Bem, não tem tanto tempo";
 		mes "que essas pedras chamaram";
@@ -585,9 +583,9 @@ ve_in02,54,49,2	script	Empregado#ve1	943,{
 		mes "[Bahed]";
 		mes "Então, de repente";
 		mes "essas pessoas de --Eu acho";
-		mes "que é Schwaltzvalt-- vieram";
+		mes "que era Schwaltzvalt-- vieram";
 		mes "e compraram um monte destas";
-		mes "pedras.Depois, eles construíram";
+		mes "pedras. Depois, eles construíram";
 		mes "esta fábrica para refiná-las!";
 		next;
 		mes "[Bahed]";
@@ -646,13 +644,13 @@ prontera,202,122,0	script	Garota#sch	703,{
 	if (que_sch == 0) {
 		mes "[Rooney]";
 		mes "Onde diabos";
-		mes "ele está? Não sei... Onde...?";
+		mes "está isso? Não sei... Onde...?";
 		mes "Ele tem que estar em algum";
 		mes "lugar por aqui...";
 		next;
 		select("O que foi?:...");
 		mes "[Rooney]";
-		mes "Nada,é que...";
+		mes "Nada, é que...";
 		mes "Um cara me mandou";
 		mes "entregar uma coisa, mas não consigo";
 		mes "encontrar o destinatário. Ele disse";
@@ -661,7 +659,7 @@ prontera,202,122,0	script	Garota#sch	703,{
 		next;
 		mes "[Rooney]";
 		mes "Eu deveria ter perguntado";
-		mes "qual é o local exato.Quero dizer,";
+		mes "qual é o local exato. Quero dizer,";
 		mes "se eu não o encontrar, então";
 		mes "não vou ser pago por";
 		mes "esta entrega. ^333333*Pff...*^000000";
@@ -670,7 +668,7 @@ prontera,202,122,0	script	Garota#sch	703,{
 			mes "[Rooney]";
 			mes "Obrigada. Acho que";
 			mes "vou precisar.";
-			mes "onde esse cara pode";
+			mes "Onde esse cara pode";
 			mes "estar? Se ele espera";
 			mes "uma entrega, ele deveria";
 			mes "se fazer mais fácil de se encontrar...";
@@ -688,7 +686,7 @@ prontera,202,122,0	script	Garota#sch	703,{
 		mes "na cidade, por alguém que";
 		mes "se pareça com um Bardo, mas eu";
 		mes "não tenho tido muita sorte. Se você";
-		mes "o encontrar, você poderia me avisar?";
+		mes "o encontrar, poderia me avisar?";
 		set que_sch,1;
 		close;
 	}
@@ -697,7 +695,7 @@ prontera,202,122,0	script	Garota#sch	703,{
 		mes "Eu ainda não";
 		mes "encontrei Lasda Midar.";
 		mes "Será que você poderia me avisar";
-		mes "se você o encontrar para que";
+		mes "se o encontrar para que";
 		mes "eu possa entregar esta carta?";
 		close;
 	}
@@ -756,7 +754,7 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "Por que, em um glorioso";
 		mes "dia! Eu devo cantar uma canção,";
 		mes "em louvor de sua maravilha!";
-		mes "Ooooh... La la la-la~";
+		mes "Ooooh... Lá lá lá-lá~";
 		mes "Garotas, garotas, gaaaarotas...";
 		next;
 		if(select("Com licença...:......") == 1) {
@@ -764,7 +762,7 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 			mes "Por que, em um glorioso";
 			mes "dia! Eu devo cantar uma canção";
 			mes "em louvor de sua maravilha!";
-			mes "Ooooh... La la la-la~";
+			mes "Ooooh... Lá lá lá-lá~";
 			mes "Garotas, garotas, gaaaarotas...";
 			close;
 		}
@@ -884,7 +882,7 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "[Lasda]";
 		mes "Ainda não consigo acreditar";
 		mes "que Vitre está preso";
-		mes "na prisão de morroc. Quero dizer,";
+		mes "na prisão de Morroc. Quero dizer,";
 		mes "o que poderia ter acontecido?";
 		mes "Espero que você possa ajudá-lo...";
 		close;
@@ -951,9 +949,9 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		next;
 		mes "[Lasda]";
 		mes "Nós o prendemos assim que";
-		mes "soubemos de que ele era";
+		mes "soubemos que ele era";
 		mes "um espião de Arunafeltz, mas nós";
-		mes "não poderíamos o prender uma vez que";
+		mes "não poderíamos o punir uma vez que";
 		mes "faltavam provas concretas.";
 		next;
 		mes "[Lasda]";
@@ -962,7 +960,7 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "segui-lo para que conseguíssemos";
 		mes "a prova de que precisamos. Nosso";
 		mes "aguilhão foi mesmo capaz de voltar-se";
-		mes "contra todos os compatriotas";
+		mes "contra todos os compatriotas!";
 		next;
 		mes "[Lasda]";
 		mes "Peço desculpas por manter";
@@ -980,7 +978,7 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "[Lasda]";
 		mes "Estamos tendo muitos";
 		mes "casos envolvendo espiões";
-		mes "como Vitre ultimamente. Isto,";
+		mes "como Vitre ultimamente. Isto";
 		mes "pode ser um sinal de que";
 		mes "Arunafeltz está planejando";
 		mes "se voltar contra nós...";
@@ -1004,7 +1002,7 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 		mes "o prisioneiro? Lamento,";
 		mes "mas ele não tem permissão";
 		mes "para ver ninguém desde que";
-		mes "ele foi preso por ser suspeito";
+		mes "foi preso por ser suspeito";
 		mes "de espionagem.";
 		set que_sch,5;
 		close;
@@ -1061,7 +1059,7 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 	else if (que_sch == 10) {
 		mes "[Jesse]";
 		mes "Você realmente conseguiu a";
-		mes "aprovação de Sir Krieg.";
+		mes "aprovação de Sir Krieg?";
 		mes "Certo, agora você pode entrar.";
 		close2;
 		warp "ra_in01",48,355;
@@ -1086,7 +1084,7 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 		mes "Leve o seu tempo.";
 		mes "Se você não estiver mentalmente";
 		mes "preparado, não é uma";
-		mes "boa idéia falar";
+		mes "boa ideia falar";
 		mes "com o prisioneiro.";
 		close;
 	}
@@ -1096,7 +1094,7 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 		mes "O prisioneiro escapou.";
 		mes "Como eu pude deixar isto...";
 		mes "acontecer?! Droga, Eu preciso";
-		mes "reportar isto para Sr. Krieg";
+		mes "reportar isto para o Sr. Krieg.";
 		close;
 	}
 	mes "[Jesse]";
@@ -1111,8 +1109,8 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 moc_castle,173,122,0	script	Funcionário de Segurança	748,{
 	if (que_sch < 7) {
 		mes "[Krieg]";
-		mes "Estou encarregado da segurança";
-		mes "pública aqui em morroc.";
+		mes "Sou responsável pela segurança";
+		mes "pública aqui em Morroc.";
 		mes "Ultimamente, tem ocorrido";
 		mes "muitos incidentes perturbando";
 		mes "a paz pública e";
@@ -1213,7 +1211,7 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 		mes "você. De qualquer forma, você quer";
 		mes "me perguntar alguma coisa?";
 		next;
-		switch(select("Nada.:Estou aqui em nome do Sr.Lasda.")) {
+		switch(select("Nada.:Estou aqui em nome do Sr. Lasda.")) {
 		case 1:
 			mes "[Vitre]";
 			mes "Bem...";
@@ -1240,7 +1238,7 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "[Vitre]";
 			mes "Minha vida está em perigo";
 			mes "desde que eu estou aqui, por isso eu tenho";
-			mes "tenho de sair daqui o mais depressa possível.";
+			mes "tenho que sair daqui o mais depressa possível.";
 			mes "Felizmente, eu sei como.";
 			mes "Eu posso abrir estas portas.";
 			mes "Eu tenho de ter 2 coisas.";
@@ -1249,8 +1247,8 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "Eu só preciso de um ^FF0000Megafone^000000";
 			mes "e um ^FF0000Violino^000000. Felizmente, eles são";
 			mes "objetos fáceis de se conseguir, assim";
-			mes "ninguém ira suspeitar nada";
-			mes "se você lhes trouxer aqui. Um...";
+			mes "ninguém irá suspeitar de nada";
+			mes "se você os trouxesse aqui. Um...";
 			mes "Você vai me ajudar, não vai?";
 			next;
 			mes "[Vitre]";
@@ -1259,7 +1257,7 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "Mas pense nisso: você";
 			mes "não iria querer ver o que eu farei";
 			mes "Com um Megafone e um Violino?";
-			mes "Isto soa ser uma coisa bem legar, anh??";
+			mes "Isto parece ser uma coisa bem legal, anh??";
 			next;
 			mes "^3355FFVocê pode ouvir alguém";
 			mes "murmurando da cela";
@@ -1277,9 +1275,7 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 		mes "[Vitre]";
 		mes "Você ainda não trouxe o";
 		mes "Megafone e o Violino?";
-		mes "Quanto mais tempo eu sentar aqui,";
-		mes "o mais provável é";
-		mes "que eles me matem!";
+		mes "Quanto mais tempo eu fico sentado aqui, maior a chance deles me matarem!";
 		close;
 	}
 	else if (que_sch == 18) {
@@ -1287,15 +1283,15 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "[Vitre]";
 			mes "Você me trouxe um";
 			mes "Megafone e um Violino?";
-			mes "Perfeito! Agora, passo aparte";
+			mes "Perfeito! Agora, afaste-se";
 			mes "Não podemos ter você ferido.";
 			next;
 			mes "...............................";
 			mes "...............................";
 			mes "...............................";
 			next;
-			mes "^^3355FFVitre deu em um profundo";
-			mes "suspiro, e depois esmagou";
+			mes "^^3355FFVitre respirou fundo";
+			mes "e depois esmagou";
 			mes "as barras de aço de sua cela";
 			mes "com o som do Violino. Surpreendentemente,";
 			mes "a porta abriu";
@@ -1335,7 +1331,7 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "Me-meus ouvidos...";
 			next;
 			mes "[Vitre]";
-			mes "Heh! Eu adoro isto,quando";
+			mes "Heh! Eu adoro quando";
 			mes "um plano dá certo~";
 			mes "Vamos dar o fora daqui!";
 			next;
@@ -1350,14 +1346,14 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 		mes "[Vitre]";
 		mes "Você ainda não trouxe o";
 		mes "Megafone e o Violino?";
-		mes "Rápido";
+		mes "Rápido,";
 		mes "eu não tenho";
 		mes "muito tempo!";
 		close;
 	}
 	else {
 		mes "[Vitre]";
-		mes "Heh! Eu adoro isto,quando";
+		mes "Heh! Eu adoro quando";
 		mes "um plano dá certo~";
 		mes "Vamos dar o fora daqui!";
 		close2;
@@ -1377,8 +1373,8 @@ OnInit:
 ra_in01,58,389,0	script	Presidiário#sch	929,{
 	if (que_sch < 11) {
 		mes "[Ruan]";
-		mes "Isto fede. Porque estou";
-		mes "eu trancado aqui?";
+		mes "Isso fede. Porque estou";
+		mes "trancado aqui?";
 		mes "Eu não fiz nada";
 		mes "para merecer isto!";
 		next;
@@ -1393,8 +1389,8 @@ ra_in01,58,389,0	script	Presidiário#sch	929,{
 	}
 	else if (que_sch == 11) {
 		mes "[Ruan]";
-		mes "Isto fede. Porque estou";
-		mes "eu trancado aqui?";
+		mes "Isso fede. Porque estou";
+		mes "trancado aqui?";
 		mes "Eu não fiz nada";
 		mes "para merecer isto!";
 		next;
@@ -1505,7 +1501,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 			mes "[Hianna]";
 			mes "Primeiramente, eu quero um pouco";
 			mes "de dinheiro. Considere isto uma";
-			mes "taxa de aluguel. 500,000 zenys deve ser";
+			mes "taxa de aluguel. 500.000 zenys deve ser";
 			mes "o suficiente. Então,";
 			mes "Quero que você faça-me um favor.";
 			next;
@@ -1605,7 +1601,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 			mes "[Hianna]";
 			mes "Bem, posso deixá-lo";
 			mes "ter outro se você";
-			mes "me pagar 500,000 zenys.";
+			mes "me pagar 500.000 zenys.";
 			mes "Tem certeza de que deseja pagar";
 			mes "esta quantia por um Megafone?";
 			next;
@@ -1615,7 +1611,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 					mes "Sinto muito, mas este";
 					mes "dinheiro não é o suficiente";
 					mes "para um Megafone. Certifique-se";
-					mes "de me trazer 500,000 zenys.";
+					mes "de me trazer 500.000 zenys.";
 					close;
 				}
 				mes "[Hianna]";
@@ -1825,8 +1821,8 @@ airplane,79,55,2	script	Odalisca Adulta#s2	724,{
 		mes "a República de Schwaltzvalt";
 		mes "solicitou uma performance";
 		mes "nossa. Isto não é impressionante?";
-		mes "Eu acho que ganhamos um reputação";
-		mes "muito popular. Farei o meu melhor!";
+		mes "Acho que ganhamos fama no exterior.";
+		mes "Farei o meu melhor!";
 		next;
 		mes "[Anúncio do Aeroplano]";
 		mes "Nós estaremos chegando em";
@@ -1847,8 +1843,8 @@ airplane,79,55,2	script	Odalisca Adulta#s2	724,{
 	mes "Estive dançando no palco";
 	mes "durante muito tempo, mas";
 	mes "mas eu sempre sinto tão nervosa";
-	mes "antes de começar.Me Pergunto por que";
-	mes "razão isso acontece comigo.";
+	mes "antes de começar. Me Pergunto por que";
+	mes "isso acontece comigo.";
 	close;
 }
 
@@ -1873,8 +1869,8 @@ ein_in01,174,266,0	script	Odalisca Jovem#sch3	724,{
 	}
 	mes "[Odalisca]";
 	mes "Sem dança,";
-	mes "minha vida não";
-	mes "tem sentido em nada.";
+	mes "minha vida não tem";
+	mes "sentido algum.";
 	close;
 }
 
@@ -2014,9 +2010,9 @@ ein_in01,166,282,4	script	Empregado#sch	904,{
 	}
 	mes "[Empregado]";
 	mes "Oh, a bagunça deixada após";
-	mes "um banquete é o maior";
-	mes "parte do meu trabalho. É duro";
-	mes "trabalho, mas é preciso que começa feito.";
+	mes "um banquete é a maior";
+	mes "parte do meu trabalho.";
+	mes "É um trabalho duro, mas precisa ser feito.";
 	close;
 }
 
@@ -2078,14 +2074,14 @@ OnTouch:
 		mes "isto aqui. Para falar a";
 		mes "verdade, Eu havia suspeitado que";
 		mes "algo como isto estava";
-		mes "acontecendo... Sim,faz sentido.";
+		mes "acontecendo... Sim, faz sentido.";
 		next;
 		mes "[????]";
 		mes "Nós precisamos de ir para";
 		mes "um local onde possamos falar";
 		mes "com um pouco mais de liberdade.";
 		mes "Siga-me por favor,";
-		mes "Eu já preparei";
+		mes "eu já preparei";
 		mes "um local para isto.";
 		set que_sch,16;
 		close2;
@@ -2185,7 +2181,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 		mes "cantar-lhe uma canção. Escute";
 		mes "cuidadosamente, e me cante estas";
 		mes "canções quando você voltar.";
-		mes "Obrigado, você não tem idéia de como";
+		mes "Obrigado, você não tem ideia de como";
 		mes "Eu aprecio sua ajuda.";
 		set que_sch,20;
 		close;
@@ -2439,11 +2435,11 @@ prontera,109,161,6	script	Rapaz#sch	83,{
 		mes "E aprenda... E ame...";
 		next;
 		mes "[Chada]";
-		mes "La la la la la la la la~";
+		mes "Lá lá lá lá lá lá lá lá~";
 		mes "Uma maldição assola a";
 		mes "família real, e colocou";
 		mes "suas garras sobre o segundo";
-		mes "filho, afinal... la la la...";
+		mes "filho, afinal... lá lá lá...";
 		mes "Ninguem poderá curar... Oooh!";
 		next;
 		mes "[Chada]";
@@ -2461,11 +2457,11 @@ prontera,109,161,6	script	Rapaz#sch	83,{
 		mes "escute atentamente desta vez~";
 		next;
 		mes "[Chada]";
-		mes "La la la la la la la la~";
+		mes "Lá lá lá lá lá lá lá lá~";
 		mes "Uma maldição assola a";
 		mes "família real, e colocou";
 		mes "suas garras sobre o segundo";
-		mes "filho, afinal... la la la...";
+		mes "filho, afinal... lá lá lá...";
 		mes "Ninguem poderá curar... Oooh!";
 		next;
 		mes "[Chada]";
@@ -2499,10 +2495,10 @@ geffen,196,167,4	script	Moça#sch	101,{
 		mes "nova canção que eu escrevi. É ótima.";
 		next;
 		mes "[Ghez]";
-		mes "Sha la la la la la";
+		mes "Sha lá lá lá lá lá";
 		mes "Os cavaleiros de Prontera";
 		mes "o palácio devem proteger...";
-		mes "Sha la laaaaaa";
+		mes "Sha lá láaaaaa";
 		mes "Os cavaleiros de Geffen";
 		mes "pela torre mágica vão combater...";
 		next;
@@ -2512,7 +2508,7 @@ geffen,196,167,4	script	Moça#sch	101,{
 		mes "reunidos! Protejam o palácio!";
 		mes "Ooooooooooooh yeah!";
 		mes "E os inimigos para o oeste serão";
-		mes "repelidos! Esse é o plano secreto";
+		mes "repelidos! Esse é o plano secreto.";
 		next;
 		mes "[Ghez]";
 		mes "Não é poético?";
@@ -2528,10 +2524,10 @@ geffen,196,167,4	script	Moça#sch	101,{
 		mes "de que vai memorizar tudo desta vez.";
 		next;
 		mes "[Ghez]";
-		mes "Sha la la la la la";
+		mes "Sha lá lá lá lá lá";
 		mes "Os cavaleiros de Prontera";
 		mes "o palácio devem proteger...";
-		mes "Sha la laaaaaa";
+		mes "Sha lá láaaaaa";
 		mes "Os cavaleiros de Geffen";
 		mes "pela torre mágica vão combater...";
 		next;
@@ -2541,7 +2537,7 @@ geffen,196,167,4	script	Moça#sch	101,{
 		mes "reunidos! Protejam o palácio!";
 		mes "Yeeeeeeeah!";
 		mes "E os inimigos para o oeste serão";
-		mes "repelidos! Esse é o plano secreto La la la...";
+		mes "repelidos! Esse é o plano secreto Lá lá lá...";
 		next;
 		mes "[Ghez]";
 		mes "Não é poético?";
@@ -2591,9 +2587,9 @@ comodo,135,299,0	script	Rapaz#sch2	809,{
 		mes "O velho companheiro estava certo,";
 		mes "o grupo maligno foi descoberto...";
 		mes "Hora de deter a ressurreição do";
-		mes "Demônio de Morroc! La la la la la la la";
-		mes "la la la la la la la la la la";
-		mes "la la la la la la la la la la";
+		mes "Demônio de Morroc! Lá lá lá lá lá lá lá";
+		mes "lá lá lá lá lá lá lá lá lá lá";
+		mes "lá lá lá lá lá lá lá lá lá lá";
 		next;
 		mes "[Nosdan]";
 		mes "O que você acha?";
@@ -2624,9 +2620,9 @@ comodo,135,299,0	script	Rapaz#sch2	809,{
 		mes "O velho companheiro estava certo,";
 		mes "o grupo maligno foi descoberto...";
 		mes "Hora de deter a ressurreição do";
-		mes "Demônio de Morroc! La la la la la la la";
-		mes "la la la la la la la la la la";
-		mes "la la la la la la la la la la";
+		mes "Demônio de Morroc! Lá lá lá lá lá lá lá";
+		mes "lá lá lá lá lá lá lá lá lá lá";
+		mes "lá lá lá lá lá lá lá lá lá lá";
 		next;
 		mes "[Nosdan]";
 		mes "O que você acha?";
@@ -2750,7 +2746,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			next;
 			mes "["+strcharinfo(0)+"]";
 			mes "Espere... Eu tenho uma pergunta.";
-			mes "Você disse que alguém pegou";
+			mes "Você disse que alguém levou";
 			mes "sua irmã no Vulcão de";
 			mes "Thor? O que eles fizeram?";
 			mes "Você tem certeza de que";
@@ -2765,7 +2761,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "["+strcharinfo(0)+"]";
 			mes "Hmmm...";
 			mes "Talvez sua irmã tenha sido";
-			mes "seqüestrada por bandidos...";
+			mes "sequestrada por bandidos...";
 			next;
 			switch(select("Rejeitar pedido:Aceitar Pedido")) {
 			case 1:
@@ -2822,7 +2818,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "ela está bem, mas...";
 			next;
 			mes "[Garoto Karyn]";
-			mes "O que? Por que ela não";
+			mes "O quê? Por que ela não";
 			mes "está com você?";
 			next;
 			mes "["+strcharinfo(0)+"]";
@@ -2837,7 +2833,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "Ah! Ah, há um";
 			mes "Chaveiro, na Rua do";
 			mes "Mercado! Você pode o perguntar";
-			mes "se ele poderia libertar Curdie!";
+			mes "se ele poderia libertar a Curdie!";
 			changequest 3061,3062;
 			set rachel_camel,3;
 			close;
@@ -2846,25 +2842,22 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "[Garoto Karyn]";
 			mes "Vamos ver...";
 			mes "É melhor eu encontrar o";
-			mes "serralheiro no mercado";
-			mes "rua, e peça-lhe para me ajudar";
-			mes "a destravar as algemas de Curdie.";
+			mes "chaveiro na rua do mercado";
+			mes "e pedir para me ajudar";
+			mes "a destravar as algemas da Curdie.";
 			close;
 		}
 		else if (rachel_camel == 4) {
 			mes "[Garoto Karyn]";
 			mes "Huh... é melhor eu conversar";
-			mes "ao Sr. Lockenlock primeiro, o";
-			mes "serralheiro na rua do mercado.";
+			mes "com o Sr. Lockenlock primeiro, o";
+			mes "chaveiro na rua do mercado.";
 			close;
 		}
 		else if (rachel_camel == 5) {
 			mes "["+strcharinfo(0)+"]";
-			mes "Vamos ver...";
-			mes "Eu devo encontrar o";
-			mes "chaveiro na Rua do Mercado,";
-			mes "e o perguntar se ele poderia me";
-			mes "ajudar a soltar as algemas de Curdie.";
+			mes "Hmm... É melhor eu falar com a Sra. Ivory, a fabricante de sabão orgânico,";
+			mes "se eu quiser ajudar Karyn a libertar sua irmã, Curdie.";
 			close;
 		}
 		else if (rachel_camel == 6) {
@@ -2917,7 +2910,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 		}
 		else if (rachel_camel == 10) {
 			mes "["+strcharinfo(0)+"]";
-			mes "Agora,seria melhor";
+			mes "Agora, seria melhor";
 			mes "gastar meu tempo";
 			mes "procurando pelos ingredientes";
 			mes "no deserto de camelos.";
@@ -2930,7 +2923,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "com estimulantes de apetite, e";
 			mes "depois pegar os ingredientes";
 			mes "para o sabão e 5 Blocos de Estrume";
-			mes "se eu quiser libertar Curdie.";
+			mes "se eu quiser libertar a Curdie.";
 			close;
 		}
 		else if (rachel_camel > 11 && rachel_camel < 17) {
@@ -2939,7 +2932,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "camelo. Agora eu preciso conseguir";
 			mes "todos os ingredientes para o sabão.";
 			mes "Quanto mais cedo eu fizer isto,";
-			mes "mais cedo eu irei ajudar Curdie.";
+			mes "mais cedo eu irei ajudar a Curdie.";
 			close;
 		}
 		else if (rachel_camel == 17) {
@@ -2985,14 +2978,14 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "Eu preciso levar";
 			mes "1 Aço para o Mr. Lockenlock";
 			mes "então ele poderá fazer uma chave";
-			mes "que finalmente libertará Curdie.";
+			mes "que finalmente libertará a Curdie.";
 			close;
 		}
 		else if (rachel_camel == 23) {
 			mes "["+strcharinfo(0)+"]";
 			mes "Eu finalmente consegui";
 			mes "a chave que eu posso usar";
-			mes "para libertar Curdie. Eu estou";
+			mes "para libertar a Curdie. Eu estou";
 			mes "indo salvá-la neste momento.";
 			next;
 			mes "[Garoto Karyn]";
@@ -3017,7 +3010,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			next;
 			mes "[Garoto Karyn]";
 			mes "Eu não sei o que há de errado";
-			mes "com Curdie. Desde que ela";
+			mes "com a Curdie. Desde que ela";
 			mes "retornou, ela fica";
 			mes "assustada sempre que vê";
 			mes "os soldados na cidade.";
@@ -3032,7 +3025,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "["+strcharinfo(0)+"]";
 			mes "Hmm... Entendo...";
 			mes "Eu irei voltar depois,";
-			mes "quando Curdie tiver saído";
+			mes "quando a Curdie tiver saído";
 			mes "do hospital.";
 			next;
 			mes "[Garoto Karyn]";
@@ -3043,7 +3036,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "["+strcharinfo(0)+"]";
 			mes "Hahahaha!";
 			mes "Bem... Que isto é bem";
-			mes "tranqüilizante. Então até,";
+			mes "tranquilizante. Então até,";
 			mes "tome conta de sua mãe e de";
 			mes "sua irmã muito bem. Entendeu?";
 			next;
@@ -3077,12 +3070,12 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			}
 			else if (aru_monas == 15) {
 				mes "[Pequeno Karyn]";
-				mes "Oi! ";
-				mes "você novamente! ";
-				mes "voltando para casa do hospital,";
-				mes "e está melhorando a cada dia!";
+				mes "Oi!";
+				mes "Bom te ver novamente!";
+				mes "Curdie saiu do hospital e voltou para casa.";
+				mes "Está melhorando a cada dia!";
 				mes "Ah, e eu tenho cuidado";
-				mes "dela, assim como eu prometi~";
+				mes "dela, assim como prometi~";
 				next;
 				mes "["+strcharinfo(0)+"]";
 				mes "Sério? Isto é ótimo.";
@@ -3129,7 +3122,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 				mes "uma vez que todos os outros pescadores";
 				mes "atracam seus barcos em outros";
 				mes "lugares. E ainda, o barco do meu pai";
-				mes "vai enferrujar se ninguém usá-lo.";
+				mes "vai enferrujar se ninguém usar.";
 				next;
 				mes "["+strcharinfo(0)+"]";
 				mes "Ótimo! Muito obrigado";
@@ -3158,8 +3151,8 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 				mes "[Pequeno Karyn]";
 				mes "Papai diz que ele vai";
 				mes "poder ir pescar";
-				mes "novamente em breve! ";
-				mes "ele vai pegar muitos peixes!";
+				mes "novamente em breve!";
+				mes "Espero que ele pegue muitos peixes!";
 				close;
 			}
 // End Nameless Island Access Quest Addition.
@@ -3207,7 +3200,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "se eles o capturarem!";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "É você Curdie?";
+		mes "Você é a Curdie?";
 		mes "Seu irmão Karyn";
 		mes "me pediu para resgatar você.";
 		mes "Vamos, Nós precisamos de";
@@ -3223,7 +3216,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "O que...?!";
-		mes "Que bastardos!";
+		mes "Que canalhas!";
 		mes "Prendendo uma pequena";
 		mes "menina como esta...";
 		next;
@@ -3247,7 +3240,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "uma forma para libertá-la.";
 		next;
 		mes "[Pequena Curdie]";
-		mes "^333333*Soluço*^000000 S-Sério...";
+		mes "^333333*Soluço*^000000 S-Sério...?";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Eu prometo.";
@@ -3264,7 +3257,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "deve ter uma";
 		mes "perícia para soltar";
 		mes "estas algemas. É a única";
-		mes "maneira de libertar Curdie";
+		mes "maneira de libertar a Curdie";
 		mes "destas correntes.^000000";
 		close;
 	}
@@ -3322,14 +3315,14 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "com estimulantes de apetite, e";
 		mes "depois pegar os ingredientes";
 		mes "para o sabão e 5 Blocos de Estrume";
-		mes "se eu quiser libertar Curdie.";
+		mes "se eu quiser libertar a Curdie.";
 		close;
 	}
 	else if (rachel_camel > 11 && rachel_camel < 17) {
 		mes "^3355FFVocê já encontrou o";
 		mes "camelo, então você precisa coletar";
 		mes "os ingredientes para o sabão se";
-		mes "quiser libertar Curdie.^000000";
+		mes "quiser libertar a Curdie.^000000";
 		close;
 	}
 	else if (rachel_camel == 17) {
@@ -3436,7 +3429,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "da fechadura, e";
 		mes "o guarda cuidadosamente.";
 		mes "Agora você precisa levar";
-		mes "o molde de voltar para a cidade";
+		mes "o molde de volta para a cidade";
 		mes "para o Sr. Lockenlock.^000000";
 		changequest 3079,3080;
 		set rachel_camel,21;
@@ -3447,7 +3440,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "para a cidade e levar o";
 		mes "molde de chave para o Sr. Lockenlock";
 		mes "apenas assim ele poderá fazer";
-		mes "a chave para libertar Curdie das Algemas.^000000";
+		mes "a chave para libertar a Curdie das Algemas.^000000";
 		close;
 	}
 	else if (rachel_camel == 23) {
@@ -3463,7 +3456,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "correntes com a chave";
 		mes "feita pelo Sr. Lockenlock.^000000";
 		next;
-		mes "^333333*Creck*^000000";
+		mes "^333333*Crac*^000000";
 		next;
 		mes "[Pequena Curdie]";
 		mes "Aaaah!";
@@ -3509,7 +3502,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 	}
 	else {
 		mes "[Pequena Curdie]";
-		mes " .......";
+		mes " ...Wah....";
 		close;
 	}
 }
@@ -3580,7 +3573,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "["+strcharinfo(0)+"]";
 			mes "(^333333Esse cara faz fechaduras";
 			mes "para o exército de Rachel?! Talvez";
-			mes "não seja uma boa idéia permitir que";
+			mes "não seja uma boa ideia permitir que";
 			mes "ele saiba que eu estou tentando libertar";
 			mes "um de seus prisioneiros. E se";
 			mes "ele for fiel ao Exército?^000000)";
@@ -3649,7 +3642,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "encontrá-la antes que ela feche";
 			mes "sua loja. A dona da loja";
 			mes "é uma moça bonita, então será";
-			mes "difícil de não encontrá-la.";
+			mes "difícil não encontrá-la.";
 			next;
 			mes "["+strcharinfo(0)+"]";
 			mes "...........";
@@ -3687,7 +3680,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "encontrá-la antes que ela feche";
 		mes "sua loja. A dona da loja";
 		mes "é uma moça bonita, então será";
-		mes "difícil de não encontrá-la.";
+		mes "difícil não encontrá-la.";
 		close;
 	}
 	else if (rachel_camel == 6) {
@@ -3753,7 +3746,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "com estimulantes de apetite, e";
 		mes "depois pegar os ingredientes";
 		mes "para o sabão e 5 Blocos de Estrume";
-		mes "e eu quiser libertar Curdie.";
+		mes "e eu quiser libertar a Curdie.";
 		close;
 	}
 	else if (rachel_camel == 12) {
@@ -3769,7 +3762,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "^3355FFVocê já encontrou o";
 		mes "camelo, então você precisa coletar";
 		mes "os ingredientes para o sabão se";
-		mes "quiser libertar Curdie.^000000";
+		mes "quiser libertar a Curdie.^000000";
 		close;
 	}
 	else if (rachel_camel == 17) {
@@ -4076,7 +4069,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "[Produtora de Sabão Orgânico Ivory]";
 		mes "Eu preciso fazer mais";
 		mes "meu sabonete, mas acabei";
-		mes "de ingredientes. ";
+		mes "de ingredientes.";
 		mes "não há muito que eu possa fazer sem eles,";
 		mes "então talvez fosse melhor se";
 		mes "Acabei de fechar a loja hoje...";
@@ -4228,12 +4221,10 @@ veins,227,127,5	script	Ivory	940,{
 		}
 	}
 	else if (rachel_camel == 7) {
-		mes "[Moça Bonita]";
-		mes "Hm? Você precisa de";
-		mes "alguma coisa? Eu estou";
-		mes "abrindo a loja agora";
-		mes "então eu não estou pronta";
-		mes "para vender nada ainda.";
+		mes "["+strcharinfo(0)+"]";
+		mes "Eu preciso falar com";
+		mes "alguém chamado Saraman";
+		mes "para conseguir os ingredientes do sabão...";
 		close;
 	}
 	else if (rachel_camel == 8) {
@@ -4277,7 +4268,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "com estimulantes de apetite, e";
 		mes "depois pegar os ingredientes";
 		mes "para o sabão e 5 Blocos de Estrume";
-		mes "se eu quiser libertar Curdie.";
+		mes "se eu quiser libertar a Curdie.";
 		close;
 	}
 	else if (rachel_camel == 12) {
@@ -4293,7 +4284,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "^3355FFVocê já encontrou o";
 		mes "camelo, então você precisa coletar";
 		mes "os ingredientes para o sabão se";
-		mes "quiser libertar Curdie.^000000";
+		mes "quiser libertar a Curdie.^000000";
 		close;
 	}
 	else if (rachel_camel == 17) {
@@ -4424,7 +4415,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "Você só pode estar brincando!";
 		next;
 		mes "[Fazendeiro Saraman]";
-		mes "Claro como o pegado, e";
+		mes "Claro como o pecado, e";
 		mes "honesto como Deus.";
 		next;
 		mes "["+strcharinfo(0)+"]";
@@ -4672,7 +4663,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "^3355FFVocê já encontrou o";
 		mes "camelo, então você precisa coletar";
 		mes "os ingredientes para o sabão se";
-		mes "quiser libertar Curdie.^000000";
+		mes "quiser libertar a Curdie.^000000";
 		close;
 	}
 	else if (rachel_camel == 17) {
@@ -4688,7 +4679,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "Não se preocupe, Sr. Saraman,";
 		mes "Eu encontrei Soony perto";
 		mes "da cidade. Ela machucou sua perna então";
-		mes "eu acho que iria ser uma boa idéia se";
+		mes "eu acho que iria ser uma boa ideia se";
 		mes "você enviasse algumas pessoas";
 		mes "para ajudar a trazê-la de volta.";
 		next;
@@ -4698,7 +4689,7 @@ veins,115,59,5	script	Saraman	847,{
 		next;
 		mes "[Fazendeiro Saraman]";
 		mes "Muito bom, você não tem";
-		mes "idéia de quanto esta camela";
+		mes "ideia de quanto esta camela";
 		mes "vale! Eu vou enviar alguns de";
 		mes "meus homens até lá para trazê-la";
 		mes "de volta para casa imediatamente! Obrigado,";
@@ -4764,9 +4755,9 @@ veins,78,226,5	script	Camelo#camelcc1::VeinsCamel	938,{
 		close;
 	}
 	else {
-		mes "[Camel]";
-		mes "*Neigh* ~";
-		mes "*Chew Chew*";
+		mes "[Camelo]";
+		mes "*Relincha* ~";
+		mes "*Mastiga Mastiga*";
 		close;
 	}
 }
@@ -4786,9 +4777,9 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 		mes "o estimulante de apetite para camelos,";
 		mes "e o mastigou.^000000";
 		next;
-		mes "[Camel]";
-		mes "^333333*Chew Chew~*^000000";
-		mes "^333333*Mastiga*^000000";
+		mes "[Camela de Veludo]";
+		mes "^333333*Mastiga Mastiga~*^000000";
+		mes "^333333*Estala os lábios*^000000";
 		next;
 		mes "^3355FFA camela começou a mastigar";
 		mes "o estimulante, então ela começou";
@@ -4817,8 +4808,8 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 			case 1:
 				if (rachel_camel == 12) {
 					mes "[Camela de Veludo]";
-					mes "^333333*Chew Chew~*^000000";
-					mes "^333333*Mastiga*^000000";
+					mes "^333333*Mastiga Mastiga~*^000000";
+					mes "^333333*Estala os lábios*^000000";
 					next;
 					mes "^3355FFA camela comeu tudo,";
 					mes "mas ela parece não querer";
@@ -4840,13 +4831,13 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 				close;
 			case 2:
 				mes "[Camela de Veludo]";
-				mes "^333333*Chew Chew~*^000000";
-				mes "^333333*Mastiga*^000000";
+				mes "^333333*Mastiga Mastiga~*^000000";
+				mes "^333333*Estala os lábios*^000000";
 				next;
 				mes "^3355FFA camela torceu o rosto";
 				mes "como se estivesse sofrendo";
 				mes "de dor de estômago...";
-				mes "Huzah! ";
+				mes "Huzah!";
 				mes "de esterco de camelo fumegante!";
 				mes "Isso é motivo de comemoração!^000000";
 				next;
@@ -4887,7 +4878,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 					mes "5 Blocos de Estrume de Camelo.";
 					mes "Este é o meu melhor momento.";
 					next;
-					mes "["+strcharinfo(0)+"]";
+					mes "[" + strcharinfo(0) + "]";
 					mes "Nunca, em todos estes anos";
 					mes "de aventura, salvando os";
 					mes "oprimidos, protegendo os";
@@ -4895,7 +4886,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 					mes "eu iria completar este";
 					mes "feito magnificente.";
 					next;
-					mes "["+strcharinfo(0)+"]";
+					mes "[" + strcharinfo(0) + "]";
 					mes "Eu estou tão feliz --com isto--";
 					mes "^4D4DFFProvei^000000 minha força, meu";
 					mes "valor, e minha determinação";
@@ -4915,8 +4906,8 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 				close;
 			default:
 				mes "[Camela de Veludo]";
-				mes "^333333*Chew Chew~*^000000";
-				mes "^333333*Mastiga*^000000";
+				mes "^333333*Mastiga Mastiga~*^000000";
+				mes "^333333*Estala os lábios*^000000";
 				next;
 				mes "^3355FFA camela torceu o rosto";
 				mes "como se estivesse sofrendo";
@@ -4949,14 +4940,14 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 			}
 			next;
 			mes "["+strcharinfo(0)+"]";
-			mes "^4D4DFF10 Leites^000000,";
-			mes "^4D4DFF100 Ervas Verde^000000,";
-			mes "^4D4DFF50 Jellopys^000000, e";
-			mes "^4D4DFF5 Garrafas Vazias^000000.";
+			mes "^4D4DFF2 Leites^000000,";
+			mes "^4D4DFF20 Ervas Verde^000000,";
+			mes "^4D4DFF10 Jellopys^000000, e";
+			mes "^4D4DFF1 Garrafas Vazias^000000.";
 			next;
 			mes "[Camela de Veludo]";
-			mes "*Chew Chew*";
-			mes "*Neigh Neigh*~";
+			mes "*Mastiga Mastiga*";
+			mes "*Relincha*~";
 			close;
 		}
 	}
@@ -4972,9 +4963,9 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 	}
 	else {
 		mes "[Camela de Veludo]";
-		mes "*Neigh Neigh*~";
+		mes "*Relincha*~";
 		next;
-		mes "^3355FFCamelo Mastigando.^000000";
+		mes "^3355FFCamelo bobo.^000000";
 		close;
 	}
 }
@@ -5104,7 +5095,7 @@ ra_temin,87,133,1	script	Soldado de Rachel#vol1	934,5,2,{
 		if (.@input$ != "Lamir") {
 			mes "["+strcharinfo(0)+"]";
 			mes "O que...?";
-			mes "De onde é que eu tiro estas idéias?";
+			mes "De onde é que eu tiro estas ideias?";
 			mes "Isto não faz sentido algum...";
 			close;
 		}
@@ -5726,7 +5717,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		emotion ET_THROB, getnpcid(0, "Moça Bêbada#1");
 		emotion ET_THROB, getnpcid(0, "Moça Bêbada#2");
 		mes "[Moças]";
-		mes "Por favor não vá~";
+		mes "Por favor, não vá~";
 		next;
 		mes "[Homem Bêbado]";
 		mes "Ahem!";
@@ -5805,8 +5796,8 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		mes "Ahh, Eu já decidi, eu irei";
 		mes "fazer destas moças adoráveis";
 		mes "minhas estudantes~";
-		mes "Então eu ficarei aqui e";
-		mes "dar uma palestra a elas.";
+		mes "Acho que vou ficar por aqui";
+		mes "e presenteá-las com uma aula.";
 		next;
 		emotion ET_THROB, getnpcid(0, "Moça Bêbada#1");
 		emotion ET_THROB, getnpcid(0, "Moça Bêbada#2");
@@ -5900,7 +5891,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		mes "Eu quebrei ele de propósito.";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "O que?!";
+		mes "O quê?!";
 		next;
 		mes "[Geólogo Gio]";
 		mes "Você sabe, é difícil para";
@@ -5957,7 +5948,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		mes "pagamento por um trabalho";
 		mes "bem feito. Bom trabalho!";
 		mes "Eu não esperava nada menos";
-		mes "vindo do meu aluno estrela!";
+		mes "vindo do meu aluno prodígio!";
 		changequest 60211,60212;
 		set aru_vol,25;
 		delitem 7342,1; //File01
@@ -6009,8 +6000,8 @@ ve_in,234,115,3	script	Moça Bêbada#2	940,{
 	mes "Esta taverna pode parecer";
 	mes "luxuosa e maravilhosa,";
 	mes "mas as bebidas aqui fedem!";
-	mes "Posso misturar bebidas melhor";
-	mes "em casa, sem suar nem um pouco~";
+	mes "Posso misturar bebidas melhores";
+	mes "em casa, sem o menor esforço~";
 	close;
 }
 
@@ -6103,7 +6094,7 @@ ve_in,281,214,3	script	Estante#vol	111,{
 		}
 		getexp (checkre(3))?100000:800000,0;
 		mes "^3355FFBem, você fez tudo";
-		mes "o que pode aqui.";
+		mes "o que podia aqui.";
 		mes "Agora seria uma boa hora";
 		mes "para voltar ao Sumo Sacerdote Zhed.^000000";
 		close;
@@ -6123,7 +6114,7 @@ thor_v01,37,234,3	script	Superfície Quente#1	111,{
 			mes "desta superfície aqui";
 			mes "no chão do vulcão.^000000";
 			next;
-			mes "^3131FFBeep-- Beep-- Bee-^000000";
+			mes "^3131FFBip-- Bip-- Bi-^000000";
 			next;
 			mes "^3131FFTemperatura Atual: 2300°C^000000";
 			next;
@@ -6161,7 +6152,7 @@ thor_v02,165,37,3	script	Superfície Quente#2	111,{
 			mes "desta superfície aqui";
 			mes "no chão do vulcão.^000000";
 			next;
-			mes "^3131FFBeep-- Beep-- Bee-^000000";
+			mes "^3131FFBip-- Bip-- Bi-^000000";
 			next;
 			mes "^3131FFTemperatura Atual: 2270°C^000000";
 			next;
@@ -6193,7 +6184,7 @@ thor_v02,170,100,3	script	Superfície Quente#3	111,{
 			mes "desta superfície aqui";
 			mes "no chão do vulcão.^000000";
 			next;
-			mes "^3131FFBeep-- Beep-- Bee-^000000";
+			mes "^3131FFBip-- Bip-- Bi-^000000";
 			next;
 			mes "^3131FFTemperatura Atual: 2500°C^000000";
 			next;
@@ -6344,7 +6335,7 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		emotion ET_PROFUSELY_SWEAT, playerattached();
 		mes "["+strcharinfo(0)+"]";
 		mes "Oh... Oh, não!";
-		mes "Yikes! Eu acho que se isto";
+		mes "Caramba! Eu acho que se isto";
 		mes "ficar muito mais alto do que";
 		mes "o normal... Isto poderia ser ruim?";
 		next;
@@ -6365,7 +6356,7 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		mes "Ok...";
 		mes "Por favor vá logo, e";
 		mes "veja se esta base estará";
-		mes "a salvo de algum desastre.";
+		mes "salva de algum desastre.";
 		changequest 2121,2122;
 		set aru_vol,13;
 		delitem 7342,1; //File01
@@ -6427,7 +6418,7 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		mes "[Sahedi]";
 		mes "Huh? Você está falando sério?";
 		mes "O Vulcão de Thor irá entrar em";
-		mes "erupção?! Nós-nós temos de";
+		mes "erupção?! Nós-nós temos que";
 		mes "dar o fora daqui!";
 		mes "Poderia ser um desastre, como";
 		mes "o que aconteceu no passado!";
@@ -6916,7 +6907,7 @@ thor_camp,159,74,3	script	Coronel Vito#3	946,{
 		mes "alguma dúvida sobre a vida";
 		mes "na base, vá perguntar a Sahedi";
 		mes "fora deste edifício.";
-		mes "Você está despensado.";
+		mes "Você está dispensado.";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "(^333333Bem... Eu acho";
@@ -7023,7 +7014,7 @@ thor_camp,109,167,3	script	Painel de Controle#vol	111,{
 		mes "derretida passando por eles...";
 		mes "Acho que o calor é aquilo";
 		mes "que é fonte de energia para a base. Isso";
-		mes "é realmente uma idéia inteligente~";
+		mes "é realmente uma ideia inteligente~";
 		next;
 		mes "^3355FFO painel de controle emite";
 		mes "ruídos mecânicos";
@@ -7051,7 +7042,7 @@ thor_camp,150,65,3	script	Boneco#1::VeinsDummy	111,{
 		mes "do Reino de Rune-Midgard.^000000";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "Wow...";
+		mes "Uau...";
 		mes "Eles realmente odeiam";
 		mes "o Reino de Rune-Midgard...";
 		mes "(^333333Tecnicamente, eu não deveria";
@@ -7069,7 +7060,7 @@ thor_camp,150,65,3	script	Boneco#1::VeinsDummy	111,{
 		next;
 		specialeffect EF_HIT2;
 		mes "["+strcharinfo(0)+"]";
-		mes "Um!!";
+		mes "Um!";
 		next;
 		specialeffect EF_HIT2;
 		mes "["+strcharinfo(0)+"]";
@@ -7093,7 +7084,7 @@ thor_camp,150,65,3	script	Boneco#1::VeinsDummy	111,{
 		next;
 		specialeffect EF_HIT2;
 		mes "["+strcharinfo(0)+"]";
-		mes "Sete!";
+		mes "Sete!!";
 		next;
 		specialeffect EF_HIT2;
 		mes "["+strcharinfo(0)+"]";
@@ -7110,7 +7101,7 @@ thor_camp,150,65,3	script	Boneco#1::VeinsDummy	111,{
 		close;
 	}
 	else if (aru_vol == 20) {
-		mes "^3355FF*THUD*^000000";
+		mes "^3355FF*BUM*^000000";
 		specialeffect EF_HIT2;
 		emotion ET_HUK, playerattached();
 		next;
@@ -7212,7 +7203,7 @@ thor_camp,206,92,3	script	Soldado do Vulcão#vo5	939,{
 
 thor_camp,201,321,1	script	Soldado do Vulcão#vo6	939,{
 	mes "[Soldado]";
-	mes "Yo-ho! Yo-ho!";
+	mes "Ioiô! Ioiô!";
 	close;
 }
 
@@ -7226,7 +7217,7 @@ thor_camp,196,315,7	script	Soldado do Vulcão#vo7	939,{
 	close;
 }
 
-thor_camp,181,231,0	script	Guardiões#vol_7	111,{
+thor_camp,181,231,0	script	Guardião#vol_7	111,{
 	mes "^3355FFExistem muitos guardiões";
 	mes "aqui em diferentes estágios";
 	mes "de montagem. Parece que";
