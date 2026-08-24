@@ -25,7 +25,7 @@
 
 morocc,100,104,1	script	Sujeito Estranho#rg	118,{
 	mes "[Sujeito Estranho]";
-	mes "*Sigh...*";
+	mes "*Suspiro...*";
 	mes "O que é a vida?";
 	mes "E qual utilidade";
 	mes "do dinheiro? ...Maldição.";
@@ -33,7 +33,7 @@ morocc,100,104,1	script	Sujeito Estranho#rg	118,{
 	next;
 	mes "[Sujeito Estranho]";
 	mes "Ei, criança.";
-	mes "Para quem diabos";
+	mes "Que diabos";
 	mes "você está olhando?";
 	next;
 	if (select("Eu? N-ninguém!':........") == 1) {
@@ -69,7 +69,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 		mes "........É estranho. Hmm.";
 		next;
 		mes "[Markie]";
-		mes "Eu nunca confundi as pessoas...oh bem, normal!";
+		mes "Eu nunca confundo as pessoas...oh bem, normal!";
 		close;
 	}
 	if (BaseJob == Job_Thief) {
@@ -90,19 +90,17 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				}
 				else {
 					mes "Oh, já sei...";
-					mes "O minininho quer ";
+					mes "O garotinho quer";
 				}
 				mes "ser um ^800000Arruaceiro^000000.";
 				next;
 				mes "[Arruaceira da Guilda]";
-				mes "Hmm, é bom conhecer você, eu acho. Eu sou Markie, e eu trabalho para Guilda dos Arruaceiros, uma filantró-- *ahem* um ^800000filantrófilo^000000 grupo, como você pode ver. Mas qual é seu nome?";
+				mes "Hmm, é bom conhecer você, eu acho. Eu sou Markie, e eu trabalho para Guilda dos Arruaceiros, um grupo filantró-- *aham* um ^800000lucrantrópico^000000, como você pode ver. Então, qual é o seu nome?";
 				next;
 				mes "[Markie]";
 				mes "..." + strcharinfo(0) + "?";
 				mes "Heh heh! Bom nome.";
-				mes "Para um idiota, nós";
-				mes "podemos fazer você mudar isso,";
-				mes "você têm sorte.";
+				mes "Se fosse algo tosco, nós te obrigaríamos a mudar, então você está com sorte.";
 				next;
 				mes "[Markie]";
 				mes "Então porque você quer se juntar aos arruaceiros? Eu acho que você me deu seu nome verdadeiro, você deve ser um Arruaceiro honesto. Não há muitos por aí, heh heh~";
@@ -121,9 +119,9 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 			}
 			else if (ROGUE_Q == 1) {
 				mes "[Markie]";
-				mes "Você denovo?";
-				mes "Ok, você provavelmente estava nervoso e fez besteira da última vez. Agora mantenha a calma e passe";
-				mes "neste teste, ok?";
+				mes "Você de novo?";
+				mes "Ok, você provavelmente estava nervoso e fez besteira da última vez.";
+				mes "Agora mantenha a calma e passe neste teste, ok?";
 				next;
 			}
 			else if (ROGUE_Q == 2) {
@@ -142,8 +140,8 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				next;
 				mes "[Markie]";
 				mes "Heh heh...";
-				mes "Carne fresca. Isto vai ser uma presa";
-				mes "fácil para--espere! Er, eu não estava falando de você! Estava pensando em outra carne fresca~";
+				mes "Carne fresca.";
+				mes "Será uma presa fácil para--espere! Er, eu não estava falando de você! Estava pensando em outra carne fresca~";
 				close;
 			}
 			else if (ROGUE_Q == 16 || ROGUE_Q == 17) {
@@ -157,8 +155,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 					next;
 					mes "[Markie]";
 					mes "Parabéns~!";
-					mes "Você parece";
-					mes "beeem dopado!";
+					mes "Você está incrível!";
 				}
 				else {
 					mes "Oh! É você!";
@@ -167,8 +164,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 					mes "[Markie]";
 					mes "Ei Ei~";
 					mes "Parabéns!";
-					mes "Você";
-					mes "está fazendo um bom trabalho~";
+					mes "Você está fazendo um bom trabalho~";
 				}
 				set .@jlevel,JobLevel;
 				callfunc "Job_Change",Job_Rogue;
@@ -195,10 +191,8 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "[Markie]";
 				mes "Preparado...?";
 				mes "Bom, bom.";
-				mes "Use seu precioso";
-				mes "tempo, porque você não fez isso?";
-				mes "Mas ande rápido";
-				mes "e volte, beleza?";
+				mes "Use seu precioso tempo, porque você não fez isso?";
+				mes "Mas ande rápido e volte, beleza?";
 				close;
 			}
 			next;
@@ -206,7 +200,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 			mes "Preste muita atenção, e";
 			mes "escolha a resposta certa.";
 			mes "Capiche? Agora, deixa eu";
-			mes "ler essas questões...";
+			mes "ler estas questões...";
 			next;
 			switch(rand(1,3)) {
 			case 1:
@@ -225,17 +219,17 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "[Markie]";
 				mes "3. O que a habilidade ^880000Afanar^000000 faz?";
 				next;
-				if (select("Rouba Item de um jogador:Rouba Item de um monstro:Rouba Zeny de um monstro:Rouba Zeny de um jogador") == 3)
+				if (select("Roubar itens de um jogador:Roubar itens de um monstro:Roubar zenys de um monstro:Roubar zenys de um jogador") == 3)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "4. Quantas pessoas são necessárias pra que a habilidade ^880000Malandragem^000000 funcione?";
 				next;
-				if (select("2 Arruaceiros:1 Gatuno + 2 Arruaceiros:4 Gatunos:2 Arruaceiros + 1 Mercenário") == 4)
+				if (select("1 Arruaceiros + 1 Mercenário:1 Gatuno + 2 Arruaceiros:4 Gatunos:2 Arruaceiros") == 4)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
-				mes "5. Que habilidade você pode aprender após ^880000Remover Capacete^000000 Nível 5?";
+				mes "5. Que habilidade você pode aprender após ^880000Remover Elmo^000000 Nível 5?";
 				next;
 				if (select("^880000Envenenar^000000:^880000Recuar^000000:^880000Explosão Tóxica^000000:^880000Remover Escudo^000000") == 4)
 					set .@assassin_t,.@assassin_t+10;
@@ -247,25 +241,25 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
-				mes "7. Que carta aumenta sua chance de acerto num ataque?";
+				mes "7. Qual carta aumenta sua chance de acerto num ataque?";
 				next;
-				if (select("Carta André.:Carta Familiar.:Carta Múmia.:Carta Poring.") == 3)
+				if (select("Carta André.:Carta Familiar.:Carta Múmia.:Carta Marina.") == 3)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "8. Se você usar uma arma equipada com a carta Vadon (20% de dano extra em monstros de propriedade fogo), qual desses monstros será mais fácil de matar?";
 				next;
-				if (select("Vadon:Deviruchi:Salgueiro Ancião:Baphomet") == 3)
+				if (select("Vadon:Deviruchi:Salgueiro Ancião:Bafomé") == 3)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "9. Quanto SP a habilidade ^880000Ataque Duplo^000000 gasta, se você estiver equipando uma adaga?";
 				next;
-				if (select("15: 0, pois é uma habilidade passiva.:Habilidade Passiva, 10 SP:54") == 2)
+				if (select("15:Habilidade passiva, não é necessário SP.:Habilidade passiva, 10 SP:54") == 2)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
-				mes "10. Que adaga com propriedades especiais é mais útil no Túnel Subterrâneo de Byalan?";
+				mes "10. Escolha a adaga mais eficiente para usar na Masmorra de Byalan.";
 				next;
 				if (select("Main-Gauche de Vento:Main-Gauche de Gelo:Main-Gauche de Terra:Main-Gauche de Fogo") == 1)
 					set .@assassin_t,.@assassin_t+10;
@@ -280,13 +274,13 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "[Markie]";
 				mes "2. Que monstro pode deixar cair uma Main Gauche com vagas para cartas (slots)?";
 				next;
-				if (select("Zangão:Lobo do Deserto:Marionete:Lunático") == 1)
+				if (select("Zangão:Lobo do Deserto:Marionete:Névoa") == 1)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
 				mes "3. Qual classe é capaz de criar poções?";
 				next;
-				if (select("Mercador:Alquimista:Ferreiro:Noviço") == 2)
+				if (select("Mercador:Alquimista:Ferreiro:Sacerdote") == 2)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
@@ -354,7 +348,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "[Markie]";
 				mes "3. Onde fica a Guilda para a mudança de classe para Arruaceiro?";
 				next;
-				if (select("Comodo:Praia Kokomo:Ilha Pharos:Morroc") == 3)
+				if (select("Comodo:Praia de Kokomo:Farol de Paros:Morroc") == 3)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
@@ -372,7 +366,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "[Markie]";
 				mes "6. Diga porque você gosta de Arruaceiros?";
 				next;
-				select("Para ser Fera.:As roupas, o estilo.:Para falar assim com os outros: 'foo'':Excelente força de ataque");
+				select("Ser totalmente foda.:As roupas, o estilo.:Poder chamar os outros de 'foo''.:Excelente força de ataque.");
 				set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
@@ -391,7 +385,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "[Markie]";
 				mes "8. Se você quiser pintar seu cabelo de azul, onde você deve levar sua tintura azul?";
 				next;
-				if (select("Morroc, a nordeste do centro:Prontera,a nordeste do centro:Morroc, a nordeste do centro:Prontera, a nordeste do centro") == 2)
+				if (select("Morroc, a sudoeste do centro:Prontera, a sudoeste do centro:Morroc, a sudeste do centro:Prontera, a nordeste do centro") == 2)
 					set .@assassin_t,.@assassin_t+10;
 
 				mes "[Markie]";
@@ -406,15 +400,15 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 					break;
 				}
 				mes "[Markie]";
-				mes "10. Que carta é inútil para Arruaceiros?";
+				mes "10. Qual carta é inútil para Arruaceiros?";
 				next;
-				if (select("Cata Sussurro:Carta Salgueiro Ancião:Carta Zerom:Carta Matyr") == 2)
+				if (select("Carta Sussurro:Carta Salgueiro Ancião:Carta Zerom:Carta Matyr") == 2)
 					set .@assassin_t,.@assassin_t+10;
 			}
 			mes "[Markie]";
-			mes "*Whew~*";
+			mes "*Ufa~*";
 			mes "Finalmente.";
-			mes "Nós acabamos.";
+			mes "Terminamos.";
 			next;
 			mes "[Markie]";
 			mes "Vamos ver.";
@@ -425,14 +419,14 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				setquest 2017;
 				mes "Bom. Você passou.";
 				mes "Nós não teremos que";
-				mes "fazer isso denovo.";
+				mes "fazer isso de novo.";
 				next;
 				mes "[Markie]";
-				mes "Mais não se afobe, você têm mais uns testes. O próximo vai ser do Smith.";
+				mes "Mais não se afobe, você têm mais uns testes. O próximo vai ser o do Smith.";
 				next;
 				mes "[Markie]";
 				mes "Então...";
-				mes "Vai procurar o Smith e termine este teste, beleza? Cuidado, o Smith é um pé no saco.";
+				mes "Vá procurar o Smith e termine este teste, beleza? Mas tenha cuidado. O Smith é um pé no saco.";
 				close;
 			}
 			else {
@@ -440,10 +434,10 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 				mes "Que merda... Você se ferrou!";
 				next;
 				mes "[Markie]";
-				mes "Cara, Você devia ter aprendido mais quando teve a chance. Obrigado por gastar meu tempo atoa.";
+				mes "Cara, você devia ter aprendido mais quando teve a chance. Obrigada por desperdiçar meu tempo.";
 				next;
 				mes "[Markie]";
-				mes "*Sigh...* Deixa eu te falar umas paradas, beleza? Vou te dizer para você dar uma passadinha em ^990000ragnarok.com.br^000000 para te ajudar no que você precisa aprender.";
+				mes "*Suspiro...* Deixa eu te falar umas paradas, beleza? Vou te dizer para você dar uma passadinha em ^990000ragnarok.com.br^000000 para te ajudar no que você precisa aprender.";
 				next;
 				mes "[Markie]";
 				mes "Claro, eu não sei que diabos isso significa, mas se você perceber, ele provavelmente vai te ajudar muito.";
@@ -451,7 +445,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 			}
 		}
 		else if (JobLevel < 40) {
-			mes "[Rogue Guildsman]";
+			mes "[Arruaceira da Guilda]";
 			mes "Whoa, calma noob. Nós só aceitamos Gatunos de nível de classe 40. E não vou me arriscar te ensinando sendo que você não está pronto. Sacou?";
 			close;
 		}
@@ -472,7 +466,7 @@ in_rogue,363,122,4	script	Arruaceira da Guilda#rg	747,{
 		mes "[Markie]";
 		mes "Ei Ei~";
 		mes "Há quanto tempo.";
-		mes "Eh, certo agora não temos";
+		mes "Eh, neste momento não temos";
 		mes "nenhuma tarefa da guilda";
 		mes "para você, portanto";
 		mes "basta checar novamente mais tarde.";
@@ -499,8 +493,8 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 		next;
 		mes "[Sr. Smith]";
 		mes "Antes de nós começarmos,";
-		mes "Eu quero que você";
-		mes "saiba de algo...";
+		mes "eu quero que você";
+		mes "saiba de uma coisa...";
 		next;
 		mes "[Sr. Smith]";
 		mes "Todos os novos Arruaceiros são obrigados a pagar uma taxa, então eu espero que você cuide disso primeiro.";
@@ -523,7 +517,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			next;
 			mes "[Sr. Smith]";
 			mes "Eu vou deixar você saber........";
-			mes "De qalquer forma.....";
+			mes "De qualquer forma.....";
 			next;
 			mes "[Sr. Smith]";
 			mes "Oh cara...";
@@ -552,8 +546,8 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			mes "[Sr. Smith]";
 			mes "Aquele maldito chefe da guilda me atribuiu essa porcaria de tarefa. Eu sou melhor que essa M#$%¨# de tarefa!";
 			mapannounce "in_rogue","Aquele maldito chefe da guilda me atribuiu essa porcaria de tarefa! Aquele bastardo!",bc_map;
-			mes "Aquele bastardo tinha que ir para a P@#$$ que o P@#%&, Eu irei chutar o rabo daquele F@#$ da P#$%¨@! F#%k F#%k F#%k !!!";
-			mapannounce "in_rogue","Aquele bastardo tinha que ir para a P@#$$ que o P@#%&, Eu irei chutar o rabo daquele F@#$ da P#$%¨@!F#%k F#%k F#%k !!!",bc_map;
+			mes "Aquele bastardo tinha que ir para a P@#$$ que o P@#%&, eu irei chutar o rabo daquele F@#$ da P#$%¨@! F#%k F#%k F#%k !!!";
+			mapannounce "in_rogue","Aquele bastardo tinha que ir para a P@#$$ que o P@#%&, eu irei chutar o rabo daquele F@#$ da P#$%¨@!F#%k F#%k F#%k !!!",bc_map;
 			next;
 			mes "[Sr. Smith]";
 			mes "Aquele pedaço de lixo que tentou mudar sua profissão, um antes de você...";
@@ -589,7 +583,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			mapannounce "in_rogue","Faça o que quiser, ok? Faça a p#$!@ que quiser...!!",bc_map;
 			next;
 			mes "[Sr. Smith]";
-			mes "Sua taxa... ^FF000010,000 zeny^000000!!";
+			mes "Sua taxa... ^FF000010.000 zeny^000000!!";
 			next;
 			mes "[Sr. Smith]";
 			mes "^FF00005 Crisálidas^000000!";
@@ -687,7 +681,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				mes "Wow, você trouxe cara coisa que eu lhe pedi para trazer. Bom trabalho... Eu lhe saúdo.";
 				next;
 				mes "^CCCCCC- Dedo Médio -^000000'";
-				mes "*Grins*";
+				mes "*Sorri*";
 				set ROGUE_Q,8;
 				changequest 2021,2025;
 				next;
@@ -695,29 +689,29 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				mes "Desde que você mostrou esse seu grande esforço, irei escrever uma carta de recomendação para você. Eu normalmente não faço isso, você sabe.";
 				next;
 				mes "[Sr. Smith]";
-				mes "Mas acredito que você será um grande trunfo para a Guilda dos Arruaceiros. Hmm, não tenho nenhum papel em branco aqui agora, então pegue isso...";
+				mes "Mas acredito que você será um grande trunfo para a Guilda dos Arruaceiros. Hmm, não tenho nenhum papel em branco aqui agora, então pegue este...";
 				getitem 1097,1; //Worn_Out_Page
 				next;
 				mes "[Sr. Smith]";
-				mes "*Sigh...*";
-				mes "Eu sei, Eu sei. Eu tenho que me controlar no local de trabalho. Como rebelde isso é um mau hábito...";
+				mes "*Suspiro...*";
+				mes "Eu sei, eu sei. Eu tenho que me controlar no local de trabalho. Ficar enfurecido é um mau hábito...";
 				next;
 				mes "[Sr. Smith]";
-				mes "*Mumble mumble...*";
-				mes "Como foi que eu... *Mumble...*";
+				mes "*Murmúrio murmúrio...*";
+				mes "Como foi que eu... *Murmúrio...*";
 				mes "Como é que... Eu lembro...";
-				mes "*Sigh* Foi tudo por causa do meu mau humor!";
+				mes "*Suspiro* Foi tudo por causa do meu mau humor!";
 				next;
 				mes "[Sr. Smith]";
 				mes "Wah....!!!";
 				next;
-				mes "^3355FFAcho que é uma boa";
-				mes "idéia eu voltar mais tarde.^000000";
+				mes "^3355FFTalvez seja melhor";
+				mes "voltar mais tarde.^000000";
 				close;
 			}
 			mes "[Sr. Smith]";
 			mes "Preste atenção!";
-			mes "taxa de inscrição:";
+			mes "Taxa de inscrição:";
 			mes "^FF000010000 zeny^000000,";
 			mes "^FF00005 Crisálidas^000000!";
 			mes "^FF00005 Garrafas Vazias^000000!";
@@ -755,7 +749,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			mes "[Sr. Smith]";
 			mes "Deixe-me ver...";
 			mes "Para quem eu";
-			mes "deveria lhe mandar...?";
+			mes "deveria te encaminhar...?";
 			switch(rand(1,3)) {
 			case 1:
 				set ROGUE_Q,9;
@@ -770,14 +764,14 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				}
 				next;
 				mes "[Sr. Smith]";
-				mes "Certo! Eu sei";
-				mes "de apenas um cara~!";
+				mes "Certo!";
+				mes "Conheço a pessoa ideal~!";
 				next;
 				mes "[Sr. Smith]";
-				mes "Vá visitar Aragham Junior que vive ao Sul da Fortaleza de Saint Darmain. Essa area é localizada a um campo a leste daqui.";
+				mes "Vá visitar Aragham Junior que vive ao Sul da Fortaleza de Saint Darmain. Esta área é localizada a um campo a leste daqui.";
 				next;
 				mes "[Sr. Smith]";
-				mes "Ele é um cara legal, você sabe. Ele trabalha duro e é muito bom em coletar contas.";
+				mes "Ele é um cara legal, você sabe. Ele trabalha duro e é muito bom em cobrança.";
 				next;
 				mes "[Sr. Smith]";
 				mes "Antes dele se juntar a Guilda dos Arruaceiros, pessoas tem tentado a mata-lo por algo que o pai dele fez no passado. Então, ele se tornou um fugitivo.";
@@ -786,13 +780,13 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				mes "Bem de qualquer modo, é por isso que ele está com a gente. Nós o ajudamos a se esconder de seus inimigos.";
 				next;
 				mes "[Sr. Smith]";
-				mes "Ah, você terá que lembrar da senha se você quiser conhecê-lo. Ele não deixa ninguem entrar em sua casa sem a senha.";
+				mes "Ah, você terá que lembrar da senha se você quiser conhecê-lo. Ele não deixa ninguém entrar em sua casa sem a senha.";
 				next;
 				mes "[Sr. Smith]";
-				mes "A senha é ^0000FFAragham não roubou o material de forja^000000.";
+				mes "A senha é ^0000FFAragham nunca roubou itens de aprimoramento^000000.";
 				next;
 				mes "[Sr. Smith]";
-				mes "Bem, lhe desejo sorte. O lugar não é tão longe daqui, então volte o mais rápido possivel. Seja ligeiro... Esse é o espírito do Arruaceiro.";
+				mes "Bem, lhe desejo sorte. O lugar não é tão longe daqui, então volte o mais rápido possível. Seja ligeiro... Esse é o espírito do Arruaceiro.";
 				close;
 			case 2:
 				set ROGUE_Q,10;
@@ -810,16 +804,16 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				mes "Hmm...";
 				mes "Esse cara será";
 				mes "legal com você, mas...";
-				mes "ele é um pouco perigoso.";
+				mes "Ele é um pouco perigoso.";
 				next;
 				mes "[Sr. Smith]";
 				mes "Eu quero que você conheça o Antonio Junior, filho de Antonio, o primeiro. Pela mesma razão, pessoas querem matá-lo por causa de algo que o pai dele fez no passado.";
 				next;
 				mes "[Sr. Smith]";
-				mes "Ele morava em Payon, mas ele está hospedado em uma casa vazia próxima a praia de Kokomo nesse momento";
+				mes "Ele morava em Payon, mas ele está hospedado em uma casa vazia próxima a Praia de Kokomo nesse momento";
 				next;
 				mes "[Sr. Smith]";
-				mes "Ouvi dizer que ultimamente ele tem reclamado muito sobre ruídos fora de sua casa, e ele teme uma tentativa de assasinato. De qualquer maneira...";
+				mes "Ouvi dizer que ultimamente ele tem reclamado muito sobre ruídos fora de sua casa, e ele teme uma tentativa de assassinato. De qualquer maneira...";
 				next;
 				mes "[Sr. Smith]";
 				mes "Ele é meio tenso, então ele lança uma faca em quem se aproximar de sua casa. Ele tem uma personalidade violenta.";
@@ -828,7 +822,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				mes "No entanto, ele tem uma magnífica competência empresarial. E ele adora jogar. Depois de conhece-lo, ele irá cuidar de seu treino de Arruaceiro muito bem.";
 				next;
 				mes "[Sr. Smith]";
-				mes "Ah, você terá que lembrar da senha para conhece-lo. A senha é ^0000FFAntonio não gosta de quebrar o material de forja^000000.";
+				mes "Ah, você terá que lembrar da senha para conhece-lo. A senha é ^0000FFAntonio não gosta de destruir os itens de aprimoramento^000000.";
 				close;
 			case 3:
 				set ROGUE_Q,11;
@@ -851,7 +845,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				mes "[Sr. Smith]";
 				mes "Seu nome é";
 				mes "Hollgrehenn Junior,";
-				mes "um genio da manipulação.";
+				mes "um gênio da manipulação.";
 				next;
 				mes "[Sr. Smith]";
 				mes "Contudo, por causa de algo que seu pai fez no passado, as pessoas tem tentado a mata-lo. Por causa disso, ele é muito desconfiado e irá jogar facas em pessoas na qual ele não confia.";
@@ -860,7 +854,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 				mes "Nosso líder foi capaz de convence-lo a se juntar a nossa Guilda, e sua mente brilhante foi um trunfo para nós. Depois que você conhece-lo, ele irá ele irá cuidar de seu treino de Arruaceiro muito bem.";
 				next;
 				mes "[Sr. Smith]";
-				mes "Ah, você terá que lembrar da senha para conhece-lo. A senha é ^0000FFMeu pai não roubou o material de forja^000000.";
+				mes "Ah, você terá que lembrar da senha para conhece-lo. A senha é ^0000FFMeu pai nunca roubou itens de aprimoramento^000000.";
 				close;
 			}
 		}
@@ -869,10 +863,10 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			mes "Muito bem... Agora que estou mais calmo, irei lhe informar o seu próximo destino. *Whew*";
 			next;
 			mes "[Sr. Smith]";
-			mes "Vá e procure por Hermanthorn Junior, que está vivendo perto do ^0000FFPonto de inspeção da Ilha Pharos^000000, que está na fronteira entre Morroc e Comodo.";
+			mes "Vá e procure por Hermanthorn Junior, que está vivendo perto do ^0000FFPonto de inspeção da Farol de Paros^000000, que está na fronteira entre Morroc e Comodo.";
 			next;
 			mes "[Sr. Smith]";
-			mes "Ah...antes que me esqueça, ponha em mente em não mencionar nada sobre itens de forja. Isso é muito importante.";
+			mes "Ah...antes que me esqueça, tenha em mente em não mencionar nada sobre itens de aprimoramento. Isso é muito importante.";
 			close;
 		}
 		else if (ROGUE_Q == 9) {
@@ -886,7 +880,7 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			mes "Siga um campo a Leste e entre no edifício que fica ao Sul da Fortaleza de Saint Darmain para conhecer Aragham Junior.";
 			next;
 			mes "[Sr. Smith]";
-			mes "A senha é ^0000FFAragham não roubou o material de forja^000000.";
+			mes "A senha é ^0000FFAragham nunca roubou itens de aprimoramento^000000.";
 			close;
 		}
 		else if (ROGUE_Q == 10) {
@@ -898,13 +892,12 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			next;
 			mes "[Sr. Smith]";
 			mes "Vá para o edifício que ";
-			mes "está na praia de Kokomo,";
+			mes "está na Praia de Kokomo,";
 			mes "que está a caminho";
-			mes "para Comodo por aqui, para conhecer";
-			mes "Antonio Junior.";
+			mes "para Comodo por aqui, para conhecer Antonio Junior.";
 			next;
 			mes "[Sr. Smith]";
-			mes "A senha é ^0000FF'Antonio não gosta de quebrar o material de forja'^000000.";
+			mes "A senha é ^0000FF'Antonio não gosta de destruir os itens de aprimoramento'^000000.";
 			close;
 		}
 		else if (ROGUE_Q == 11) {
@@ -915,10 +908,10 @@ in_rogue,376,23,1	script	Sr. Smith#rg	57,{
 			mes "esqueceu para onde deve ir?";
 			next;
 			mes "[Sr. Smith]";
-			mes "Vá para o campo ao Sul da Fortaleza, que está a caminho de Morroc por aqui, para conhecer Hollgrehenn Junior.";
+			mes "Vá para o campo ao Sul da Fortaleza de Saint Darmain, que está a caminho de Morroc por aqui, para conhecer Hollgrehenn Junior.";
 			next;
 			mes "[Sr. Smith]";
-			mes "A senha é ^0000FFMeu pai não roubou o material de forja^000000.";
+			mes "A senha é ^0000FFMeu pai nunca roubou itens de aprimoramento^000000.";
 			close;
 		}
 		else if (ROGUE_Q > 11) {
@@ -937,7 +930,7 @@ S_Req:
 	mes "[Sr. Smith]";
 	mes "Primeiro, a";
 	mes "taxa de inscrição:";
-	mes "^FF000010,000 zeny^000000.";
+	mes "^FF000010.000 zeny^000000.";
 	next;
 	mes "[Sr. Smith]";
 	mes "Nós tambem precisamos";
@@ -967,7 +960,7 @@ S_Req:
 	next;
 	mes "[Sr. Smith]";
 	mes "Isso me soa tão bem~,";
-	mes "eu apreciei isso.";
+	mes "agradeço a gentileza.";
 	mes "Mas volte aqui quando";
 	mes "você estiver preparado.";
 	close;
@@ -979,7 +972,7 @@ S_CheckItems:
 
 	if (Zeny > 9999 && countitem(.@item_req[0]) >= .@amount[0] && countitem(.@item_req[1]) >= .@amount[1] && countitem(.@item_req[2]) >= .@amount[2] && countitem(.@item_req[3]) >= .@amount[3]) {
 		mes "[Sr. Smith]";
-		mes "Ok, temos a taxa de pedido de, ^FF000010,000 zeny^000000, "+ .@amount[0] +" "+ getitemname(.@item_req[0]) +", "+ .@amount[1] +" "+ getitemname(.@item_req[1]) +", "+ .@amount[2] +" "+ getitemname(.@item_req[2]) +" e "+ .@amount[3] +" "+ getitemname(.@item_req[3]) +"...";
+		mes "Ok, temos a taxa de pedido de, ^FF000010.000 zeny^000000, "+ .@amount[0] +" "+ getitemname(.@item_req[0]) +", "+ .@amount[1] +" "+ getitemname(.@item_req[1]) +", "+ .@amount[2] +" "+ getitemname(.@item_req[2]) +" e "+ .@amount[3] +" "+ getitemname(.@item_req[3]) +"...";
 		set Zeny, Zeny-10000;
 		delitem .@item_req[0],.@amount[0];
 		delitem .@item_req[1],.@amount[1];
@@ -994,16 +987,16 @@ S_CheckItems:
 		set ROGUE_Q,7;
 		next;
 		mes "[Sr. Smith]";
-		mes "Muito bem, espere um momemto enquanto";
-		mes "eu preparo essas coisas. Deixe-me ver... Seu próximo teste é...";
+		mes "Muito bem, espere um momento enquanto eu preparo estas coisas.";
+		mes "Deixe-me ver... Seu próximo teste é...";
 		close;
 	}
 	mes "[Sr. Smith]";
-	mes "Mas que P$@&*!? Você não trouxe todos os itens necessários?! Você está querendo me dizer que quer checar os itens pedidos novamente!?";
+	mes "Mas que P$@&*!? Você não trouxe todos os itens necessários?! Você está me dizendo que precisa verificar os requisitos novamente!?";
 	next;
 	mes "[Sr. Smith]";
 	mes "Agora preste atenção...!";
-	mes "Traga ^FF000010,000 zeny^000000,";
+	mes "Traga ^FF000010.000 zeny^000000,";
 	mes "e os seguintes itens...";
 	next;
 	mes "[Sr. Smith]";
@@ -1019,8 +1012,8 @@ cmd_fild09,106,195,0	script	Warp#1	45,1,1,{
 OnTouch_:
 	mes "[???]";
 	mes "Quem está aí?!";
-	mes "Quem ousa";
-	mes "entrar em meu território?";
+	mes "Quem ousaria";
+	mes "invadir o meu território?";
 	next;
 	switch(select("Meu pai:Aragham:Aragon:Legolas")) {
 	case 1:
@@ -1041,33 +1034,33 @@ OnTouch_:
 		mes "Legolas";
 		break;
 	}
-	switch(select("não faz:não gosta:não:sempre")) {
+	switch(select("não faz:não gosta:nunca:sempre")) {
 	case 1: mes "não faz"; break;
 	case 2: mes "não gosta"; break;
 	case 3:
-		mes "não";
+		mes "nunca";
 		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 4: mes "sempre"; break;
 	}
-	switch(select("recebe:roubou:se escondeu:examinou:de quebrar")) {
-	case 1: mes "recebe"; break;
+	switch(select("acumular:roubou:esconder:pegou:pegar")) {
+	case 1: mes "acumular"; break;
 	case 2:
 		mes "roubou";
 		set .@rogue_t,.@rogue_t+10;
 		break;
-	case 3: mes "se escondeu"; break;
-	case 4: mes "examinou"; break;
-	case 5: mes "de quebrar"; break;
+	case 3: mes "esconder"; break;
+	case 4: mes "pegou"; break;
+	case 5: mes "pegar"; break;
 	}
-	switch(select("o material de forja.:itens roubados.:material refinado:equipamentos.")) {
+	switch(select("itens de aprimoramento.:itens de forja.:itens de refinamento.:itens refinados.")) {
 	case 1:
-		mes "o material de forja.";
+		mes "itens de aprimoramento.";
 		set .@rogue_t,.@rogue_t+10;
 		break;
-	case 2: mes "itens roubados."; break;
-	case 3: mes "material refinado."; break;
-	case 4: mes "equipamentos."; break;
+	case 2: mes "itens de forja."; break;
+	case 3: mes "itens de refinamento."; break;
+	case 4: mes "itens refinados."; break;
 	}
 	next;
 	if (.@rogue_t > 30) {
@@ -1089,8 +1082,8 @@ cmd_fild09,335,143,0	script	Warp#2	45,1,1,{
 OnTouch_:
 	mes "[???]";
 	mes "Quem está aí?!";
-	mes "Quem ousa";
-	mes "entrar em meu território?";
+	mes "Quem ousaria";
+	mes "invadir o meu território?";
 	next;
 	switch(select("Meu pai:Aragham:Aragon:Legolas")) {
 	case 1:
@@ -1111,18 +1104,18 @@ OnTouch_:
 		mes "Legolas";
 		break;
 	}
-	switch(select("não:nem:nunca:jamais")) {
+	switch(select("não:não gosta:nunca:sempre")) {
 	case 1: mes "não faz"; break;
 	case 2: mes "não gosta"; break;
 	case 3:
-		mes "não";
+		mes "nunca";
 		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 4: mes "sempre"; break;
 	}
-	switch(select("recebe:de quebrar:se escondeu:examinou:rubou")) {
+	switch(select("recebe:de destruir:se escondeu:examinou:rubou")) {
 	case 1: mes "recebe"; break;
-	case 2: mes "de quebrar"; break;
+	case 2: mes "de destruir"; break;
 	case 3: mes "se escondeu"; break;
 	case 4: mes "examinou"; break;
 	case 5:
@@ -1130,14 +1123,14 @@ OnTouch_:
 		set .@rogue_t,.@rogue_t+10;
 		break;
 	}
-	switch(select("o material de forja.:itens roubados.:material refinado:equipamentos.")) {
+	switch(select("itens de aprimoramento.:itens de forja.:itens de refinamento.:itens refinados.")) {
 	case 1:
-		mes "o material de forja.";
+		mes "itens de aprimoramento.";
 		set .@rogue_t,.@rogue_t+10;
 		break;
-	case 2: mes "itens roubados."; break;
-	case 3: mes "material refinado."; break;
-	case 4: mes "equipamentos."; break;
+	case 2: mes "itens de forja."; break;
+	case 3: mes "itens de refinamento."; break;
+	case 4: mes "itens refinados."; break;
 	}
 	next;
 	if (.@rogue_t > 30) {
@@ -1159,8 +1152,8 @@ cmd_fild04,304,180,0	script	Warp#3	45,1,1,{
 OnTouch_:
 	mes "[???]";
 	mes "Quem está aí?!";
-	mes "Quem ousa";
-	mes "entrar em meu território?";
+	mes "Quem ousaria";
+	mes "invadir o meu território?";
 	next;
 	switch(select("Anntonio:Aragham:Antonio:Hollgrehenn")) {
 	case 1:
@@ -1190,20 +1183,20 @@ OnTouch_:
 	case 3: mes "prefere"; break;
 	case 4: mes "não prefere"; break;
 	}
-	switch(select("de danificar:de quebrar:de consertar:de forjar")) {
+	switch(select("de danificar:de destruir:de consertar:de forja")) {
 	case 1: mes "de danificar"; break;
 	case 2:
-		mes "de quebrar";
+		mes "de destruir";
 		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 3: mes "de consertar"; break;
-	case 4: mes "de forjar"; break;
+	case 4: mes "de forja"; break;
 	}
-	switch(select("o item de forja.:os itens refinados.:o material de forja.:os itens aprimorados.:os itens reforçados.:os itens forjados.")) {
+	switch(select("o item de forja.:os itens refinados.:os itens de aprimoramento.:os itens aprimorados.:os itens reforçados.:os itens forjados.")) {
 	case 1: mes "o item de forja."; break;
 	case 2: mes "os itens refinados."; break;
 	case 3:
-		mes "o material de forja.";
+		mes "os itens de aprimoramento.";
 		set .@rogue_t,.@rogue_t+10;
 		break;
 	case 4: mes "os itens aprimorados."; break;
@@ -1228,7 +1221,7 @@ OnTouch_:
 in_rogue,272,135,1	script	Hermanthorn Jr#rg	85,{
 	if (ROGUE_Q == 8) {
 		mes "[Hermanthorn Jr.]";
-		mes "Eu vejo...";
+		mes "Posso ver...";
 		mes "Você deve vindo da";
 		mes "Guilda dos Arruaceiros.";
 		mes "Voce deve ser um dos";
@@ -1268,7 +1261,7 @@ in_rogue,272,135,1	script	Hermanthorn Jr#rg	85,{
 	else {
 		mes "[Hermanthorn Jr.]";
 		mes "Huh...?";
-		mes "O que diabos";
+		mes "Que diabos";
 		mes "você está fazendo aqui.";
 		mes "Desapareça, por que você não?";
 		close;
@@ -1277,20 +1270,20 @@ in_rogue,272,135,1	script	Hermanthorn Jr#rg	85,{
 
 in_rogue,270,130,0	script	he_to_rogue#rg	45,1,1,{
 OnTouch_:
-	mes "^3355FFA porta está trancada. Você deve inserir a combinação de quatro números para abri-lá.^000000";
+	mes "^3355FFA porta está trancada. Você deve inserir a combinação de quatro números para abri-la.^000000";
 	next;
 	input .@input;
 	if (.@input < 1 || .@input > 10000) {
 		if (ROGUE_Q == 12)
 			mes "^3355FFNão funcionou. Por favor redigite a combinação de quatro dígitos.^000000";
-		else 
+		else
 			mes "^3355FFPor favor digite a combinação de quatro números.^000000";
 		close;
 	}
 	else if (.@input == 3019) {
 		if (ROGUE_Q == 12) {
 			mes "^3355FFA porta";
-			mes "está aberta.^000000";
+			mes "se abriu.^000000";
 			close2;
 			warp "in_rogue",10,21;
 			set ROGUE_Q,12;
@@ -1403,7 +1396,7 @@ in_rogue,244,39,1	script	Aragham Junior#rg	99,{
 		mes "vindo da Guilda dos Arruaceiros...";
 		next;
 		mes "[Aragham Jr.]";
-		mes "meu nome é";
+		mes "Meu nome é";
 		mes "Aragham Junior,";
 		mes "Arruaceiro do Deserto.";
 		mes "Você está pronto para aprender";
@@ -1421,7 +1414,7 @@ in_rogue,244,39,1	script	Aragham Junior#rg	99,{
 		mes "Agora, lembre-se disso quando você passar pelo^0000FFtúnel subterrâneo^000000. Tente andar todo o caminho para a Guilda dos Arruaceiros.";
 		next;
 		mes "[Aragham Jr.]";
-		mes "Haverá alguns monstros, mas não se preocupe. Eu sei que você é forte. Tudo bem, você está pronto para ir ou o que?";
+		mes "Haverá alguns monstros, mas não se preocupe. Eu sei que você é forte. Tudo bem, você está pronto para ir ou o quê?";
 		next;
 		if (select("Sim, vamos lá.:Nah~") == 1) {
 			mes "[Aragham Jr.]";
@@ -1445,7 +1438,7 @@ in_rogue,244,39,1	script	Aragham Junior#rg	99,{
 		mes "Oh, você voltou.";
 		mes "Acho que você está bem desta vez. Outro lema dos Arruaceiros é '^0000FFFalha ensina o sucesso^000000.' Bem, então novamente...";
 		next;
-		if (select("Re-Test:Cancel") == 1) {
+		if (select("Tentar novamente.:Cancelar.") == 1) {
 			mes "[Aragham Jr.]";
 			mes "Boa sorte.";
 			close2;
@@ -1467,7 +1460,7 @@ in_rogue,244,39,1	script	Aragham Junior#rg	99,{
 		mes "da Guilda dos Arruaceiros!!";
 		next;
 		mes "[Aragham Jr.]";
-		mes "Se você veio para me matar, não é mesmo? N-não! Não posso morrer ainda! Caia fora! Ou então, Eu matarei você primeiro!";
+		mes "Se você veio para me matar, não é mesmo? N-não! Não posso morrer ainda! Caia fora! Ou então, eu matarei você primeiro!";
 		close;
 	}
 	else {
@@ -1477,12 +1470,12 @@ in_rogue,244,39,1	script	Aragham Junior#rg	99,{
 		mes "você de volta aqui?";
 		mes "Porque você não";
 		mes "descansa um pouco";
-		mes "antes de você ir?";
+		mes "antes de ir?";
 		close;
 	}
 }
 
-in_rogue,160,34,1	script	Hollgrehenn junior#rg	85,{
+in_rogue,160,34,1	script	Hollgrehenn Junior#rg	85,{
 	if (ROGUE_Q == 11) {
 		mes "[Hollgrehenn Jr.]";
 		mes "Hmm...";
@@ -1516,8 +1509,7 @@ in_rogue,160,34,1	script	Hollgrehenn junior#rg	85,{
 		}
 		mes "[Hollgrehenn Jr.]";
 		mes "Aproveite seu tempo.";
-		mes "Volte aqui";
-		mes "quando estiver pronto.";
+		mes "Volte aqui quando estiver pronto.";
 		close;
 	}
 	else if (ROGUE_Q == 15) {
@@ -1526,7 +1518,7 @@ in_rogue,160,34,1	script	Hollgrehenn junior#rg	85,{
 		mes "Você falhou.";
 		mes "Quer tentar novamente?";
 		next;
-		if (select("Novamente.:Cancelar.") == 1) {
+		if (select("Tentar novamente.:Cancelar.") == 1) {
 			mes "[Hollgrehenn Jr.]";
 			mes "Boa sorte.";
 			close2;
@@ -1535,8 +1527,7 @@ in_rogue,160,34,1	script	Hollgrehenn junior#rg	85,{
 		}
 		mes "[Hollgrehenn Jr.]";
 		mes "Aproveite seu tempo.";
-		mes "Volte aqui";
-		mes "quando estiver pronto.";
+		mes "Volte aqui quando estiver pronto.";
 		close;
 	}
 	else if (BaseJob != Job_Rogue) {
@@ -1546,29 +1537,29 @@ in_rogue,160,34,1	script	Hollgrehenn junior#rg	85,{
 		mes "Clã dos Arruaceiros...";
 		next;
 		mes "[Hollgrehenn Jr.]";
-		mes "Você deveria sair";
+		mes "É melhor você sair";
 		mes "daqui agora";
 		mes "se souber o que é";
 		mes "bom para você...";
 		next;
 		mes "[Hollgrehenn Jr.]";
 		mes "Agora...";
-		mes "Aproveito antes que";
-		mes "eu mude de idéia e";
+		mes "Vaza daqui antes que";
+		mes "eu mude de ideia e";
 		mes "decida matar você.";
 		close;
 	}
 	else {
 		mes "[Hollgrehenn Jr.]";
 		mes "Ei...";
-		mes "Veio pessear?";
+		mes "Veio passear?";
 		mes "Nós Arruaceiros devemos";
 		mes "ficar juntos, certo?";
 		close;
 	}
 }
 
-in_rogue,177,109,1	script	Antonio junior#rg	88,{
+in_rogue,177,109,1	script	Antonio Junior#rg	88,{
 	if (ROGUE_Q == 10) {
 		mes "[Antonio Jr.]";
 		mes "Você é do";
@@ -1603,7 +1594,7 @@ in_rogue,177,109,1	script	Antonio junior#rg	88,{
 		}
 		mes "[Antonio Jr.]";
 		mes "Não tenho tempo";
-		mes "para idiotices com";
+		mes "para perder com";
 		mes "você. Apresse-se e fique";
 		mes "pronto, então comece";
 		mes "o teste.";
@@ -1614,9 +1605,9 @@ in_rogue,177,109,1	script	Antonio junior#rg	88,{
 		mes "Você falhou...?";
 		mes "Isso é a vida.";
 		mes "Vai tentar novamente";
-		mes "ou o que?";
+		mes "ou o quê?";
 		next;
-		if (select("Novamente.:Cancelar.") == 1) {
+		if (select("Tentar novamente.:Cancelar.") == 1) {
 			mes "[Antonio Jr.]";
 			mes "Lembre-se, estou lhe";
 			mes "fazendo um favor aqui...";
@@ -1628,7 +1619,7 @@ in_rogue,177,109,1	script	Antonio junior#rg	88,{
 		}
 		mes "[Antonio Jr.]";
 		mes "Não tenho tempo";
-		mes "para idiotices com";
+		mes "para perder com";
 		mes "você. Apresse-se e fique";
 		mes "pronto, então comece";
 		mes "o teste.";
