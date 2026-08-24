@@ -61,7 +61,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			Zeny = Zeny-120000;
 			mes "[Christopher Guillenrow]";
 			mes "Humm, muitos compram esta bigorna.";
-			mes "Esta é uma bigorna própria para forjadores, não é?";
+			mes "É uma bigorna própria para forjadores, não é?";
 			mes "Obrigado por comprar na minha oficina.";
 			mes "Sinta-se livre para voltar a qualquer hora, sempre que precisar.";
 			close;
@@ -142,7 +142,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			Zeny = Zeny-.@sell;
 			mes "[Christopher Guillenrow]";
 			mes "Obrigado por comprar na minha oficina.";
-			mes "Sinta-se livre para vir aqui, sempre que precisar.";
+			mes "Sinta-se livre para vir aqui sempre que precisar.";
 			close;
 		case 2:
 			if (Zeny < 1000) {
@@ -155,7 +155,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			Zeny = Zeny-1000;
 			mes "[Christopher Guillenrow]";
 			mes "Obrigado por comprar na minha oficina.";
-			mes "Sinta-se livre para vir aqui, sempre que precisar.";
+			mes "Sinta-se livre para vir aqui sempre que precisar.";
 			close;
 		case 3:
 			if (Zeny < 3000) {
@@ -168,7 +168,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			Zeny = Zeny-3000;
 			mes "[Christopher Guillenrow]";
 			mes "Obrigado por comprar na minha oficina.";
-			mes "Sinta-se livre para vir aqui, sempre que precisar.";
+			mes "Sinta-se livre para vir aqui sempre que precisar.";
 			close;
 		case 4:
 			if (Zeny < 5000) {
@@ -181,7 +181,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			Zeny = Zeny-5000;
 			mes "[Christopher Guillenrow]";
 			mes "Obrigado por comprar na minha oficina.";
-			mes "Sinta-se livre para vir aqui, sempre que precisar.";
+			mes "Sinta-se livre para vir aqui sempre que precisar.";
 			close;
 		case 5:
 			mes "[Christopher Guillenrow]";
@@ -222,7 +222,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 				mes "[Christopher Guillenrow]";
 				mes "Você não tem o dinheiro.";
 				mes "Saiba que eu não posso vender por um preço tão baixo...";
-				mes "Minha esposa reclama muito sobre a falta de Zeny.";
+				mes "Minha esposa reclama muito sobre a falta de zeny.";
 				close;
 			}
 			if (checkweight(1010,.@input) == 0) {
@@ -235,7 +235,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			Zeny = Zeny-.@sell;
 			mes "[Christopher Guillenrow]";
 			mes "Obrigado por comprar na minha oficina.";
-			mes "Sinta-se livre para vir aqui, sempre que precisar.";
+			mes "Sinta-se livre para vir aqui sempre que precisar.";
 			close;
 		case 2:
 			mes "[Christopher Guillenrow]";
@@ -264,7 +264,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 				mes "[Christopher Guillenrow]";
 				mes "Você não tem o dinheiro.";
 				mes "Saiba que eu não posso vender por um preço tão baixo...";
-				mes "Minha esposa reclama muito sobre a falta de Zeny.";
+				mes "Minha esposa reclama muito sobre a falta de zeny.";
 				close;
 			}
 			if (checkweight(1011,.@input) == 0) {
@@ -278,7 +278,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			Zeny = Zeny-.@sell;
 			mes "[Christopher Guillenrow]";
 			mes "Obrigado por comprar na minha oficina.";
-			mes "Sinta-se livre para vir aqui, sempre que precisar.";
+			mes "Sinta-se livre para vir aqui sempre que precisar.";
 			close;
 		case 3:
 			mes "[Christopher Guillenrow]";
@@ -322,7 +322,7 @@ geffen_in,110,172,0	script	Christopher#1	63,{
 			}
 		case 3:
 			mes "[Christopher Guillenrow]";
-			mes "Sinta-se livre para vir aqui, sempre que precisar.";
+			mes "Sinta-se livre para vir aqui sempre que precisar.";
 			mes "Até mais.";
 			close;
 		}
@@ -345,7 +345,7 @@ ein_in01,38,29,0	script	Paul Spanner	63,{
 	}
 	mes "[Paul Spanner]";
 	mes "Bem vindo, meu amigo.";
-	mes "Na minha oficina, você podera encontrar tudo que necessita para forjar.";
+	mes "Na minha oficina, você poderá encontrar tudo que necessita para forjar.";
 	mes "Me diga o que você precisa.";
 	next;
 	switch(select("Comprar uma bigorna.:Comprar itens de forja.:Comprar metais.:Purificar minérios.:Sair.")) {
@@ -673,7 +673,7 @@ lhz_in02,282,20,7	script	Fulerr	4_M_LGTMAN,{
 	if( getbattleflag( "feature.refineui" ) ){
 		mes "[Fulerr]";
 		mes "Hehe... Quer refinar?";
-		mes "Hehe... Pode deixar comigo...";
+		mes "Hehe.. Pode deixar comigo...";
 		mes "Hehe...";
 		close2;
 		refineui();
@@ -814,7 +814,7 @@ function	script	refinemain	{
 
 	if(.@features != 1) {
 		mes "["+ .@npc_name$ +"]";
-		mes "Para refinar isso, eu preciso de um ^003366"+getitemname(.@material)+"^000000 e uma taxa de " + .@price + " Zeny.";
+		mes "Para refinar isso, eu preciso de um ^003366"+getitemname(.@material)+"^000000 e uma taxa de " + .@price + " zeny.";
 		mes "Você realmente deseja continuar?";
 		next;
 		if(select("Sim:Não") == 2){
@@ -827,19 +827,19 @@ function	script	refinemain	{
 		if(getequippercentrefinery(.@part) < 100) {
 			mes "["+ .@npc_name$ +"]";
 			mes "Oh não!";
-			mes "Se você continuar a refinar isso, há um risco de ser destruido!";
+			mes "Se você continuar a refinar isso, há um risco de ser destruído!";
 			switch(.@material) {
 			case 985:
 				mes "Isso quer dizer que ^FF0000este equipamento^000000, assim como ^FF0000quaisquer cartas^000000 ou propriedades especiais adicionadas nesta armadura, ^FF0000irão sumir^000000.";
 				break;
 			default:
-				mes "E você iria ^FF0000perder esta arma^000000, assim como quaisquer ^FF0000cartas nesta arma^000000, ou propriedades especiais dela.";
+				mes "E você irá ^FF0000perder esta arma^000000, assim como quaisquer ^FF0000cartas nesta arma^000000, ou propriedades especiais dela.";
 				break;
 			}
 			next;
 			mes "["+getarg(0)+"]";
 			mes "Eu serei claro com você.";
-			mes "Se a arma for destruida, você não a terá de volta.";
+			mes "Se a arma for destruída, você não a terá de volta.";
 			mes "Você realmente tem uma chance de ^FF0000perder a sua arma^000000 para sempre.";
 			mes "Você ainda quer refinar?";
 			next;
@@ -852,7 +852,7 @@ function	script	refinemain	{
 		}
 		if((countitem(.@material) < 1) || (Zeny < .@price)) {
 			mes "["+ .@npc_name$ +"]";
-			mes "Você não tem Zeny suficiente ou não tem "+getitemname(.@material)+"...";
+			mes "Você não tem zeny suficiente ou não tem "+getitemname(.@material)+"...";
 			mes "Vá pegar o que eu preciso.";
 			mes "Estarei aqui o dia todo se você precisar de mim.";
 			close;
@@ -919,7 +919,7 @@ function	script	refinemain	{
 		mes "Eu posso refinar até o limite seguro ou até a quantidade de vezes desejada....";
 		mes "É sua escolha...";
 		next;
-		.@menu2 = select("Até o limite seguro por favor.","Eu irei decidir quantas vezes.","Eu mudei de idéia...");
+		.@menu2 = select("Até o limite seguro por favor.","Eu irei decidir quantas vezes.","Eu mudei de ideia...");
 	} else
 		.@menu2 = 2;
 	switch(.@menu2){
@@ -942,7 +942,7 @@ function	script	refinemain	{
 			.@refinecheck = .@refinecheck - .@safe;
 			mes "["+ .@npc_name$ +"]";
 			mes "Eu irei tentar refinar o equipamento " + .@refinecheck + " além do limite seguro.";
-			mes "Seu equipamento pode ser destruido...";
+			mes "Seu equipamento pode ser destruído...";
 			mes "Está bem?";
 			next;
 			if(select("Sim...","Não...") == 2){
@@ -960,7 +960,7 @@ function	script	refinemain	{
 	}
 	.@fullprice = .@price * .@refinecnt;
 	mes "["+ .@npc_name$ +"]";
-	mes "Irá custar para refinar " + .@refinecnt + " " + getitemname(.@material) + " e " + .@fullprice + " Zeny.";
+	mes "Irá custar para refinar " + .@refinecnt + " " + getitemname(.@material) + " e " + .@fullprice + " zeny.";
 	mes "Está certo?";
 	next;
 	if(select("Sim","Não...") == 2){
@@ -1000,7 +1000,7 @@ function	script	refinemain	{
 			mes "WAHHHH!!! Me desculpe... Eu avisei que isso podia acontecer...";
 			.@refinecnt = .@refinecnt - 1;
 			if(.@refinecnt == 0) close;
-			mes "Aqui estão os Zenys e materiais não utilizados...";
+			mes "Aqui estão os zenys e materiais não utilizados...";
 			getitem .@material,.@refinecnt;
 			.@fullprice = .@refinecnt * .@price;
 			Zeny = Zeny + .@fullprice;
@@ -1060,9 +1060,9 @@ function	script	phramain	{
 	.@npc_name$ = getarg(0);
 	mes "["+ .@npc_name$ +"]";
 	mes "Eu vendo 2 tipos de metais para temperar armas.";
-	mes "Eu tenho ^007777Fracon^000000 para armas de nivel 1, e ^007777Emveretarcon^000000 para armas de nivel 2.";
+	mes "Eu tenho ^007777Fracon^000000 para armas de nível 1, e ^007777Emveretarcon^000000 para armas de nível 2.";
 	next;
-	switch(select("Fracon - 200 Zeny:Emveretarcon - 1000 Zeny:Perguntar sobre outros metais")) {
+	switch(select("Fracon - 200 zeny:Emveretarcon - 1000 zeny:Perguntar sobre outros metais")) {
 	case 1:
 		.@material = 1010;
 		.@price = 200;
@@ -1076,12 +1076,12 @@ function	script	phramain	{
 		mes "Outros metais?";
 		mes "Bem, você precisa de metais especiais para refinar armas de alto nível, ou qualquer tipo de armaduras.";
 		mes "Mas como você sabe, Oridecon e Elunium são realmente";
-		mes "dificeis de encontrar...";
+		mes "difíceis de encontrar...";
 		close;
 	}
 	mes "["+ .@npc_name$ +"]";
 	mes "Quantos você quer comprar?";
-	mes "Se você não quiser nenhum, basta colocar o numero, 0.";
+	mes "Se você não quiser nenhum, basta colocar o número, 0.";
 	next;
 	while(1) {
 		input .@input;
@@ -1105,7 +1105,7 @@ function	script	phramain	{
 	if (Zeny < .@sell) {
 		mes "["+ .@npc_name$ +"]";
 		mes "Humm...";
-		mes "Você não tem Zeny suficiente para comprar "+ .@input +" destes.";
+		mes "Você não tem zeny suficiente para comprar "+ .@input +" destes.";
 		close;
 	}
 	if (checkweight(.@material,.@input) == 0) {
@@ -1311,7 +1311,7 @@ function	script	repairmain	{
 		.@checkitem = .@checkitem-1;
 		if (!.@checkitem) {
 			mes "["+ .@npc_name$ +"]";
-			mes "Oh, isso é incrivel!";
+			mes "Oh, isso é incrível!";
 			mes "Parece que você toma muito cuidado com as suas coisas.";
 			mes "Nenhum dos seus itens foi danificado!";
 			next;
@@ -1329,7 +1329,7 @@ function	script	repairmain	{
 		.@totalcost = .@repairprice*.@checkitem;
 		mes "["+ .@npc_name$ +"]";
 		mes "Cada reparo custa " + .@repairprice + ".";
-		mes "Então para reparar todos os seus itens você irá pagar " + .@totalcost + " Zeny!";
+		mes "Então para reparar todos os seus itens você irá pagar " + .@totalcost + " zeny!";
 		mes "Você quer mesmo reparar os seus itens?";
 		next;
 		switch(select("Sim:Não")) {
@@ -1371,7 +1371,7 @@ function	script	repairmain	{
 		case 2:
 			mes "["+ .@npc_name$ +"]";
 			mes "Bem, não é da minha conta, mas não é bom levar itens quebrados embora.";
-			mes "Você deve repará-los o mais rápido possivel!";
+			mes "Você deve repará-los o mais rápido possível!";
 			close;
 		}
 	case 2:
