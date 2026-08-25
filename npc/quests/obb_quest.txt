@@ -94,7 +94,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 				mes "como estas.";
 				next;
 				mes "[Turista]";
-				mes "Perguntei a todos esses";
+				mes "Perguntei a todos estes";
 				mes "vendedores sobre isso, e me disseram";
 				mes "que eu só poderia encontrá-los";
 				mes "em Lutie... essa é a minha história.";
@@ -144,7 +144,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 				mes "como essa.";
 				next;
 				mes "[Turista]";
-				mes "Perguntei a todos esses";
+				mes "Perguntei a todos estes";
 				mes "vendedores sobre isso, e me disseram";
 				mes "que eu só conseguiria encontrá-los";
 				mes "em Lutie... essa é a minha história.";
@@ -222,7 +222,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 					mes "mas...";
 					next;
 					mes "[Turista]";
-					mes "O que você está...";
+					mes "O que você é...";
 					mes "Mão de vaca?! Você pode alimentar";
 					mes "um homem faminto com mais";
 					mes "muito mais do que isso... traga-me";
@@ -292,7 +292,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 					mes "mas...";
 					next;
 					mes "[Turista]";
-					mes "O que você está...";
+					mes "O que você é...";
 					mes "Mão de vaca?! Você pode alimentar";
 					mes "um homem faminto com mais";
 					mes "carne!";
@@ -643,8 +643,8 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "* Suspiro *... tudo bem... tudo bem. Se você quer tanto assim...";
 			next;
 			mes "[Jacob]";
-			mes "Nossa... ser pai não é fácil";
-			mes "... Hmmm? Você tem algum assunto comigo?";
+			mes "Nossa... ser pai não é fácil...";
+			mes "Hmmm? Você tem algum assunto para tratar comigo?";
 			mes " ";
 			mes "[Tommy]";
 			mes "^FF0000Munak Munak Munak Munak!!^000000";
@@ -975,7 +975,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 				mes "Tenho algo para lhe contar.";
 				next;
 				mes "[Jacob]";
-				mes "Quando você for para o oeste de Morocc,";
+				mes "Quando você for para o oeste de Morroc,";
 				mes "e passar por uma caverna, você chegará";
 				mes "a uma cidade chamada Comodo.";
 				next;
@@ -1000,13 +1000,11 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			}
 			else {
 				mes "[Jacob]";
-				mes "Quando você tiver um filho,";
-				mes "não se esqueça de ensiná-lo";
-				mes "esta coisa:";
+				mes "Quando você tiver um filho, não esqueça de ensiná-lo uma coisa:";
 				next;
 				mes "[Jacob]";
 				mes "'^0000FFSeja bom com os outros.^000000'";
-				mes "'^0000FFTente no lugar do outro antes de julgá-lo.^000000'";
+				mes "'^0000FFTente se colocar no lugar do outro antes de julgar.^000000'";
 				mes "Entendeu?";
 				next;
 				mes "["+strcharinfo(0)+"]";
@@ -1128,7 +1126,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 					close;
 				case 4:
 					mes "[Ancião Creek]";
-					mes "... Você achou que eu aceitaria qualquer significado?";
+					mes ".....";
+					mes "Você achou que eu aceitaria qualquer significado?";
 					mes "Cuidado, seu tolo ignorante.";
 					set thai_head,12;
 					close;
@@ -1204,9 +1203,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
 					next;
 					mes "[Ancião Creek]";
-					mes "Elas são gananciosas demais para estarem nessa posição";
-					mes "e não têm";
-					mes "as prioridades certas.";
+					mes "Elas são gananciosas demais para estarem nesta posição e não têm as prioridades certas.";
 					mes "Em vez de melhorar o mundo, elas usam seu poder apenas para se beneficiarem.";
 					next;
 					mes "[Ancião Creek]";
