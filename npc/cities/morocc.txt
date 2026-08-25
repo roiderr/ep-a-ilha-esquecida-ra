@@ -422,7 +422,7 @@ morocc,277,213,4	script	Tio Morroc#moc	48,{
 		mes "Um deserto é...";
 		mes "Uma terra árida e infértil...";
 		mes "Incapaz de abrigar a vida da maioria das plantas e animais...";
-		mes "Devido à baixa precipitação de chuva e conseqüentemente, escassez de água.";
+		mes "Devido à baixa precipitação de chuva e consequentemente, escassez de água.";
 		next;
 		mes "[Tio Morroc]";
 		mes "É claro que não são todas as plantas que não conseguem viver no deserto...";
@@ -442,10 +442,7 @@ morocc,277,213,4	script	Tio Morroc#moc	48,{
 		mes "A natureza pode ser muito estranha às vezes, não é mesmo?";
 		next;
 		mes "[Tio Morroc]";
-		mes "Unfortunately some of those plants growing around Morroc have been mutated into monsters. One of those is Muka, the mutated cactus.";
-		next;
-		mes "[Tio Morroc]";
-		mes "Although it can be pretty uncomfortable for us, other creatures can thrive in the desert near Morroc.";
+		mes "Embora possa ser bastante desconfortável para nós, outras criaturas conseguem prosperar no deserto perto de Morroc.";
 		close;
 	}
 	mes "[Tio Morroc]";

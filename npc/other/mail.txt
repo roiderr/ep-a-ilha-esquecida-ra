@@ -54,6 +54,7 @@
 		openmail;
 		end;
 	case 2:
+		mes "[Caixa de Correio]";
 		mes "Obrigado, volte sempre.";
 		close;
 	}

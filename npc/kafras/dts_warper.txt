@@ -402,7 +402,7 @@ function	script	F_VoteKafra	{
 					case 1:
 						mes "[Kafra Assistente da Eleição]";
 						mes "Eu entendo, mas se você";
-						mes "mudar de idéia";
+						mes "mudar de ideia";
 						mes "será bem vindo para";
 						mes "voltar. Muito obrigado e";
 						mes "tenha um bom dia, aventureiro.";
@@ -471,7 +471,7 @@ function	script	F_VoteKafra	{
 					case 1:
 						mes "[Kafra Assistente da Eleição]";
 						mes "Entendo. Mas, se mudar";
-						mes "de idéia, pode voltar";
+						mes "de ideia, pode voltar";
 						mes "a qualquer hora. Muito";
 						mes "obrigada e tenha um";
 						mes "bom dia, aventureiro!";

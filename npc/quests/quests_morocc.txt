@@ -1757,13 +1757,13 @@ yuno_in04,167,120,3	script	Livro Desgastado#garas	111,{
 		next;
 		mes "< - Hum... -";
 		mes "-...Ele acordou. -";
-		mes "- OlÃ¡, vocÃª consegue me ver? Como vocÃª se sente? -";
+		mes "- Olá, você consegue me ver? Como você se sente? -";
 		mes "Um velho entrou lentamente no quarto. Com um sorriso no rosto, sentou-se em uma cadeira. O garotinho sentiu medo por um instante ao ver pessoas fora de sua aldeia pela primeira vez,";
 		mes "mas então se obrigou a levantar da cama e olhou ao redor.";
 		mes "- Onde estou? Por que estou aqui? -";
-		mes "- Eu estava andando de carruagem ontem Ã  noite e encontrei vocÃª deitado na rua. Meu nome Ã© Haeji. Pode me chamar de Sr. Haeji, filho. -";
+		mes "- Eu estava andando de carruagem ontem à noite e encontrei você deitado na rua. Meu nome é Haeji. Pode me chamar de Sr. Haeji, filho. -";
 		mes "-....... -";
-		mes "- Qual Ã© o seu nome? -";
+		mes "- Qual é o seu nome? -";
 		mes "-......Al. -";
 		mes "- Você sabe por que está na rua? Onde você mora? Seus pais devem estar morrendo de vontade de te ver. -";
 		mes "O comentário de Haeji trouxe instantaneamente a imagem monstruosa de Eva à mente de Al. Interiormente, ele gritou de medo.";
