@@ -66,7 +66,7 @@
 		mes "pegar pedras o dia inteiro...";
 		mes "a dor... é insuportável!";
 		next;
-		switch(select("Curve-se com seus joelhos,ora.:Nossa, o quão ruim é isso?")) {
+		switch(select("Curve-se com seus joelhos, cara.:Nossa, o quão ruim é isso?")) {
 		case 1:
 			mes "[Zabaroo]";
 			mes "Seu irritante!";
@@ -356,7 +356,7 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		mes "nome. Depressa, você não pode";
 		mes "ver que estou ocupado?";
 		next;
-		if (select("Eu... sinto muito.:Eu estou aqui para o Sr.Zabaroo...") == 1) {
+		if (select("Eu... sinto muito.:Eu estou aqui para o Sr. Zabaroo...") == 1) {
 			mes "[Absar]";
 			mes "Somente se você não";
 			mes "interromper-me! Então";
@@ -916,10 +916,10 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 	}
 	else if (que_sch < 19) {
 		mes "[Lasda]";
-		mes "Ele realmente o pediu.";
-		mes "Bem, que é uma área de moralidade.";
-		mes "mas espero que você de o melhor";
-		mes "de si para ajudar Vitre.";
+		mes "Ele realmente pediu para você tirá-lo da cadeia?";
+		mes "Bem, eu sei que é uma";
+		mes "área de moralidade, mas";
+		mes "espero que você dê o melhor de si para ajudar Vitre.";
 		close;
 	}
 	else if (que_sch < 25) {
@@ -1370,7 +1370,7 @@ OnInit:
 	end;
 }
 
-ra_in01,58,389,0	script	Presidiário#sch	929,{
+ra_in01,58,389,0	script	Prisioneiro Desolado#sch	929,{
 	if (que_sch < 11) {
 		mes "[Ruan]";
 		mes "Isso fede. Porque estou";
@@ -1646,7 +1646,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 	close;
 }
 
-job_duncer,85,49,0	script	Odalisca Jovem#sch1	724,{
+job_duncer,85,49,0	script	Jovem Odalisca#sch1	724,{
 	if (que_sch < 12) {
 		mes "[Odalisca]";
 		mes "Olá~";
@@ -1758,7 +1758,7 @@ job_duncer,87,50,2	script	Odalisca Adulta#s1	724,{
 	close;
 }
 
-airplane,76,56,4	script	Odalisca Jovem#sch2	724,{
+airplane,76,56,4	script	Jovem Odalisca#sch2	724,{
 	if (que_sch < 13) {
 		mes "[Odalisca]";
 		mes "Olá~";
@@ -1848,7 +1848,7 @@ airplane,79,55,2	script	Odalisca Adulta#s2	724,{
 	close;
 }
 
-ein_in01,174,266,0	script	Odalisca Jovem#sch3	724,{
+ein_in01,174,266,0	script	Jovem Odalisca#sch3	724,{
 	if (que_sch < 17) {
 		mes "[Odalisca]";
 		mes "Ah, a festa de";
@@ -2217,7 +2217,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 	}
 	else if (que_sch == 23) {
 		mes "[Vitre]";
-		mes "Bem-vindo de volta.";
+		mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" de volta.";
 		mes "Então você escutou as";
 		mes "músicas de todos?";
 		next;
@@ -2905,15 +2905,15 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "um camelo. Agora eu preciso de";
 			mes "alimentar o camelo então eu poderei";
 			mes "conseguir os ingredientes para o";
-			mes "sabão, 5 Blocos de Estrume.";
+			mes "sabão e os 5 blocos de estrume.";
 			close;
 		}
 		else if (rachel_camel == 10) {
 			mes "["+strcharinfo(0)+"]";
 			mes "Agora, seria melhor";
 			mes "gastar meu tempo";
-			mes "procurando pelos ingredientes";
-			mes "no deserto de camelos.";
+			mes "procurando pelo camelo";
+			mes "para obter os ingredientes.";
 			close;
 		}
 		else if (rachel_camel == 11) {
@@ -2922,7 +2922,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "perdido do Sr. Saraman, alimentar este camelo";
 			mes "com estimulantes de apetite, e";
 			mes "depois pegar os ingredientes";
-			mes "para o sabão e 5 Blocos de Estrume";
+			mes "para o sabão e 5 blocos de estrume";
 			mes "se eu quiser libertar a Curdie.";
 			close;
 		}
@@ -2939,8 +2939,8 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "["+strcharinfo(0)+"]";
 			mes "Eu consegui todos os ingredientes";
 			mes "para o sabão e 5 destes";
-			mes "Blocos de Estrume. Eu tenho";
-			mes "voltar ao SR. Saraman para";
+			mes "blocos de estrume.";
+			mes "Eu tenho que voltar ao Sr. Saraman para";
 			mes "dizer a ele onde está o seu camelo,";
 			mes "e depois ir até a Srta. Ivory.";
 			close;
@@ -2976,7 +2976,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 		else if (rachel_camel == 22) {
 			mes "["+strcharinfo(0)+"]";
 			mes "Eu preciso levar";
-			mes "1 Aço para o Mr. Lockenlock";
+			mes "1 Aço para o Sr. Lockenlock";
 			mes "então ele poderá fazer uma chave";
 			mes "que finalmente libertará a Curdie.";
 			close;
@@ -3314,7 +3314,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "perdido do Sr. Saraman, alimentar este camelo";
 		mes "com estimulantes de apetite, e";
 		mes "depois pegar os ingredientes";
-		mes "para o sabão e 5 Blocos de Estrume";
+		mes "para o sabão e 5 blocos de estrume";
 		mes "se eu quiser libertar a Curdie.";
 		close;
 	}
@@ -3329,8 +3329,8 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "["+strcharinfo(0)+"]";
 		mes "Eu consegui todos os ingredientes";
 		mes "para o sabão e 5 destes";
-		mes "Blocos de Estrume. Eu tenho";
-		mes "voltar ao Sr. Saraman para";
+		mes "blocos de estrume.";
+		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
 		mes "e depois ir até a Srta. Ivory.";
 		close;
@@ -3728,15 +3728,15 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "um camelo. Agora eu preciso de";
 		mes "alimentar o camelo então eu poderei";
 		mes "conseguir os ingredientes para o";
-		mes "sabão, 5 Blocos de Estrume.";
+		mes "sabão e os 5 blocos de estrume.";
 		close;
 	}
 	else if (rachel_camel == 10) {
 		mes "["+strcharinfo(0)+"]";
 		mes "Agora,seria melhor";
 		mes "gastar meu tempo";
-		mes "procurando pelos ingredientes";
-		mes "no deserto de camelos.";
+		mes "procurando pelo camelo";
+		mes "para obter os ingredientes.";
 		close;
 	}
 	else if (rachel_camel == 11) {
@@ -3745,7 +3745,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "perdido do Sr. Saraman, alimentar este camelo";
 		mes "com estimulantes de apetite, e";
 		mes "depois pegar os ingredientes";
-		mes "para o sabão e 5 Blocos de Estrume";
+		mes "para o sabão e 5 blocos de estrume";
 		mes "e eu quiser libertar a Curdie.";
 		close;
 	}
@@ -3769,8 +3769,8 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "["+strcharinfo(0)+"]";
 		mes "Eu consegui todos os ingredientes";
 		mes "para o sabão e 5 destes";
-		mes "Blocos de Estrume. Eu tenho";
-		mes "voltar ao SR. Saraman para";
+		mes "blocos de estrume.";
+		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
 		mes "depois ir até a Srta. Ivory.";
 		close;
@@ -3815,7 +3815,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "a forma da chave muito bem.";
 		next;
 		mes "[Chaveiro Lockenlock]";
-		mes "Despeje o sabonete líquido no buraco da chave na fechadura,";
+		mes "Despeje o sabão líquido no buraco da chave na fechadura,";
 		mes "derrame o sabão de volta à garrafa,";
 		mes "feche a tampa tão bem para que o ar não entre dentro da garrafa..";
 		mes "Lembre-se, você não pode demorar mais de 30 segundos para concluir os procedimentos.";
@@ -4068,7 +4068,7 @@ veins,227,127,5	script	Ivory	940,{
 	if (rachel_camel && rachel_camel < 5) {
 		mes "[Produtora de Sabão Orgânico Ivory]";
 		mes "Eu preciso fazer mais";
-		mes "meu sabonete, mas acabei";
+		mes "meu sabão, mas acabei";
 		mes "de ingredientes.";
 		mes "não há muito que eu possa fazer sem eles,";
 		mes "então talvez fosse melhor se";
@@ -4100,7 +4100,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "Ah, o Sr. Lockenlock";
 		mes "deve estar falando";
 		mes "sobre o meu Sabão Chamelepu";
-		mes "orgânico. Este é um sabonete artístico";
+		mes "orgânico. Este é um sabão artesanal";
 		mes "que você pode moldar facilmente~";
 		next;
 		mes "["+strcharinfo(0)+"]";
@@ -4110,7 +4110,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "[Produtora de Sabão Orgânico Ivory]";
 		mes "Meu Sabão Chamelepu";
 		mes "é muito popular. É";
-		mes "um sabonete líquido que pode ser";
+		mes "um sabão líquido que pode ser";
 		mes "derramando em qualquer coisa, e irá";
 		mes "endurecer em qualquer formato";
 		mes "que quiser. Simples, huh?";
@@ -4170,7 +4170,7 @@ veins,227,127,5	script	Ivory	940,{
 			next;
 			mes "[Produtora de Sabão Orgânico Ivory]";
 			mes "Por favor diga ao";
-			mes "Dono da Fazenda de Camelos";
+			mes "dono da Fazenda de Camelos";
 			mes "na cidade que eu lhe enviei";
 			mes "e mostre a ele os";
 			mes "ingredientes que você teve";
@@ -4250,15 +4250,15 @@ veins,227,127,5	script	Ivory	940,{
 		mes "um camelo. Agora eu preciso de";
 		mes "alimentar o camelo então eu poderei";
 		mes "conseguir os ingredientes para o";
-		mes "sabão e 5 Blocos de Estrume.";
+		mes "sabão e 5 blocos de estrume.";
 		close;
 	}
 	else if (rachel_camel == 10) {
 		mes "["+strcharinfo(0)+"]";
 		mes "Agora,seria melhor";
 		mes "gastar meu tempo";
-		mes "procurando pelos ingredientes";
-		mes "no deserto de camelos.";
+		mes "procurando pelo camelo";
+		mes "para obter os ingredientes.";
 		close;
 	}
 	else if (rachel_camel == 11) {
@@ -4267,7 +4267,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "perdido do Sr. Saraman, alimentar este camelo";
 		mes "com estimulantes de apetite, e";
 		mes "depois pegar os ingredientes";
-		mes "para o sabão e 5 Blocos de Estrume";
+		mes "para o sabão e 5 blocos de estrume";
 		mes "se eu quiser libertar a Curdie.";
 		close;
 	}
@@ -4291,8 +4291,8 @@ veins,227,127,5	script	Ivory	940,{
 		mes "["+strcharinfo(0)+"]";
 		mes "Eu consegui todos os ingredientes";
 		mes "para o sabão e 5 destes";
-		mes "Blocos de Estrume. Eu tenho";
-		mes "voltar ao SR. Saraman para";
+		mes "blocos de estrume.";
+		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
 		mes "e depois ir até a Srta. Ivory.";
 		close;
@@ -4309,8 +4309,8 @@ veins,227,127,5	script	Ivory	940,{
 		mes "Parece que foi um grande";
 		mes "incômodo... Mas felizmente,";
 		mes "tudo isto vai valer a pena.";
-		mes "De qualquer forma, pegue este Bloco de";
-		mes "Estrume. Não quero mexer";
+		mes "De qualquer forma, pegue este bloco de";
+		mes "estrume. Não quero mexer";
 		mes "muito com isto.";
 		next;
 		mes "[Produtora de Sabão Orgânico Ivory]";
@@ -4406,7 +4406,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "[Fazendeiro Saraman]";
 		mes "Sabão, eh? Oh, Entendi.";
 		mes "Você deve estar aqui para pegar";
-		mes "alguns Blocos de Estrume de Camelo Fresco.";
+		mes "alguns blocos frescos de estrume de camelo.";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "O-o Q-Que!?";
@@ -4428,12 +4428,12 @@ veins,115,59,5	script	Saraman	847,{
 		mes "que você me trouxe? Eles são";
 		mes "para fazer sabão certo. ^FF0000Aquilo com";
 		mes "que alimentamos os Camelos^000000 para";
-		mes "que eles façam Estrume aos";
+		mes "que eles façam estrume aos";
 		mes "montes. Estrume para fazer sabão.";
 		next;
 		mes "[Fazendeiro Saraman]";
 		mes "Oh, não se preocupe. Estrume de";
-		mes "Camelo é estéril, completamente";
+		mes "camelo é estéril, completamente";
 		mes "seguro. Na verdade, isto cheira bem,";
 		mes "tem propriedades medicinais, e";
 		mes "é considerada uma delicadeza";
@@ -4466,7 +4466,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "resolver primeiro. Ouça...";
 		next;
 		mes "[Fazendeiro Saraman]";
-		mes "Nós só podemos obter Estrume de";
+		mes "Nós só podemos obter estrume de";
 		mes "camelo depois do mesmo comer,";
 		mes "certo? Bem, minha camela não está";
 		mes "acostumada a comer tão tarde";
@@ -4534,14 +4534,14 @@ veins,115,59,5	script	Saraman	847,{
 			mes "Assim que ela morder este";
 			mes "estimulante de apetite, ela irá";
 			mes "comer sua comida como louca.";
-			mes "Depois o Estrume sairá dela";
+			mes "Depois o estrume sairá dela";
 			mes "como se fosse em uma torneira. Vamos,";
 			mes "por que você não tenta?";
 			next;
 			mes "[Fazendeiro Saraman]";
 			mes "Tudo certo. Você deve ser";
-			mes "capaz de obter 5 Blocos de";
-			mes "Estrume de Camelo com estes";
+			mes "capaz de obter 5 blocos de";
+			mes "estrume de camelo com estes";
 			mes "ingredientes. Esta é uma boa";
 			mes "quantia de acordo com o";
 			mes "que a Srta. Ivory ordenou.";
@@ -4581,14 +4581,14 @@ veins,115,59,5	script	Saraman	847,{
 		mes "Assim que ela morder este";
 		mes "estimulante de apetite, ela irá";
 		mes "comer sua comida como louca.";
-		mes "Depois o Estrume sairá dela";
+		mes "Depois o estrume sairá dela";
 		mes "como se fosse em uma torneira. Vamos,";
 		mes "por que você não tenta?";
 		next;
 		mes "[Fazendeiro Saraman]";
 		mes "Tudo certo. Você deve ser";
-		mes "capaz de obter 5 Blocos de";
-		mes "Estrume de Camelo com estes";
+		mes "capaz de obter 5 blocos de";
+		mes "estrume de camelo com estes";
 		mes "ingredientes. Esta é uma boa";
 		mes "quantia de acordo com o";
 		mes "que a Srta. Ivory ordenou.";
@@ -4605,7 +4605,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "Oh, sim, Bem...";
 		mes "Um de meus funcionários";
 		mes "veio até mim, e me disse";
-		mes "ue minha Camela de Veludo";
+		mes "que minha Camela de Veludo";
 		mes "desapareceu em algum lugar...";
 		mes "Esta notícia é terrível!";
 		next;
@@ -4623,7 +4623,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "ela acabou conseguindo fugir!";
 		mes "Ugh! Por favor me ajude a encontrá-la!";
 		mes "Sem ela, eu não poderei ser capaz";
-		mes "de conseguir o seu Estrume de Camelo especial.";
+		mes "de conseguir o seu estrume especial de camelo.";
 		next;
 		mes "[Fazendeiro Saraman]";
 		mes "Calma, sem pânico...";
@@ -4792,7 +4792,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 		mes "Camela de Veludo...";
 		mes "Eu acho que tudo que eu tenho";
 		mes "que fazer é coletar um pouco";
-		mes "deste seu precioso Estrume de Camelo.";
+		mes "deste seu precioso estrume de camelo.";
 		changequest 3070,3071;
 		set rachel_camel,12;
 		close;
@@ -4837,8 +4837,8 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 				mes "^3355FFA camela torceu o rosto";
 				mes "como se estivesse sofrendo";
 				mes "de dor de estômago...";
-				mes "Huzah!";
-				mes "de esterco de camelo fumegante!";
+				mes "Viva!";
+				mes "Você conseguiu um pedaço fumegante de estrume de camelo!";
 				mes "Isso é motivo de comemoração!^000000";
 				next;
 				mes "[" + strcharinfo(0) + "]";
@@ -4851,21 +4851,21 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 				}
 				else if (rachel_camel == 13) {
 					mes "Incrível! Eu consegui";
-					mes "2 gloriosos Blocos de Estrume de";
-					mes "Camelo! Só faltam mais 3!";
+					mes "2 gloriosos blocos de estrume de";
+					mes "camelo! Só faltam mais 3!";
 					set rachel_camel, 14;
 					changequest 3072,3073;
 				}
 				else if (rachel_camel == 14) {
 					mes "Yeah! Agora eu tenho";
-					mes "3 Blocos de Estrume de Camelo.";
+					mes "3 blocos de estrume de camelo.";
 					mes "Só faltam 2... Eu tenho mais";
 					mes "da metade do que eu precisava!";
 					set rachel_camel, 15;
 					changequest 3073,3074;
 				}
 				else if (rachel_camel == 15) {
-					mes "4 Blocos de Estrume de Camelo...";
+					mes "4 blocos de estrume de camelo...";
 					mes "Heh heh! Isto está indo";
 					mes "melhor do que eu pensei!";
 					mes "Só mais 1!";
@@ -4875,7 +4875,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 				else if (rachel_camel == 16) {
 					mes "Em minhas mãos...";
 					mes "Eu estou segurando";
-					mes "5 Blocos de Estrume de Camelo.";
+					mes "5 blocos de estrume de camelo.";
 					mes "Este é o meu melhor momento.";
 					next;
 					mes "[" + strcharinfo(0) + "]";
@@ -4927,7 +4927,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 			if (rachel_camel == 12) {
 				mes "Eu preciso alimentar esta camela.";
 				mes "se não nunca vou conseguir algum";
-				mes "Estrume dela. Vamos ver, os itens";
+				mes "estrume dela. Vamos ver, os itens";
 				mes "que o Sr Saraman mencionou que";
 				mes "a Srta. Ivory me pediram para alimentar";
 				mes "a camela. Eu tenho que ter...";
@@ -4955,8 +4955,8 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 		mes "["+strcharinfo(0)+"]";
 		mes "Eu consegui todos os ingredientes";
 		mes "para o sabão e 5 destes";
-		mes "Blocos de Estrume. Eu tenho";
-		mes "voltar ao Sr. Saraman para";
+		mes "blocos de estrume.";
+		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
 		mes "e depois ir até a Srta. Ivory.";
 		close;
@@ -4993,7 +4993,7 @@ veins,221,120,5	script	Jovem Nativo	943,{
 		mes "e também em Rachel.";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "Mr. Lockenlock, eh?";
+		mes "Sr. Lockenlock, eh?";
 		mes "Mas aonde eu posso encontrá-lo?";
 		next;
 		mes "[Toby]";
@@ -5744,7 +5744,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		mes "chefe de pesquisa do";
 		mes "Instituto de Pesquisas Geológicas";
 		mes "de Veins. Parabéns!";
-		mes "Bem vindo a equipe, colega!";
+		mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a equipe, colega!";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Huh...?";
@@ -5864,7 +5864,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		mes "sobre as rochas. Todas elas.";
 		next;
 		mes "[Geólogo Gio]";
-		mes "Bem vindo de volta! então,";
+		mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" de volta! então,";
 		mes "como foi a apresentação do";
 		mes "relatório de temperatura vulcânica?";
 		next;
@@ -6869,7 +6869,7 @@ thor_camp,159,74,3	script	Coronel Vito#3	946,{
 		set aru_vol,19;
 		next;
 		if (select("Sim, senhor!:O que você quer dizer com socar") == 1) {
-			mes "[Colonel Vito]";
+			mes "[Coronel Vito]";
 			mes "Foque sua energia em";
 			mes "seu grito quando atacar!";
 			mes "Socar! 10 Vezes! Faça isso!";
@@ -6994,7 +6994,7 @@ thor_camp,134,309,5	script	Soldado#vol2	939,{
 	mes "quem seria rico o bastante para pagar";
 	mes "tanto frango assim para nós?";
 	next;
-	mes "[Thor Volcano Camp Soldado]";
+	mes "[Soldado da Base do Vulcão de Thor]";
 	mes "Heheh...";
 	mes "Mal posso esperar pelo jantar!";
 	close;
@@ -7313,9 +7313,9 @@ OnTouch_:
 	close;
 }
 
-ve_in,235,135,5	script	Garçom do Bar#ve	947,{
+ve_in,235,135,5	script	Barman#ve	947,{
 	mes "[Garçom do Bar]";
-	mes "Bem vindo a nossa taverna.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a nossa taverna.";
 	mes "Por favor, sente-se.";
 	mes "Permita-me lhe trazer";
 	mes "um copo de água gelada primeiro.";
