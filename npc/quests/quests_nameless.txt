@@ -126,7 +126,7 @@ cmd_in02,174,89,7	script	Larjes#pc1	97,{
 	else {
 		mes "[Larjes]";
 		mes "O quê?!";
-		mes "Eu perdi denovo?";
+		mes "Eu perdi de novo?";
 		mes "Como funciona...";
 		mes "Como funciona esse jogo?!";
 		close;
@@ -152,7 +152,7 @@ cmd_in02,111,52,3	script	Larjes#pc2	97,{
 		mes "É sempre uma mulher, né?";
 		next;
 		mes "[Larjes]";
-		mes "Segundo, depois que ele saiu para ver essa mulher, outras pessoas entraram.";
+		mes "Segundo, depois que ele saiu para ver esta mulher, outras pessoas entraram.";
 		mes "Então carregaram uma enorme bagagem com elas quando partiram para o oeste.";
 		next;
 		mes "[Larjes]";
@@ -257,7 +257,7 @@ OnTouch:
 		select("...Sim, parece ser bom.");
 		mes "[Garçom]";
 		mes "Excelente escolha.";
-		mes "Só para lhe informar, esse prato custa ^9932CD3.000 zenys^000000.";
+		mes "Só para lhe informar, este prato custa ^9932CD3.000 zenys^000000.";
 		mes "Volto já.";
 		next;
 		mes "^3355FFO garçom anotou seu pedido e saiu para a cozinha.";
@@ -327,11 +327,11 @@ OnTouch:
 		mes "Bom apetite.";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "^ff0000Veins^000000, não é?";
+		mes "^FF0000Veins^000000, não é?";
 		mes "É melhor eu dar uma olhada lá um dia desses, talvez encontre mais desses peixes.";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "Uau, esse peixe tem gosto de...";
+		mes "Uau, este peixe tem gosto de...";
 		mes "Nunca saboreei nada igual!";
 		mes "É quase como uma sobremesa. Hummm, que bom!";
 		set aru_monas,8;
@@ -355,7 +355,7 @@ ve_in,78,314,5	script	Magistrado#Aru	945,{
 	}
 	else if (aru_monas == 8) {
 		mes "[Al Hamad]";
-		mes "Puxa, esse deve ser o pior caso da minha carreira.";
+		mes "Puxa, este deve ser o pior caso da minha carreira.";
 		mes "Por que isso tinha que acontecer agora?";
 		mes "A aposentadoria estava tão perto...";
 		next;
@@ -608,14 +608,14 @@ ve_fild07,125,128,0	script	Barco#Aru	111,{
 		mes "[Larjes]";
 		mes "Este é um incidente";
 		mes "internacional, então para evitar que qualquer coisa vazasse para Arunafeltz.";
-		mes "Tivemos que ser muito rígidos para proteger todas as informações sobre esse caso.";
+		mes "Tivemos que ser muito rígidos para proteger todas as informações sobre este caso.";
 		next;
 		mes "[Larjes]";
 		mes "Enfim, decidi me revelar para você, já que sou o único que pode ajudar você agora.";
 		mes "Está pensando em usar o barco, não está?";
 		next;
 		mes "[Larjes]";
-		mes "Se você não tiver a habilidade, conhecimento e preparação para navegar por essas águas, provavelmente vai afundar com o barco.";
+		mes "Se você não tiver a habilidade, conhecimento e preparação para navegar por estas águas, provavelmente vai afundar com o barco.";
 		mes "Conseguiria com sorte, mas... seria sorte demais.";
 		next;
 		mes "[Larjes]";
@@ -759,9 +759,9 @@ nameless_i,127,207,0	script	Corvo Morto#Aru	111,{
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Espere...";
-		mes "Essa grama...?";
+		mes "Foi esta grama...?";
 		next;
-		mes "^3355FFEssa grama deve ser o ingrediente principal do veneno usado para matar os príncipes da família Gaebolg.^000000";
+		mes "^3355FFEsta grama deve ser o ingrediente principal do veneno usado para matar os príncipes da família Gaebolg.^000000";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Parece que tirei a sorte grande.";
@@ -898,7 +898,7 @@ OnTouch:
 		warp "nameless_in",12,41;
 		end;
 	}
-	mes "^3355FFEssa porta não abre, você não pode passar por ela.^000000";
+	mes "^3355FFEsta porta não abre, você não pode passar por ela.^000000";
 	close;
 }
 
@@ -913,7 +913,7 @@ OnTouch:
 		next;
 		mes "[Larjes]";
 		mes "Então...";
-		mes "Essa é a verdadeira natureza da ilha.";
+		mes "Esta é a verdadeira natureza da ilha.";
 		next;
 		mes "[Larjes]";
 		mes "Alguém como eu não sobrevive em um lugar como este.";
@@ -1125,7 +1125,7 @@ abbey03,232,232,4	script	Homem Morto#King	956,{
 		close;
 	}
 	if (aru_monas == 23) {
-		mes "^3355FFVocê não faz ideia por que esse homem morto está andando por aí, então decide examiná-lo.";
+		mes "^3355FFVocê não faz ideia por que este homem morto está andando por aí, então decide examiná-lo.";
 		mes "Em sua casaca você encontra uma medalha brilhante...^000000";
 		next;
 		mes "["+strcharinfo(0)+"]";
@@ -1398,7 +1398,7 @@ ra_temple,165,57,5	script	Niren#ss	915,{
 			mes "Os moderados realizaram testes em criaturas vivas, até mesmo em humanos!";
 			mes "E Zhed e eu...";
 			mes "Não podíamos fazer nada além de orar para Freya.";
-			mes "Só a guerra pode acabar com esse caos!";
+			mes "Só a guerra pode acabar com este caos!";
 			next;
 			mes "[Suma-Sacerdotisa Niren]";
 			mes "Precisamos começar tudo de novo.";
@@ -1513,7 +1513,7 @@ ra_temple,165,57,5	script	Niren#ss	915,{
 				mes "[Suma-Sacerdotisa Niren Niren]";
 				mes "Nossa papisa está sempre cercada por sacerdotes e seguidores enviados pelo Sumo-Sacerdote Vildt.";
 				mes "Ele sempre consegue ficar de olho nela.";
-				mes "Precisamos afastar esses espiões...";
+				mes "Precisamos afastar estes espiões...";
 				next;
 				mes "["+strcharinfo(0)+"]";
 				mes "O que posso fazer com eles, então?";
@@ -1904,7 +1904,7 @@ OnTouch:
 		if (aru_em == 0) {
 			mes "[Mercador Estrangeiro]";
 			mes "*Gargarejo*";
-			mes "Cara, eu acho que vou morrer com todo esse calor!";
+			mes "Cara, eu acho que vou morrer com todo este calor!";
 			close;
 		}
 	}
@@ -2985,7 +2985,7 @@ cmd_fild01,55,160,0	script	Monte de Terra	844,{
 				mes "Um glamoroso motor de rubi, projetado pelo meu gênio, gera um poderoso campo magnético.";
 				next;
 				mes "[Dorian]";
-				mes "O campo magnético do motor de rubi opera de acordo com a ^FF0000 Teoria das Ondas Tricentrífugas^000000.";
+				mes "O campo magnético do motor de rubi opera de acordo com a ^FF0003 Teoria das Ondas Tricentrífugas^000000.";
 				mes "Então os sensores incrustados em pérola detectam a quantidade de calibração...";
 				next;
 				mes "[Dorian]";
@@ -3081,7 +3081,7 @@ cmd_fild01,55,160,0	script	Monte de Terra	844,{
 				mes "Um glamoroso motor de rubi, projetado pelo meu gênio, gera um poderoso campo magnético.";
 				next;
 				mes "[Dorian]";
-				mes "O campo magnético do motor de rubi opera de acordo com a ^FF0000 Teoria das Ondas Tricentrífugas^000000.";
+				mes "O campo magnético do motor de rubi opera de acordo com a ^FF0003 Teoria das Ondas Tricentrífugas^000000.";
 				mes "Então, os sensores incrustados em pérola detectam a quantidade de calibração...";
 				next;
 				mes "[Dorian]";
@@ -5685,7 +5685,7 @@ payon,244,62,3	script	Moonho Ahn	897,{
 						next;
 						break;
 					}
-					if ((.@input$ != "Ímpar") && (.@input$ !="Odd")) {
+					if ((.@input$ != "Par") && (.@input$ !="Ímpar")) {
 						mes "[Moonho Ahn]";
 						mes "Você só pode dizer";
 						mes "^0000FFPar^000000 ou ^0000FFÍmpar^000000 na sua aposta.";
@@ -6290,7 +6290,7 @@ S_Quest:
 	set $@zdan,1;
 	initnpctimer;
 	mes "[????]";
-	mes "Eu sei que você ";
+	mes "Eu sei que você";
 	mes "está nos perseguindo!";
 	mes "Grrrr... MORRA!";
 	specialeffect EF_STEAL;
@@ -6316,9 +6316,9 @@ S_Quest:
 	mes "Em? O homem deve ter largado este bilhete na pressa de fugir daqui.";
 	mes "Vamos ver o que ele diz...";
 	next;
-	mes "^666666Mate " + strcharinfo(0) + ", meow.";
+	mes "^666666Mate " + strcharinfo(0) + ", miau.";
 	mes "Esse samaritano arrogante sabe demais sobre nós.";
-	mes "Falhe em matá-lo, e a morte será boa demais para você.^000000";
+	mes "Falhe em matá-lo, e a morte será boa demais para você, miau.^000000";
 	next;
 	mes "[" + strcharinfo(0) + "]";
 	mes "Então, aquele deve ser um informante da Gangue Z.";
@@ -6332,7 +6332,6 @@ moc_ruins,75,171,3	duplicate(Homem Suspeito#1)	Homem Suspeito#2	4W_M_03,4,4
 
 moc_fild17,209,235,0	script	Laje Estranha	111,4,4,{
 	if (((zdan_edq == 15) || (zdan_edq == 16) || (zdan_edq == 17)) && ($@door2 == 0)) {
-		mes "[Laje Estranha]";
 		mes "[Laje Estranha]";
 		mes "^FF0000*range range*";
 		mes "Idigti a eshan.^000000";
@@ -6578,7 +6577,7 @@ OnDisable:
 
 OnTimer3000:
 	killmonster "z_agit","#ZGuard::OnMyMobDead";
-	mapannounce "z_agit","Catfoii: Hein? Ouvi alguma coisa, miau! Parece que estamos sob ataque!",bc_map,"0xFFFF00";
+	mapannounce "z_agit","Catfoii: Hein? Ouvi alguma coisa, miau! Parece que estamos sob ataque, miau!",bc_map,"0xFFFF00";
 	end;
 
 OnTimer5000:
@@ -6665,14 +6664,14 @@ OnMyMobDead:
 		next;
 		mes "[Catfoii]";
 		mes "Essa é nossa pior crise!";
-		mes "Não sei o que fazer!";
+		mes "Não sei o que fazer, miau!";
 		next;
 		mes "[Louis]";
 		mes "A Gangue Z não vai se render ainda!";
 		mes "Venham, meus fiéis servidores das sombras!";
 		next;
 		mes "[Catfoii]";
-		mes "Não, não, não!";
+		mes "Não, não, não, miau!";
 		mes "Esse botão não!";
 		next;
 		mes "[Louis]";
@@ -6715,7 +6714,7 @@ z_agit,97,101,3	script	Louis	931,{
 		mes "O que aconteceu?";
 		next;
 		mes "[Catfoii]";
-		mes "Você apertou o botão para desligar a invisibilidade!";
+		mes "Você apertou o botão para desligar a invisibilidade, miau!";
 		mes "Você tinha mesmo que fazer isso?!";
 		mes "É tudo culpa sua!";
 		next;
@@ -6744,7 +6743,7 @@ z_agit,97,101,3	script	Louis	931,{
 		mes "Agora, se você puder entregar o Livro dos Mistérios Proibidos...";
 		next;
 		mes "[Catfoii]";
-		mes "Louis!";
+		mes "Louis, miau!";
 		mes "Não faça isso!";
 		next;
 		mes "[Martha]";
@@ -6817,7 +6816,7 @@ z_agit,99,101,3	script	Martha	101,{
 		mes "O que aconteceu?";
 		next;
 		mes "[Catfoii]";
-		mes "Você apertou o botão para desligar a invisibilidade!";
+		mes "Você apertou o botão para desligar a invisibilidade, miau!";
 		mes "Você tinha mesmo que fazer isso?!";
 		mes "É tudo culpa sua!";
 		next;
@@ -6846,7 +6845,7 @@ z_agit,99,101,3	script	Martha	101,{
 		mes "Agora, se você puder entregar o Livro dos Mistérios Proibidos...";
 		next;
 		mes "[Catfoii]";
-		mes "Louis!";
+		mes "Louis, miau!";
 		mes "Não faça isso!";
 		next;
 		mes "[Martha]";
@@ -6917,7 +6916,7 @@ z_agit,95,101,3	script	Catfoii	876,{
 		mes "O que aconteceu?";
 		next;
 		mes "[Catfoii]";
-		mes "Você apertou o botão para desligar a invisibilidade!";
+		mes "Você apertou o botão para desligar a invisibilidade, miau!";
 		mes "Você tinha mesmo que fazer isso?!";
 		mes "É tudo culpa sua!";
 		next;
@@ -6946,7 +6945,7 @@ z_agit,95,101,3	script	Catfoii	876,{
 		mes "Agora, se você puder entregar o Livro dos Mistérios Proibidos...";
 		next;
 		mes "[Catfoii]";
-		mes "Louis!";
+		mes "Louis, miau!";
 		mes "Não faça isso!";
 		next;
 		mes "[Martha]";
@@ -6967,7 +6966,7 @@ z_agit,95,101,3	script	Catfoii	876,{
 		mes "Não posso aguentar ver o rosto de quem causou minha trágica queda...";
 		next;
 		mes "[Catfoii]";
-		mes "Tá bom, .";
+		mes "Tá bom, miau.";
 		mes "Entendi.";
 		mes "Mas como nós perdemos?!";
 		close2;
@@ -7965,7 +7964,7 @@ alberta_in,70,109,5	script	Xamã	788,{
 		mes "[Xamã]";
 		mes "Traga-me";
 		mes "^FF00001 Água Benta^000000,";
-		mes "^ff00001 Sangue Escarlate^000000,";
+		mes "^FF00001 Sangue Escarlate^000000,";
 		mes "^FF00001 Rosa Eterna^000000,";
 		mes "^FF00001 Cristal Azul^000000 e";
 		mes "^FF00001 Frescor do Vento^000000.";
@@ -8026,7 +8025,7 @@ alberta_in,70,109,5	script	Xamã	788,{
 			mes "[Xamã]";
 			mes "Traga-me";
 			mes "^FF00001 Água Benta^000000,";
-			mes "^ff00001 Sangue Escarlate^000000,";
+			mes "^FF00001 Sangue Escarlate^000000,";
 			mes "^FF00001 Rosa Eterna^000000,";
 			mes "^FF00001 Cristal Azul^000000 e";
 			mes "^FF00001 Frescor do Vento^000000!";
@@ -9820,8 +9819,8 @@ comodo,233,199,5	script	Agente da Guilda#nd3	810,{
 		mes "É disso que você precisa!";
 		next;
 		mes "[Agente]";
-		mes "De agora em diante.";
-		mes "Quero que você grite \"Sim, senhor!\" quando ouvir minhas instruções.";
+		mes "De agora em diante,";
+		mes "quero que você grite \"Sim, senhor!\" quando ouvir minhas instruções.";
 		mes "Entendeu?";
 		mes "Alto e claro!";
 		next;
@@ -10079,8 +10078,8 @@ morocc,116,39,3	script	Agente da Guilda#nd4	779,{
 		mes "[Agente]";
 		mes "*Hic*";
 		mes "Hahahaha,";
-		mes "como é bom!";
-		mes "Essa bebida...";
+		mes "isso é bom demais!";
+		mes "Boa e velha cerveja~";
 		next;
 		mes "[Agente]";
 		mes "*Hic*";
