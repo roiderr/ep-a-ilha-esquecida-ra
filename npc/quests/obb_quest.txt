@@ -27,7 +27,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 		mes "- Espere um momento! -";
 		mes "- Atualmente você está carregando -";
 		mes "- muitos itens. -";
-		mes "- Por favor, calcule seu peso -";
+		mes "- Por favor, reduza seu peso -";
 		mes "- e tente novamente. -";
 		close;
 	}
@@ -72,9 +72,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "...........";
 			next;
 			mes "[Turista]";
-			mes "Não pensei que você fosse tão";
-			mes "maldoso. Vaza, não estou com paciência";
-			mes "para conversar com você.";
+			mes "Não pensei que você fosse tão maldoso.";
+			mes "Vaza, não estou com paciência para conversar com você.";
 			close;
 		case 2:
 			mes "[Turista]";
@@ -87,17 +86,12 @@ alberta,43,244,0	script	Turista#thai	99,{
 				mes "Bem, na verdade...";
 				next;
 				mes "[Turista]";
-				mes "Eu queria dar à minha namorada";
-				mes "uns biscoitos de gengibre.";
-				mes "Infelizmente, na minha cidade natal,";
-				mes "Morroc, não temos comidas sofisticadas";
-				mes "como estas.";
+				mes "Eu queria dar à minha namorada uns biscoitos de gengibre.";
+				mes "Infelizmente, na minha cidade natal, Morroc, não temos comidas sofisticadas como esta.";
 				next;
 				mes "[Turista]";
-				mes "Perguntei a todos estes";
-				mes "vendedores sobre isso, e me disseram";
-				mes "que eu só poderia encontrá-los";
-				mes "em Lutie... essa é a minha história.";
+				mes "Perguntei a todos estes vendedores sobre isso, e me disseram que eu só poderia encontrá-los em Lutie...";
+				mes "Essa é a minha história.";
 				next;
 				mes "[Turista]";
 				mes "Agora estou ficando sem dinheiro e";
@@ -111,43 +105,33 @@ alberta,43,244,0	script	Turista#thai	99,{
 					next;
 					mes "[Turista]";
 					mes "Hum...";
-					mes "Antes de falarmos sobre essa ajuda...";
-					mes "Er, hmmm...";
-					mes "Bem, você sabe que estou praticamente";
-					mes "morrendo de fome...";
+					mes "Antes de falarmos sobre esta ajuda... Er, hmmm...";
+					mes "Bem, você sabe que estou praticamente morrendo de fome...";
 					next;
 					mes "[Turista]";
 					mes "Você poderia me conseguir um pouco de carne?";
-					mes "Sei que estou pedindo demais,";
-					mes "mas estou praticamente sem dinheiro,";
-					mes "então não tenho muita";
-					mes "escolha...";
+					mes "Sei que estou pedindo demais, mas estou praticamente sem dinheiro.";
+					mes "Então não tenho muita escolha...";
 					close;
 				}
 				set thai_head,1;
 				mes "[Turista]";
 				mes ".........";
-				mes "Como você pôde ser tão frio";
-				mes "depois de ouvir minha história?";
+				mes "Como você pôde ser tão frio depois de ouvir minha história?";
 				mes "...Você é muito cruel!";
 				close;
 			case 2:
 				mes "[Turista]";
-				mes "...Ah, é mesmo? Hum... disseram que eu";
-				mes "só conseguiria encontrar biscoitos de gengibre";
-				mes "em Lutie.";
+				mes "...Ah, é mesmo? Hum...";
+				mes "Disseram que eu só conseguiria encontrar biscoitos de gengibre em Lutie.";
 				next;
 				mes "[Turista]";
 				mes "Eu queria dar alguns biscoitos de gengibre para minha namorada.";
-				mes "Infelizmente, na minha cidade natal, no";
-				mes "Morroc, não temos comidas sofisticadas";
-				mes "como essa.";
+				mes "Infelizmente, na minha cidade natal, Morroc, não temos comidas sofisticadas como esta.";
 				next;
 				mes "[Turista]";
-				mes "Perguntei a todos estes";
-				mes "vendedores sobre isso, e me disseram";
-				mes "que eu só conseguiria encontrá-los";
-				mes "em Lutie... essa é a minha história.";
+				mes "Perguntei a todos estes vendedores sobre isso, e me disseram que eu só conseguiria encontrá-los em Lutie...";
+				mes "essa é a minha história.";
 				next;
 				mes "[Turista]";
 				mes "Agora estou ficando sem dinheiro e";
@@ -161,45 +145,35 @@ alberta,43,244,0	script	Turista#thai	99,{
 					next;
 					mes "[Turista]";
 					mes "Hum...";
-					mes "Antes de falarmos sobre ajuda...";
-					mes "Er, hmmm...";
-					mes "Bem, você sabe que estou praticamente";
-					mes "morrendo de fome...";
+					mes "Antes de falarmos sobre esta ajuda... Er, hmmm...";
+					mes "Bem, você sabe que estou praticamente morrendo de fome...";
 					next;
 					mes "[Turista]";
 					mes "Você poderia me conseguir um pouco de carne?";
-					mes "Eu sei que estou pedindo demais,";
-					mes "mas estou praticamente sem dinheiro,";
-					mes "então não tenho muita";
-					mes "escolha...";
+					mes "Sei que estou pedindo demais, mas estou praticamente sem dinheiro.";
+					mes "Então não tenho muita escolha...";
 					close;
 				}
 				set thai_head,1;
 				mes "[Turista]";
 				mes ".........";
-				mes "Como você pôde ser tão frio";
-				mes "depois de ouvir minha história?";
+				mes "Como você pôde ser tão frio depois de ouvir minha história?";
 				mes "...Você é muito cruel!";
 				close;
 			case 3:
 				mes "[Turista]";
-				mes "Disseram-me que eu só encontraria";
-				mes "a entrada para Lutie em";
-				mes "Al De Baran...";
+				mes "Disseram-me que eu só encontraria a entrada para Lutie em Al De Baran...";
 				next;
 				mes "[Turista]";
-				mes "Então vim para cá depois de procurar";
-				mes "Al De Baran... quase";
-				mes "me matei ao atravessar o deserto... *Soluço*";
+				mes "Então vim para cá depois de procurar por Al De Baran...";
+				mes "Quase me matei ao atravessar o deserto... *Soluço*";
 				close;
 			}
 		case 3:
 			if (countitem(517) == 0) {
 				mes "[Turista]";
-				mes "Entendo... Posso compreender que você";
-				mes "não pode me ajudar. Tudo bem...";
-				mes "Não é como se eu tivesse o direito";
-				mes "de exigir algo de você...";
+				mes "Entendo... Posso compreender que você não pode me ajudar. Tudo bem...";
+				mes "Não é como se eu tivesse o direito de exigir algo de você...";
 				mes "Mas...";
 				next;
 				mes "[Turista]";
@@ -222,11 +196,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 					mes "mas...";
 					next;
 					mes "[Turista]";
-					mes "O que você é...";
-					mes "Mão de vaca?! Você pode alimentar";
-					mes "um homem faminto com mais";
-					mes "muito mais do que isso... traga-me";
-					mes "mais carne!";
+					mes "Você é... mão de vaca?!";
+					mes "Você pode alimentar um homem faminto com mais muito mais do que isso... traga-me mais carne!";
 					close;
 				}
 				else if (countitem(517) > 10) {
@@ -257,11 +228,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 					mes "mas...";
 					next;
 					mes "[Turista]";
-					mes "Você é...";
-					mes "mesquinho?! Você pode alimentar";
-					mes "um homem faminto com mais";
-					mes "muito mais do que isso... traga-me";
-					mes "mais carne!";
+					mes "Você é... mão de vaca?!";
+					mes "Você pode alimentar um homem faminto com mais muito mais do que isso... traga-me mais carne!";
 					close;
 				}
 				else if (countitem(517) > 20) {
@@ -292,12 +260,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 					mes "mas...";
 					next;
 					mes "[Turista]";
-					mes "O que você é...";
-					mes "Mão de vaca?! Você pode alimentar";
-					mes "um homem faminto com mais";
-					mes "carne!";
-					mes "Traga-me";
-					mes "mais carne!";
+					mes "Você é... mão de vaca?!";
+					mes "Você pode alimentar um homem faminto com mais muito mais do que isso... traga-me mais carne!";
 					close;
 				}
 				else if (countitem(517) > 40) {
@@ -310,10 +274,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 				}
 			}
 			set thai_head,4;
-			mes "^3355FFEle parecia estar";
-			mes "faminto há muito tempo.";
-			mes "Ele comeu toda a carne que eu lhe dei";
-			mes "e tudo sumiu num instante.^000000";
+			mes "^3355FFEle parecia estar faminto há muito tempo.";
+			mes "Ele comeu toda a carne que eu lhe dei e tudo sumiu num instante.^000000";
 			if (countitem(538) > 0) {
 				mes "^0000FF...Oh meu Deus! Ele pegou meus biscoitos sem nem pedir e comeu todos eles também!!^000000";
 				delitem 538,countitem(538); //Well_Baked_Cookie
@@ -327,11 +289,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "Minha namorada.";
 			next;
 			mes "[Turista]";
-			mes "Er...sobre o biscoito de gengibre";
-			mes "que eu te falei? Hum... Eu";
-			mes "sei que estou sendo rude e egoísta";
-			mes "...Mas acho que não consigo encontrá-lo";
-			mes "sozinho.";
+			mes "Er...sobre o biscoito de gengibre que eu te falei?";
+			mes "Hum... Eu sei que estou sendo rude e egoísta... Mas acho que não consigo encontrá-lo sozinho.";
 			next;
 			mes "[Turista]";
 			mes "Então, você poderia me trazer ^0000FF20 Biscoitos de Gengibre^000000?";
@@ -351,11 +310,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 			next;
 			mes "[Turista]";
 			mes "Você nunca esteve apaixonado...?";
-			mes "Certamente você entende o";
-			mes "poder que esta mulher exerce";
-			mes "sobre mim! Caso contrário... eu estaria";
-			mes "vendendo joias... qualquer coisa";
-			mes "menos isso.";
+			mes "Certamente você entende o poder que esta mulher exerce sobre mim! Caso contrário... eu estaria vendendo joias... qualquer coisa menos isso.";
 			next;
 			mes "[Turista]";
 			mes "Eu imploro, já que você é";
@@ -393,11 +348,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 				close;
 			}
 			mes "[Turista]";
-			mes "Entendo... posso compreender que você";
-			mes "não possa me ajudar. Tudo bem...";
-			mes "Não é como se eu tivesse o direito";
-			mes "de exigir algo de você...";
-			mes "Mas...";
+			mes "Entendo... posso compreender que você não possa me ajudar. Tudo bem...";
+			mes "Não é como se eu tivesse o direito de exigir algo de você... Mas...";
 			close;
 		case 5:
 			mes "[Turista]";
@@ -406,10 +358,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "[Turista]";
 			mes "Hmm... Quero te retribuir...";
 			mes "E você é um aventureiro...";
-			mes "Mas eu não tenho nenhuma...";
-			mes "armadura mágica ou aquelas";
-			mes "cartas que vocês";
-			mes "sempre usam...";
+			mes "Mas eu não tenho nenhuma... armadura mágica ou aquelas cartas que vocês sempre usam...";
 			next;
 			mes "[Turista]";
 			mes "Hmmm...";
@@ -420,12 +369,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "...algo assim, certo?";
 			next;
 			mes "[Turista]";
-			mes "Visite meu amigo ^649664Jacob^000000 em";
-			mes "Morroc. Diga a ele que eu";
-			mes "te apresentei. Ele sabe";
-			mes "sobre um homem sábio...";
-			mes "Embora ele próprio não seja um";
-			mes "...";
+			mes "Visite meu amigo ^649664Jacob^000000 em Morroc.";
+			mes "Diga a ele que eu te apresentei. Ele sabe sobre um homem sábio... Embora ele mesmo não seja um...";
 			next;
 			mes "[Turista]";
 			mes "Ah, desculpe, eu nem disse";
@@ -444,15 +389,12 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "^FF0000Não se esqueça disso~^000000";
 			next;
 			mes "[Turista]";
-			mes "Desculpe, não posso te retribuir com";
-			mes "mais do que isso. É meio";
-			mes "chato, né?";
+			mes "Desculpe, não posso te retribuir com mais do que isso.";
+			mes "É meio chato, né?";
 			next;
 			mes "[Turista]";
-			mes "Aqui, aceite isto como um gesto extra de";
-			mes "gratidão.";
-			mes "Este treco tem sido";
-			mes "muito útil em situações complicadas...";
+			mes "Aqui, aceite isto como um gesto extra de gratidão.";
+			mes "Este treco tem sido muito útil em situações complicadas...";
 			next;
 			mes "[Turista]";
 			mes "Espero que seja útil.";
@@ -474,17 +416,13 @@ alberta,43,244,0	script	Turista#thai	99,{
 		switch(rand(1,3)) {
 		case 1:
 			mes "[Turista]";
-			mes "Ei, muito obrigado pela sua";
-			mes "ajuda. Enfim... agora eu me lembrei";
-			mes "que tenho que voltar pelo";
-			mes "deserto de novo... *Suspiro*";
+			mes "Ei, muito obrigado pela sua ajuda.";
+			mes "Enfim... agora eu me lembrei que tenho que voltar pelo deserto de novo... *Suspiro*";
 			mes "É, é melhor eu voltar...";
 			next;
 			mes "[Turista]";
 			mes "...não importa o quão difícil seja.";
-			mes "Mas... é. Vai ser bem";
-			mes "difícil. Atravessando o deserto...";
-			mes "sozinho. Sozinho... droga.";
+			mes "Mas... é. Vai ser bem difícil. Atravessando o deserto... sozinho. Sozinho... droga.";
 			close;
 		case 2:
 			mes "[Turista]";
@@ -501,16 +439,11 @@ alberta,43,244,0	script	Turista#thai	99,{
 			close;
 		case 3:
 			mes "[Turista]";
-			mes "Ei, muito obrigado pela sua";
-			mes "ajuda. Nossa... Morroc é muito";
-			mes "longe, não é? Droga...";
-			mes "Acho que se eu fui louco";
-			mes "o suficiente para vir aqui por causa";
-			mes "da minha namorada...";
+			mes "Ei, muito obrigado pela sua ajuda. Nossa... Morroc é muito longe, não é?";
+			mes "Droga... Acho que se eu fui louco o suficiente para vir aqui por causa da minha namorada...";
 			next;
 			mes "[Turista]";
-			mes "Sou louco o suficiente para voltar andando";
-			mes "até Morroc...";
+			mes "Sou louco o suficiente para voltar andando até Morroc...";
 			mes "...";
 			mes "...a menos que...";
 			mes "Você me dê uma carona nas costas?";
@@ -572,8 +505,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "[Turista]";
 			mes "Ei, obrigado por me avisar.";
 			mes "Agora pelo menos sei onde estou.";
-			mes "Nossa... eles têm barcos aqui";
-			mes "que vão para todo lugar, né?";
+			mes "Nossa... eles têm barcos aqui que vão para todo lugar, né?";
 			next;
 			mes "[Turista]";
 			mes "Ah, é verdade, para todo lugar... menos Lutie.";
@@ -605,7 +537,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "Hah~!... Eu sabia! Bem, é";
 			mes "muito difícil admitir quando";
 			mes "você faz algo errado.";
-			mes "Obrigado por ser honesto, amigo.";
+			mes "Obrigado por ser honest"+(Sex==SEX_MALE?"o":"a")+", amig"+(Sex==SEX_MALE?"o":"a")+".";
 			close;
 		}
 	}
@@ -675,8 +607,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			next;
 			mes "[Jacob]";
 			mes "......";
-			mes "*Suspiro* Por enquanto, tenho um favor a";
-			mes "te pedir. Poderias me trazer";
+			mes "*Suspiro* Por enquanto, tenho um favor a te pedir. Poderia me trazer";
 			mes "^0000FF1 Sem Destinatário^000000?";
 			set thai_head,7;
 			next;
@@ -722,8 +653,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 				next;
 				mes "[Jacob]";
 				mes "..........";
-				mes "Não, não, não, não... isso não é";
-				mes "mentir, Tommy.";
+				mes "Não, não, não, não... isso não é mentir, Tommy.";
 				mes "Só estou tentando fazer parecer melhor para a mamãe~";
 				next;
 				mes "[Tommy]";
@@ -784,7 +714,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 						next;
 						mes "[Tommy]";
 						mes "Eu te odeio...eu te odeio!!!";
-						mes "Eu queria que Baphomet te levasse para algum lugar e te comesse!!";
+						mes "Eu queria que Bafomé te levasse para algum lugar e te comesse!!";
 						next;
 						mes "[Jacob]";
 						mes "Droga... Tommy, Tommy...";
@@ -820,7 +750,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 					next;
 					mes "[Tommy]";
 					mes "Eu te odeio... Eu te odeio!!!";
-					mes "Queria que Baphomet te levasse para algum lugar e te comesse!!";
+					mes "Queria que Bafomé te levasse para algum lugar e te comesse!!";
 					next;
 					mes "[Jacob]";
 					mes "Droga... Tommy, Tommy...";
@@ -870,8 +800,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "[Jacob]";
 			mes "....Não quero mais falar com VOCÊ.";
 			mes "Saia daqui!";
-			mes "A culpa é sua se meu garotinho";
-			mes "acha que eu sou um grande mentiroso!";
+			mes "A culpa é sua se meu garotinho acha que eu sou um grande mentiroso!";
 			close;
 		case 9:
 			mes "[Jacob]";
@@ -896,16 +825,11 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "depois que você os perdeu.";
 			next;
 			mes "[Jacob]";
-			mes "Eu também era uma criança rebelde... meus";
-			mes "pais tiveram dificuldades para me criar. Tenho vergonha do que fiz";
-			mes "quando era jovem...";
+			mes "Eu também era uma criança rebelde... meus pais tiveram dificuldades para me criar. Tenho vergonha do que fiz quando era jovem...";
 			next;
 			mes "[Jacob]";
-			mes "Naquela época, meus pais não tinham";
-			mes "dinheiro para me dar três refeições por dia.";
-			mes "E havia muitos";
-			mes "credores que sempre apareciam";
-			mes "em nossa casa bem cedinho.";
+			mes "Naquela época, meus pais não tinham dinheiro para me dar três refeições por dia.";
+			mes "E havia muitos credores que sempre apareciam em nossa casa bem cedinho.";
 			next;
 			mes "[Jacob]";
 			mes "Você já ouviu falar de";
@@ -916,15 +840,12 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "minha.";
 			next;
 			mes "[Jacob]";
-			mes "Eu odiava meus pais por não me darem um lar aconchegante,";
-			mes "e me tornei rebelde.";
-			mes "Mas, não importa o quão ruim eu fosse,";
-			mes "mesmo naquelas circunstâncias difíceis...";
+			mes "Eu odiava meus pais por não me darem um lar aconchegante, e me tornei rebelde.";
+			mes "Mas, não importa o quão ruim eu fosse, mesmo naquelas circunstâncias difíceis...";
 			next;
 			mes "[Jacob]";
 			mes "Eles nunca desistiram de mim.";
-			mes "Mais tarde, eles me disseram que eu era a única esperança deles...";
-			mes "embora eu fosse mais um fardo do que qualquer outra coisa naquele momento.";
+			mes "Mais tarde, eles me disseram que eu era a única esperança deles... embora eu fosse mais um fardo do que qualquer outra coisa naquele momento.";
 			next;
 			mes "[Tommy]";
 			mes "Papai, você percebe que já contou";
@@ -975,24 +896,20 @@ morocc,230,150,0	script	Jacob#thai	50,{
 				mes "Tenho algo para lhe contar.";
 				next;
 				mes "[Jacob]";
-				mes "Quando você for para o oeste de Morroc,";
-				mes "e passar por uma caverna, você chegará";
-				mes "a uma cidade chamada Comodo.";
+				mes "Quando você for para o oeste de Morroc, e passar por uma caverna, você chegará a uma cidade chamada Comodo.";
 				next;
 				mes "[Jacob]";
 				mes "Quando você chegar lá, verá um velho chamado ^0000FFElder Creek^000000. Como sábio, ele conquistou o respeito de muitos.";
 				next;
 				mes "[Jacob]";
-				mes "Dizem que muitos aventureiros";
-				mes "visitam este homem por algum";
-				mes "motivo. Por que você não vai conversar com ele e ver se ele tem alguma sabedoria para lhe dar?";
+				mes "Dizem que muitos aventureiros visitam este homem por algum motivo.";
+				mes "Por que você não vai conversar com ele e ver se ele tem alguma sabedoria para lhe dar?";
 				set thai_head,11;
 				close;
 			}
 			else if (.@rem > 1 && .@remrem < 7) {
 				mes "[Jacob]";
-				mes "Respeite seus pais enquanto eles";
-				mes "ainda estão vivos. É tarde demais para se arrepender depois de perdê-los.";
+				mes "Respeite seus pais enquanto eles ainda estão vivos. É tarde demais para se arrepender depois de perdê-los.";
 				next;
 				mes "["+strcharinfo(0)+"]";
 				mes "(Hum... Eu sei que esse cara tem mais coisas para me contar...)";
@@ -1056,7 +973,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 		mes "- Espere um momento! -";
 		mes "- Atualmente você está carregando -";
 		mes "- muitos itens. -";
-		mes "- Por favor, reduza o peso -";
+		mes "- Por favor, reduza seu peso -";
 		mes "- e tente novamente. -";
 		close;
 	}
@@ -1080,15 +997,14 @@ comodo,68,195,0	script	Velho#thai	120,{
 			switch(select("Eu busco fortuna!:Eu busco...sabedoria.:Eu quero terminar o que comecei.")) {
 			case 1:
 				mes "[Ancião Creek]";
-				mes "Você é honesto...!";
+				mes "Você é honest"+(Sex==SEX_MALE?"o":"a")+"...!";
 				mes "No entanto, sugiro que você tente não se deixar seduzir pela riqueza.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Você sabe o significado exato";
 				mes "do velho ditado...";
 				mes "^0000FFMuito é tão ruim quanto pouco^000000?";
-				mes "Eu lhe darei o que você quer se";
-				mes "você responder da maneira que eu espero.";
+				mes "Eu lhe darei o que você quer se você responder da maneira que eu espero.";
 				next;
 				switch(select("É necessário ter muito!:Muito burro para ver o futuro.:Tudo em excesso faz mal.:Curva-se diante dos poderosos.")) {
 				case 1:
@@ -1116,8 +1032,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "dinheiro e fortuna, que não se importava com o que os outros pensavam dele.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Consequentemente, as pessoas ao seu redor";
-					mes "não gostavam dele. No fim, ele perdeu seus amigos por causa de sua ganância.";
+					mes "Consequentemente, as pessoas ao seu redor não gostavam dele.";
+					mes "No fim, ele perdeu seus amigos por causa de sua ganância.";
 					next;
 					mes "[Ancião Creek]";
 					mes "É claro que essa regra se aplica a";
@@ -1139,10 +1055,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "para melhorar suas vidas.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Já que você também precisa do meu conselho,";
-				mes "tentarei";
-				mes "transmitir minha sabedoria de uma";
-				mes "maneira que você entenda.";
+				mes "Já que você também precisa do meu conselho, tentarei transmitir minha sabedoria de uma maneira que você entenda.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Agora, me diga o que está te incomodando.";
@@ -1150,17 +1063,13 @@ comodo,68,195,0	script	Velho#thai	120,{
 				switch(select("Problema com namorado/namorada.:Problema financeiro.:Morrendo de tédio.:Problema na carreira.:Quero dinheiro.:Me dê coisas, velho.")) {
 				case 1:
 					mes "[Ancião Creek]";
-					mes "Tenho inveja de você! Mesmo assim, jovens";
-					mes "como você têm sorte de";
-					mes "ter esses problemas... infelizmente,";
-					mes "ninguém além de você mesmo pode realmente";
-					mes "te ajudar nestas situações...";
+					mes "Tenho inveja de você!";
+					mes "Ainda assim, jovens como você têm sorte de ter problemas como estes...";
+					mes "Infelizmente, ninguém além de você mesmo pode realmente te ajudar nestas situações...";
 					next;
 					mes "[Ancião Creek]";
-					mes "No entanto, o conselho que posso te dar";
-					mes "é este: Seja honesto com a pessoa amada.";
-					mes "Uma mentira leva a";
-					mes "outra mentira num instante.";
+					mes "No entanto, o conselho que posso lhe dar é este:";
+					mes "Seja honest"+(Sex==SEX_MALE?"o":"a")+" com "+(Sex==SEX_MALE?"sua amada":"seu amado")+". Uma mentira leva a outra mentira num instante.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Se você tratar a pessoa que ama";
@@ -1174,14 +1083,11 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "Então... não se desanime se seus sentimentos não forem correspondidos.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Mas ainda assim, acredito que ser honesto";
-					mes "é a melhor maneira de conquistar o seu";
-					mes "verdadeiro amor.";
+					mes "Mas ainda assim, acredito que ser honesto é a melhor maneira de conquistar o seu verdadeiro amor.";
 					next;
 					mes "[Ancião Creek]";
 					mes "...bem, isso é tudo que posso lhe dizer.";
-					mes "Espero que você fique feliz";
-					mes "com esta pérola da sabedoria.";
+					mes "Espero que você fique feliz com esta pérola da sabedoria.";
 					close2;
 					set thai_head,14;
 					end;
@@ -1224,24 +1130,19 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "para proteger seu orgulho.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Mas ainda acredito que estou certo.";
-					mes "Afinal... eu sou um Sábio.";
+					mes "Mas ainda acredito que estou certo. Afinal... eu sou um Sábio.";
 					mes "Espero que você fique feliz com meu sábio conselho.";
 					close2;
 					set thai_head,14;
 					end;
 				case 3:
 					mes "[Ancião Creek]";
-					mes "Sim, sempre precisamos de";
-					mes "entretenimento. Mas... parece que você pode não se satisfazer com nada.";
+					mes "Sim, sempre precisamos de entretenimento. Mas... parece que você pode não se satisfazer com nada.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Tudo se resume aos diferentes gostos";
-					mes "e interesses que as pessoas têm.";
-					mes "Coisas que outras pessoas apreciam podem não";
-					mes "desagradar você. Além disso, se sua";
-					mes "mente não estiver disposta a ser feliz,";
-					mes "você não aproveitará a vida.";
+					mes "Tudo se resume aos diferentes gostos e interesses que as pessoas têm.";
+					mes "Coisas que outras pessoas apreciam podem não desagradar você.";
+					mes "Além disso, se sua mente não estiver disposta a ser feliz, você não aproveitará a vida.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Aqui está um exemplo de ter";
@@ -1261,10 +1162,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "No entanto, mesmo assim, será diferente para alguém com uma perspectiva diferente.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Idealmente, devemos tentar";
-					mes "encontrar alegria em fazer";
-					mes "outras pessoas felizes. Ao limpar a rua, podemos";
-					mes "dar aos outros um motivo para sorrir.";
+					mes "Idealmente, devemos tentar encontrar alegria em fazer outras pessoas felizes.";
+					mes "Ao limpar a rua, podemos dar aos outros um motivo para sorrir.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Os turistas que passam pela rua";
@@ -1283,14 +1182,11 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "Com a atitude certa, eventualmente você encontrará algo de que goste.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Haha~ Vejo que você está apenas";
-					mes "clicando no botão 'próximo' nessas";
-					mes "janelas, porque está farto desta conversa com NPCs.";
+					mes "Haha~ Vejo que você está apenas clicando no botão 'próximo' nessas janelas, porque está farto desta conversa com o NPC.";
 					next;
 					mes "[Ancião Creek]";
 					mes "...enfim, é só isso.";
-					mes "Espero que você fique feliz";
-					mes "com meu sábio conselho.";
+					mes "Espero que você fique feliz com meu sábio conselho.";
 					close2;
 					set thai_head,14;
 					end;
@@ -1300,9 +1196,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "Mas você tem muito tempo para pensar no que quer fazer no futuro.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Viva mais experiências em muitos lugares diferentes";
-					mes "e leia o máximo de livros";
-					mes "que puder. Concentre-se em ampliar sua perspectiva.";
+					mes "Viva mais experiências em lugares diferentes e leia o máximo de livros que puder.";
+					mes "Concentre-se em ampliar sua perspectiva.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Então, você perceberá o que realmente quer fazer.";
@@ -1317,7 +1212,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "Entendo, você escolheu a resposta errada desde o início.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Acredito que isso servirá de lição para que você seja mais honesto consigo mesmo.";
+					mes "Acredito que isso servirá de lição para que você seja mais honest"+(Sex==SEX_MALE?"o":"a")+" consigo mesmo.";
 					mes "Escolha a resposta certa da próxima vez!";
 					close;
 				case 6:
@@ -1348,9 +1243,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 			close;
 		case 13:
 			mes "[Ancião Creek]";
-			mes "...Eu estava apenas testando você";
-			mes "para lhe dar algo";
-			mes "especial. Sou a única pessoa no mundo que pode lhe dar isso...";
+			mes "...Eu estava apenas testando você para lhe dar algo especial. Sou a única pessoa no mundo que pode lhe dar isso...";
 			next;
 			mes "[Ancião Creek]";
 			mes "Eu precisava verificar se você é a pessoa certa, como pensei inicialmente.";
@@ -1415,15 +1308,11 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "neto mais tarde. Parece que ele testemunhou algo horrível há pouco tempo...";
 				next;
 				mes "[Ancião Creek]";
-				mes "Não faço ideia do que ele viu,";
-				mes "porque o choque o deixou sem palavras.";
+				mes "Não faço ideia do que ele viu, porque o choque o deixou sem palavras.";
 				mes "Quando ele se recuperar, eu lhe contarei.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Na verdade, os itens que pedi";
-				mes "serão usados para curar";
-				mes "sua condição. Eu não coleciono isso como um";
-				mes "hobby...";
+				mes "Na verdade, os itens que pedi serão usados para curar sua condição. Eu não coleciono isso como um hobby...";
 				next;
 				mes "[Ancião Creek]";
 				mes "Sinto muito por causar";
@@ -1431,9 +1320,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 				close;
 			}
 			mes "[Ancião Creek]";
-			mes "Lembre-se, quando você quer algo,";
-			mes "especialmente quando é especial, você";
-			mes "sempre deve oferecer algo em troca.";
+			mes "Lembre-se, quando você quer algo, especialmente quando é especial, você sempre deve oferecer algo em troca.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Eu quero...";
@@ -1461,17 +1348,13 @@ comodo,68,195,0	script	Velho#thai	120,{
 			switch(select("Problema com namorado/namorada.:Problema financeiro.:Morrendo de tédio.:Problema na carreira.:Quero dinheiro.:Me dê coisas, velho.")) {
 			case 1:
 				mes "[Ancião Creek]";
-				mes "Tenho inveja de você! Ainda assim, jovens";
-				mes "como você têm sorte de";
-				mes "ter tais problemas... infelizmente,";
-				mes "ninguém além de você mesmo pode realmente";
-				mes "ajudá-lo nestas situações...";
+				mes "Tenho inveja de você!";
+				mes "Ainda assim, jovens como você têm sorte de ter problemas como estes...";
+				mes "Infelizmente, ninguém além de você mesmo pode realmente te ajudar nestas situações...";
 				next;
 				mes "[Ancião Creek]";
-				mes "No entanto, o conselho que posso lhe dar";
-				mes "é este: Seja honesto com seu";
-				mes "amado. Uma mentira leva a";
-				mes "outra mentira num instante.";
+				mes "No entanto, o conselho que posso lhe dar é este:";
+				mes "Seja honest"+(Sex==SEX_MALE?"o":"a")+" com "+(Sex==SEX_MALE?"sua amada":"seu amado")+". Uma mentira leva a outra mentira num instante.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Se você tratar a pessoa que ama";
@@ -1485,14 +1368,11 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "Então... não se desanime se seus sentimentos não forem correspondidos.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Mas ainda assim, acredito que ser honesto";
-				mes "é a melhor maneira de conquistar o seu";
-				mes "verdadeiro amor.";
+				mes "Mas ainda assim, acredito que ser honesto é a melhor maneira de conquistar o seu verdadeiro amor.";
 				next;
 				mes "[Ancião Creek]";
 				mes "...bem, isso é tudo que posso lhe dizer.";
-				mes "Espero que você fique feliz";
-				mes "com esta pérola da sabedoria.";
+				mes "Espero que você fique feliz com esta pérola da sabedoria.";
 				close;
 			case 2:
 				mes "[Ancião Creek]";
@@ -1512,9 +1392,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
 				next;
 				mes "[Ancião Creek]";
-				mes "Elas são gananciosas demais para estarem nessa posição";
-				mes "e não têm";
-				mes "as prioridades certas.";
+				mes "Elas são gananciosas demais para estarem nesta posição e não têm as prioridades certas.";
 				mes "Em vez de melhorar o mundo, elas usam seu poder apenas para se beneficiarem.";
 				next;
 				mes "[Ancião Creek]";
@@ -1535,23 +1413,17 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "para proteger seu orgulho.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Mas ainda acredito que estou certo.";
-				mes "Afinal... eu sou um Sábio.";
+				mes "Mas ainda acredito que estou certo. Afinal... eu sou um Sábio.";
 				mes "Espero que você fique feliz com meu sábio conselho.";
 				close;
 			case 3:
 				mes "[Ancião Creek]";
-				mes "Sim, sempre precisamos de";
-				mes "entretenimento. Mas... parece que você pode não se satisfazer";
-				mes "com nada.";
+				mes "Sim, sempre precisamos de entretenimento. Mas... parece que você pode não se satisfazer com nada.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Tudo se resume aos diferentes gostos";
-				mes "e interesses que as pessoas têm.";
-				mes "Coisas que outras pessoas apreciam podem";
-				mes "desagradar você. Além disso, se sua";
-				mes "mente não estiver disposta a ser feliz,";
-				mes "você não aproveitará a vida.";
+				mes "Tudo se resume aos diferentes gostos e interesses que as pessoas têm.";
+				mes "Coisas que outras pessoas apreciam podem não desagradar você.";
+				mes "Além disso, se sua mente não estiver disposta a ser feliz, você não aproveitará a vida.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Aqui está um exemplo de ter";
@@ -1571,11 +1443,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "No entanto, mesmo assim, será diferente para alguém com uma perspectiva diferente.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Idealmente, devemos tentar";
-				mes "encontrar alegria em fazer";
-				mes "outras pessoas felizes.";
-				mes "Limpando a rua, podemos";
-				mes "dar aos outros um motivo para sorrir.";
+				mes "Idealmente, devemos tentar encontrar alegria em fazer outras pessoas felizes.";
+				mes "Ao limpar a rua, podemos dar aos outros um motivo para sorrir.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Os turistas que passam pela";
@@ -1595,14 +1464,11 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "Com a atitude certa, eventualmente você encontrará algo de que goste.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Haha~ Vejo que você está apenas";
-				mes "clicando no botão 'próximo' nessas";
-				mes "janelas, porque está farto dessa conversa com o NPC.";
+				mes "Haha~ Vejo que você está apenas clicando no botão 'próximo' nessas janelas, porque está farto desta conversa com o NPC.";
 				next;
 				mes "[Ancião Creek]";
 				mes "...enfim, é só isso.";
-				mes "Espero que você fique feliz";
-				mes "com meu sábio conselho.";
+				mes "Espero que você fique feliz com meu sábio conselho.";
 				close;
 			case 4:
 				mes "[Ancião Creek]";
@@ -1610,8 +1476,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "Mas você tem muito tempo para pensar no que quer fazer no futuro.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Viva mais experiências em lugares diferentes";
-				mes "e leia o máximo de livros que puder. Concentre-se em ampliar sua perspectiva.";
+				mes "Viva mais experiências em lugares diferentes e leia o máximo de livros que puder.";
+				mes "Concentre-se em ampliar sua perspectiva.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Então, você perceberá o que realmente quer fazer.";
@@ -1646,17 +1512,13 @@ comodo,68,195,0	script	Velho#thai	120,{
 		switch(select("Problema com namorado/namorada.:Problema financeiro.:Morrendo de tédio.:Problema na carreira.:Me dê coisas, velho.")) {
 		case 1:
 			mes "[Ancião Creek]";
-			mes "Estou com inveja de você! Ainda assim, jovens";
-			mes "como você têm sorte de";
-			mes "ter tais problemas... infelizmente,";
-			mes "ninguém além de você mesmo pode realmente";
-			mes "ajudá-lo nestas situações...";
+			mes "Tenho inveja de você!";
+			mes "Ainda assim, jovens como você têm sorte de ter problemas como estes...";
+			mes "Infelizmente, ninguém além de você mesmo pode realmente te ajudar nestas situações...";
 			next;
 			mes "[Ancião Creek]";
-			mes "No entanto, o conselho que posso lhe dar";
-			mes "é este: Seja honesto com seu";
-			mes "amado. Uma mentira leva a";
-			mes "outra mentira em pouco tempo.";
+			mes "No entanto, o conselho que posso lhe dar é este:";
+			mes "Seja honest"+(Sex==SEX_MALE?"o":"a")+" com "+(Sex==SEX_MALE?"sua amada":"seu amado")+". Uma mentira leva a outra mentira num instante.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Se você tratar a pessoa que ama";
@@ -1675,8 +1537,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 			next;
 			mes "[Ancião Creek]";
 			mes "...bem, isso é tudo que posso lhe dizer.";
-			mes "Espero que você fique feliz";
-			mes "com esta pérola da sabedoria.";
+			mes "Espero que você fique feliz com esta pérola da sabedoria.";
 			close;
 		case 2:
 			mes "[Ancião Creek]";
@@ -1696,10 +1557,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
 			next;
 			mes "[Ancião Creek]";
-			mes "Elas são gananciosas demais para estarem nessa posição";
-			mes "e não têm";
-			mes "as prioridades certas.";
-			mes "Em vez de melhorar o mundo, eles usam seu poder apenas para se beneficiarem.";
+			mes "Elas são gananciosas demais para estarem nesta posição e não têm as prioridades certas.";
+			mes "Em vez de melhorar o mundo, elas usam seu poder apenas para se beneficiarem.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Se eu fosse eles, não gostaria de";
@@ -1719,24 +1578,17 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "para proteger seu orgulho.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Mas ainda acredito que estou certo.";
-			mes "Afinal... eu sou um Sábio.";
+			mes "Mas ainda acredito que estou certo. Afinal... eu sou um Sábio.";
 			mes "Espero que você fique feliz com meu sábio conselho.";
 			close;
 		case 3:
 			mes "[Ancião Creek]";
-			mes "Sim, precisamos sempre nos";
-			mes "entreter. Mas... parece que";
-			mes "você pode não se satisfazer";
-			mes "com nada.";
+			mes "Sim, sempre precisamos de entretenimento. Mas... parece que você pode não se satisfazer com nada.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Tudo se resume aos diferentes gostos";
-			mes "e interesses que as pessoas têm.";
-			mes "Coisas que outras pessoas apreciam podem";
-			mes "desagradá-lo. Além disso, se sua";
-			mes "mente não estiver disposta a ser feliz,";
-			mes "você não aproveitará a vida.";
+			mes "Tudo se resume aos diferentes gostos e interesses que as pessoas têm.";
+			mes "Coisas que outras pessoas apreciam podem não desagradar você.";
+			mes "Além disso, se sua mente não estiver disposta a ser feliz, você não aproveitará a vida.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Aqui está um exemplo de ter";
@@ -1756,11 +1608,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "No entanto, mesmo assim, será diferente para alguém com uma perspectiva diferente.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Idealmente, devemos tentar";
-			mes "encontrar alegria em fazer";
-			mes "outras pessoas felizes.";
-			mes "Limpando a rua, podemos";
-			mes "dar aos outros um motivo para sorrir.";
+			mes "Idealmente, devemos tentar encontrar alegria em fazer outras pessoas felizes.";
+			mes "Ao limpar a rua, podemos dar aos outros um motivo para sorrir.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Turistas que passam pela";
@@ -1779,14 +1628,11 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "Apenas tente pensar positivamente. Com a atitude certa, eventualmente você encontrará algo de que goste.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Haha~ Vejo que você está apenas";
-			mes "clicando no botão 'próximo' nessas";
-			mes "janelas, porque está farto dessa conversa com o NPC.";
+			mes "Haha~ Vejo que você está apenas clicando no botão 'próximo' nessas janelas, porque está farto desta conversa com o NPC.";
 			next;
 			mes "[Ancião Creek]";
 			mes "...enfim, é só isso.";
-			mes "Espero que você fique feliz";
-			mes "com meu sábio conselho.";
+			mes "Espero que você fique feliz com meu sábio conselho.";
 			close;
 		case 4:
 			mes "[Ancião Creek]";
@@ -1794,9 +1640,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "Mas você tem muito tempo para pensar no que quer fazer no futuro.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Viva mais experiências em diferentes lugares";
-			mes "e leia o máximo de livros";
-			mes "que puder. Concentre-se em ampliar sua perspectiva.";
+			mes "Viva mais experiências em lugares diferentes e leia o máximo de livros que puder.";
+			mes "Concentre-se em ampliar sua perspectiva.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Então, você perceberá o que realmente quer fazer.";
