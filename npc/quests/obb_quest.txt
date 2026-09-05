@@ -302,10 +302,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "enquanto eu estaria seguro aqui...";
 			next;
 			mes "[Turista]";
-			mes "Eu realmente quero fazer minha";
-			mes "namorada feliz. Tudo";
-			mes "valeria a pena por";
-			mes "aquele sorriso no rosto dela...";
+			mes "Eu realmente quero fazer minha namorada feliz. Tudo valeria a pena por aquele sorriso no rosto dela...";
 			mes "Eu simplesmente não posso perder essa chance!";
 			next;
 			mes "[Turista]";
@@ -330,8 +327,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 				delitem 538,20; //Well_Baked_Cookie
 				mes "[Turista]";
 				mes "Agradeço o que você fez por";
-				mes "mim... agora posso vê-la sorrir de";
-				mes "felicidade.";
+				mes "mim... agora posso vê-la sorrir";
+				mes "de felicidade.";
 				next;
 				mes "[Turista]";
 				mes "Hmm, ainda tenho um problema";
@@ -363,9 +360,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "[Turista]";
 			mes "Hmmm...";
 			mes "...Já sei!";
-			mes "Mais cedo ou mais tarde, você";
-			mes "vai querer visitar algum tipo de";
-			mes "sábio ou...";
+			mes "Mais cedo ou mais tarde, você vai querer visitar algum tipo de sábio ou...";
 			mes "...algo assim, certo?";
 			next;
 			mes "[Turista]";
@@ -378,8 +373,7 @@ alberta,43,244,0	script	Turista#thai	99,{
 			mes "^0000FFPandger Mayer^000000.";
 			next;
 			mes "[Turista]";
-			mes "Então, diga ao meu amigo Jacob";
-			mes "que foi o Pandger Mayer quem te apresentou.";
+			mes "Então, diga ao meu amigo Jacob que foi o Pandger Mayer quem te apresentou.";
 			next;
 			mes "[Turista]";
 			mes "Então... você diz a eles:";
@@ -433,8 +427,8 @@ alberta,43,244,0	script	Turista#thai	99,{
 			next;
 			mes "[Turista]";
 			mes "Mas é melhor eu voltar";
-			mes "para minha namorada. Esse é o";
-			mes "motivo de eu ter vindo";
+			mes "para minha namorada. Este é";
+			mes "o motivo de eu ter vindo";
 			mes "aqui, afinal.";
 			close;
 		case 3:
@@ -582,7 +576,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "^FF0000Munak Munak Munak Munak!!^000000";
 			next;
 			input .@input$;
-			if (.@input$ != "Pandger Mayer introduced you") {
+			if (.@input$ != "Pandger Mayer te apresentou") {
 				mes "["+strcharinfo(0)+"]";
 				mes ""+.@input$+"";
 				next;
@@ -595,8 +589,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			next;
 			mes "[Jacob]";
 			mes "Ah, você quer dizer aquele cara apaixonado?";
-			mes "A última vez que o vi, ele estava";
-			mes "saindo para procurar biscoitos em algum lugar...";
+			mes "A última vez que o vi, ele estava saindo para procurar biscoitos em algum lugar...";
 			next;
 			mes "[Jacob]";
 			mes "Só existe um motivo para ele ter mencionado meu nome para você...";
@@ -691,8 +684,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 					mes "(^0000FFNossa, por que você está fazendo isso comigo? Me ajuda logo!!^000000)";
 					next;
 					mes "[Tommy]";
-					mes "Podemos pegar um Munak com isso ou";
-					mes "não, hein? Me dizeeeeee~~~!";
+					mes "Podemos pegar um Munak com isso ou não, hein? Me dizeeeeee~~~!";
 					next;
 					switch(select("Sim, podemos.:Não, não podemos.")) {
 					case 1:
@@ -808,10 +800,8 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "As crianças de hoje em dia são tão impacientes... Estou preocupado com meu filho.";
 			next;
 			mes "[Jacob]";
-			mes "No entanto, não posso fazer nada";
-			mes "sobre o temperamento dele... Acho que";
-			mes "ele é muito novo para saber";
-			mes "o que está fazendo.";
+			mes "No entanto, não posso fazer nada sobre o temperamento dele...";
+			mes "Acho que ele é muito novo para saber o que está fazendo.";
 			next;
 			mes "[Jacob]";
 			mes "Estou tendo dificuldades para";
@@ -820,9 +810,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "esforços dos meus pais para me criar.";
 			next;
 			mes "[Jacob]";
-			mes "Respeite seus pais enquanto eles ainda estão";
-			mes "vivos. É tarde demais para se arrepender";
-			mes "depois que você os perdeu.";
+			mes "Respeite seus pais enquanto eles ainda estão vivos. É tarde demais para se arrepender depois que você os perdeu.";
 			next;
 			mes "[Jacob]";
 			mes "Eu também era uma criança rebelde... meus pais tiveram dificuldades para me criar. Tenho vergonha do que fiz quando era jovem...";
@@ -864,8 +852,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 			mes "E...!!!";
 			next;
 			mes "[Jacob]";
-			mes "Quantas vezes eu já te disse";
-			mes "para se comportar na frente dos outros?!";
+			mes "Quantas vezes eu já te disse para se comportar na frente dos outros?!";
 			next;
 			mes "[Jacob]";
 			if (Sex == SEX_MALE)
@@ -899,7 +886,7 @@ morocc,230,150,0	script	Jacob#thai	50,{
 				mes "Quando você for para o oeste de Morroc, e passar por uma caverna, você chegará a uma cidade chamada Comodo.";
 				next;
 				mes "[Jacob]";
-				mes "Quando você chegar lá, verá um velho chamado ^0000FFElder Creek^000000. Como sábio, ele conquistou o respeito de muitos.";
+				mes "Quando você chegar lá, verá um velho chamado ^0000FFAncião Creek^000000. Como sábio, ele conquistou o respeito de muitos.";
 				next;
 				mes "[Jacob]";
 				mes "Dizem que muitos aventureiros visitam este homem por algum motivo.";
@@ -958,9 +945,9 @@ morocc,230,150,0	script	Jacob#thai	50,{
 	else {
 		mes "[Jacob]";
 		mes "*Boceja*...";
-		mes "Que dia chato!";
-		mes "Acho melhor dar uma volta";
-		mes "com meu filho. Quer caminhar comigo?";
+		mes "Que dia chato! Acho melhor";
+		mes "dar uma volta com meu filho.";
+		mes "Quer caminhar comigo?";
 		next;
 		mes "[Filho de Jacob]";
 		mes "Fico feliz em ouvir isso, papai~";
@@ -1027,17 +1014,14 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "Esse ditado serve como uma lição sobre ganância.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Há um homem que conheço há muito tempo...";
-					mes "ele era tão ganancioso por";
-					mes "dinheiro e fortuna, que não se importava com o que os outros pensavam dele.";
+					mes "Há um homem que conheço há muito tempo... ele era tão ganancioso por dinheiro e fortuna, que não se importava com o que os outros pensavam dele.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Consequentemente, as pessoas ao seu redor não gostavam dele.";
 					mes "No fim, ele perdeu seus amigos por causa de sua ganância.";
 					next;
 					mes "[Ancião Creek]";
-					mes "É claro que essa regra se aplica a";
-					mes "você também. Afinal, esse tipo de coisa é um princípio universal.";
+					mes "É claro que essa regra se aplica a você também. Afinal, esse tipo de coisa é um princípio universal.";
 					set thai_head,13;
 					close;
 				case 4:
@@ -1050,9 +1034,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 				}
 			case 2:
 				mes "[Ancião Creek]";
-				mes "Entendo. Tenho tentado ajudar";
-				mes "outras pessoas que precisam de conselhos";
-				mes "para melhorar suas vidas.";
+				mes "Entendo. Tenho tentado ajudar outras pessoas que precisam de conselhos para melhorar suas vidas.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Já que você também precisa do meu conselho, tentarei transmitir minha sabedoria de uma maneira que você entenda.";
@@ -1072,10 +1054,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "Seja honest"+(Sex==SEX_MALE?"o":"a")+" com "+(Sex==SEX_MALE?"sua amada":"seu amado")+". Uma mentira leva a outra mentira num instante.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Se você tratar a pessoa que ama";
-					mes "como especial para você, essa pessoa";
-					mes "eventualmente passará a";
-					mes "entender seus sentimentos...";
+					mes "Se você tratar a pessoa que ama como especial para você, essa pessoa eventualmente passará a entender seus sentimentos...";
 					next;
 					mes "[Ancião Creek]";
 					mes "E lembre-se disso...";
@@ -1093,28 +1072,23 @@ comodo,68,195,0	script	Velho#thai	120,{
 					end;
 				case 2:
 					mes "[Ancião Creek]";
-					mes "...sim, todos têm seus próprios";
-					mes "problemas financeiros. No entanto, pense desta forma:";
+					mes "...sim, todos têm seus próprios problemas financeiros. No entanto, pense desta forma:";
 					next;
 					mes "[Ancião Creek]";
-					mes "Dinheiro é importante para ganhar a vida,";
-					mes "mas não é tudo o que importa na vida.";
+					mes "Dinheiro é importante para ganhar a vida, mas não é tudo o que importa na vida.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Alguns podem ter como objetivo de vida";
-					mes "fazer fortuna, mas não acho que seja a maneira mais feliz de viver.";
+					mes "Alguns podem ter como objetivo de vida fazer fortuna, mas não acho que seja a maneira mais feliz de viver.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Como você vê, existem pessoas poderosas";
-					mes "neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
+					mes "Como você vê, existem pessoas poderosas neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
 					next;
 					mes "[Ancião Creek]";
 					mes "Elas são gananciosas demais para estarem nesta posição e não têm as prioridades certas.";
 					mes "Em vez de melhorar o mundo, elas usam seu poder apenas para se beneficiarem.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Se eu fosse elas, não gostaria de";
-					mes "governar o mundo dessa maneira.";
+					mes "Se eu fosse elas, não gostaria de governar o mundo dessa maneira.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Você não acha que precisamos de alguém que possa mudar este mundo?";
@@ -1124,10 +1098,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "Eu só queria que você soubesse que dinheiro não é tudo. Mas é algo necessário para viver.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Sei que pessoas gananciosas";
-					mes "ridicularizam essa crença, dizendo";
-					mes "que é um esforço de pobre";
-					mes "para proteger seu orgulho.";
+					mes "Sei que pessoas gananciosas ridicularizam esta crença, dizendo que é um esforço de um pobre homem para proteger seu orgulho.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Mas ainda acredito que estou certo. Afinal... eu sou um Sábio.";
@@ -1171,15 +1142,12 @@ comodo,68,195,0	script	Velho#thai	120,{
 					mes "No geral, isso faz com que toda a comunidade pareça bem.";
 					next;
 					mes "[Ancião Creek]";
-					mes "Se seus pais virem você limpando";
-					mes "a rua, eles ficarão orgulhosos";
-					mes "do filho.";
+					mes "Se seus pais virem você limpando a rua, eles ficarão orgulhosos do filho.";
 					mes "...Mas agora, acho que estou começando a falar sem sentido.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Bem, peço desculpas.";
-					mes "Apenas tente pensar positivamente.";
-					mes "Com a atitude certa, eventualmente você encontrará algo de que goste.";
+					mes "Apenas tente pensar positivamente. Com a atitude certa, eventualmente você encontrará algo de que goste.";
 					next;
 					mes "[Ancião Creek]";
 					mes "Haha~ Vejo que você está apenas clicando no botão 'próximo' nessas janelas, porque está farto desta conversa com o NPC.";
@@ -1290,11 +1258,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 		case 15:
 			if (countitem(7054) > 9 && countitem(965) > 14 && countitem(964) > 9 && countitem(7053) > 49) {
 				mes "[Ancião Creek]";
-				mes "Vejo que você sabe como o mundo";
-				mes "funciona. Quando você precisa de algo";
-				mes "de alguém, você deve dar";
-				mes "para receber.";
-				mes "Obrigado por sua gentileza.";
+				mes "Vejo que você sabe como o mundo funciona. Quando você precisa de algo de alguém, você deve dar para receber.";
+				mes "Obrigado pela sua gentileza.";
 				delitem 7054,10; //Brigan
 				delitem 965,15; //Clam_Shell
 				delitem 964,10; //Crap_Shell
@@ -1357,10 +1322,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "Seja honest"+(Sex==SEX_MALE?"o":"a")+" com "+(Sex==SEX_MALE?"sua amada":"seu amado")+". Uma mentira leva a outra mentira num instante.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Se você tratar a pessoa que ama";
-				mes "como especial para você, essa pessoa";
-				mes "eventualmente passará a";
-				mes "compreender seus sentimentos...";
+				mes "Se você tratar a pessoa que ama como especial para você, essa pessoa eventualmente passará a entender seus sentimentos...";
 				next;
 				mes "[Ancião Creek]";
 				mes "E lembre-se disso...";
@@ -1376,28 +1338,23 @@ comodo,68,195,0	script	Velho#thai	120,{
 				close;
 			case 2:
 				mes "[Ancião Creek]";
-				mes "...sim, todos têm seus próprios";
-				mes "problemas financeiros. No entanto, pense desta forma:";
+				mes "...sim, todos têm seus próprios problemas financeiros. No entanto, pense desta forma:";
 				next;
 				mes "[Ancião Creek]";
-				mes "Dinheiro é importante para ganhar a vida,";
-				mes "mas não é tudo o que importa na vida.";
+				mes "Dinheiro é importante para ganhar a vida, mas não é tudo o que importa na vida.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Alguns podem ter como objetivo de vida";
-				mes "fazer fortuna, mas não acho que seja a maneira mais feliz de viver.";
+				mes "Alguns podem ter como objetivo de vida fazer fortuna, mas não acho que seja a maneira mais feliz de viver.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Como você vê, existem pessoas poderosas";
-				mes "neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
+				mes "Como você vê, existem pessoas poderosas neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
 				next;
 				mes "[Ancião Creek]";
 				mes "Elas são gananciosas demais para estarem nesta posição e não têm as prioridades certas.";
 				mes "Em vez de melhorar o mundo, elas usam seu poder apenas para se beneficiarem.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Se eu fosse elas, não gostaria de";
-				mes "governar o mundo dessa maneira.";
+				mes "Se eu fosse elas, não gostaria de governar o mundo dessa maneira.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Você não acha que precisamos de alguém que possa mudar este mundo?";
@@ -1407,10 +1364,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "Eu só queria que você soubesse que dinheiro não é tudo. Mas é algo necessário para viver.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Sei que pessoas gananciosas";
-				mes "ridicularizam essa crença, dizendo";
-				mes "que é um esforço de pobre";
-				mes "para proteger seu orgulho.";
+				mes "Sei que pessoas gananciosas ridicularizam esta crença, dizendo que é um esforço de um pobre homem para proteger seu orgulho.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Mas ainda acredito que estou certo. Afinal... eu sou um Sábio.";
@@ -1453,15 +1407,12 @@ comodo,68,195,0	script	Velho#thai	120,{
 				mes "No geral, isso faz com que toda a comunidade fique bem na foto.";
 				next;
 				mes "[Ancião Creek]";
-				mes "Se seus pais virem você limpando";
-				mes "a rua, eles ficarão orgulhosos";
-				mes "do filho.";
+				mes "Se seus pais virem você limpando a rua, eles ficarão orgulhosos do filho.";
 				mes "...Mas agora, acho que estou começando a falar sem sentido.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Bem, peço desculpas.";
-				mes "Apenas tente pensar positivamente.";
-				mes "Com a atitude certa, eventualmente você encontrará algo de que goste.";
+				mes "Apenas tente pensar positivamente. Com a atitude certa, eventualmente você encontrará algo de que goste.";
 				next;
 				mes "[Ancião Creek]";
 				mes "Haha~ Vejo que você está apenas clicando no botão 'próximo' nessas janelas, porque está farto desta conversa com o NPC.";
@@ -1521,9 +1472,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "Seja honest"+(Sex==SEX_MALE?"o":"a")+" com "+(Sex==SEX_MALE?"sua amada":"seu amado")+". Uma mentira leva a outra mentira num instante.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Se você tratar a pessoa que ama";
-			mes "como especial para você, essa pessoa";
-			mes "eventualmente entenderá seus sentimentos...";
+			mes "Se você tratar a pessoa que ama como especial para você, essa pessoa eventualmente passará a entender seus sentimentos...";
 			next;
 			mes "[Ancião Creek]";
 			mes "E lembre-se disso...";
@@ -1531,9 +1480,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "Então... não se desanime se seus sentimentos não forem correspondidos.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Mas ainda assim, acredito que ser honesto";
-			mes "é a melhor maneira de conquistar seu";
-			mes "verdadeiro amor.";
+			mes "Mas ainda assim, acredito que ser honesto é a melhor maneira de conquistar o seu verdadeiro amor.";
 			next;
 			mes "[Ancião Creek]";
 			mes "...bem, isso é tudo que posso lhe dizer.";
@@ -1541,20 +1488,16 @@ comodo,68,195,0	script	Velho#thai	120,{
 			close;
 		case 2:
 			mes "[Ancião Creek]";
-			mes "...sim, todos têm seus próprios";
-			mes "problemas financeiros. No entanto, pense desta forma:";
+			mes "...sim, todos têm seus próprios problemas financeiros. No entanto, pense desta forma:";
 			next;
 			mes "[Ancião Creek]";
-			mes "Dinheiro é importante para";
-			mes "ganhar a vida, mas não é tudo o que importa na vida.";
+			mes "Dinheiro é importante para ganhar a vida, mas não é tudo o que importa na vida.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Alguns podem ter como objetivo de vida";
-			mes "fazer fortuna, mas não acho que seja a maneira mais feliz de viver.";
+			mes "Alguns podem ter como objetivo de vida fazer fortuna, mas não acho que seja a maneira mais feliz de viver.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Como você vê, existem pessoas poderosas";
-			mes "neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
+			mes "Como você vê, existem pessoas poderosas neste mundo que podem controlar nossas vidas. Mas muitas vezes...";
 			next;
 			mes "[Ancião Creek]";
 			mes "Elas são gananciosas demais para estarem nesta posição e não têm as prioridades certas.";
@@ -1572,10 +1515,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "Eu só queria que você soubesse que dinheiro não é tudo. Mas é algo necessário para viver.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Sei que pessoas gananciosas";
-			mes "ridicularizam essa crença, dizendo";
-			mes "que é um esforço de um homem pobre";
-			mes "para proteger seu orgulho.";
+			mes "Sei que pessoas gananciosas ridicularizam esta crença, dizendo que é um esforço de um pobre homem para proteger seu orgulho.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Mas ainda acredito que estou certo. Afinal... eu sou um Sábio.";
@@ -1600,7 +1540,7 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "[Ancião Creek]";
 			mes "Você está sempre coberto de poeira.";
 			mes "No verão, seu corpo fica";
-			mes "pegajoso de suor...";
+			mes "grudento de suor...";
 			mes "No inverno, você estará";
 			mes "no frio congelante...";
 			next;
@@ -1618,10 +1558,8 @@ comodo,68,195,0	script	Velho#thai	120,{
 			mes "No geral, isso faz com que toda a comunidade pareça bem.";
 			next;
 			mes "[Ancião Creek]";
-			mes "Se seus pais virem você limpando";
-			mes "a rua, eles ficarão orgulhosos";
-			mes "do filho.";
-			mes "...Mas agora, acho que estou começando a não fazer sentido.";
+			mes "Se seus pais virem você limpando a rua, eles ficarão orgulhosos do filho.";
+			mes "...Mas agora, acho que estou começando a falar sem sentido.";
 			next;
 			mes "[Ancião Creek]";
 			mes "Bem, peço desculpas.";
