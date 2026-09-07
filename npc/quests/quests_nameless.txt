@@ -177,7 +177,7 @@ cmd_in02,111,52,3	script	Larjes#pc2	97,{
 ra_in01,308,59,1	script	Garçom#pc	930,{
 	if (aru_monas < 7) {
 		mes "[Garçom]";
-		mes "Bem-vindo ao Palato de Rachel, um dos mais refinados restaurantes de Rachel.";
+		mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" ao Palato de Rachel, um dos mais refinados restaurantes de Rachel.";
 		if (aru_monas < 6) {
 			close;
 		}
@@ -2791,7 +2791,7 @@ alberta,127,143,3	script	Belder	85,{
 		mes "[Belder]";
 		mes "Preciso contratar gente para promover os negócios...";
 		mes "Umas damas bem bonitas devem atrair os clientes às... Oh!";
-		mes "Bem-vindo à Belder Empréstimos!";
+		mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" à Belder Empréstimos!";
 		next;
 		switch(select("Eu posso promover seus negócios!:Ahn...")) {
 		case 1:
@@ -2819,7 +2819,7 @@ alberta,127,143,3	script	Belder	85,{
 	}
 	if (diamond_edq < 13) {
 		mes "[Belder]";
-		mes "Seja bem-vindo!";
+		mes "Seja bem-vind"+(Sex==SEX_MALE?"o":"a")+"!";
 		mes "Então, você precisa de dinheiro rápido?";
 		mes "A Belder Empréstimos oferece o dinheiro que você precisa a juros baixos!";
 		next;
@@ -2857,7 +2857,7 @@ alberta,127,143,3	script	Belder	85,{
 		close;
 	}
 	mes "[Belder]";
-	mes "Seja bem-vindo!";
+	mes "Seja bem-vind"+(Sex==SEX_MALE?"o":"a")+"!";
 	mes "Você precisa de dinheiro...";
 	mes "Ei, é você de novo, o samaritano.";
 	mes "Por que você não me faz a caridade de voltar para o lugar de onde veio?";
@@ -2952,7 +2952,7 @@ cmd_fild01,55,160,0	script	Monte de Terra	844,{
 	}
 	if (diamond_edq == 6) {
 		mes "[Dorian]";
-		mes "Sou o Inventor Dorian, seja bem-vindo à minha oficina.";
+		mes "Sou o Inventor Dorian, seja bem-vind"+(Sex==SEX_MALE?"o":"a")+" à minha oficina.";
 		mes "Tudo o que eu crio recebe a essência da arte...";
 		mes "Então...";
 		mes "Como posso ajudar você?";
@@ -3553,7 +3553,7 @@ OnTouch:
 								next;
 								mes "^3355FFA máquina faz sons mais violentos e erráticos, vibrando fortemente antes de fazer uma parada súbita.";
 								mes "Não era para apertar esse botão.";
-								mes "Melhor perguntar a Dorian... ";
+								mes "Melhor perguntar a Dorian...";
 								changequest 3105,3106;
 								set diamond_edq,11;
 								close;
@@ -3607,7 +3607,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 	if (diamond_edq < 14) {
 		mes "[Ibrahim]";
 		mes "Você já ouviu falar das Quatro Joias Malditas?";
-		mes "Ouvi dizer que uma delas, o Diamante da Destruição, apareceu recentemente.";
+		mes "Ouvi dizer que uma delas, o Diamante da Ruína, apareceu recentemente.";
 		mes "Ah, o que eu faria para encontrá-lo...";
 		close;
 	}
@@ -3623,7 +3623,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 				mes "[Ibrahim]";
 				mes "Quero perguntar sobre as Quatro Joias Malditas.";
 				mes "Todos os mercadores daqui estão falando nelas.";
-				mes "Enfim, consegui obter o Diamante da Destruição!";
+				mes "Enfim, consegui obter o Diamante da Ruína!";
 				next;
 				mes "[" + strcharinfo(0) + "]";
 				mes "(^666666Hum... Talvez ele esteja falando daquela joia que Muff deu para Belder como garantia de empréstimo.^000000)";
@@ -3786,7 +3786,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 	if (diamond_edq == 25) {
 		mes "[Ibrahim]";
 		mes "Ah, você voltou.";
-		mes "Fez algum avanço em suas investigações sobre o Diamante da Destruição?";
+		mes "Fez algum avanço em suas investigações sobre o Diamante da Ruína?";
 		next;
 		select("Explicar o que você descobriu");
 		mes "[Ibrahim]";
@@ -3796,7 +3796,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 		mes "E quanto à joia?";
 		mes "Você a recuperou?";
 		next;
-		select("Dar o Diamante da Destruição");
+		select("Dar o Diamante da Ruína");
 		mes "[Ibrahim]";
 		mes "Oh! Ótimo!";
 		mes "Então estava no esconderijo da Gangue Z?";
@@ -3813,7 +3813,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 		getitem 603,1; //Old_Blue_Box
 		next;
 		mes "[Ibrahim]";
-		mes "Agora que tenho o Diamante da Destruição de volta, posso pesquisar mais sobre suas estranhas propriedades.";
+		mes "Agora que tenho o Diamante da Ruína de volta, posso pesquisar mais sobre suas estranhas propriedades.";
 		mes "Entrarei em contato de novo se precisar de sua ajuda.";
 		close;
 	}
@@ -3857,7 +3857,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					mes "[Ibrahim]";
 					mes "Oh, não vai ficar com ela?";
 					mes "Queria poder comprá-la de você...";
-					mes "Mas já passei por um grande aperto comprando o Diamante da Destruição.";
+					mes "Mas já passei por um grande aperto comprando o Diamante da Ruína.";
 					next;
 					mes "[Ibrahim]";
 					mes "Você já conheceu alguns joalheiros de renome enquanto procurava pelo diamante.";
@@ -3913,7 +3913,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			mes "Eles devem estar com muito medo da maldição dessa joia. Hum... estranho.";
 			next;
 			mes "[Ibrahim]";
-			mes "Acho que o Diamante da Destruição é considerado seguro, por já ter circulado por algum tempo sem nenhum incidente estranho.";
+			mes "Acho que o Diamante da Ruína é considerado seguro, por já ter circulado por algum tempo sem nenhum incidente estranho.";
 			next;
 			mes "[Ibrahim]";
 			mes "Você simplesmente escavou a esmeralda?";
@@ -3946,7 +3946,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 	}
 	mes "[Ibrahim]";
 	mes "Você já ouviu falar das Quatro Joias Malditas?";
-	mes "Queria recuperar meu Diamante da Destruição, mas quem quer que esteja com ele o escondeu muito bem...";
+	mes "Queria recuperar meu Diamante da Ruína, mas quem quer que esteja com ele o escondeu muito bem...";
 	close;
 
 OnTouch:
@@ -3968,7 +3968,7 @@ alberta,102,80,3	script	Jhonnita	86,{
 		mes "Só trabalhamos com as melhores.";
 		mes "Hahahaha!";
 		next;
-		switch(select("Qual é a joia mais popular?:Você conhece o Diamante da Destruição?")) {
+		switch(select("Qual é a joia mais popular?:Você conhece o Diamante da Ruína?")) {
 		case 1:
 			mes "[Jhonnita]";
 			mes "Ah, dê uma olhada neste brilhante rubi.";
@@ -3983,7 +3983,7 @@ alberta,102,80,3	script	Jhonnita	86,{
 			close;
 		case 2:
 			mes "[Jhonnita]";
-			mes "Diamante da Destruição?";
+			mes "Diamante da Ruína?";
 			mes "Hehehehe!";
 			mes "Um amador como você não apreciaria seu verdadeiro valor.";
 			mes "Eu o queria tanto, mas o tal Ibrahim teve muito mais sorte que eu...";
@@ -4097,11 +4097,11 @@ payon,69,65,5	script	Kimeunbang	89,{
 		mes "Era um sonho tão bom...";
 		mes "Vá para outra joalheria, não estou a fim de abrir.";
 		next;
-		switch(select("O que foi?:Diamante da Destruição?")) {
+		switch(select("O que foi?:Diamante da Ruína?")) {
 		case 1:
 			mes "[Kimeunbang]";
 			mes "Só estou desapontado.";
-			mes "Estava tão perto de conseguir o Diamante da Destruição.";
+			mes "Estava tão perto de conseguir o Diamante da Ruína.";
 			mes "Tão perto!";
 			mes "Belder, meu sócio havia conseguido pegá-lo de um coitado qualquer.";
 			next;
@@ -4176,7 +4176,7 @@ payon,69,65,5	script	Kimeunbang	89,{
 			mes "Nenhum joalheiro vai comprar essa esmeralda maldita.";
 			mes "Realmente sinto muito.";
 			mes "Você pode tentar falar com Ibrahim, então.";
-			mes "Foi ele que conseguiu o Diamante da Destruição.";
+			mes "Foi ele que conseguiu o Diamante da Ruína.";
 			close;
 		}
 		else {
@@ -4197,7 +4197,7 @@ geffen,128,153,3	script	Leblo	883,{
 	if ((diamond_edq == 15) || (diamond_edq == 16)) {
 		mes "[Leblo]";
 		mes "Ah, já ouvi falar de você.";
-		mes "É você que anda fazendo perguntas sobre o Diamante da Destruição.";
+		mes "É você que anda fazendo perguntas sobre o Diamante da Ruína.";
 		next;
 		emotion ET_HUK, playerattached();
 		mes "[Leblo]";
@@ -4234,7 +4234,7 @@ geffen,128,153,3	script	Leblo	883,{
 		mes "[Leblo]";
 		mes "Por favor, procure por uma médica chamada ^0000FFWola^000000 em Payon.";
 		mes "Faça o que puder para pegar o remédio com ela...";
-		mes "Ah, e tente ser gentil... ";
+		mes "Ah, e tente ser gentil...";
 		close;
 	}
 	if (diamond_edq == 21) {
@@ -4254,7 +4254,7 @@ geffen,128,153,3	script	Leblo	883,{
 		mes "...............................";
 		next;
 		mes "[Leblo]";
-		mes "Certo, vou contar o que sei sobre o Diamante da Destruição.";
+		mes "Certo, vou contar o que sei sobre o Diamante da Ruína.";
 		mes "Ouça com atenção.";
 		mes "Há algum tempo, um casal jovem tentou me vender essa mesma joia.";
 		mes "Suspeito, não?";
@@ -4271,7 +4271,7 @@ geffen,128,153,3	script	Leblo	883,{
 		mes "[Leblo]";
 		mes "Soube que a Guilda dos Arruaceiros está investigando secretamente a Gangue Z, então esse casal deve ter muitos inimigos.";
 		mes "Então...";
-		mes "É isso, a Gangue Z está com o Diamante da Destruição.";
+		mes "É isso, a Gangue Z está com o Diamante da Ruína.";
 		next;
 		mes "[Leblo]";
 		mes "Você deve falar com um dos investigadores da Guilda dos Arruaceiros se quiser saber mais sobre a Gangue Z.";
@@ -4698,7 +4698,7 @@ in_rogue,366,46,3	script	Investigador#rogue1	828,{
 				next;
 				mes "[Investigador]";
 				mes "O velho esconderijo da Gangue Z é um grande armazém em Comodo.";
-				mes "Duvido que você vá encontrar algo lá, mas pode ir dar uma olhada. ";
+				mes "Duvido que você vá encontrar algo lá, mas pode ir dar uma olhada.";
 				changequest 3115,3116;
 				set diamond_edq,23;
 				close;
@@ -4808,7 +4808,7 @@ cmd_in02,94,208,5	script	Investigador#rogue2	828,{
 	}
 }
 
-cmd_in02,69,188,1	script	Caixa forte pequena	844,{
+cmd_in02,69,188,1	script	Pequeno Cofre	844,{
 	if ((diamond_edq == 22) || (diamond_edq == 23)) {
 		mes "^3355FFHá um pequeno cofre escondido sob as sombras destas caixas.^000000";
 		next;
@@ -4816,7 +4816,7 @@ cmd_in02,69,188,1	script	Caixa forte pequena	844,{
 		mes "Parece que a Gangue Z esqueceu de levar isto com eles na pressa de fugir.";
 		mes "Humm... Como eu abro isto?";
 		mes "Será que há uma chave, um botão, algo que eu possa usar?";
-		hideoffnpc "Interruptor estranho#Switch1";
+		hideoffnpc "Interruptor Estranho#Switch1";
 		close;
 	}
 	if (diamond_edq == 24) {
@@ -4828,7 +4828,7 @@ cmd_in02,69,188,1	script	Caixa forte pequena	844,{
 		mes "[" + strcharinfo(0) + "]";
 		mes "Incrível!";
 		mes "É um enorme diamante vermelho!";
-		mes "Será esse o Diamante da Destruição do Ibrahim?";
+		mes "Será esse o Diamante da Ruína do Ibrahim?";
 		next;
 		getitem 7723,1; //Diamond_Of_Ruin
 		mes "[Investigador]";
@@ -4853,7 +4853,7 @@ cmd_in02,69,188,1	script	Caixa forte pequena	844,{
 	close;
 }
 
-cmd_in02,69,196,0	script	Interruptor estranho#Switch1	844,{
+cmd_in02,69,196,0	script	Interruptor Estranho#Switch1	844,{
 	if ((diamond_edq == 22) || (diamond_edq == 23)) {
 		mes "^3355FFHá um pequeno botão no chão, próximo aos barris de uísque.^000000";
 		next;
@@ -4861,23 +4861,23 @@ cmd_in02,69,196,0	script	Interruptor estranho#Switch1	844,{
 		mes "Isso estava aqui antes?";
 		mes "O que acontece se eu apertar este botãozinho?";
 		next;
-		hideoffnpc "Interruptor estranho#Switch2";
+		hideoffnpc "Interruptor Estranho#Switch2";
 		mes "^3355FF*Click Click*^000000";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Esse som...!";
 		mes "Alguma coisa aconteceu, mas o que será que é?";
-		hideonnpc "Interruptor estranho#Switch1";
+		hideonnpc "Interruptor Estranho#Switch1";
 		close;
 	}
 	end;
 
 OnInit:
-	hideonnpc "Interruptor estranho#Switch1";
+	hideonnpc "Interruptor Estranho#Switch1";
 	end;
 }
 
-cmd_in02,80,189,0	script	Interruptor estranho#Switch2	844,{
+cmd_in02,80,189,0	script	Interruptor Estranho#Switch2	844,{
 	if ((diamond_edq == 22) || (diamond_edq == 23)) {
 		mes "^3355FFHá um pequeno botão no chão, sob as sombras das caixas.^000000";
 		next;
@@ -4893,13 +4893,13 @@ cmd_in02,80,189,0	script	Interruptor estranho#Switch2	844,{
 		mes "Esse som...!";
 		mes "Alguma coisa aconteceu, mas o que será que é?";
 		close2;
-		hideonnpc "Interruptor estranho#Switch1";
-		hideonnpc "Interruptor estranho#Switch2";
+		hideonnpc "Interruptor Estranho#Switch1";
+		hideonnpc "Interruptor Estranho#Switch2";
 	}
 	end;
 
 OnInit:
-	hideonnpc "Interruptor estranho#Switch2";
+	hideonnpc "Interruptor Estranho#Switch2";
 	end;
 }
 
@@ -5105,7 +5105,7 @@ prontera,148,326,3	script	Chefe da Polícia#edq	734,{
 		next;
 		mes "[Chefe da Polícia]";
 		mes "Sua bravura e ardente patriotismo será sempre lembrado nos anais da história de Rune-Midgard.";
-		mes "Parabéns! ";
+		mes "Parabéns!";
 		completequest 3134;
 		set zdan_edq,19;
 		getexp (checkre(3))?100000:1000000,0;
@@ -5126,7 +5126,7 @@ prt_in,168,18,1	script	Valdes	65,2,2,{
 	if (zdan_edq == 2) {
 		mes "[Valdes]";
 		mes "^666666*Urp*^000000";
-		mes "Você veio para... condoer-se do meu fracasso também?";
+		mes "Você veio para... lamentar sobre a vida fracassada também?";
 		next;
 		mes "[" + strcharinfo(0) + "]";
 		mes "Você é Valdes?";
@@ -5452,7 +5452,7 @@ in_rogue,359,116,3	script	Marybell	747,{
 		mes "[Marybell]";
 		mes "Ah, e mais uma coisa...";
 		mes "Soube que eles estão tentando recrutar em segredo mais membros para a gangue em Morroc.";
-		mes "A ousadia desses caras...! ";
+		mes "A ousadia desses caras...!";
 		next;
 		mes "[Marybell]";
 		mes "Não soube de mais nada, mas você poderia me contar se achar alguma pista?";
@@ -5605,7 +5605,7 @@ payon,244,62,3	script	Moonho Ahn	897,{
 			next;
 			mes "[Moonho Ahn]";
 			mes "Se o adivinhador acertar ganha a rodada.";
-			mes "No entanto, se ele errar, então a vitória é do sacudidor. ";
+			mes "No entanto, se ele errar, então a vitória é do sacudidor.";
 			next;
 			mes "[Moohno Ahn]";
 			mes "Nós nos alternamos nos papéis.";
@@ -5970,7 +5970,7 @@ payon,244,62,3	script	Moonho Ahn	897,{
 			next;
 			mes "[Moonho Ahn]";
 			mes "Se o adivinhador acertar, ganha a rodada.";
-			mes "No entanto, se ele errar, então a vitória é do sacudidor. ";
+			mes "No entanto, se ele errar, então a vitória é do sacudidor.";
 			next;
 			mes "[Moohno Ahn]";
 			mes "Nós nos alternamos nos papéis.";
@@ -6067,11 +6067,11 @@ payon,192,176,3	script	Gooho Ahn	903,{
 			mes "O Aegye era popular entre crianças e adolescentes rebeldes, mas era considerado vulgar até que se tornou predominante.";
 			mes "Então, de alguma forma...";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "O Aegye destruiu não apenas o idioma deste povo antigo, como também sua civilização, depois que foi popularizado.";
 			mes "É por isso que hoje há uma forte censura ao Aegye.";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "Na verdade, a existência do Aegye deveria ser um grande segredo.";
 			mes "Esse idioma é responsável por um dos maiores desastres de todos os tempos.";
 			next;
@@ -6079,12 +6079,12 @@ payon,192,176,3	script	Gooho Ahn	903,{
 			mes "...............................";
 			mes "Então, o que diz a carta?";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "Hum...";
 			mes "Deixe-me ver...";
 			mes "Meu conhecimento sobre o Aegye  é limitado, então...";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "^0000ffSsoom gadrean G anueg Z^000000";
 			mes "^0000ffMke tetran nus tered^000000";
 			mes "^0000ffyva darsans efui!^000000";
@@ -6092,15 +6092,15 @@ payon,192,176,3	script	Gooho Ahn	903,{
 			mes "[" + strcharinfo(0) + "]";
 			mes "Quê...?";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "Essa é a natureza do Aegye, ele é caótico, e quase ilegível!";
 			mes "Mesmo assim, esta carta é valiosíssima como material de pesquisa para meus estudos.";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "Bastará para Marybell se você entregar a mensagem a ela como está.";
 			mes "Escute com atenção, talvez seja melhor até anotar.";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "^0000ffSsoom gadrean G anueg Z^000000";
 			mes "^0000ffMke tetran nus tered^000000";
 			mes "^0000ffyva darsans efui!^000000";
@@ -6114,7 +6114,7 @@ payon,192,176,3	script	Gooho Ahn	903,{
 			mes "Tenho certeza de que Marybell está esperando para descobrir o paradeiro da Gangue Z, e esta carta pode ser uma pista.";
 			mes "Ah, e lembre-se...";
 			next;
-			mes "[Gooho Ahn] ";
+			mes "[Gooho Ahn]";
 			mes "Preciso de";
 			mes "^0000FF20 Lenhas em Brasa^000000,";
 			mes "^0000FF1 Palito de Fósforo^000000,";
@@ -6127,17 +6127,17 @@ payon,192,176,3	script	Gooho Ahn	903,{
 		}
 	}
 	if (zdan_edq == 14) {
-		mes "[Gooho Ahn] ";
+		mes "[Gooho Ahn]";
 		mes "Por favor, diga a Marybell o conteúdo da carta da Gangue Z para que eu possa ficar com o documento original para pesquisa.";
 		mes "Talvez seja melhor você anotar...";
 		next;
-		mes "[Gooho Ahn] ";
+		mes "[Gooho Ahn]";
 		mes "^0000ffSsoom gadrean G anueg Z^000000";
 		mes "^0000ffMke tetran nus tered^000000";
 		mes "^0000ffyva darsans efui!^000000";
 		close;
 	}
-	mes "[Gooho Ahn] ";
+	mes "[Gooho Ahn]";
 	mes "A criptografia é a arte de esconder a verdade em camadas de segredo.";
 	mes "Minha especialidade é revelar a verdade e decifrar segredos.";
 	close;
@@ -6152,7 +6152,7 @@ moc_ruins,90,67,3	script	Homem Suspeito#1	4W_M_03,4,4,{
 			if (strnpcinfo(2) == "1") {
 				mes "...............................";
 				mes "...............................";
-				mes "............................... ";
+				mes "...............................";
 			}
 			else
 				mes "... ...";
@@ -6258,7 +6258,7 @@ moc_ruins,90,67,3	script	Homem Suspeito#1	4W_M_03,4,4,{
 		mes "Só estou parado aqui na estrada, não fiz nada de errado!";
 	}
 	else if (zdan_edq > 14) {
-		mes "[Informante]";
+		mes "[Ex-informante da Gangue Z]";
 		mes "Você não tem que se preocupar mais comigo.";
 		mes "Recomecei a vida, arrumei um trabalho de verdade e tudo o mais.";
 	}
@@ -6637,9 +6637,9 @@ OnInit:
 OnEnable:
 	enablenpc "#ZGuard";
 	initnpctimer;
-	monster "z_agit",97,78,"O Guarda de Catfoii",1479,1,"#ZGuard::OnMyMobDead";
-	monster "z_agit",98,79,"O Guarda de Catfoii",1479,1,"#ZGuard::OnMyMobDead";
-	monster "z_agit",96,81,"O Guarda de Catfoii",1523,1,"#ZGuard::OnMyMobDead";
+	monster "z_agit",97,78,"Guarda de Catfoii",1479,1,"#ZGuard::OnMyMobDead";
+	monster "z_agit",98,79,"Guarda de Catfoii",1479,1,"#ZGuard::OnMyMobDead";
+	monster "z_agit",96,81,"Guarda de Catfoii",1523,1,"#ZGuard::OnMyMobDead";
 	end;
 
 OnDisable:
@@ -7005,7 +7005,7 @@ OnInit:
 //============================================================
 morocc,143,63,3	script	Maltrapilho#nd	929,{
 	if (treasure_nd == 0) {
-		mes "[Homem Atormentado]";
+		mes "[Homem Maltrapilho]";
 		mes "O-olá? Pode me ajudar?";
 		mes "Você salvaria a vida deste pobre homem se pudesse fazer esse favor.";
 		mes "Por favor...";
@@ -7015,50 +7015,50 @@ morocc,143,63,3	script	Maltrapilho#nd	929,{
 			mes "[" + strcharinfo(0) + "]";
 			mes "Certo, como eu posso ajudar você?";
 			next;
-			mes "[Homem Atormentado]";
+			mes "[Homem Maltrapilho]";
 			mes "Oh, muito obrigado mesmo!";
 			mes "É tão bom poder falar com alguém depois de ser ignorado todo esse tempo!";
 			mes "Posso parecer ser um mendigo, mas na verdade sou um caçador de tesouros de Prontera.";
 			next;
 			switch(select("Humm... E então?")) {
 			case 1:
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Tinha tanta certeza que encontraria o tesouro em Morroc quando comecei...";
 				mes "Fiz toda a pesquisa e a preparação.";
 				mes "Mas depois de contratar equipes de outros caçadores e pesquisadores...";
 				next;
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Gastei toda a minha fortuna, e ainda não cheguei nem perto de encontrar o tesouro.";
 				mes "Eu... Eu não tenho dinheiro sequer pra voltar pra casa!";
 				emotion ET_CRY;
 				next;
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Você não pode me dar algum dinheiro, para que finalmente eu possa voltar para Prontera?";
 				next;
 				switch(select("Por que você não vai andando?:Posso te dar algum dinheiro.")) {
 				case 1:
-					mes "[Homem Atormentado]";
+					mes "[Homem Maltrapilho]";
 					mes "Quê? Você não acha que se eu pudesse andar até Prontera, já não teria feito isso?!";
 					mes "Por que eu me incomodaria em pedir dinheiro?";
 					mes "Tá bom, não preciso desse tipo de piedade.";
 					next;
-					mes "[Homem Atormentado]";
+					mes "[Homem Maltrapilho]";
 					mes "Sabe, eu tinha uma boa dica que ia dividir com você, mas se você não quer dividir, então nem eu!";
 					set treasure_nd,1;
 					close;
 				case 2:
-					mes "[Homem Atormentado]";
+					mes "[Homem Maltrapilho]";
 					mes "Ah, obrigado!";
 					mes "Qualquer coisa que você puder dar, eu agradeço!";
 					mes "Deus lhe abençoe!";
 					next;
 					if (Zeny < 1200) {
-						mes "[Homem Atormentado]";
+						mes "[Homem Maltrapilho]";
 						mes "Humm... Oh, puxa...";
 						mes "Você está tão mal quanto eu.";
 						mes "Agradeço, mas não posso pegar seu dinheiro.";
 						next;
-						mes "[Homem Atormentado]";
+						mes "[Homem Maltrapilho]";
 						mes "É uma pena, realmente.";
 						mes "Se você tivesse me dado 1.200 zenys.";
 						mes "Eu teria lhe dado uma dica para algo grande...";
@@ -7067,25 +7067,25 @@ morocc,143,63,3	script	Maltrapilho#nd	929,{
 					}
 					else {
 						set Zeny, Zeny-1200;
-						mes "[Homem Atormentado]";
+						mes "[Homem Maltrapilho]";
 						mes "Vejamos... Eu só preciso de 1.200 zenys.";
 						mes "Isso basta para eu voltar para casa.";
 						mes "Bem, não posso deixar você me dar dinheiro e ficar de mãos abanando, não é?";
 						next;
-						mes "[Homem Atormentado]";
+						mes "[Homem Maltrapilho]";
 						mes "Lembra do tesouro escondido que eu estava procurando?";
 						mes "Diz um rumor que sua localização finalmente foi confirmada.";
 						mes "Por que você não tenta encontrá-lo por sua conta?";
 						next;
-						mes "[Homem Atormentado]";
+						mes "[Homem Maltrapilho]";
 						mes "Prefiro que ele vá parar nas mãos de alguém como você do que com um caçador rival.";
 						mes "Um caçador que está ao norte da cidade aparentemente confirmou a localização do tesouro.";
 						next;
-						mes "[Homem Atormentado]";
+						mes "[Homem Maltrapilho]";
 						mes "Bom, ouvi dizer que esse cara ainda não voltou para casa, e ainda não encontrou o tesouro.";
 						mes "Provavelmente ele teve algum problema sério.";
 						next;
-						mes "[Homem Atormentado]";
+						mes "[Homem Maltrapilho]";
 						mes "Duvido que ele informe a você a localização do tesouro facilmente, mas quem sabe?";
 						mes "Talvez ele cometa um lapso, e acabe lhe dando alguma pista.";
 						set treasure_nd,2;
@@ -7094,7 +7094,7 @@ morocc,143,63,3	script	Maltrapilho#nd	929,{
 				}
 			}
 		case 2:
-			mes "[Homem Atormentado]";
+			mes "[Homem Maltrapilho]";
 			mes "Por favor! Por favor, espere!";
 			mes "Você é um aventureiro, não é?";
 			mes "Tenho informações valiosas para compartilhar se você puder me dar algum... Ei!";
@@ -7103,20 +7103,20 @@ morocc,143,63,3	script	Maltrapilho#nd	929,{
 		}
 	}
 	else if (treasure_nd == 1) {
-		mes "[Homem Atormentado]";
+		mes "[Homem Maltrapilho]";
 		mes "Ah, eu me lembro de você.";
 		mes "Você quer mesmo esse tesouro agora, não quer?";
 		mes "Só me dê 1.200 zenys para que eu possa voltar para casa, e contarei tudo que sei.";
 		next;
 		switch(select("Dar Dinheiro:Não Dar Dinheiro")) {
 		case 1:
-			mes "[Homem Atormentado]";
+			mes "[Homem Maltrapilho]";
 			mes "Ah, boa escolha!";
 			mes "E muito obrigado mesmo.";
 			mes "Será ótimo finalmente voltar para casa em Prontera.";
 			next;
 			if (Zeny < 1200) {
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Mas o quê...?!";
 				mes "Esse dinheiro não é suficiente para eu voltar pra casa!";
 				mes "Bem, volte depois, quando conseguir o dinheiro.";
@@ -7124,27 +7124,27 @@ morocc,143,63,3	script	Maltrapilho#nd	929,{
 				close;			}
 			else {
 				set Zeny, Zeny-1200;
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Lembra do tesouro escondido que eu estava procurando?";
 				mes "Diz um rumor que sua localização finalmente foi confirmada.";
 				mes "Por que você não tenta encontrá-lo por sua conta?";
 				next;
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Prefiro que ele vá parar nas mãos de alguém como você do que nas de um caçador rival.";
 				mes "Um caçador que está ao norte da cidade aparentemente confirmou a localização do tesouro.";
 				next;
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Bom, ouvi dizer que esse cara ainda não voltou para casa, e ainda não encontrou o tesouro.";
 				mes "Provavelmente ele teve algum problema sério.";
 				next;
-				mes "[Homem Atormentado]";
+				mes "[Homem Maltrapilho]";
 				mes "Duvido que ele informe a você a localização do tesouro facilmente, mas quem sabe?";
 				mes "Talvez ele cometa um lapso, e acabe lhe dando alguma pista.";
 				set treasure_nd,2;
 				close;
 			}
 		case 2:
-			mes "[Homem Atormentado]";
+			mes "[Homem Maltrapilho]";
 			mes "Tá legal, faça como quiser.";
 			mes "Admito que estou um pouco desapontado com você.";
 			mes "Vocês aventureiros não deviam ser os heróis das pessoas?";
@@ -7152,21 +7152,21 @@ morocc,143,63,3	script	Maltrapilho#nd	929,{
 		}
 	}
 	else if (treasure_nd == 2) {
-		mes "[Homem Atormentado]";
+		mes "[Homem Maltrapilho]";
 		mes "Ah, você voltou?";
 		mes "Ah, você deve estar com problemas para encontrar o cara de que falei.";
 		mes "Ele está na parte norte desta cidade. Não deve ser tão difícil.";
 		close;
 	}
 	else if (treasure_nd > 10) {
-		mes "[Homem Atormentado]";
+		mes "[Homem Maltrapilho]";
 		mes "Você encontrou o tesouro?!";
 		mes "Ele... Ele existe mesmo...";
 		mes "Desculpe, é que tem sido meu sonho...";
 		mes "Sinto vontade de chorar...";
 		mes "Oh, não sei que sensação é essa...";
 		next;
-		mes "[Homem Atormentado]";
+		mes "[Homem Maltrapilho]";
 		mes "Quero dizer...";
 		mes "Eu me sinto tão feliz, mas...";
 		mes "Gastei toda a minha fortuna...";
@@ -7174,7 +7174,7 @@ morocc,143,63,3	script	Maltrapilho#nd	929,{
 		close;
 	}
 	else {
-		mes "[Homem Atormentado]";
+		mes "[Homem Maltrapilho]";
 		mes "Então, como está indo a caçada ao tesouro?";
 		mes "Espero que você tenha mais sorte do que eu.";
 		mes "Ainda assim, tenho a sensação de que você vai encontrar.";
@@ -7734,7 +7734,7 @@ comodo,139,184,3	script	Sábio#zgang	742,{
 		mes "Vim aqui perguntar sobre uma Joia Maldita.";
 		next;
 		mes "[Sábio]";
-		mes "Vejamos... Ah, você veio saber sobre o Diamante da Destruição?";
+		mes "Vejamos... Ah, você veio saber sobre o Diamante da Ruína?";
 		next;
 		select("Não, sobre a Esmeralda do Azar.");
 		mes "[Sábio]";
@@ -7837,8 +7837,8 @@ alberta_in,70,109,5	script	Xamã	788,{
 		mes "antes que venham perturbá-lo!";
 		next;
 		mes "[Xamã]";
-		mes "Rápido, agora! É ";
-		mes "fundamental que você me dê ";
+		mes "Rápido, agora! É";
+		mes "fundamental que você me dê";
 		mes "500.000 zenys imediatamente";
 		mes "para que eu possa confortar";
 		mes "essas almas antes que";
@@ -7942,7 +7942,7 @@ alberta_in,70,109,5	script	Xamã	788,{
 		mes "[Xamã]";
 		mes "Finalmente, os espíritos se uniram a mim.";
 		mes "Agora o ritual pode começar.";
-		mes "Ohhhhhhhhhhhmmmmm... ";
+		mes "Ohhhhhhhhhhhmmmmm...";
 		next;
 		mes "[Xamã]";
 		mes "Hhhkkk... Arrrgh...!";
@@ -8844,7 +8844,7 @@ prontera,163,204,3	script	Viajante de Morroc	99,{
 	else if (rumour_nd == 1) {
 		mes "[Viajante de Morroc]";
 		mes "Não deveria estar procurando por um agente Arruaceiro?";
-		mes "Quero dizer, talvez você ";
+		mes "Quero dizer, talvez você";
 		mes "possa investigar e ajudá-los.";
 		close;
 	}
@@ -9460,7 +9460,7 @@ payon,209,44,5	script	Agente da Guilda#nd2	828,{
 		set rumour_nd,7;
 		next;
 		mes "[" + strcharinfo(0) + "]";
-		mes "Vamos ver o bilhete diz...";
+		mes "Vamos ver, o bilhete diz...";
 		next;
 		switch(select("Coopere com o aventureiro.:......")) {
 		case 1:
@@ -9938,7 +9938,7 @@ comodo,233,199,5	script	Agente da Guilda#nd3	810,{
 				mes "[Agente]";
 				mes "Enfim, você tem mais um lugar para ir, Morroc.";
 				mes "Fale com o agente Arruaceiro de lá, sim?";
-				mes "Ah, e aceite esta comida com as minhas desculpas.";
+				mes "Ah, e aceite esta comida com as minhas desculpas, ok?";
 				set .@sorry_item,rand(1,6);
 				if (.@sorry_item == 1) {
 					getitem 12044,1; //Str_Dish04
