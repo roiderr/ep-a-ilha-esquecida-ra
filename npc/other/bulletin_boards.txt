@@ -22,75 +22,81 @@
 
 alberta,111,59,5	script	Quadro de Avisos#1	837,{
 	mes "[Alberta: A Cidade Portuária]";
-	mes "Bem-vindo a Alberta, a cidade portuária!";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Alberta, a cidade portuária!";
 	next;
 	mes "[Alberta: A Cidade Portuária]";
 	mes "Aqui você pode visitar a Guilda dos Mercadores, onde jovens aventureiros podem se tornar mercadores.";
 	next;
 	mes "[Alberta: A Cidade Portuária]";
-	mes "A cidade depende do mar, Alberta é o centro comercial de Rune-Midgard, as mercadorias vem pelo mar depois são distribuídas pelo continente.";
+	mes "A cidade depende do mar, Alberta é o centro comercial de Rune-Midgard. As mercadorias vem pelo mar depois são distribuídas pelo continente.";
 	next;
 	mes "[Alberta: A Cidade Portuária]";
-	mes "No porto, você pode encontrar representantes de outros países que buscam aqui turistas para visitarem sua terra.";
+	mes "No porto, você pode encontrar representantes de outros países, que buscam aqui turistas para visitarem suas terras.";
 	next;
 	mes "[Alberta: A Cidade Portuária]";
-	mes "Grandes aventuras, existe a história de um local chamado ^338C60Ilha da Tartaruga000000. Corajosos aventureiros procuram visitar essa ilha para descobrirem seu mistério por si mesmo.";
+	mes "Entre os marinheiros, existe a história de um local chamado ^338C60Ilha da Tartaruga^000000. Corajosos aventureiros procuram visitar esta ilha para descobrirem o mistério por si mesmo.";
 	next;
 	mes "[Alberta: A Cidade Portuária]";
 	mes "Foi descoberto um navio encalhado aqui perto de Alberta, e agora é um local visitado por aventureiros mais jovens.";
 	next;
 	mes "[Alberta: A Cidade Portuária]";
 	mes "De Alberta, ^1F3A11Payon^000000 é localizada a noroeste. Você pode ir a um navio no porto que eles te levarão a ^5E5C69Izlude^000000.";
-	mes "Aproveite sua viajem.";
+	mes "Aproveite a sua viajem.";
 	close;
 }
 
 geffen,124,65,5	script	Quadro de Avisos#2	837,{
 	mes "[Geffen: A Cidade da Magia]";
-	mes "Bem-vindo a Geffen, a cidade da magia! Geffen é o local ideal para se descobrir os segredos da magia.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Geffen,";
+	mes "a cidade da magia!";
+	mes "Geffen é o local ideal para se descobrir os segredos da magia.";
 	next;
 	mes "[Geffen: A Cidade da Magia]";
-	mes "Pontos interessantes da cidade incluem a casa de Forja, onde as pessoas podem mudar sua classe para Ferreiro, a Academia de Magia, e a Torre de Geffen para que Magos se tornem Bruxos.";
+	mes "Pontos interessantes da cidade incluem a Casa de Forja, onde as pessoas podem mudar sua classe para Ferreiro, a Academia de Magia, e a Torre de Geffen para que Magos se tornem Bruxos.";
 	next;
 	mes "[Geffen: A Cidade da Magia]";
 	mes "Também, a Torre de Geffen é infestada de monstros que a protegem.";
 	next;
 	mes "[Geffen: A Cidade da Magia]";
-	mes "Existem boatos de uma cidade abandonada chamada Gefênia, um local de lendas, é guardado o segredo da entrada dessa cidade.";
+	mes "Existem boatos de uma cidade abandonada chamada Gefênia, um local de lendas, é guardado o segredo da entrada desta cidade.";
 	next;
 	mes "[Geffen: A Cidade da Magia]";
-	mes "De Geffen, a ^828E28Vila dos Orcs^000000 é localizada ao sul, ^4C6055Glast Heim^000000 ao oeste, ^6D6FE0Prontera^000000 bem ao leste, e ^744B2DMt. Mjolnir^000000 ao norte. Aproveite suas viagens!";
+	mes "De Geffen, a ^828E28Vila dos Orcs^000000 é localizada ao sul, ^4C6055Glast Heim^000000 ao oeste, ^6D6FE0Prontera^000000 bem ao leste, e ^744B2DMt. Mjolnir^000000 ao norte.";
+	mes "Aproveite as suas viagens!";
 	close;
 }
 
 izlu2dun,104,92,5	script	Quadro de Avisos#4	837,{
 	mes "[Ilha Byalan]";
 	mes "^6B1312Cuidado!^000000";
-	mes "A Ilha Byalan possui 5 níveis. O primeiro é recomendado para novos aventureiros.";
+	mes "A Ilha Byalan possui 5 níveis.";
+	mes "O primeiro é recomendado para novos aventureiros.";
 	next;
 	mes "[Ilha Byalan]";
-	mes "Quanto mais você descer na caverna, você irá encontrar monstros mais fortes e mais poderosos.";
+	mes "Quanto mais longe você avançar na caverna, mais fortes e poderosos serão os monstros que encontrará.";
 	next;
 	mes "[Ilha Byalan]";
-	mes "Com alguma exceções, a maioria dos monstros daqui possuem propiedade água. Com isso, armas com elemento vento podem lhe ajudar muito.";
+	mes "Com alguma exceções, a maioria dos monstros daqui possuem propriedade água. Por isso, armas com elemento vento podem lhe ajudar muito.";
 	close;
 }
 
 payon,178,108,5	script	Quadro de Avisos#06	837,{
 	mes "[Payon: A Cidade das Montanhas]";
-	mes "Bem-vindo a Payon, a cidade das montanhas. Payon recentemente foi renovada, agora está mais limpa, melhores ruas e construções.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Payon,";
+	mes "a cidade das montanhas.";
+	mes "Payon recentemente foi renovada. Agora está mais limpa, com melhores ruas e construções.";
 	next;
 	mes "[Payon: A Cidade das Montanhas]";
-	mes "Payon é famosa por ser a cidade dos Arqueiros, por muito tempo, os moradores da cidade vivem da caça com sua flechas e arcos. Manuseamento de arcos dentre outros foram desenvolvidos aqui em Payon.";
+	mes "Payon é famosa por ser a cidade dos Arqueiros. Por muito tempo, os moradores da cidade vivem da caça com seus arcos e flechas. A confecção de arcos e o treinamento foram desenvolvidos aqui em Payon.";
 	next;
 	mes "[Payon: A Cidade das Montanhas]";
-	mes "Payon tem vários tipos de escudo e armaduras, especialmente para Arqueiros. Se você quiser virar um Arqueiro, você será muito bem recebido em nossa cidade.";
+	mes "Payon tem vários tipos de armaduras e armas, especialmente para Arqueiros. Se você quiser virar um Arqueiro, você será muito bem recebido em nossa cidade.";
 	next;
 	mes "[Payon: A Cidade das Montanhas]";
 	mes "O Palácio de Payon é localizado ao centro. A Vila dos Arqueiros é localizada a nordeste. Lá, pessoas podem ser tornar Arqueiros.";
 	next;
 	mes "[Payon: A Cidade das Montanhas]";
-	mes "Na vila dos Arqueiros, você pode achar a ^2F0400Caverna de Payon^000000 onde 'vivem' mortos-vivos.";
+	mes "Na Vila dos Arqueiros, você pode encontrar a ^2F0400Caverna de Payon^000000, onde residem mortos-vivos.";
 	next;
 	mes "[Payon: A cidade das Montanhas]";
 	mes "De Payon, ^123972Alberta^000000 está a sudoeste, ^866C4BMorroc^000000 ao oeste. ^5E5C69Izlude^000000 e ^6D6FE0Prontera^000000 ao norte.";
@@ -100,10 +106,10 @@ payon,178,108,5	script	Quadro de Avisos#06	837,{
 
 pay_arche,79,31,5	script	Quadro de Avisos#07	837,{
 	mes "[Vila dos Arqueiros]";
-	mes "Bem-vindo a Vila dos Arqueiros onde aprendizes podem virar Arqueiros.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Vila dos Arqueiros, onde Aprendizes podem virar Arqueiros.";
 	next;
 	mes "[Vila dos Arqueiros]";
-	mes "A Vila dos Arqueiros é especializada na venda de Arcos e Flechas que você pode comprar. As quais são as necessidades principais de um Arqueiro e Caçador.";
+	mes "A Vila dos Arqueiros é especializada em arcos e flechas, que você pode comprar. São necessidades para Arqueiros e Caçadores.";
 	next;
 	mes "[Vila dos Arqueiros]";
 	mes "Se você quer virar um Arqueiro, este é o local ideal. Se quiser se tornar Caçador, a Guilda dos Caçadores fica localizada em um campo ao leste de Payon.";
@@ -113,7 +119,7 @@ pay_arche,79,31,5	script	Quadro de Avisos#07	837,{
 prontera,148,49,5	script	Quadro de Avisos#09	837,{
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
-	mes "Bem-vindo a Prontera, a capital do Reino de Rune-Midgard.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Prontera, a capital do Reino de Rune-Midgard.";
 	next;
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
@@ -121,7 +127,7 @@ prontera,148,49,5	script	Quadro de Avisos#09	837,{
 	next;
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
-	mes "Nessa cidade, você pode achar a Igreja, onde as pessoas podem se tornar Noviços ou Sacerdotes.";
+	mes "Nesta cidade, você pode encontrar a Igreja, onde as pessoas podem se tornar Noviços ou Sacerdotes.";
 	next;
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
@@ -129,11 +135,11 @@ prontera,148,49,5	script	Quadro de Avisos#09	837,{
 	next;
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
-	mes "Sinta-se à vontade para andar pelas grandes ruas de Prontera, existem várias atrações turísticas na cidade.";
+	mes "Sinta-se à vontade para andar pelas grandes ruas de Prontera. Existem várias atrações turísticas na cidade.";
 	next;
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
-	mes "Quando você precisa aprimorar sua arma ou armadura, visite a casa de refinaria de Prontera a sudeste da praça principal.";
+	mes "Quando você precisar aprimorar sua arma ou armadura, visite a casa de refinaria de Prontera a sudeste da praça principal.";
 	next;
 	mes "[Prontera: A Capital do]";
 	mes "[Reino de Rune-Midgard]";
@@ -144,117 +150,71 @@ prontera,148,49,5	script	Quadro de Avisos#09	837,{
 
 morocc,152,110,5	script	Quadro de Avisos#11	837,{
 	mes "[Morroc: A Cidade da Fronteira]";
-	mes "Bem-vindo a Morroc, a cidade do";
-	mes "Deserto. Morroc foi construída em";
-	mes "um oásis, essa cidade servia para";
-	mes "abrigar aventureiros que passavam por aqui.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Morroc, a cidade do Deserto.";
+	mes "Morroc foi construída em um oásis. Esta cidade servia para abrigar aventureiros que passavam por aqui.";
 	next;
 	mes "[Morroc: A Cidade da Fronteira]";
-	mes "O Castelo de Morroc está ao centro";
-	mes "da cidade. Sinta se a vontade para";
-	mes "explorá-lo, e aproveite esse clima";
-	mes "único. Porém, fique de olho em sua ";
-	mes "mochila para que gatunos não te assaltem!";
+	mes "O Castelo de Morroc está ao centro da cidade. Sinta-se a vontade para explorá-lo, e aproveite este clima único. Porém, fique de olho na sua mochila para que gatunos não te assaltem!";
 	next;
 	mes "[Morroc: A Cidade da Fronteira]";
-	mes "De Morroc, a ^6B1312Pirâmide^000000 pode";
-	mes "pode ser achada a noroeste, e a ^6B1312Esfinge^000000 pode";
-	mes "ser encontrada ao oeste. Ao sudeste, você pode encontrar";
-	mes "o ^6B1312Formigueiro Infernal^000000.";
+	mes "De Morroc, a ^6B1312Pirâmide^000000 pode ser encontrada a noroeste, e a ^6B1312Esfinge^000000 pode ser encontrada ao oeste. Ao sudeste, você pode encontrar o ^6B1312Formigueiro Infernal^000000.";
 	next;
 	mes "[Morroc: A Cidade da Fronteira]";
-	mes "A Guilda dos Assassinos é localizada";
-	mes "ao sudeste. Quando você se dirigir ao";
-	mes "leste de Morroc, e depois ao norte você";
-	mes "poderá chegar em ^6D6FE0Prontera^000000.";
+	mes "A Guilda dos Assassinos é localizada ao sudeste. Quando você se dirigir ao leste de Morroc, e depois ao norte você poderá chegar em ^6D6FE0Prontera^000000.";
 	close;
 }
 
 comodo,210,148,5	script	Quadro de Avisos#12	837,{
 	mes "[Comodo: A Cidade do Mar]";
-	mes "Bem-vindo! A cidade de Comodo é";
-	mes "rodeada por relíquias passadas";
-	mes "por todo seu território.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+"! A cidade de Comodo é rodeada por muitas relíquias antigas de uma era esquecida.";
 	next;
 	mes "[Comodo: A Cidade do Mar]";
-	mes "Apenas em Comodo você pode achar a";
-	mes "Guilda das Odaliscas e a Guilda dos Bardos.";
-	mes "Oportunidade para os Arqueiros que desejam se";
-	mes "tornar Bardos, para homem, ou Odaliscas, para mulheres.";
+	mes "Apenas em Comodo você pode encontrar a Guilda das Odaliscas e a Guilda dos Bardos. Oportunidade para os Arqueiros que desejam se tornar Bardos, para homem, ou Odaliscas, para mulheres.";
 	next;
 	mes "[Comodo: A Cidade do Mar]";
-	mes "Você pode visitar o Cassino,";
-	mes "que é uma atração turística muito";
-	mes "popular e um local confortável.";
+	mes "Você pode visitar o Cassino, que é uma atração turística muito popular e um local confortável.";
 	next;
 	mes "[Comodo: A Cidade do Mar]";
-	mes "Você pode comprar Poções da Fúria Selvagem, um";
-	mes "produto especial de Comodo, vindo dos";
-	mes "Alquimistas aqui do local.";
+	mes "Você pode comprar Poções da Fúria Selvagem, um produto especial de Comodo, vindo dos Alquimistas locais.";
 	next;
 	mes "[Comodo: A Cidade do Mar]";
-	mes "Existem 3 cavernas em volta de Comodo";
-	mes "cada uma é habitada por diferentes tipos";
-	mes "de monstros. Se você entrar nesses locais,";
-	mes "por favor, tenha cuidado!";
+	mes "Existem 3 cavernas em volta de Comodo cada uma é habitada por diferentes tipos de monstros. Se você entrar nestes locais, por favor, tenha cuidado!";
 	next;
 	mes "[Comodo: A Cidade do Mar]";
-	mes "De Comodo, você pode ir para";
-	mes "^866C4BMorroc^000000 pela caverna do leste";
-	mes "e também ^7D2272Umbala^000000 pela caverna do norte.";
+	mes "De Comodo, você pode ir para ^866C4BMorroc^000000 pela caverna do leste e também ^7D2272Umbala^000000 pela caverna do norte.";
 	next;
 	mes "[Comodo: A Cidade do Mar]";
-	mes "Ao leste, você pode achar ^BF2B0DParos,";
-	mes "a Ilha do Farol^000000, aonde se encontra a Guilda";
-	mes "dos Arruaceiros. Aproveite o estilo de vida noturna";
-	mes "de Comodo~";
+	mes "Ao leste, você pode encontrar ^BF2B0DParos, a Ilha do Farol^000000, onde se encontra a Guilda dos Arruaceiros.";
+	mes "Aproveite o estilo de vida noturna de Comodo~";
 	close;
 }
 
 umbala,137,94,5	script	Quadro de Avisos#13	837,{
 	mes "[Umbala: Casa da Tribo Utan]";
-	mes "Bem-vindo a Umbala,";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Umbala,";
 	mes "a vila da tribo Utan.";
 	next;
 	mes "[Umbala: Casa da Tribo Utan]";
-	mes "Umbala, é a casa da tribo Utan";
-	mes "que falam sua própria língua.";
-	mes "Que foi descoberta recentemente";
-	mes "por aventureiros intrometidos.";
+	mes "Umbala é a casa da tribo Utan, que fala sua própria língua. Foi descoberta recentemente por aventureiros intrometidos.";
 	next;
 	mes "[Umbala: Casa da Tribo Utan]";
-	mes "Pesquisadores acreditam que";
-	mes "Umbala seja a porta para um";
-	mes "outro mundo além do real. Eles";
-	mes "acreditam que essa entrada está";
-	mes "na árvore de Yggdrasil localizada ao norte.";
+	mes "Pesquisadores acreditam que Umbala seja a porta para um outro mundo além do real. Eles acreditam que esta entrada está na árvore de Yggdrasil, localizada ao norte.";
 	next;
 	mes "[Umbala: Casa da Tribo Utan]";
-	mes "Locais interessantes incluem a casa";
-	mes "do chefe, casa dos moradores e a área,";
-	mes "de Bungee Jump. Milhares de turistas";
-	mes "visitam a área de Bungee Jump para";
-	mes "testarem sua coragem.";
+	mes "Locais interessantes incluem a casa do chefe, casa dos moradores e a área de Bungee Jump. Milhares de turistas visitam a área de Bungee Jump para testarem sua coragem.";
 	next;
 	mes "[Umbala: Casa da Tribo Utan]";
-	mes "De Umbala, andando para o sul você chegará";
-	mes "em ^D91B73Comodo^000000. Aproveite sua";
-	mes "estadia em Umbala.";
+	mes "De Umbala, andando para o sul você chegará em ^D91B73Comodo^000000. Aproveite a sua estadia em Umbala.";
 	close;
 }
 
 gef_fild09,227,29,4	script	Quadro de Avisos::OrcsBoard	835,{
 	mes "[Vila dos Orcs]";
 	mes "^6B1312Cuidado!^000000";
-	mes "Depois desse ponto";
-	mes "você entrará na Vila dos Orcs.";
+	mes "Depois deste ponto você entrará na Vila dos Orcs.";
 	next;
 	mes "[Vila dos Orcs]";
-	mes "Cuidado pois essa área é habitada";
-	mes "por um grupo de Orcs, chamados";
-	mes "Guerreiros Orc, Senhoras Orc e Grands";
-	mes "Orc. Dois monstros chefes, ^6B1312Orc Herói^000000";
-	mes "e ^6B1312Senhor dos Orcs^000000 eles aparecem em um certo período de tempo.";
+	mes "Cuidado, pois esta área é habitada por um grupo de Orcs, chamados Guerreiros Orc, Senhoras Orc e Grands Orc. Dois monstros chefes, ^6B1312Orc Herói^000000 e ^6B1312Senhor dos Orcs^000000 aparecem em um certo período de tempo.";
 	close;
 }
 
@@ -264,8 +224,7 @@ gef_fild13,29,206,5	script	Quadro de Avisos::KoboldsBoard	836,{
 
 	mes "[Vila dos Kobolds]";
 	mes "^6B1312Cuidado!^000000";
-	mes "Você está entrando na Vila dos Kobolds.";
-	mes "Tenha cuidado pois existem Kobolds fortes nessa área.";
+	mes "Você está entrando na Vila dos Kobolds. Tenha cuidado, pois existem Kobolds fortes nesta área.";
 	close;
 }
 
@@ -275,147 +234,107 @@ gef_fild10,109,23,5	script	Quadro de Avisos#15	836,{
 
 	mes "[Vila dos Goblins]";
 	mes "^6B1312Cuidado!^000000";
-	mes "Você está entrando na Vila dos Goblins.";
-	mes "Tenha cuidado pois existem Goblins fortes nessa área.";
+	mes "Você está entrando na Vila dos Goblins. Tenha cuidado, pois existem Goblins fortes nesta área.";
 	close;
 }
 
 yuno,154,112,5	script	Quadro de Avisos#17	837,{
 	mes "[Juno: Capital da]";
 	mes "[República de Schwartzwald]";
-	mes "Bem-vindo a Juno, a cidade dos Sábios.";
-	mes "Juno flutua nas nuvens devido ao poder";
-	mes "dos pedaços do coração de Ymir.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Juno, a cidade dos Sábios.";
+	mes "Juno flutua nas nuvens devido ao poder dos pedaços do coração de Ymir.";
 	next;
 	mes "[Juno: Capital da]";
 	mes "[República de Schwartzwald]";
-	mes "Para aqueles interessados em virar";
-	mes "Sábio, visitem o Castelo dos Sábios";
-	mes "para mais informações sobre essa classe";
-	mes "e seus requerimentos.";
+	mes "Interessados em virar Sábio devem visitar o Castelo dos Sábios para mais informações sobre a classe e seus requisitos.";
 	next;
 	mes "[Juno: Capital da]";
 	mes "[República de Schwartzwald]";
 	mes "Outros locais notáveis são:";
-	mes "O Museu de Monstros, Academia de Mágica";	
-	mes "e a Biblioteca de Juno.";
+	mes "O Museu de Monstros, Academia de Magia e a Biblioteca de Juno.";
 	next;
 	mes "[Juno: Capital da]";
 	mes "[República de Schwartzwald]";
-	mes "Em alguém lugar ao redor de Juno, está";
-	mes "um local onde aventureiros podem renascer";
-	mes "para um novo aprendizado e mais força.";
+	mes "Ao redor de Juno tem um local onde aventureiros podem renascer para um novo aprendizado e mais força.";
 	mes "O local ainda é um mistério!";
 	next;
 	mes "[Juno: Capital da]";
 	mes "[República de Schwartzwald]";
-	mes "Ao sudeste de Juno você pode encontrar ^6B1312Labirinto";
-	mes "Nogg^000000, a Caverna de Magma. O Labirinto Nogg";
-	mes "é famoso por suas criaturas agressivas,";
-	mes "tenha cuidado!";
+	mes "Ao sudeste de Juno você pode encontrar o ^6B1312Labirinto Nogg^000000, a Caverna de Magma. O Labirinto Nogg é famoso por suas criaturas agressivas, então tenha cuidado!";
 	next;
 	mes "[Juno: Capital da]";
 	mes "[República de Schwartzwald]";
-	mes "De Juno, ^2D3832Al De Baran^000000";
-	mes "está localizada ao Sul.";
+	mes "De Juno, ^2D3832Al De Baran^000000 está localizada ao Sul.";
 	close;
 }
 
 aldebaran,145,105,5	script	Quadro de Avisos#18	837,{
 	mes "[Al De Baran: A Cidade dos Canais]";
-	mes "Bem-vindo a Al De Baran, a cidade dos";
-	mes "canais do Reino de Rune-Midgard.";
-	mes "Al De Baran é bonita pelos seus canais";
-	mes "de água e pela sua grande Torre do";
-	mes "Relógio que pode ser vista à longas distâncias.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Al De Baran, a cidade dos canais do Reino de Rune-Midgard. Al De Baran é bonita pelos seus canais de água e pela sua grande Torre do Relógio que pode ser vista à longas distâncias.";
 	next;
 	mes "[Al De Baran: A Cidade dos Canais]";
-	mes "Aventureiros podem explorar a torre";
-	mes "do relógio localizada ao centro da cidade.";
-	mes "Outros locais importantes é o Escritório";
-	mes "Principal da Corporação Kafra, e a Guilda";
-	mes "dos Alquimistas que te permite virar";
-	mes "um Alquimista de verdade.";
+	mes "Aventureiros podem explorar a torre do relógio localizada ao centro da cidade.";
+	mes "Outros locais importantes são o Escritório Principal da Corporação Kafra, e a Guilda dos Alquimistas, que te permite virar um Alquimista de verdade.";
 	next;
 	mes "[Al De Baran: A Cidade dos Canais]";
-	mes "Existe um Papai Noel em algum lugar";
-	mes "em Al De Baran que pode te levar para";
-	mes "a cidade mágica do Natal, ^1D2585Lutie^000000. Se";
-	mes "você deseja visitá-la, basta procurar pelo";
-	mes "Papai Noel.";
+	mes "Existe um Papai Noel em algum lugar em Al De Baran, que pode te levar para a cidade mágica do Natal, ^1D2585Lutie^000000. Se você deseja visitá-la, basta procurar pelo Papai Noel.";
 	next;
 	mes "[Al De Baran: A Cidade dos Canais]";
-	mes "Desta cidade, ^60D5FDJuno^000000 se encontra";
-	mes "ao norte, e ^6D6FE0Prontera^000000 ao sul";
+	mes "Desta cidade, ^60D5FDJuno^000000 se encontra ao norte, e ^6D6FE0Prontera^000000 ao sul";
 	close;
 }
 
 xmas_fild01,75,80,5	script	Quadro de Avisos#22	837,{
 	mes "[Cidade do Papai Noel, Lutie]";
-	mes "Bem-vindo a Lutie, a cidade da neve.";
-	mes "A produção de brinquedos na Fábrica de Brinquedos";
-	mes "é o unico negócio dessa cidade.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Lutie, a cidade da neve.";
+	mes "A produção de brinquedos na Fábrica de Brinquedos é o unico negócio desta cidade.";
 	next;
 	mes "[Cidade do Papai Noel, Lutie]";
-	mes "Você pode ir à Fábrica de Brinquedos";
-	mes "indo ao norte de Lutie.";
-	mes "Lembre de nos visitar na época do Natal.";
-	mes "Existem vários eventos para você participar.";
-	mes "Cuidado com o ^6B1312Cavaleiro da Tempestade^000000 e com o ^6B1312Hatii^000000 os monstros mais fortes da Fábrica de Brinquedos.";
+	mes "Você pode ir à Fábrica de Brinquedos indo ao norte de Lutie.";
+	mes "Lembre de nos visitar na época do Natal. Existem vários eventos para você participar.";
+	mes "Cuidado com o ^6B1312Cavaleiro da Tempestade^000000 e com o ^6B1312Hatii^000000, os monstros mais fortes da Fábrica de Brinquedos.";
 	close;
 }
 
 niflheim,200,191,5	script	Quadro de Avisos#25	837,{
 	mes "[Cidade Morta, Nifflheim]";
-	mes "Bem-vindo a Nifflheim, a cidade da Morte.";
-	mes "Nifflheim era um local diferente do que é hoje";
-	mes "você veio depois da morte da cidade.";
-	mes "De qualquer modo, recentemente pessoas acharam um caminho para aqui atravéz de uma árvore.";
-	mes "Então, você poderá ver mais pessoas passando por aqui.";
+	mes "Bem-vind"+(Sex==SEX_MALE?"o":"a")+" a Nifflheim, a cidade da Morte.";
+	mes "Nifflheim era conhecido como o outro mundo para onde se vai após a morte.";
+	mes "De qualquer modo, recentemente, pessoas acharam um caminho secreto atrás de uma árvore misteriosa. Então, você poderá ver mais pessoas passando por aqui.";
 	next;
 	mes "[Cidade Morta, Nifflheim]";
-	mes "Uma atração turística, é o Castelo Assombrado.";
-	mes "Diferente de outras cidades, é proibido salvar o ponto de retorno";
-	mes "ou se teletransportar para Nifflheim. Pois se não os monstros daqui iriam fugir.";
+	mes "Uma atração turística é o Castelo Assombrado.";
+	mes "Diferente de outras cidades, é proibido salvar o ponto de retorno ou se teletransportar para Nifflheim. Além disso, monstros também surgem dentro da cidade.";
 	next;
 	mes "[Cidade Morta, Nifflheim]";
-	mes "Especialmente, fique atento com o monstro-chefe";
-	mes "chamado ^6B1312Senhor das Trevas^000000.";
+	mes "Especialmente, fique atento com o monstro-chefe chamado ^6B1312Senhor das Trevas^000000.";
 	next;
 	mes "[Cidade Morta, Nifflheim]";
-	mes "Se você for a oeste, você chegará na ^6B1312Vila de Gyoll^000000";
-	mes "onde monstros muito fortes vivem, é recomendado que aventureiros";
-	mes "que estejam sozinhos saiam da cidade imediatamente.";
+	mes "Se você for a oeste, chegará na ^6B1312Vila de Gyoll^000000, onde monstros muito fortes vivem. É recomendado que aventureiros que estejam sozinhos saiam da cidade imediatamente.";
 	close;
 }
 
 moc_fild15,267,264,5	script	Quadro de Avisos#26	837,{
 	mes "[Formigueiro Infernal]";
-	mes "^6B1312Cuidado!^000000";
-	mes "O Formigueiro Infernal possui 2 níveis.";
-	mes "Como o nome diz, este formigueiros possui uma variedade grande";
-	mes "de formigas, e é um bom lugar para novos aventureiros.";
+	mes "^6B1312Cuidado!^000000 O Formigueiro Infernal possui 2 níveis.";
+	mes "Como o nome diz, este formigueiro possui uma variedade grande de formigas. É um bom lugar para novos aventureiros.";
 	next;
 	mes "[Formigueiro Infernal]";
-	mes "Porém, cuidado com o ^6B1312Maya Macho^000000 que aparece no primeiro nível,";
-	mes "e ^6B1312Maya^000000 que aparece no segundo nível. Eles são os pais das formigas.";
-	mes "Um chefe chamado ^6B1312Freeoni^000000 pode aparecer a qualquer momento.";
+	mes "Porém, cuidado com o ^6B1312Maya Macho^000000 que aparece no primeiro nível, e ^6B1312Maya^000000 que aparece no segundo nível. Elas são as rainhas das formigas. Um chefe chamado ^6B1312Freeoni^000000 pode aparecer a qualquer momento.";
 	close;
 }
 
 glast_01,369,308,5	script	Quadro de Avisos#28	837,{
 	mes "[Glast Heim]";
 	mes "Glast Heim é uma enorme cidade com várias cavernas.";
-	mes "Esta cidade definitivamente não é apropriada para novos ou";
-	mes "aventureiros medianos, mas sim para profissionais.";
+	mes "Esta cidade definitivamente não é apropriada para novos aventureiros, mas sim para profissionais.";
 	next;
 	mes "[Glast Heim]";
-	mes "Existem vários monstros por aqui como: ^6B1312Senhor das Trevas^000000,";
-	mes "^6B1312Duque Coruja^000000, ^6B1312Barão Coruja^000000, ^6B1312Ilusão das Trevas^000000, ^6B1312Cavaleiro Sanguinário^000000, ^6B1312Cavaleiro do Abismo^000000, ^6B1312Quimera^000000 e vários outros tipos de utilizadores de espada.";
+	mes "Existem vários monstros por aqui como: ^6B1312Senhor das Trevas^000000, ^6B1312Duque Coruja^000000, ^6B1312Barão Coruja^000000, ^6B1312Ilusão das Trevas^000000, ^6B1312Cavaleiro Sanguinário^000000, ^6B1312Cavaleiro do Abismo^000000, ^6B1312Quimera^000000 e vários tipos de espadas malditas.";
 	next;
 	mes "[Glast Heim]";
 	mes "Porém, por mais difícil que seja, a recompensa é grande.";
-	mes "Essa cidade é movimentada por jogadores mais experientes.";
-	mes "Aproveite sua aventura!";
+	mes "Esta cidade é movimentada por jogadores mais experientes.";
+	mes "Aproveite a sua aventura!";
 	close;
 }
