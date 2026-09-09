@@ -39,8 +39,7 @@
 	mes "Fábrica de ^3355FFPlacas^000000 MacMillan.";
 	next;
 	mes "[William]";
-	mes "Minha família, o Clã MacMillan, produz Placas de Trânsito Profissionais há mais de 250 anos.";
-	mes "Atualmente, estamos aceitando encomendas especiais para nosso ornamento exclusivo, a ^3355FFPlaca de Pare^000000.";
+	mes "Minha família, o Clã MacMillan, produz Placas de Trânsito Profissionais há mais de 250 anos. Atualmente, estamos aceitando encomendas especiais para nosso ornamento exclusivo, a ^3355FFPlaca de Pare^000000.";
 	next;
 	switch(select("Posso pedir uma ^3355FFPlaca de PARE^000000?:Não...")) {
 	case 1:
@@ -212,8 +211,8 @@ OnTouch_:
 	}
 	else {
 		mes "[Litheron]";
-		mes "Uau, você não pode";
-		mes "estar aqui.";
+		mes "Uau, você não tem";
+		mes "permissão para estar aqui.";
 		mes "Ei, mestre! Você";
 		mes "conhece esse cara?";
 		next;
@@ -279,7 +278,8 @@ OnTouch_:
 			}
 		}
 		else {
-			mes "[Mestre] De jeito nenhum.";
+			mes "[Mestre]";
+			mes "De jeito nenhum.";
 			mes "Certifique-se de que este não tenha permissão para entrar.";
 			next;
 			mes "[Litheron]";
@@ -506,6 +506,7 @@ que_job01,82,95,3	script	Dono do Bar#moc_main01	46,{
 					next;
 					mes "[Mestre]";
 					mes "................Você está parecendo muito suspeito agora.";
+					mes " ";
 					mes "Rapazes, mostrem a esse cara a porta!!";
 					next;
 					mes "[Garotos Bebendo]";
@@ -619,10 +620,10 @@ que_job01,49,49,5	script	Tao#dan_09	877,{
 			mes "[Tao]";
 			mes "Miau, miau.";
 			mes "É uma longa história, miau.";
-			mes "Naquele dia, Tao queria muito uma Fita Grande, miau.";
+			mes "Naquele dia, Tao queria muito uma Laço Grande, miau.";
 			next;
 			mes "[Tao]";
-			mes "Então eu saí em busca de Rosas Silvestres, miau...";
+			mes "Então eu saí em busca de Rosas Selvagens, miau...";
 			mes "...Miau? Espere um minuto, por que estou contando essa história, miau?!";
 			next;
 			mes "[Tao]";
@@ -696,7 +697,7 @@ OnTouch_:
 	else {
 		mes "[Tao]";
 		mes "Q-quem é você?";
-		mes "Esta é uma área restrita, miau! Se você não tem permissão, saia daqui agora mesmo!";
+		mes "Esta é uma área restrita, miau! Se você não tem permissão, saia daqui agora mesmo, miau!";
 		close2;
 		warp "que_job01",52,50;
 		end;
@@ -706,11 +707,11 @@ OnTouch_:
 que_job01,1,1,0	script	 #room1timer	844,{
 OnEnable:
 	initnpctimer;
-	mapannounce "que_job01","Você entrará agora na Master Zone, Área 1.",bc_map,"0x70DBDB";
+	mapannounce "que_job01","Você entrará agora na Master Zone [Área 1].",bc_map,"0x70DBDB";
 	end;
 
 OnStop:
-	mapannounce "que_job01","A segurança mágica na Master Zone, Área 1, está desativada.",bc_map,"0x70DBDB";
+	mapannounce "que_job01","A segurança mágica na Master Zone [Área 1] está desativada.",bc_map,"0x70DBDB";
 	donpcevent "#room1_warp::OnDisable";
 	donpcevent "Valdes#moc_master_1::OnDisable";
 	donpcevent "Marjana#poison::OnInit";
@@ -729,7 +730,7 @@ OnTimer245000:
 	end;
 
 OnTimer250000:
-	mapannounce "que_job01","A segurança mágica na Master Zone, Área 1, agora está ativada.",bc_map,"0x70DBDB";
+	mapannounce "que_job01","A segurança mágica na Master Zone [Área 1] agora está ativada.",bc_map,"0x70DBDB";
 	donpcevent "que_job01#room_1::OnReset";
 	stopnpctimer;
 	end;
@@ -994,7 +995,7 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		mes "[Bibliotecário]";
 		mes "Hum... Ah, bem.";
 		mes "(Pegando uma pedrinha)";
-		mes "Eu disse para ir embora, seu idiota Pássaro!";
+		mes "Eu disse para ir embora, seu pássaro idiota!";
 		next;
 		mes "(ZUMBIDO-)";
 		next;
@@ -1016,7 +1017,7 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		mes "^660000Você olhou para o chão e encontrou algumas penas que caíram do corvo quando ele foi atingido pela pedra.^000000";
 		next;
 		mes "["+ strcharinfo(0) +"]";
-		mes "Nossa, olha o tamanho dessas penas. Acho que um corvo tão grande precisa de penas grandes para voar.";
+		mes "Nossa, olha o tamanho destas penas. Acho que um corvo tão grande precisa de penas grandes para voar.";
 		next;
 		mes "[Bibliotecário]";
 		mes "Quando eu era jovem, ouvi dizer que penas de pássaros atraem os servos de Odin para abençoar seus donos, e muitos poetas as usavam como marcadores de livros.";
@@ -1045,7 +1046,7 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		mes "^660000Você começou a sentir frio e a tremer.^000000";
 		next;
 		mes "[Bibliotecário]";
-		mes "Experimente beber um caldo quente de gelatina com mel. Meu Minha mãe costumava fazer isso para mim sempre que eu pegava um resfriado.";
+		mes "Experimente beber um caldo quente de gelatina com mel. Minha mãe costumava fazer isso para mim sempre que eu pegava um resfriado.";
 		mes "Eu garanto que você vai melhorar rapidinho.";
 		next;
 		mes "^660000Ele parecia sincero, mas não parece que esse tipo de caldo seja eficaz...^000000";
@@ -1093,7 +1094,7 @@ OnTouch:
 		mes "[Bibliotecário]";
 		mes "Hum... Ah, bem.";
 		mes "(Pegando uma pedrinha)";
-		mes "Eu disse para ir embora, seu idiota Pássaro!";
+		mes "Eu disse para ir embora, seu pássaro idiota!";
 		next;
 		mes "(ZUMBIDO-)";
 		next;
@@ -1110,12 +1111,12 @@ OnTouch:
 		mes "Grrr... Você não pode simplesmente ir embora?!";
 		next;
 		mes "^660000Ele começou a gritar com o corvo, mas este não pareceu se importar. Em vez disso, voou um pouco mais alto.";
-		mes "Finalmente, ele virou a cabeça para longe do corvo e desistiu de espantá-lo. Então o cachorro parou de latir enquanto Bem.^000000";
+		mes "Finalmente, ele virou a cabeça para longe do corvo e desistiu de espantá-lo. Então o cachorro parou de latir.^000000";
 		next;
 		mes "^660000Você olhou para o chão e encontrou algumas penas que caíram do corvo quando ele foi atingido pela pedra.^000000";
 		next;
 		mes "["+ strcharinfo(0) +"]";
-		mes "Nossa, olha o tamanho dessas penas. Acho que um corvo tão grande precisa de penas grandes para voar.";
+		mes "Nossa, olha o tamanho destas penas. Acho que um corvo tão grande precisa de penas grandes para voar.";
 		next;
 		mes "[Bibliotecário]";
 		mes "Quando eu era jovem, ouvi dizer que as penas de pássaros atraem os servos de Odin para abençoar seus donos, e muitos poetas as usavam como marcadores de livros.";
@@ -1218,7 +1219,7 @@ yuno_in04,111,57,3	script	Bibliotecária de Meio Período#garas	862,{
 		next;
 		mes "[Funcionária da Biblioteca]";
 		mes "Ah, lembro desse... É o que mais frequentemente fica no carrinho.";
-		mes "Suba as escadas e veja a prateleira da esquerda.";
+		mes "Suba ^3131FFas escadas^000000 e veja a prateleira da esquerda.";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "Obrigado.";
@@ -1231,7 +1232,7 @@ yuno_in04,111,57,3	script	Bibliotecária de Meio Período#garas	862,{
 		mes "Hum... A cena mais impressionante foi... Err...";
 		next;
 		mes "[Funcionária da Biblioteca]";
-		mes "Isso mesmo! Quando o herói estava encontrando seu fim na mansão em chamas... ^FF0000-- BEEP --^000000";
+		mes "Isso mesmo! Quando o herói estava encontrando seu fim na mansão em chamas... ^FF0000-- BIP --^000000";
 		specialeffect2 EF_BASH3D2;
 		close2;
 		warp "que_ba",264,186;
@@ -1266,7 +1267,7 @@ yuno_in04,100,5,3	script	Melhores Bestsellers	111,{
 		mes "["+ strcharinfo(0) +"]";
 		mes "Snif... Então agora tudo que eu tenho que fazer é dar uma olhada nisso e entregar para aquele fã da Mammi.";
 		next;
-		mes "^FF0000-- BEEP --^000000";
+		mes "^FF0000-- BIP --^000000";
 		next;
 		mes "^660000Você estava prestes a pegar o livro, reclamando e resmungando, quando de repente sentiu como se seu cérebro tivesse explodido. Você desmaia...^000000";
 		set barmunt_crow,4;
@@ -1290,7 +1291,7 @@ yuno_in04,100,5,3	script	Melhores Bestsellers	111,{
 		mes "["+ strcharinfo(0) +"]";
 		mes "Snif... Então agora tudo que eu tenho que fazer é dar uma olhada nisso e entregar para aquele fã da Mammi.";
 		next;
-		mes "^FF0000-- BEEP --^000000";
+		mes "^FF0000-- BIP --^000000";
 		next;
 		mes "^660000Você estava prestes a pegar o livro, reclamando e resmungando, quando de repente sentiu como se seu cérebro tivesse explodido. Você desmaia...^000000";
 		close2;
@@ -1313,7 +1314,7 @@ yuno_in04,100,5,3	script	Melhores Bestsellers	111,{
 		mes "["+ strcharinfo(0) +"]";
 		mes "Snif... Então agora tudo que eu tenho que fazer é dar uma olhada nisso e entregar para aquele fã da Mammi.";
 		next;
-		mes "^FF0000-- BEEP --^000000";
+		mes "^FF0000-- BIP --^000000";
 		next;
 		mes "^660000Você estava prestes a pegar o livro, reclamando e resmungando, quando de repente sentiu como se seu cérebro tivesse explodido. Você desmaiou...^000000";
 		close2;
@@ -1389,7 +1390,7 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 	if (barmunt_crow == 7) {
 		mes "^660000É uma pasta com uma moldura de madeira contendo uma pilha grossa de jornais antigos.^000000";
 		next;
-		mes "^660000Você examinou cuidadosamente os jornais para ver se encontrava algum artigo sobre incêndio. acidentes.^000000";
+		mes "^660000Você examinou cuidadosamente os jornais para ver se encontrava algum artigo sobre acidentes de incêndio.^000000";
 		next;
 		while(1) {
 			mes "...................................";
@@ -1400,6 +1401,7 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 			if ((.@newspp == 1) || (.@newspp == 2)) {
 				mes "- Página 1 -";
 				mes "Assassino renomado Sieglinde: 'Eu sirvo somente a você.'";
+				mes " ";
 				mes "Sieglinde conquistou o título de Maior Assassino";
 				mes "por seu profissionalismo";
 				mes "e fama entre as mulheres,";
@@ -1418,11 +1420,13 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 				mes "Assassinos devem viver sozinhos nas sombras.'";
 				mes "Esperamos que a reação dos fãs não cause muita preocupação";
 				mes "a Siglinde e sua futura esposa.";
+				mes " ";
 				next;
 			}
 			else if ((.@newspp == 3) || (.@newspp == 4)) {
 				mes "- Página 4 -";
 				mes "Cena de briga em Juno";
+				mes " ";
 				mes "Na noite passada, dois jovens foram vistos";
 				mes "brigando violentamente um com o outro na Praça Juno.";
 				mes "Segundo o soldado de Juno que os prendeu,";
@@ -1431,10 +1435,12 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 				mes "sua paciência finalmente se esgotou na noite passada.";
 				mes "Aparentemente, a briga começou quando o Sr. A colocou seus pés descalços e suados na coxa do Sr. B,";
 				mes "dizendo que seus pés estavam muito suados ... A culpa é do calor, pessoal!";
+				mes " ";
 				next;
 			}
 			else if (.@newspp == 5) {
 				mes "Aviso de Deus: Um Laboratório Secreto Reduzido a Cinzas";
+				mes " ";
 				mes "A fumaça que cobriu o céu de Juno na noite passada";
 				mes "acabou sendo de um";
 				mes "laboratório secreto incendiado.";
@@ -1450,6 +1456,7 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 				mes "para testar projetos de biotecnologia,";
 				mes "e expressou sua crença de que o incêndio foi a ira de Deus,";
 				mes "um castigo justo por brincar com suas criações.";
+				mes " ";
 				next;
 				mes "["+ strcharinfo(0) +"]";
 				mes "...........................";
@@ -1468,7 +1475,7 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 				next;
 				mes "["+ strcharinfo(0) +"]";
 				mes "Não acredito que isso está acontecendo!";
-				mes "Pense bem... Era uma área conectada a uma caverna ao norte.";
+				mes "Pense bem... Era ^FF0000uma área conectada a uma caverna ao norte^000000.";
 				set barmunt_crow,8;
 				changequest 2065,2066;
 				close;
@@ -1476,6 +1483,7 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 			else if ((.@newspp == 6) || (.@newspp == 7)) {
 				mes "- Página de Cultura -";
 				mes "- Por Favor, Salve Minha Água -";
+				mes " ";
 				mes "Uma jovem autora recentemente aclamada,";
 				mes "Jean Cadoc, com sua nova série 'Por Favor, Salve Minha Água', alcançou o topo";
 				mes "como o livro mais emprestado nas bibliotecas.";
@@ -1489,11 +1497,13 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 				mes "República de Schwarzwald por";
 				mes "promover a moralidade e";
 				mes "a proteção ambiental em todo o país.";
+				mes " ";
 				next;
 			}
 			else {
 				mes "Desabamento da Mina de Einbech (2)";
-				mes "Segundo um funcionário da Rekenber Corporation,";
+				mes " ";
+				mes "Segundo um funcionário da Corporação Rekenber,";
 				mes "empresa que administra a mina de Einbech,";
 				mes "três corpos foram encontrados,";
 				mes "mas um sobrevivente foi internado em um hospital.";
@@ -1502,6 +1512,7 @@ yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
 				mes "buscando por sobreviventes,";
 				mes "e contrataram especialistas para investigar";
 				mes "a causa do acidente.";
+				mes " ";
 				next;
 			}
 		}
@@ -1660,7 +1671,7 @@ yuno_in04,169,123,3	script	Homem Suspeito#oliver_h	407,{
 		mes "Estou tendo ótimas ideias agora. Desculpe, mas preciso ir.";
 		next;
 		cutin "oliver_pre",255;
-		mes "^660000Assim que ele falou com você, voltou a escrever e ficou completamente absorto em seu trabalho.^000000";
+		mes "^660000Assim que ele falou com você, voltou a escrever e ficou completamente absorvido em seu trabalho.^000000";
 		next;
 		mes "["+ strcharinfo(0) +"]";
 		mes "Ele tem uma concentração incrível.";
@@ -1748,6 +1759,7 @@ yuno_in04,167,120,3	script	Livro Desgastado#garas	111,{
 		mes "Para ele, sua pequena e escura vila subterrânea era uma prisão que o impedia de satisfazer sua curiosidade e desejo de liberdade.";
 		mes "Ele expressou seu desejo de aprender mais sobre o mundo exterior para sua madrasta Eva, mas ela sempre ignorava seu desejo com um olhar severo.";
 		mes "Por fim, sua dissuasão irracional não conseguiu mais impedi-lo de escapar de sua realidade.";
+		mes " ";
 		mes "- Arf! Arf! -";
 		mes "Ele correu pela escuridão que parecia não ter fim. Ele estava fugindo de tudo que tentava confiná-lo.>";
 		next;
@@ -1760,6 +1772,7 @@ yuno_in04,167,120,3	script	Livro Desgastado#garas	111,{
 		mes "- Olá, você consegue me ver? Como você se sente? -";
 		mes "Um velho entrou lentamente no quarto. Com um sorriso no rosto, sentou-se em uma cadeira. O garotinho sentiu medo por um instante ao ver pessoas fora de sua aldeia pela primeira vez,";
 		mes "mas então se obrigou a levantar da cama e olhou ao redor.";
+		mes " ";
 		mes "- Onde estou? Por que estou aqui? -";
 		mes "- Eu estava andando de carruagem ontem à noite e encontrei você deitado na rua. Meu nome é Haeji. Pode me chamar de Sr. Haeji, filho. -";
 		mes "-....... -";
@@ -2236,7 +2249,7 @@ OnTouch:
 	mes "você se virou e encontrou uma mulher parada ali.^000000";
 	next;
 	mes "[Mulher Misteriosa]";
-	mes "Estava quase pronto, mas então você quebrou todos eles -- até mesmo ^FF00FFBEEP^000000 e ^FF00FFBEEP^000000 -- e estava se escondendo aqui.";
+	mes "Estava quase pronto, mas então você quebrou todos eles -- até mesmo ^FF00FFBIP^000000 e ^FF00FFBIP^000000 -- e estava se escondendo aqui.";
 	next;
 	mes "[Homem Misterioso]";
 	mes "Eles não deveriam existir neste mundo!";
@@ -2661,7 +2674,7 @@ cave,72,71,5	script	Moradora da Caverna#m_cave2	981,{
 	mes "Heh...";
 	mes "Você quer... Isto?";
 	next;
-	mes "- Ela te mostrou a Ração do Monstro. -";
+	mes "- Ela te mostrou a Ração para Monstros. -";
 	close;
 }
 
