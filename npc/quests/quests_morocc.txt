@@ -36,7 +36,7 @@
 -	script	William	89,{
 	mes "[William]";
 	mes "Bem-vindo à";
-	mes "Fábrica de ^3355FFPlacas^000000 MacMillan.";
+	mes "Oficina de ^3355FFPlacas^000000 MacMillan.";
 	next;
 	mes "[William]";
 	mes "Minha família, o Clã MacMillan, produz Placas de Trânsito Profissionais há mais de 250 anos. Atualmente, estamos aceitando encomendas especiais para nosso ornamento exclusivo, a ^3355FFPlaca de Pare^000000.";
@@ -55,10 +55,8 @@
 			set Zeny, Zeny-91100;
 			mes "[William]";
 			mes "Aqui está!";
-			mes "Esta ^3355FFPlaca de Pare^000000 foi";
-			mes "feito especialmente";
-			mes "para você!";
-			mes "Obrigado pela visita!";
+			mes "Esta ^3355FFPlaca de Pare^000000 foi feita especialmente para você!";
+			mes "Obrigado por parar aqui!";
 			mes "...Entendeu a piada?";
 			getitem 2272,1; // Stop_Post
 			close;
@@ -66,12 +64,12 @@
 		else {
 			mes "[William]";
 			mes "Então...";
-			mes "Quando você conseguir esses itens, dê uma passada aqui e nós lhe daremos uma Placa de Pare.";
+			mes "Quando você conseguir estes itens, dê uma passada aqui e nós lhe daremos uma Placa de Pare.";
 			close;
 		}
 	case 2:
 		mes "[William]";
-		mes "De qualquer forma, obrigado por visitar a 'Oficina do MacMillan'. Mas pense em comprar algo da próxima vez, ok?";
+		mes "De qualquer forma, obrigado por visitar a 'Oficina MacMillan'. Mas pense em comprar algo da próxima vez, ok?";
 		close;
 	}
 }
@@ -141,7 +139,7 @@
 		}
 	case 3:
 		mes "[Marius]";
-		mes "Ei, você aí!";
+		mes "Ei, você~!";
 		mes "Agora você está na frente de Marius, um Alquimista entre Alquimistas. Me ignorando, é? Vamos lá, vou te dar uma surra!";
 		close;
 	}
@@ -233,7 +231,7 @@ OnTouch_:
 			mes "Certo, que tal isso?";
 			mes "Deixo você entrar se me pagar uma bebida.";
 			mes "Além disso, você não pode arriscar arrumar confusão aqui: este lugar";
-			mes "está cheio de Assassinos mortais.";
+			mes "está cheio de Assassinos letais.";
 			next;
 			switch(select("Claro:Por que eu deveria?!")) {
 			case 1:
@@ -509,10 +507,10 @@ que_job01,82,95,3	script	Dono do Bar#moc_main01	46,{
 					mes " ";
 					mes "Rapazes, mostrem a esse cara a porta!!";
 					next;
-					mes "[Garotos Bebendo]";
+					mes "[Rapazes Bebendo]";
 					mes "- Sim, senhor!";
 					next;
-					mes "- Você foi expulso daqui.";
+					mes "- Você foi expulso do lugar. -";
 					close2;
 					warp "morocc",45,106;
 					end;
@@ -560,10 +558,10 @@ que_job01,49,49,5	script	Tao#dan_09	877,{
 	if (BaseClass == Job_Assassin) {
 		mes "[Tao]";
 		mes "Bem-vindo, miau~";
-		mes "Como vai, miau?";
+		mes "Como estão as coisas lá fora, miau?";
 		next;
 		if (prt_curse == 24) {
-			switch(select("Marjana está aí?: Vim te ver, Tao.")) {
+			switch(select("Marjana está aí?:Vim te ver, Tao.")) {
 			case 1:
 				mes "[Tao]";
 				mes "Ela está na sala à sua esquerda, miau~";
@@ -620,7 +618,7 @@ que_job01,49,49,5	script	Tao#dan_09	877,{
 			mes "[Tao]";
 			mes "Miau, miau.";
 			mes "É uma longa história, miau.";
-			mes "Naquele dia, Tao queria muito uma Laço Grande, miau.";
+			mes "Naquele dia, Tao queria muito um Laço Grande, miau.";
 			next;
 			mes "[Tao]";
 			mes "Então eu saí em busca de Rosas Selvagens, miau...";
@@ -730,7 +728,7 @@ OnTimer245000:
 	end;
 
 OnTimer250000:
-	mapannounce "que_job01","A segurança mágica na Master Zone [Área 1] agora está ativada.",bc_map,"0x70DBDB";
+	mapannounce "que_job01","A segurança mágica na Master Zone [Área 1] foi ativada.",bc_map,"0x70DBDB";
 	donpcevent "que_job01#room_1::OnReset";
 	stopnpctimer;
 	end;
@@ -773,7 +771,7 @@ que_job01,16,21,5	script	Valdes#moc_master_1	55,{
 		next;
 		mes "[Valdes]";
 		mes "Pedirei sua ajuda em outra ocasião.";
-		mes "Você parece bem apaixonado, afinal.";
+		mes "Você parece bem entusiasmado, afinal.";
 	}
 	else {
 		mes "[Valdes]";
@@ -810,9 +808,9 @@ yuno_in04,180,106,3	script	Garota Lendo#moc_girl1	73,{
 	mes "Com licença, posso lhe fazer uma pergunta?";
 	next;
 	mes "[Yunia]";
-	mes "Eh? Ah, desculpe, eu estava";
+	mes "Hã? Ah, desculpe, eu estava";
 	mes "tão ocupada lendo este livro!";
-	mes "Então, uh, o que exatamente";
+	mes "Então, hã, o que exatamente";
 	mes "você queria me perguntar?";
 	next;
 	select("O que você está lendo?");
@@ -821,14 +819,14 @@ yuno_in04,180,106,3	script	Garota Lendo#moc_girl1	73,{
 	mes "O personagem principal é um escritor, e é tão tocante que ele escreva uma história sobre sua amante...";
 	next;
 	mes "[Yunia]";
-	mes "Oh... Mal posso esperar para ver o Especial Hoein...";
-	mes "E este, você pode dar uma olhada se quiser.";
+	mes "Ah... Mal posso esperar para ver o Especial Hoein...";
+	mes "E este aqui, você pode dar uma olhada se quiser.";
 	next;
 	mes "[" + strcharinfo(0) + "]";
-	mes "Oh, agora, não deveria.";
+	mes "Ah, agora, não deveria.";
 	mes "Parece que a capa é arredondada com uma tira vermelha,";
 	mes "o que... eu realmente acho que é só para adultos.";
-	mes "Com licença~!";
+	mes "Co... com licença~!";
 	close;
 }
 
@@ -840,7 +838,7 @@ prt_in,179,92,3	script	Curador da Biblioteca#garas	57,{
 		next;
 		mes "[Curadoria]";
 		mes "A outra biblioteca do outro lado da rua também tem Enciclopédias de Monstros.";
-		mes "Se tiver interesse, fique à vontade para visitar essa biblioteca também.";
+		mes "Se tiver interesse, fique à vontade para visitar esta biblioteca também.";
 		close;
 	}
 	else if (barmunt_crow == 1) {
@@ -920,7 +918,7 @@ prt_in,179,92,3	script	Curador da Biblioteca#garas	57,{
 			mes "<O Corvo do Destino>^000000!";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "Isso mesmo! É isso que estou procurando!";
+			mes "Isso mesmo! É este que estou procurando!";
 			next;
 			mes "[Curadoria]";
 			mes "Haha... Mas tenho más notícias.";
@@ -958,20 +956,20 @@ prt_in,179,92,3	script	Curador da Biblioteca#garas	57,{
 		next;
 		mes "[Curadoria]";
 		mes "A outra biblioteca do outro lado da rua também tem Enciclopédias de Monstros.";
-		mes "Se tiver interesse, sinta-se à vontade para visitar essa biblioteca também.";
+		mes "Se tiver interesse, sinta-se à vontade para visitar esta biblioteca também.";
 		close;
 	}
 }
 
 yuno,333,210,5	script	Bibliotecário#garas	57,{
 	if (barmunt_crow == 2) {
-		mes "[Cachorro]";
+		mes "[Cão]";
 		mes "Au au!";
 		mes "Grrr... Au au!";
 		next;
 		mes "^660000Um cachorro está latindo alto na frente da biblioteca.^000000";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Seu pássaro maldito! Voa embora, sai daqui!";
 		next;
 		mes "^660000Um homem também está gritando na frente da biblioteca.^000000";
@@ -979,20 +977,20 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		mes "["+ strcharinfo(0) +"]";
 		mes "O que está acontecendo aqui?";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Não é nada, mas tem um corvo gigantesco empoleirado no telhado desta biblioteca, grasnando há pelo menos algumas horas.";
 		mes "Eu estava tentando espantá-lo porque... Parece sinistro de alguma forma.";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Vá! Voe para longe, seu pássaro maldito! Saia!!";
 		next;
 		mes "^660000Você olhou para cima e encontrou um enorme corvo empoleirado no telhado da biblioteca como se fosse o dono do lugar.^000000";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Saia! Nossa, ele não vai embora!";
 		mes "Tenho medo que esse pássaro assustador espante meus frequentadores!";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Hum... Ah, bem.";
 		mes "(Pegando uma pedrinha)";
 		mes "Eu disse para ir embora, seu pássaro idiota!";
@@ -1008,7 +1006,7 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		mes "^660000Mas então começou a voar em círculos acima do telhado, e parecia ainda mais assustador.^000000";
 		specialeffect EF_BAT;
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Grrr... Você não pode simplesmente ir embora?!";
 		next;
 		mes "^660000Ele começou a gritar com o corvo, mas este não pareceu se importar. Em vez disso, voou um pouco mais alto.";
@@ -1019,13 +1017,13 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		mes "["+ strcharinfo(0) +"]";
 		mes "Nossa, olha o tamanho destas penas. Acho que um corvo tão grande precisa de penas grandes para voar.";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Quando eu era jovem, ouvi dizer que penas de pássaros atraem os servos de Odin para abençoar seus donos, e muitos poetas as usavam como marcadores de livros.";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Eu costumava ter uma pena pequena. Acho que é natural que eu tenha me tornado um bibliotecário. Hahaha!";
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Você conhece o velho ditado: 'você pode memorizar a Edda depois de 3 anos trabalhando em uma biblioteca'?";
 		mes "Por que você não guarda uma das penas? Quem sabe? Pode te trazer boa sorte.";
 		next;
@@ -1039,14 +1037,14 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		mes "...Atchim!";
 		specialeffect2 EF_VENOMDUST;
 		next;
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Deus te abençoe. Oh, você pegou um resfriado?";
 		mes "Você deveria se cuidar bem, especialmente se for um aventureiro.";
 		next;
 		mes "^660000Você começou a sentir frio e a tremer.^000000";
 		next;
-		mes "[Bibliotecário]";
-		mes "Experimente beber um caldo quente de gelatina com mel. Minha mãe costumava fazer isso para mim sempre que eu pegava um resfriado.";
+		mes "[Bibliotecário-Chefe]";
+		mes "Experimente beber um caldo quente de Jellopy com mel. Minha mãe costumava fazer isso para mim sempre que eu pegava um resfriado.";
 		mes "Eu garanto que você vai melhorar rapidinho.";
 		next;
 		mes "^660000Ele parecia sincero, mas não parece que esse tipo de caldo seja eficaz...^000000";
@@ -1055,7 +1053,7 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 		close;
 	}
 	else {
-		mes "[Bibliotecário]";
+		mes "[Bibliotecário-Chefe]";
 		mes "Cuidado para não pegar um resfriado!";
 		close;
 	}
@@ -1064,7 +1062,7 @@ yuno,333,210,5	script	Bibliotecário#garas	57,{
 yuno,336,203,0	script	#garas_catch	139,3,3,{
 OnTouch:
 	if (barmunt_crow == 2) {
-		mes "[Cachorro]";
+		mes "[Cão]";
 		mes "Au au!";
 		mes "Grrr... Au au!";
 		next;
@@ -1145,7 +1143,7 @@ OnTouch:
 		mes "^660000Você começou a sentir frio e a tremer.^000000";
 		next;
 		mes "[Bibliotecário]";
-		mes "Tente beber um caldo quente de gelatina com mel. Minha mãe costumava fazer isso para mim sempre que eu pegava um resfriado.";
+		mes "Tente beber um caldo quente de Jellopy com mel. Minha mãe costumava fazer isso para mim sempre que eu pegava um resfriado.";
 		mes "Eu garanto que você vai melhorar rapidinho.";
 		next;
 		mes "^660000Ele parecia sincero, mas não parece que esse tipo de caldo faria efeito...^000000";
@@ -1161,12 +1159,12 @@ yuno,343,204,1	script	#garas_eff	111,{
 }
 
 yuno,335,208,5	script	Cão#garas	81,{
-	mes "[Cachorro]";
+	mes "[Cão]";
 	mes "Au au!";
 	close;
 }
 
-yuno_in04,111,57,3	script	Bibliotecária de Meio Período#garas	862,{
+yuno_in04,111,57,3	script	Bibliotecária#garas	862,{
 	if (barmunt_crow == 3) {
 		mes "[Funcionária da Biblioteca]";
 		mes "As pessoas deveriam aprender a guardar os livros depois de pegá-los.";
@@ -1386,7 +1384,7 @@ OnTouch:
 	end;
 }
 
-yuno_in04,117,102,3	script	Livro de Notícias Antigas	844,{
+yuno_in04,117,102,3	script	Notícias Antigas	844,{
 	if (barmunt_crow == 7) {
 		mes "^660000É uma pasta com uma moldura de madeira contendo uma pilha grossa de jornais antigos.^000000";
 		next;
@@ -1576,7 +1574,7 @@ yuno_in04,169,123,3	script	Homem Suspeito#oliver_h	407,{
 		mes "Ganhei esse livro dele de presente. Ele pode ter mais livros raros dela... Atchim!";
 		next;
 		mes "[Oliver Hilpert]";
-		mes "Ah, muito obrigado por essa informação tão valiosa!";
+		mes "Ah, muito obrigado por esta informação tão valiosa!";
 		next;
 		mes "[Oliver Hilpert]";
 		mes "Uau! Preciso anotar a história que vi no meu sonho ontem à noite antes que eu me esqueça!";
@@ -1691,7 +1689,7 @@ yuno_in04,169,123,3	script	Homem Suspeito#oliver_h	407,{
 			mes "Acho que quando o corvo foi atingido pela pedrinha, sua sabedoria deve ter se transformado em desastre.";
 			next;
 			mes "["+ strcharinfo(0) +"]";
-			mes "Argh, tudo isso foi culpa do mestre da biblioteca!";
+			mes "Argh, tudo isso foi culpa do bibliotecário-chefe!";
 			mes "Por sorte, a pena sumiu, então espero não sofrer mais nenhum desastre.";
 			next;
 			break;
@@ -1707,7 +1705,7 @@ yuno_in04,169,123,3	script	Homem Suspeito#oliver_h	407,{
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "Sim, a alma do Sr. Hilpert está amaldiçoada pelo Corvo!";
-			mes "Será que ele atirava pedras em corvos como o mestre da biblioteca...?";
+			mes "Será que ele atirava pedras em corvos como o bibliotecário-chefe...?";
 			next;
 			mes "["+ strcharinfo(0) +"]";
 			mes "..................";
@@ -1793,7 +1791,7 @@ yuno_in04,167,120,3	script	Livro Desgastado#garas	111,{
 		cutin "oliver_pre",2;
 		mes "^660000O jovem se aproximou e apertou sua mão com um sorriso no rosto.^000000";
 		next;
-		mes "[Homem de aparência suspeita]";
+		mes "[Homem de Aparência Suspeita]";
 		mes "Ei, você está lendo <O Rastro do Destino>!";
 		mes "Hahaha, prazer em conhecê-lo(a). Sou o autor desse livro. Vim ver como está indo meu novo livro, <O Corvo do Destino>, e é uma grande honra conhecer um fã meu! Me sinto um pouco envergonhado, mas obrigado! Hehe.";
 		next;
@@ -1830,7 +1828,7 @@ yuno_in04,167,120,3	script	Livro Desgastado#garas	111,{
 		cutin "oliver_pre",2;
 		mes "[Oliver Hilpert]";
 		mes "Uau!";
-		mes "Não é ali?!";
+		mes "Não é aquilo ali?!";
 		emotion ET_HUK;
 		next;
 		mes "["+ strcharinfo(0) +"]";
@@ -2061,35 +2059,35 @@ OnTouch:
 		next;
 		mes "^660000Você apertou os olhos e escutou. Podia ouvir vozes humanas, mas as silhuetas de quem estivesse falando não tinham forma humana.^000000";
 		next;
-		mes "[Feminino]";
+		mes "[Voz Feminina]";
 		mes "Tosse! Fogo... Tosse!";
 		mes "Malditos humanos... Tosse, tosse!";
 		next;
 		mes "^660000Sua tosse piorou à medida que o rugido das chamas aumentava.^000000";
 		next;
-		mes "[Masculino]";
+		mes "[Voz Masculina]";
 		mes "Eles fugiram e nos deixaram para morrer!";
 		next;
-		mes "[Feminino]";
+		mes "[Voz Feminina]";
 		mes "...Vamos morrer?";
 		next;
-		mes "[Masculino]";
+		mes "[Voz Masculina]";
 		mes "Morrer? ...Haha.";
 		mes "^3131FF'Eva'^000000, nós não vamos morrer... Nunca estivemos exatamente vivos para começo de conversa.";
 		next;
 		mes "- Desmoronando -";
 		next;
-		mes "[Masculino]";
+		mes "[Voz Masculina]";
 		mes "Argh!";
 		next;
 		mes "^660000A única saída estava bloqueada por barras de aço; ninguém conseguia sair da sala envolta em chamas. Então, um canto da parede desmoronou com o calor do fogo.^000000";
 		next;
 		mes "^660000A silhueta masculina aproximou-se rapidamente da parede e começou a cavar no canto desmoronado.^000000";
 		next;
-		mes "[Masculino]";
+		mes "[Voz Masculina]";
 		mes "...Está feito!";
 		next;
-		mes "[Masculino]";
+		mes "[Voz Masculina]";
 		mes "Vamos, Eva!";
 		next;
 		mes "[Eva]";
@@ -2097,7 +2095,7 @@ OnTouch:
 		next;
 		mes "^660000A silhueta feminina chamada Eva aproximou-se dos tubos de ensaio enfileirados contra a parede.^000000";
 		next;
-		mes "[Masculino]";
+		mes "[Voz Masculina]";
 		mes "Eva!! Não temos tempo para salvar todos eles! Venha aqui!";
 		if (barmunt_crow == 4) {
 			set barmunt_crow,5;
@@ -2590,7 +2588,7 @@ cave,22,186,3	script	Homem Monstruoso#zid	999,{
 				next;
 				mes "[Zid]";
 				mes "Eva não conseguia esquecê-lo. Ela esperava por seu retorno dentro desta caverna escura. Por um tempo, ele enviou cartas sem endereço, mas depois elas pararam de chegar. Foi quando Eva desapareceu.";
-				mes "Encontrei ^3131FFa uma pena preta gigante^000000 no quarto dela depois que ela saiu.";
+				mes "Encontrei ^3131FFuma pena preta gigante^000000 no quarto dela depois que ela saiu.";
 				next;
 				mes "[Zid]";
 				mes "Não sei por quê, mas... acredito que Eva não existe mais...";
@@ -2696,14 +2694,14 @@ cave,113,74,5	script	Morador da Caverna#f_cave4	401,{
 	close;
 }
 
-cave,76,39,5	shop	Cave Girl#f_cave5	62,712:-1
+cave,76,39,5	shop	Garota da Caverna#f_cave5	62,712:-1
 
-cave,108,34,3	script	Morador da Caverna#f_cave6	979,{
-	mes "[Morador da Caverna]";
+cave,108,34,3	script	Moradora da Caverna#f_cave6	979,{
+	mes "[Moradora da Caverna]";
 	mes "Hoho, ele realmente disse isso ontem...?";
 	mes "Wah!";
 	next;
-	mes "[Morador da Caverna]";
+	mes "[Moradora da Caverna]";
 	mes "É um humano...";
 	next;
 	mes "(Sussurro)";
@@ -2711,12 +2709,12 @@ cave,108,34,3	script	Morador da Caverna#f_cave6	979,{
 	close;
 }
 
-cave,105,32,7	script	Morador da Caverna#f_cave7	979,{
-	mes "[Morador da Caverna]";
+cave,105,32,7	script	Moradora da Caverna#f_cave7	979,{
+	mes "[Moradora da Caverna]";
 	mes "Hoho, ele realmente disse isso ontem...?";
 	mes "Wah!";
 	next;
-	mes "[Morador da Caverna]";
+	mes "[Moradora da Caverna]";
 	mes "É um humano...";
 	next;
 	mes "(Sussurro)";
