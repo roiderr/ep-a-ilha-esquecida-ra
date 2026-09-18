@@ -144,7 +144,7 @@ cmd_in02,111,52,3	script	Larjes#pc2	97,{
 	else if (aru_monas == 3) {
 		mes "[Larjes]";
 		mes "Ótimo, ninguém deve nos ouvir aqui.";
-		mes "Depois que enviei uma mensagem para o lugar, descobri informações novas que devem ajudar em minha investigação.";
+		mes "Depois que enviei uma mensagem para o lugar, descobri informações novas que devem ajudar na minha investigação.";
 		next;
 		mes "[Larjes]";
 		mes "Descobri dois detalhes sobre a noite em que o alto oficial desapareceu.";
@@ -211,7 +211,7 @@ ra_in01,308,59,1	script	Garçom#pc	930,{
 		}
 	}
 	mes "[Garçom]";
-	mes "A comida neste restaurante é a melhor de Rachel.";
+	mes "A comida deste restaurante é a melhor de Rachel.";
 	mes "Não, é a melhor de toda Arunafeltz!";
 	close;
 }
@@ -371,7 +371,7 @@ ve_in,78,314,5	script	Magistrado#Aru	945,{
 	else if (aru_monas == 9) {
 		mes "[Al Hamad]";
 		mes "A menos que você tenha algum assunto importante, não tem permissão para entrar aqui.";
-		mes "Estamos aqui para Homemter a ordem pública, e deixar qualquer um entrar vai causar problemas.";
+		mes "Estamos aqui para manter a ordem pública, e deixar qualquer um entrar vai causar problemas.";
 		close;
 	}
 	else if (aru_monas == 10) {
@@ -558,7 +558,7 @@ ve_in,239,115,0	script	Bêbado#Aru	943,{
 		mes "Por quê?!";
 		mes "Por que não posso sair com o barco para o mar?";
 		mes "Preciso pescar para ganhar a vida!";
-		mes "Eles 'tão querendo que eu morra de fome ou algo assim?!";
+		mes "Eles tão querendo que eu morra de fome ou algo assim?!";
 		mes "Hein?!";
 		close;
 	}
@@ -581,14 +581,14 @@ ve_fild07,125,128,0	script	Barco#Aru	111,{
 		close;
 	}
 	else if (aru_monas == 16) {
-		mes "^3355FFEste deve ser o barco de que Karyn me contou.";
+		mes "^3355FFEste deve ser o barco de que Karyn estava falando.";
 		mes "Ele parece estar em bom estado.";
 		mes "Bem, o monastério deve estar a sudoeste daqui...^000000";
 		next;
 		hideoffnpc "Agente Secreto#Aru";
 		next;
 		mes "[Larjes]";
-		mes "Muito tempo sem ver,";
+		mes "Quanto tempo,";
 		mes ""+strcharinfo(0)+".";
 		next;
 		mes "["+strcharinfo(0)+"]";
@@ -619,7 +619,7 @@ ve_fild07,125,128,0	script	Barco#Aru	111,{
 		mes "Conseguiria com sorte, mas... seria sorte demais.";
 		next;
 		mes "[Larjes]";
-		mes "Vou ajudar você a navegar para chegar aonde você deve ir.";
+		mes "Vou ajudar você a conduzir o barco até o seu destino.";
 		mes "Mas se falhar, talvez tenha que navegar com este barco sem mim.";
 		mes "Então, está pronto para ir?";
 		next;
@@ -918,7 +918,7 @@ OnTouch:
 		mes "[Larjes]";
 		mes "Alguém como eu não sobrevive em um lugar como este.";
 		mes "Vou esperar por você no barco.";
-		mes "Descubra o que tiver que descobrir, e volte a salvo, "+strcharinfo(0)+".";
+		mes "Descubra o que tiver que descobrir e volte a salvo, "+strcharinfo(0)+".";
 		set aru_monas,21;
 		//changequest 17013,17014;
 		close2;
@@ -939,7 +939,7 @@ nameless_i,259,218,3	script	Larjes#Aru	97,{
 	if (aru_monas < 18) {
 		mes "[Larjes]";
 		mes "Não gosto deste lugar...";
-		mes "É melhor você tomar cuidado com essas criaturas estranhas andando por aí.";
+		mes "É melhor você tomar cuidado com estas criaturas estranhas andando por aí.";
 		close;
 	}
 	else if (aru_monas < 24) {
@@ -1043,7 +1043,7 @@ nameless_n,259,218,3	script	Larjes#Boat1	97,{
 abbey02,224,70,0	script	Livros#Mona1	111,{
 	if (checkweight(7766,1) == 0) {
 		mes "^3355FFEspere um pouco!";
-		mes "No momento, você está carregando muitas coisas com contigo.";
+		mes "No momento, você está carregando muitas coisas.";
 		mes "Volte depois de usar os Serviços Kafra para armazenar alguns dos seus itens.^000000";
 		close;
 	}
@@ -1052,7 +1052,7 @@ abbey02,224,70,0	script	Livros#Mona1	111,{
 		close;
 	}
 	else if (aru_monas == 21) {
-		mes "^3355FFHá um livro manchado com sangue entre tudos estes livros velhos, mofados.^000000";
+		mes "^3355FFHá um livro manchado com sangue entre todos estes livros velhos, mofados.^000000";
 		next;
 		if(select("Examinar o Livro:Ignorar")==1) {
 			set aru_monas,22;
@@ -1120,7 +1120,7 @@ OnTimer300000:
 abbey03,232,232,4	script	Homem Morto#King	956,{
 	if (checkweight(7766,1) == 0) {
 		mes "^3355FFEspere um pouco!";
-		mes "No momento, você está carregando muitas coisas com contigo.";
+		mes "No momento, você está carregando muitas coisas.";
 		mes "Volte depois de usar os Serviços Kafra para armazenar alguns dos seus itens.^000000";
 		close;
 	}
@@ -1164,7 +1164,7 @@ OnTouch_:
 		mes "[" + strcharinfo(0) + "]";
 		mes "Há uma parede baixa aqui contra a outra parede, se eu escalo isto, eu poderia chegar ao lugar de descanso do Tristan III...";
 		next;
-		switch(select("Fique aqui:Escale a parede")) {
+		switch(select("Ficar aqui:Escalar a parede")) {
 		case 1:
 			warp "nameless_n",158,169;
 			end;
@@ -1215,7 +1215,7 @@ sec_in02,15,15,4	script	boss::boss_aru_monas	809,{
 ra_temple,165,57,5	script	Niren#ss	915,{
 	if (checkweight(907,200) == 0) {
 		mes "^3355FFEspere um pouco!";
-		mes "No momento, você está carregando muitas coisas com contigo.";
+		mes "No momento, você está carregando muitas coisas.";
 		mes "Volte depois de usar os Serviços Kafra para armazenar alguns dos seus itens.^000000";
 		close;
 	}
@@ -1295,7 +1295,7 @@ ra_temple,165,57,5	script	Niren#ss	915,{
 			//changequest 17008,17009;
 			next;
 			mes "[Niren]";
-			mes "Vou Homemdar uma mensagem ao magistrado de Veins.";
+			mes "Vou mandar uma mensagem ao magistrado de Veins.";
 			mes "Se você falar com ele, ele dará algumas informações úteis para sua jornada.";
 			mes "Boa sorte.";
 			close2;
@@ -2080,7 +2080,7 @@ ra_temin,103,151,7	script	Seguidora#em	917,{
 ra_fild03,139,355,5	script	Ishmael#em	914,{
 	if (checkweight(907,200) == 0) {
 		mes "^3355FFEspere um pouco!";
-		mes "No momento, você está carregando muitas coisas com contigo.";
+		mes "No momento, você está carregando muitas coisas.";
 		mes "Volte depois de usar os Serviços Kafra para armazenar alguns dos seus itens.^000000";
 		close;
 	}
@@ -2133,7 +2133,7 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 				next;
 				emotion ET_CRY;
 				mes "[Ishmael]";
-				mes "Minha caneta era feita de uma joia muito rara chamada ^FF0000peridoto^000000.";
+				mes "Minha caneta era feita de uma pedra preciosa muito rara chamada ^FF0000peridoto^000000.";
 				mes "*Soluço*";
 				mes "Acho que ninguém vende peridoto em Arunafeltz.";
 				mes "Só dá para consegui-la nos países vizinhos...";
@@ -2163,7 +2163,7 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 			mes "Você pode forjar uma cópia do arquivo da Sacerdotisa Niren com esta gema?";
 			next;
 			mes "[Ishmael]";
-			mes "Ah, você encontrou uma peridoto para mim?";
+			mes "Ah, você encontrou um peridoto para mim?";
 			mes "É perfeita!";
 			next;
 			mes "[Ishmael]";
@@ -2176,9 +2176,9 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 			emotion ET_PROFUSELY_SWEAT;
 			next;
 			mes "[Ishmael]";
-			mes "Se você jogar a peridoto para cá, vou poder forjar a sua cópia agora mesmo.";
+			mes "Se você jogar o peridoto para cá, vou poder forjar a sua cópia agora mesmo.";
 			next;
-			switch(select("Não Dar para Ela:Dar para Ela")) {
+			switch(select("Não entregar isso a ela:Entregar isso a ela")) {
 			case 1:
 				mes "[Ishmael]";
 				mes "Hã? Pensei que você precisasse da minha ajuda.";
@@ -2221,7 +2221,7 @@ ra_fild03,139,355,5	script	Ishmael#em	914,{
 		else {
 			emotion ET_CRY;
 			mes "[Ishmael]";
-			mes "Ah, se eu tivesse inha preciosa caneta feita de peridoto!";
+			mes "Ah, se eu tivesse minha preciosa caneta feita de peridoto!";
 			mes "Buááá!";
 			close;
 		}
@@ -2319,7 +2319,7 @@ OnTouch:
 		next;
 		cutin "ra_gman2",0;
 		mes "[Zhed, Niren]";
-		mes "Licensa?";
+		mes "Licença?";
 		next;
 		cutin "ra_bishop",2;
 		mes "[Papisa]";
@@ -2337,7 +2337,7 @@ OnTouch:
 		next;
 		mes "[Papisa]";
 		mes "Os sacerdotes no Jardim Celeste não se incomodam em falar à vontade em minha presença.";
-		mes "Acho que eles me vêem mais como uma criança do que como uma papisa.";
+		mes "Acho que eles me veem mais como uma criança do que como uma papisa.";
 		next;
 		mes "[Papisa]";
 		mes "Já estava ciente de que o grupo moderado realizava testes cruéis, e que os linhas-duras estavam desenvolvendo poder militar.";
@@ -2514,7 +2514,7 @@ comodo,224,187,3	script	Muff	86,{
 	}
 	if (diamond_edq == 0) {
 		mes "[Muff]";
-		mes "O que diab...?";
+		mes "Que diab...?";
 		mes "Nossa, não precisava me assustar assim!";
 		mes "O que é que você quer?";
 		next;
@@ -3600,7 +3600,7 @@ OnTouch:
 moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 	if (checkweight(907,200) == 0) {
 		mes "[Ibrahim]";
-		mes "Você está carregando coisas demais contigo.";
+		mes "Você está carregando coisas demais.";
 		mes "Deixe-as no Armazém Kafra, venda-as, largue-as ou sei lá mais o quê, antes de vir falar comigo, certo?";
 		close;
 	}
@@ -3821,7 +3821,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 		if (jewel_nd == 0) {
 			if ((treasure_nd > 10) && (BaseLevel > 65)) {
 				mes "[Ibrahim]";
-				mes "Ah, soube por um amigo em Morroc que você acabou obtendo a Esmeralda do Azar.";
+				mes "Ah, soube por um amigo em Morroc que você acabou obtendo a Esmeralda dos Azarados.";
 				mes "Tenho certeza de que ela é uma das Joias Malditas.";
 				mes "Poderia me deixar dar uma olhada?";
 				next;
@@ -3838,7 +3838,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					next;
 					if (countitem(7725) > 0) {
 						mes "[Ibrahim]";
-						mes "Sim, a julgar por sua forma característica, esta é mesmo a Esmeralda do Azar.";
+						mes "Sim, a julgar por sua forma característica, esta é mesmo a Esmeralda dos Azarados.";
 						mes "Assim como eu, agora você possui uma das Quatro Joias Malditas.";
 						next;
 					}
@@ -3850,7 +3850,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					}
 				}
 				mes "[Ibrahim]";
-				mes "Me diga o que você está pensando em fazer com a Esmeralda do Azar?";
+				mes "Me diga o que você está pensando em fazer com a Esmeralda dos Azarados?";
 				next;
 				switch(select("Vou vendê-la.:Vou estudá-la.")) {
 				case 1:
@@ -3861,7 +3861,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 					next;
 					mes "[Ibrahim]";
 					mes "Você já conheceu alguns joalheiros de renome enquanto procurava pelo diamante.";
-					mes "Por que não pergunta a eles se querem comprar sua Esmeralda do Azar?";
+					mes "Por que não pergunta a eles se querem comprar sua Esmeralda dos Azarados?";
 					set jewel_nd,1;
 					close;
 				case 2:
@@ -3878,7 +3878,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 			}
 			else if ((treasure_nd > 10) && (BaseLevel < 66)) {
 				mes "[Ibrahim]";
-				mes "Soube que você conseguiu a Esmeralda do Azar por um amigo em Morroc.";
+				mes "Soube que você conseguiu a Esmeralda dos Azarados por um amigo em Morroc.";
 				mes "Devo avisar que talvez você não seja forte o bastante para lidar com o poder dela.";
 				mes "Tenha cuidado.";
 				next;
@@ -3905,7 +3905,7 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 		else if (jewel_nd == 2) {
 			mes "[Ibrahim]";
 			mes "Ah, você voltou!";
-			mes "Então, você conseguiu vender a Esmeralda do Azar?";
+			mes "Então, você conseguiu vender a Esmeralda dos Azarados?";
 			next;
 			select("Todos ficaram com medo!");
 			mes "[Ibrahim]";
@@ -3932,13 +3932,13 @@ moc_ruins,152,147,5	script	Ibrahim	732,3,3,{
 		}
 		else if ((jewel_nd == 9) || (jewel_nd == 10)) {
 			mes "[Ibrahim]";
-			mes "Por que não visita meu amigo Professor em Comodo, e pede a ele que examine sua Esmeralda do Azar?";
+			mes "Por que não visita meu amigo Professor em Comodo, e pede a ele que examine sua Esmeralda dos Azarados?";
 			mes "Quanto mais você descobrir sobre a suposta maldição, melhor. Boa sorte!";
 			close;
 		}
 		else {
 			mes "[Ibrahim]";
-			mes "Oh, então, o que você descobriu sobre a Esmeralda do Azar até agora? Hmmm.";
+			mes "Oh, então, o que você descobriu sobre a Esmeralda dos Azarados até agora? Hmmm.";
 			mes "Sim, muito intrigante.";
 			mes "Boa sorte com sua pesquisa...";
 			close;
@@ -4353,7 +4353,7 @@ geffen,128,153,3	script	Leblo	883,{
 payon_in03,167,149,3	script	Wola	75,2,2,{
 	if (checkweight(907,1) == 0) {
 		mes "^3355FFEspere um pouco!";
-		mes "No momento, você está carregando muitas coisas com contigo.";
+		mes "No momento, você está carregando muitas coisas.";
 		mes "Volte depois de usar os Serviços Kafra para armazenar alguns dos seus itens.^000000";
 		close;
 	}
@@ -5119,7 +5119,7 @@ prontera,148,326,3	script	Chefe da Polícia#edq	734,{
 prt_in,168,18,1	script	Valdes	65,2,2,{
 	if (checkweight(907,100) == 0) {
 		mes "^3355FFEspere um pouco!";
-		mes "No momento, você está carregando muitas coisas com contigo.";
+		mes "No momento, você está carregando muitas coisas.";
 		mes "Volte depois de usar os Serviços Kafra para armazenar alguns dos seus itens.^000000";
 		close;
 	}
@@ -5456,7 +5456,7 @@ in_rogue,359,116,3	script	Marybell	747,{
 		next;
 		mes "[Marybell]";
 		mes "Não soube de mais nada, mas você poderia me contar se achar alguma pista?";
-		mes "A Guilda dos Arruaceiros quer muito pôr as mãos nessa gangue!";
+		mes "A Guilda dos Arruaceiros quer muito pôr as mãos nesta gangue!";
 		close;
 	}
 	if (zdan_edq == 11) {
@@ -7334,7 +7334,7 @@ morocc,102,298,3	script	Homem#zgang	98,{
 			mes "A partir daí, você estará por sua conta.";
 			next;
 			mes "[Homem]";
-			mes "Não sei exatamente onde o tesouro está enterrado, mas você deve conseguir encontrá-lo nessa área geral.";
+			mes "Não sei exatamente onde o tesouro está enterrado, mas você deve conseguir encontrá-lo nesta área geral.";
 			mes "Boa sorte.";
 			close;
 		}
@@ -7736,10 +7736,10 @@ comodo,139,184,3	script	Sábio#zgang	742,{
 		mes "[Sábio]";
 		mes "Vejamos... Ah, você veio saber sobre o Diamante da Ruína?";
 		next;
-		select("Não, sobre a Esmeralda do Azar.");
+		select("Não, sobre a Esmeralda dos Azarados.");
 		mes "[Sábio]";
-		mes "Ah, a Esmeralda do Azar?";
-		mes "Sim, essa foi a mais recente Joia Maldita a ser descoberta.";
+		mes "Ah, a Esmeralda dos Azarados?";
+		mes "Sim, esta foi a mais recente Joia Maldita a ser descoberta.";
 		mes "Vamos, ver, onde coloquei minhas anotações?";
 		next;
 		mes "[Sábio]";
@@ -7765,7 +7765,7 @@ comodo,139,184,3	script	Sábio#zgang	742,{
 		mes "[Sábio]";
 		mes "Depois de vendida, a joia se tornou propriedade de um homem rico.";
 		mes "Mas ele perdeu sua fortuna e ficou totalmente arruinado depois de obtê-la.";
-		mes "Daí vem seu nome, a \"Esmeralda do Azar\".";
+		mes "Daí vem seu nome, a \"Esmeralda dos Azarados\".";
 		next;
 		mes "[Sábio]";
 		mes "Então, a esmeralda caiu nas mãos de uma dama da nobreza que morreu misteriosamente ainda jovem.";
@@ -7777,7 +7777,7 @@ comodo,139,184,3	script	Sábio#zgang	742,{
 		mes "Hum, e sua joia se encaixa perfeitamente nas descrições, então, hum...";
 		next;
 		mes "[Sábio]";
-		mes "Você é o novo dono da Esmeralda do Azar.";
+		mes "Você é o novo dono da Esmeralda dos Azarados.";
 		mes "Ninguém vai comprá-la de você enquanto estiver amaldiçoada.";
 		mes "Pelo bem de sua vida, você deve romper a maldição.";
 		next;
@@ -7789,13 +7789,13 @@ comodo,139,184,3	script	Sábio#zgang	742,{
 		next;
 		mes "[Sábio]";
 		mes "A ideia é que você fale com os espíritos mortos por essa esmeralda, através do xamã.";
-		mes "E sei que ele vai ficar muito empolgado em ver que você está com a Esmeralda do Azar.";
+		mes "E sei que ele vai ficar muito empolgado em ver que você está com a Esmeralda dos Azarados.";
 		set jewel_nd,12;
 		close;
 	}
 	else if (jewel_nd == 12) {
 		mes "[Sábio]";
-		mes "Por favor, encontre o xamã em Alberta, e pergunte se ele pode ajudar a quebrar a maldição da Esmeralda do Azar.";
+		mes "Por favor, encontre o xamã em Alberta, e pergunte se ele pode ajudar a quebrar a maldição da Esmeralda dos Azarados.";
 		close;
 	}
 	else if (jewel_nd > 28) {
@@ -7855,7 +7855,7 @@ alberta_in,70,109,5	script	Xamã	788,{
 		if (countitem(7725) > 0) {
 			emotion ET_THINK;
 			mes "[Xamã]";
-			mes "Então esta é a Esmeralda do Azar?";
+			mes "Então esta é a Esmeralda dos Azarados?";
 			mes "Sim, definitivamente está amaldiçoada.";
 			mes "Se você não romper a maldição logo, ela vai consumir sua alma.";
 			mes "Isso não é nada bom.";
@@ -8042,7 +8042,7 @@ alberta_in,70,109,5	script	Xamã	788,{
 	else if (jewel_nd == 19) {
 		mes "[Xamã]";
 		mes "Ah, você voltou.";
-		mes "Então, descobriu algo novo sobre a Esmeralda do Azar?";
+		mes "Então, descobriu algo novo sobre a Esmeralda dos Azarados?";
 		next;
 		select("O arqueólogo disse...");
 		mes "["+ strcharinfo(0) +"]";
@@ -8146,7 +8146,7 @@ yuno_in04,38,48,3	script	Arqueólogo	55,{
 	else if (jewel_nd == 18) {
 		mes "[Arqueólogo]";
 		mes "Ah, ouvi falar de você pelo avaliador de antiguidades em Comodo...";
-		mes "Foi você que encontrou a Esmeralda do Azar, certo?";
+		mes "Foi você que encontrou a Esmeralda dos Azarados, certo?";
 		mes "Será que se importa se eu der uma olhada?";
 		next;
 		if (countitem(7725) > 0) {
@@ -8161,7 +8161,7 @@ yuno_in04,38,48,3	script	Arqueólogo	55,{
 				emotion ET_SMILE;
 				mes "[Arqueólogo]";
 				mes "A maldição da joia?";
-				mes "Ha! Você acredita nessa velha superstição?";
+				mes "Ha! Você acredita nesta velha superstição?";
 				mes "Oh, então você quer quebrar a maldição da joia?!";
 				mes "Você não morreu ainda, morreu?";
 				next;
@@ -8478,7 +8478,7 @@ prontera,140,304,5	script	Velho Soldado	901,{
 	}
 	else if (jewel_nd == 31) {
 		mes "[Soldado Aposentado]";
-		mes "Bem, você descobriu tudo o que havia para saber sobre a Esmeralda do Azar.";
+		mes "Bem, você descobriu tudo o que havia para saber sobre a Esmeralda dos Azarados.";
 		mes "É hora de você esquecer a maldição ou o que quer que seja, e encontrar novas aventuras.";
 		mes "Ah, a juventude...";
 		close;
@@ -9417,7 +9417,7 @@ payon,209,44,5	script	Agente da Guilda#nd2	828,{
 		mes "Estou muito ocupado, então seja breve.";
 		next;
 		mes "[Agente]";
-		mes "Nada, heim?";
+		mes "Nada, hein?";
 		mes "Acho que você deve falar com um agente Arruaceiro em uma das outras cidades.";
 		emotion ET_ANGER;
 		close;
@@ -9807,7 +9807,7 @@ comodo,233,199,5	script	Agente da Guilda#nd3	810,{
 		}
 		else {
 			mes "[Agente]";
-			mes "Quem é você, eim?";
+			mes "Quem é você, hein?";
 			close;
 		}
 	}
