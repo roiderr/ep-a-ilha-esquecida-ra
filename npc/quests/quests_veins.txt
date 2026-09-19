@@ -70,7 +70,7 @@
 		case 1:
 			mes "[Zabaroo]";
 			mes "Seu irritante!";
-			mes "Eu nã pedi para você";
+			mes "Eu não pedi para você";
 			mes "seus conselhos!! Não";
 			mes "irrite um velho!";
 			close;
@@ -95,14 +95,14 @@
 			mes "[Zabaroo]";
 			mes "Eu aprecio sua gentileza,";
 			mes "forasteiro, mas não. Eu tenho";
-			mes "de fazer isto por mim mesmo.";
+			mes "que fazer isso por mim mesmo.";
 			mes "Um homem deve ter o seu orgulho...";
 			next;
 			mes "^333333*Estalo*^000000";
 			next;
 			mes "[Zabaroo]";
 			mes "Argh! Minhas costas...!";
-			mes "Isto foi totalmente";
+			mes "Isso foi totalmente";
 			mes "imprevisível!";
 			mes "Por favor! Por favor,";
 			mes "pelo amor de Freya,";
@@ -131,7 +131,7 @@
 			mes "ARGH! Minhas costas! Como doem!";
 			next;
 			mes "[Zabaroo]";
-			mes "Isto é tão doloroso! Mas é";
+			mes "Isso é tão doloroso! Mas é";
 			mes "doloroso especialmente assim";
 			mes "quando eu estou prestes a terminar";
 			mes "frases em que eu tenho que";
@@ -155,10 +155,10 @@
 						mes "bonitas e fáceis de processar.";
 						mes "Eles são um tipo de especialidade";
 						mes "desta cidade. Eu sou pago para";
-						mes "colher a mão estas pedras.";
+						mes "coletar estas pedras úteis.";
 						next;
 						mes "[Zabaroo]";
-						mes "Nós podemos vende-las aos turistas,";
+						mes "Nós podemos vendê-las aos turistas,";
 						mes "e temos até uma fábrica,";
 						mes "que usa estas pedras.";
 						mes "Ainda assim, não é deste modo";
@@ -166,22 +166,21 @@
 						mes "ricos com estas pedras.";
 						next;
 						mes "[Zabaroo]";
-						mes "Todos nós estamos tornando esta";
-						mes "cidade um lugar ruim para viver ...";
+						mes "Todos nós mal conseguimos ganhar a vida ...";
 						next;
 						break;
 					case 2:
 						mes "[Zabaroo]";
 						mes "Absar? Ele está";
 						mes "na loja de ferramentas. Você";
-						mes "não pode perde-lo... Dê";
+						mes "não pode perdê-lo... Dê";
 						mes "uma olhada pelo homem de";
 						mes "olhos de louco!";
 						next;
 						break;
 					case 3:
 						mes "[Zabaroo]";
-						mes "Obrigado por sua ajuda.";
+						mes "Obrigado pela sua ajuda.";
 						mes "Se você não encontrar Absar";
 						mes "na loja de ferramentas, em seguida,";
 						mes "você pode dar uma olhada";
@@ -194,7 +193,7 @@
 	}
 	else if (veins_stone == 1) {
 		mes "[Zabaroo]";
-		mes "Obrigado por sua ajuda.";
+		mes "Obrigado pela sua ajuda.";
 		mes "Se você não encontrar Absar";
 		mes "na loja de ferramentas, em seguida,";
 		mes "você pode ir";
@@ -207,7 +206,7 @@
 		mes "Mesmo assim, dê o melhor de si";
 		mes "para conseguir o que ele quer.";
 		mes "Ele não me ajudará novamente!";
-		mes "Fora isso, ele não";
+		mes "Fora isso, ele não é";
 		mes "um cara tão ruim assim...";
 		close;
 	}
@@ -219,24 +218,24 @@
 		next;
 		select("Sim, aqui está...");
 		mes "[Zabaroo]";
-		mes "Então era disto que ele";
+		mes "Então era disso que ele";
 		mes "estava falando?";
-		mes "Como ele fez isto... Ah!";
-		mes "Vamos lá! se eu puxar";
+		mes "Como ele fez isso... Ah!";
+		mes "Vamos lá! Se eu puxar";
 		mes "a alavanca, a ponta";
 		mes "do graveto irá pegar tudo!";
 		next;
 		mes "[Zabaroo]";
-		mes "Isto é ótimo! Eu não";
+		mes "Isso é ótimo! Eu não";
 		mes "terei de dobrar os joelhos para";
 		mes "pegar pedras nunca mais! Heh,";
 		mes "ele deve estar orgulhoso";
 		mes "desta útil invenção~";
-		mes "Eu posso imaginar ele utilizando isto.";
+		mes "Eu posso imaginar ele utilizando isso.";
 		next;
 		mes "[Zabaroo]";
 		mes "Um, ele não lhe disse nada";
-		mes "depois que ele o deu isto?";
+		mes "depois que ele o deu isso?";
 		mes "Eu estou um pouco curioso.";
 		next;
 		select("Esta mensagem...");
@@ -245,7 +244,7 @@
 		mes "iria esquecer tudo sobre";
 		mes "isso. Pois bem, é um alívio";
 		mes "em saber que agora. Isto é";
-		mes "realmente muito bonito da parte dele";
+		mes "realmente muito bonito da parte dele.";
 		next;
 		mes "[Zabaroo]";
 		mes "Eu odeio ter que te pedir...";
@@ -253,20 +252,20 @@
 		mes "em me ajudar mais";
 		mes "uma vez?";
 		next;
-		select("Huh? O que você quer?");
+		select("Hã? O que você quer?");
 		mes "[Zabaroo]";
 		mes "Não se preocupe, não é";
 		mes "tão difícil. Será que você poderia";
 		mes "entregar as pedras que eu peguei";
 		mes "para a fábrica na cidade? É";
 		mes "perto do aeroporto ou aeronave ou";
-		mes "qualquer coisa assim.Não vai demorar muito.";
+		mes "qualquer coisa assim. Não vai demorar muito.";
 		set veins_stone,5;
 		close;
 	}
 	else if (veins_stone > 4 && veins_stone < 7) {
 		mes "[Zabaroo]";
-		mes "Obrigado novamente por sua ajuda!";
+		mes "Obrigado novamente pela sua ajuda!";
 		mes "O que fez Absar falar sobre esta";
 		mes "coisa de novo? Um Mecanismo...";
 		mes "Extensível... Que droga...";
@@ -288,7 +287,7 @@
 		mes "estas enquanto eu procurava pedras";
 		mes "Foi-me dito que aventureiros";
 		mes "acham elas úteis. De qualquer forma,";
-		mes "Espero que você goste destas pedras...";
+		mes "espero que você goste destas pedras...";
 		set veins_stone,8;
 		getexp (checkre(3))?30000:300000,0;
 		getitem 985,3; //Elunium
@@ -309,7 +308,7 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 	if (veins_stone == 0) {
 		mes "[Absar]";
 		mes "Bwahahaha!";
-		mes "Depois... assim que isto estiver completo, Eu...";
+		mes "Depois... assim que isso estiver completo, Eu vou...";
 		mes "Mwahahahahahahahah!";
 		close;
 	}
@@ -320,7 +319,7 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		next;
 		if (select("Com licença...:........") == 1) {
 			mes "[Absar]";
-			mes "O que?! Quem ousa";
+			mes "O quê?! Quem ousa";
 			mes "me incomodar?! N-não!";
 			mes "Olhe! Olhe o que você fez!";
 			mes "Você me fez parafusar errado!";
@@ -346,7 +345,7 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		mes "Q-Queeeeeee Meeeeee---";
 		next;
 		mes "[Absar]";
-		mes "Huh? Quem é você...";
+		mes "Hã? Quem é você...";
 		mes "O que você quer?";
 		next;
 		select("Oh, E-eu...");
@@ -356,11 +355,11 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		mes "nome. Depressa, você não pode";
 		mes "ver que estou ocupado?";
 		next;
-		if (select("Eu... sinto muito.:Eu estou aqui para o Sr. Zabaroo...") == 1) {
+		if (select("Eu... sinto muito.:O Sr. Zabaroo me mandou aqui...") == 1) {
 			mes "[Absar]";
 			mes "Somente se você não";
 			mes "interromper-me! Então";
-			mes "Eu já tenho ...";
+			mes "eu já tenho ...";
 			mes "Ugh! De volta pro trabalho!";
 			close;
 		}
@@ -388,7 +387,7 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		mes "quais materiais eu precisarei";
 		mes "ainda. Heh heh! Agora, isto";
 		mes "é o que eu preciso que você me traga.";
-		mes "Escute bem, ok? e rápido.";
+		mes "Escute bem, ok? E seja rápido.";
 		next;
 		mes "[Absar]";
 		mes "^4D4DFF5 Raizes de Planta Carnívora^000000,";
@@ -427,7 +426,7 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		mes "^4D4DFF5 Raízes de Planta Carnívora^000000";
 		mes "^4D4DFF2 Corações Glaciais^000000, e";
 		mes "^4D4DFF5 Aços^000000! Você pensa";
-		mes "que estou fazendo isto por pura diversão?!";
+		mes "que estou fazendo isso por pura diversão?!";
 		close;
 	}
 	else if (veins_stone == 3) {
@@ -440,11 +439,11 @@ ve_in,169,310,6	script	Idoso Estranho#ve	121,{
 		mes "Extensível de Manipulação!";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "O que... Tát...?";
+		mes "Tát... O quê...?";
 		next;
 		mes "[Absar]";
 		mes "...............................";
-		mes "Você pode usar isso para pegar";
+		mes "Você pode usar isto para pegar";
 		mes "coisas de uma certa distância.";
 		next;
 		mes "[Absar]";
@@ -470,8 +469,8 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 	if (veins_stone && veins_stone < 5) {
 		mes "[Mirhen]";
 		mes "Ei, somente funcionários depois deste ponto!";
-		mes "Droga,nós não temos ideia do que isto significa?";
-		mes "Nós deveriamos saber...";
+		mes "Droga, nós não temos ideia do que isso significa?";
+		mes "Nós deveríamos saber...";
 		mes "De qualquer forma, saia daqui.";
 		close2;
 		warp "veins",269,221;
@@ -482,7 +481,7 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 		mes "Ei, somente funcionários";
 		mes "depois deste ponto!";
 		mes "Droga, nós não temos";
-		mes "ideia do que isto significa?";
+		mes "ideia do que isso significa?";
 		mes "Nós deveríamos saber...";
 		mes "De qualquer forma, saia daqui.";
 		next;
@@ -494,7 +493,7 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 			close;
 		}
 		mes "[Mirhen]";
-		mes "Huh? O que é este crachá?";
+		mes "Hã? O que é este crachá?";
 		mes "Zabaroo? Espere um seg...";
 		mes "Você definitivamente não é ele!";
 		next;
@@ -509,7 +508,7 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 		mes "[Mirhen]";
 		mes "Leve estas pedras para";
 		mes "Bahed por aqui.";
-		mes "Ele irá cuidar disto.";
+		mes "Ele irá cuidar disso.";
 		set veins_stone,6;
 		close;
 	}
@@ -522,7 +521,7 @@ ve_in02,37,28,4	script	Gerente da Fábrica	898,{
 	next;
 	mes "[Mirhen]";
 	mes "Eu queria poder retornar para a";
-	mes "Sede da Corp.Rekenber...";
+	mes "Sede da Corp. Rekenber...";
 	mes "Eu odeio ficar aqui";
 	mes "pegando pedras";
 	mes "no meio do nada.";
@@ -551,7 +550,7 @@ ve_in02,54,49,2	script	Empregado#ve1	943,{
 		select("Ele está muito machucado.");
 		mes "[Bahed]";
 		mes "Ah não... Eu sinto muito";
-		mes "em ouvir isto. Espero que ele se";
+		mes "em ouvir isso. Espero que ele se";
 		mes "sinta melhor em breve. Mesmo assim,";
 		mes "por que você não traz as";
 		mes "pedras até aqui?";
@@ -567,7 +566,7 @@ ve_in02,54,49,2	script	Empregado#ve1	943,{
 		mes "Hm? O que você quer";
 		mes "saber? Eu não posso dizer que";
 		mes "eu sei de tudo, mas";
-		mes "Eu vou tentar dar o meu melhor para lhe dizer";
+		mes "eu vou tentar dar o meu melhor para lhe dizer";
 		mes "o que eu sei. Eu acho que,";
 		mes "você ajudou Zabaroo, assim...";
 		next;
@@ -598,8 +597,8 @@ ve_in02,54,49,2	script	Empregado#ve1	943,{
 		mes "[Bahed]";
 		mes "Eu não tenho certeza mas muitas pessoas";
 		mes "sabem quem possui esta fábrica.";
-		mes "Talvez seja a Corp.Rekenber? Sim,";
-		mes "Vi um de seus aviões";
+		mes "Talvez seja a Corp. Rekenber? Sim,";
+		mes "eu vi um de seus aviões";
 		mes "corporativos vindo para a cidade, por isso,";
 		mes "Eu penso que podem ser eles.";
 		next;
@@ -616,7 +615,7 @@ ve_in02,54,49,2	script	Empregado#ve1	943,{
 		mes "Tudo que eu consegui saber";
 		mes "foi que eles estão usando estas pedras";
 		mes "para fazer uma máquina relacionada";
-		mes "com estas pedras. Isso é";
+		mes "àqueles corações. Isso é";
 		mes "tudo que eu sei. Seja como for,";
 		mes "por favor deixe estas pedras ali~";
 		set veins_stone,7;
@@ -633,7 +632,7 @@ ve_in02,54,49,2	script	Empregado#ve1	943,{
 ve_in02,68,39,7	script	Empregado#ve2	943,{
 	mes "[Funcionário]";
 	mes "O que há com estas pedras?";
-	mes "Elas são pedras tão ordinárias, não são?";
+	mes "Elas são pedras comuns, não são?";
 	mes "Eles não me pagam o suficiente aqui...";
 	close;
 }
@@ -712,8 +711,8 @@ prontera,202,122,0	script	Garota#sch	703,{
 		mes "encontrou Lasda Midar?";
 		mes "Por que será que não pude encontrá-lo?";
 		mes "De qualquer forma, muito obrigada";
-		mes "por sua ajuda. Pensei que iria";
-		mes "falhar em minha entrega!";
+		mes "pela sua ajuda. Pensei que eu";
+		mes "iria falhar na minha entrega!";
 		next;
 		select("Ele me pediu para lhe entregar isto.");
 		mes "[Rooney]";
@@ -786,8 +785,8 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 			mes "...............................";
 			mes "Garota, Eu irei rir de todas as";
 			mes "suas piadas, e concordar com sua";
-			mes "política~ Você é quente! Mas";
-			mes "baby, você é quieta como um tijolo~";
+			mes "política~ Você é gata! Mas";
+			mes "querida, você é burra como uma porta~";
 			close;
 		}
 		mes "[Lasda]";
@@ -818,8 +817,8 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		set Zeny, Zeny+100;
 		next;
 		mes "[Lasda]";
-		mes "Se você tiver tempo.";
-		mes "Eu gostaria que você viesse";
+		mes "Se você tiver tempo,";
+		mes "eu gostaria que você viesse";
 		mes "falar comigo novamente.";
 		mes "Até mais~";
 		close;
@@ -836,15 +835,15 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "carta para mim. Escute, você";
 		mes "poderia me escutar";
 		mes "um pouco? Eu queria pedir";
-		mes "por sua ajuda com uma coisa.";
+		mes "a sua ajuda com uma coisa.";
 		next;
 		if (select("Certo.:Não.") == 1) {
 			mes "[Lasda]";
 			mes "Sabe, a carta que";
 			mes "você me trouxe era do meu velho";
 			mes "melhor amigo. Eu não tenho notícias";
-			mes "dele por um bom tempo, por isto";
-			mes "Fiquei bastante preocupado...";
+			mes "dele por um bom tempo, por isso";
+			mes "fiquei bastante preocupado...";
 			next;
 			mes "[Lasda]";
 			mes "Vitre disse em sua carta";
@@ -907,9 +906,9 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 	}
 	else if (que_sch == 9) {
 		mes "[Lasda]";
-		mes "Depressa vá entregar";
+		mes "Depressa, vá entregar";
 		mes "minha carta para Krieg.";
-		mes "Pergunto-me o que aconteceu...";
+		mes "Eu me pergunto o que aconteceu...";
 		mes "Deve haver algum tipo";
 		mes "de mal-entendido.";
 		close;
@@ -935,7 +934,7 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "nada para ajudá-lo,";
 		mes "Por favor faça o que você";
 		mes "puder para tomar conta dele";
-		mes "para mim. Eu realmente aprecio isto.";
+		mes "para mim. Eu realmente aprecio isso.";
 		close;
 	}
 	else if (que_sch == 25) {
@@ -958,9 +957,9 @@ prt_church,89,108,6	script	Bardo#sch	741,{
 		mes "É por isso que deixamos";
 		mes "ele escapar: nós planejamos";
 		mes "segui-lo para que conseguíssemos";
-		mes "a prova de que precisamos. Nosso";
-		mes "aguilhão foi mesmo capaz de voltar-se";
-		mes "contra todos os compatriotas!";
+		mes "a prova de que precisamos. Nossa";
+		mes "operação secreta conseguiu até";
+		mes "mesmo capturar todos os seus comparsas!";
 		next;
 		mes "[Lasda]";
 		mes "Peço desculpas por manter";
@@ -1031,7 +1030,7 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 			mes "Obrigado pelas Caudas de";
 			mes "Macaco Fritas~ Tudo certo,";
 			mes "vá falar com o ^FF0000Sir Krieg^000000 no";
-			mes "castelo de Morroc. Consiga sua";
+			mes "Castelo de Morroc. Consiga sua";
 			mes "aprovação, e vou deixá-lo entrar.";
 			delitem 12066,1; //Luk_Dish01
 			set que_sch,7;
@@ -1040,7 +1039,7 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 		mes "[Jesse]";
 		mes "Traga-me um prato de";
 		mes "^FF0000Caudas de Macaco Fritas^000000.";
-		mes "Faça isto, ou então não";
+		mes "Faça isso, ou então não";
 		mes "te ajudarei. Quer dizer, eu sei";
 		mes "que é por um bom motivo, mas eu";
 		mes "estou arriscando meu trabalho aqui...";
@@ -1092,9 +1091,9 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 		mes "[Jesse]";
 		mes "Argh, estou em apuros.";
 		mes "O prisioneiro escapou.";
-		mes "Como eu pude deixar isto...";
+		mes "Como eu pude deixar isso...";
 		mes "acontecer?! Droga, Eu preciso";
-		mes "reportar isto para o Sr. Krieg.";
+		mes "reportar isso para o Sr. Krieg.";
 		close;
 	}
 	mes "[Jesse]";
@@ -1102,11 +1101,11 @@ moc_castle,137,88,2	script	Vigia da Prisão#sch	707,{
 	mes "realmente sabiam que";
 	mes "o prisioneiro poderia escapar?";
 	mes "Bem, eu pensei que eu iria";
-	mes "receber um sermão por isto tudo.";
+	mes "receber um sermão por tudo isso.";
 	close;
 }
 
-moc_castle,173,122,0	script	Funcionário de Segurança	748,{
+moc_castle,173,122,0	script	Oficial de Segurança	748,{
 	if (que_sch < 7) {
 		mes "[Krieg]";
 		mes "Sou responsável pela segurança";
@@ -1125,7 +1124,7 @@ moc_castle,173,122,0	script	Funcionário de Segurança	748,{
 		select("Eu gostaria de ver um prisioneiro, o Sr. Vitre.");
 		mes "[Krieg]";
 		mes "Vitre? Eu sinto muito, mas";
-		mes "eu não posso aprovar isto.";
+		mes "eu não posso aprovar isso.";
 		mes "Eu permito visitantes para prisioneiros";
 		mes "normais, mas não para gente que é";
 		mes "suspeita de espionagem.";
@@ -1137,7 +1136,7 @@ moc_castle,173,122,0	script	Funcionário de Segurança	748,{
 		mes "confiança em você, então eu";
 		mes "reconsideraria deixando você se";
 		mes "encontrar com Vitre. Caso contrário,";
-		mes "Eu não posso fazer isto.";
+		mes "Eu não posso fazer isso.";
 		set que_sch,8;
 		close;
 	}
@@ -1222,7 +1221,7 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 		case 2:
 			mes "[Vitre]";
 			mes "Ah, ótimo. Lasda finalmente";
-			mes "recebeu minha carta, eh? Eu não";
+			mes "recebeu minha carta, né? Eu não";
 			mes "sei o que diabos está";
 			mes "havendo. Tudo que eu me lembro";
 			mes "é que estes homens estranhos";
@@ -1240,8 +1239,8 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "desde que eu estou aqui, por isso eu tenho";
 			mes "tenho que sair daqui o mais depressa possível.";
 			mes "Felizmente, eu sei como.";
-			mes "Eu posso abrir estas portas.";
-			mes "Eu tenho de ter 2 coisas.";
+			mes "Eu posso abrir estas portas se";
+			mes "eu tiver 2 coisas.";
 			next;
 			mes "[Vitre]";
 			mes "Eu só preciso de um ^FF0000Megafone^000000";
@@ -1298,13 +1297,13 @@ ra_in01,50,387,4	script	Bardo Irritado#sch	51,{
 			mes "com um ruído muito alto.^000000";
 			next;
 			mes "[Vitre]";
-			mes "Hah! Isto foi um pouco";
+			mes "Hah! Isso foi um pouco";
 			mes "mais difícil do que eu esperava,";
 			mes "mas parece que estou livre~";
 			mes "Certo, vamos nos mover.";
 			next;
 			mes "[Jesse]";
-			mes "O que?! O que é este barulho?!";
+			mes "O quê?! O que é este barulho?!";
 			next;
 			enablenpc "Jesse#sch";
 			mes "[Jesse]";
@@ -1407,8 +1406,8 @@ ra_in01,58,389,0	script	Prisioneiro Desolado#sch	929,{
 		next;
 		select("Onde posso encontrar um Megafone??");
 		mes "[Ruan]";
-		mes "Huh? Por que você";
-		mes "quer saber isto?";
+		mes "Hã? Por que você";
+		mes "quer saber isso?";
 		next;
 		select("Eu realmente preciso de um!!");
 		mes "[Ruan]";
@@ -1453,7 +1452,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 		mes "pessoal! Temos apenas";
 		mes "poucos dias antes que ocorra";
 		mes "a grande performance! Ei...";
-		mes "Você! Você não pode fazer isto certo?";
+		mes "Você! Você não pode fazer isso certo?";
 		mes "Balance seu quadril mais rápido!";
 		close;
 	}
@@ -1470,7 +1469,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 			mes "[Hianna]";
 			mes "Se você realmente quer";
 			mes "assistir nossa dança, venha para";
-			mes "o mes e compre um ingresso.";
+			mes "o show e compre um ingresso.";
 			mes "Assistir de graça não é";
 			mes "exatamente apoiar as artes.";
 			close;
@@ -1491,7 +1490,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 			close;
 		}
 		mes "[Hianna]";
-		mes "Qualquer coisa, ein?";
+		mes "Qualquer coisa, hein?";
 		mes "Bem, você acaba de dizer";
 		mes "as palavras mágicas. Escute";
 		mes "com atenção o que eu quero";
@@ -1500,7 +1499,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 		if (select("Escutar:Reconsiderar") == 1) {
 			mes "[Hianna]";
 			mes "Primeiramente, eu quero um pouco";
-			mes "de dinheiro. Considere isto uma";
+			mes "de dinheiro. Considere isso uma";
 			mes "taxa de aluguel. 500.000 zenys deve ser";
 			mes "o suficiente. Então,";
 			mes "Quero que você faça-me um favor.";
@@ -1514,7 +1513,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 			mes "estadia por lá.";
 			next;
 			mes "[Hianna]";
-			mes "Se você agir como um Guarda-Costas";
+			mes "Se você agir como um guarda-costas";
 			mes "para minhas Odaliscas no caminho";
 			mes "para a República de Schwaltzvalt,";
 			mes "Eu lhe darei meu Megafone";
@@ -1564,7 +1563,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 		if (select("Sim:Não") == 1) {
 			if (Zeny < 500000) {
 				mes "[Hianna]";
-				mes "O que é isto? Hmm..";
+				mes "O que é isso? Hmm..";
 				mes "Acho que você cometeu um erro.";
 				mes "Esse dinheiro não é suficiente.";
 				mes "Lembre-se, 500.000 zenys~";
@@ -1572,9 +1571,9 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 			}
 			mes "[Hianna]";
 			mes "Perfeito. Bem, aqui está";
-			mes "seu Megafone. Obrigado";
-			mes "por tudo, e eu te vejo";
-			mes "por aí, aventureiro~";
+			mes "seu Megafone. Obrigada";
+			mes "por tudo, e a gente se vê";
+			mes "por aí, aventureir"+(Sex==SEX_MALE?"o":"a")+"~";
 			set Zeny, Zeny-500000;
 			set que_sch,18;
 			getitem 7040,1; //Megaphone
@@ -1633,7 +1632,7 @@ job_duncer,93,106,6	script	Instrutora de Dança#sch	892,{
 		}
 		mes "[Hianna]";
 		mes "Certo~";
-		mes "Tome cuidade, e";
+		mes "Tome cuidado, e";
 		mes "viaje com segurança~";
 		close;
 	}
@@ -1657,7 +1656,7 @@ job_duncer,85,49,0	script	Jovem Odalisca#sch1	724,{
 	else if (que_sch == 12) {
 		mes "[Odalisca]";
 		mes "Ah, você deve ser o";
-		mes "Guarda-Costas. Então você";
+		mes "guarda-costas. Então você";
 		mes "está pronto para ir agora?";
 		next;
 		if (select("Sim:Não") == 1) {
@@ -1695,7 +1694,7 @@ job_duncer,83,52,6	script	Odalisca Animada#sch1	724,{
 	else if (que_sch == 12) {
 		mes "[Odalisca]";
 		mes "Ah, você deve ser o";
-		mes "Guarda-Costas. Então você";
+		mes "guarda-costas. Então você";
 		mes "está pronto para ir agora?";
 		next;
 		if (select("Sim:Não") == 1) {
@@ -1732,7 +1731,7 @@ job_duncer,87,50,2	script	Odalisca Adulta#s1	724,{
 	else if (que_sch == 12) {
 		mes "[Odalisca]";
 		mes "Ah, você deve ser o";
-		mes "Guarda-Costas. Então você";
+		mes "guarda-costas. Então você";
 		mes "está pronto para ir agora?";
 		next;
 		if (select("Sim:Não") == 1) {
@@ -1868,7 +1867,7 @@ ein_in01,174,266,0	script	Jovem Odalisca#sch3	724,{
 		close;
 	}
 	mes "[Odalisca]";
-	mes "Sem dança,";
+	mes "Sem a dança,";
 	mes "minha vida não tem";
 	mes "sentido algum.";
 	close;
@@ -1921,9 +1920,9 @@ ein_in01,170,266,0	script	Odalisca Adulta#s3	724,{
 	}
 	mes "[Odalisca]";
 	mes "Dançar é tão divertido, mas";
-	mes "as vezes é difícil de";
-	mes "se manter com a platéia";
-	mes "sabia?";
+	mes "as vezes é difícil";
+	mes "acompanhar as expectativas";
+	mes "da plateia, sabe?";
 	close;
 }
 
@@ -1991,7 +1990,7 @@ ein_in01,166,282,4	script	Empregado#sch	904,{
 			mes "possuem uma grande influência";
 			mes "política ou são figuras religiosas.";
 			mes "Esse homem ali é um importante";
-			mes "Executivo da Corp.Rekenber.";
+			mes "Executivo da Corp. Rekenber.";
 			next;
 			mes "[Empregado]";
 			mes "Aquele sacerdote bem ali é";
@@ -2036,7 +2035,7 @@ OnTouch:
 		mes "você deu esta festa mesmo assim.";
 		next;
 		mes "[????]";
-		mes "Não diga isto.";
+		mes "Não diga isso.";
 		mes "Você é um importante hóspede.";
 		mes "Seria lamentável se eu";
 		mes "falhasse em entreter você.";
@@ -2071,9 +2070,9 @@ OnTouch:
 		mes "[??????]";
 		mes "Oh... Entendo. Bem,";
 		mes "não podemos falar sobre";
-		mes "isto aqui. Para falar a";
+		mes "isso aqui. Para falar a";
 		mes "verdade, Eu havia suspeitado que";
-		mes "algo como isto estava";
+		mes "algo assim estava";
 		mes "acontecendo... Sim, faz sentido.";
 		next;
 		mes "[????]";
@@ -2120,7 +2119,7 @@ ein_in01,168,274,0	script	Figura Corporativa#sch	109,{
 ein_in01,170,284,4	script	Sacerdote Arunafeltz#sch	920,{
 	mes "[??????]";
 	mes "Eu tenho de dizer que, só";
-	mes "a Corp.Rekenber pode dar";
+	mes "a Corp. Rekenber pode dar";
 	mes "uma festa tão magnífica em";
 	mes "uma cidade poluída como esta.";
 	mes "O que está havendo...?";
@@ -2145,7 +2144,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 	}
 	else if (que_sch == 19) {
 		mes "[Vitre]";
-		mes "Obrigado por sua ajuda.";
+		mes "Obrigado pela sua ajuda.";
 		mes "O governo deste país";
 		mes "deveria saber melhor que colocaram";
 		mes "um homem bom como eu na cadeia.";
@@ -2157,7 +2156,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 		mes "Eu só preciso que você fale";
 		mes "com algumas pessoas, e gostaria";
 		mes "de saber o que eles o disseram.";
-		mes "Eu faria isto eu mesmo, mas você";
+		mes "Eu mesmo faria isso, mas você";
 		mes "entende que eu não posso";
 		mes "chamar muita atenção";
 		next;
@@ -2170,7 +2169,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 		mes "diferentes vezes... De qualquer forma...";
 		next;
 		mes "[Vitre]";
-		mes "Primeiro, vá para prontera";
+		mes "Primeiro, vá para Prontera";
 		mes "e fale com Chada. Depois,";
 		mes "vá até Geffen e fale com";
 		mes "Ghez. Por último, vá até";
@@ -2240,7 +2239,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 			enablenpc "????#sch2";
 			enablenpc "????#sch3";
 			mes "[Vitre]";
-			mes "O que? Q-Quem diabos";
+			mes "O quê? Q-Quem diabos";
 			mes "são vocês?!";
 			next;
 			mes "[????]";
@@ -2274,7 +2273,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 			mes "suspeitos para suas fontes.Nós";
 			mes "os colocamos sobre custodia";
 			mes "Chada, Ghez, Nosdan.";
-			mes "São eles, não são";
+			mes "São eles, não são?";
 			next;
 			mes "[Vitre]";
 			mes "Nããããããããooo!";
@@ -2318,12 +2317,12 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 		enablenpc "????#sch2";
 		enablenpc "????#sch3";
 		mes "[Vitre]";
-		mes "O que? Q-Quem diabos";
+		mes "O quê? Q-Quem diabos";
 		mes "são vocês?!";
 		next;
 		mes "[????]";
 		mes "O Serviço secreto";
-		mes "de Rune-Midgard";
+		mes "de Rune-Midgard!";
 		mes "Vitre Bizlleta--";
 		mes "você está preso";
 		mes "por espionagem!";
@@ -2340,7 +2339,7 @@ morocc,297,154,0	script	Bardo Magrelo#sch	51,{
 		mes "Nós conseguimos provas";
 		mes "concretas de suas atividades";
 		mes "ilegais. Isto provavelmente é";
-		mes "o suficiente para prender alguem";
+		mes "o suficiente para prender alguém";
 		mes "por uma vida inteira. Feliz agora?";
 		next;
 		mes "[Vitre]";
@@ -2709,7 +2708,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "Pobre garoto... Vamos,";
 			mes "respire fundo, assim você";
 			mes "pode me dizer sobre o que";
-			mes "aconteçeu um pouco mais devagar.";
+			mes "aconteceu um pouco mais devagar.";
 			next;
 			mes "[Garoto Karyn]";
 			mes "*^333333*Soluço*^000000 ...Está bem...";
@@ -2864,7 +2863,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "["+strcharinfo(0)+"]";
 			mes "Espera... Eu deveria estar";
 			mes "Levando todos os ingredientes";
-			mes "do sabão para a Srta. Ivory.";
+			mes "do sabão para a Sra. Ivory.";
 			mes "Quais eram eles mesmo...?";
 			next;
 			mes "["+strcharinfo(0)+"]";
@@ -2931,7 +2930,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "Bem... Eu encontrei o";
 			mes "camelo. Agora eu preciso conseguir";
 			mes "todos os ingredientes para o sabão.";
-			mes "Quanto mais cedo eu fizer isto,";
+			mes "Quanto mais cedo eu fizer isso,";
 			mes "mais cedo eu irei ajudar a Curdie.";
 			close;
 		}
@@ -2942,14 +2941,14 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "blocos de estrume.";
 			mes "Eu tenho que voltar ao Sr. Saraman para";
 			mes "dizer a ele onde está o seu camelo,";
-			mes "e depois ir até a Srta. Ivory.";
+			mes "e depois ir até a Sra. Ivory.";
 			close;
 		}
 		else if (rachel_camel == 18) {
 			mes "["+strcharinfo(0)+"]";
 			mes "Vamos ver...";
 			mes "Eu não deveria estar indo";
-			mes "ver a Srta. Ivory agora?";
+			mes "ver a Sra. Ivory agora?";
 			close;
 		}
 		else if (rachel_camel == 19) {
@@ -3029,7 +3028,7 @@ veins,327,185,3	script	Garoto#camelcamel	944,{
 			mes "do hospital.";
 			next;
 			mes "[Garoto Karyn]";
-			mes "Sim, por favor faça isto.";
+			mes "Sim, por favor faça isso.";
 			mes "Eu prometo lhe ajudar";
 			mes "sempre que precisar de mim!";
 			next;
@@ -3184,7 +3183,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "dela para acordá-la.^000000";
 		next;
 		mes "[Pequena Curdie]";
-		mes "Huh?!";
+		mes "Hã?!";
 		mes "...Ah, owwww~";
 		mes "W-waaaaaaaah!";
 		next;
@@ -3194,7 +3193,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "Você está bem?";
 		next;
 		mes "[Pequena Curdie]";
-		mes "Huh? Qu-Quem é você?";
+		mes "Hã? Qu-Quem é você?";
 		mes "Ah não, você tem que sair";
 		mes "daqui! Você estará em apuros";
 		mes "se eles o capturarem!";
@@ -3244,7 +3243,7 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Eu prometo.";
-		mes "Eu estou certo de que há alguém";
+		mes "Estou certo de que há alguém";
 		mes "na cidade que saiba uma forma";
 		mes "de soltar estas algemas.";
 		mes "Eu estarei de volta o mais rápido possível!";
@@ -3332,12 +3331,12 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "blocos de estrume.";
 		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
-		mes "e depois ir até a Srta. Ivory.";
+		mes "e depois ir até a Sra. Ivory.";
 		close;
 	}
 	else if (rachel_camel == 18) {
 		mes "^3355FFVocê deveria estar";
-		mes "indo ver Srta. Ivory agora, se";
+		mes "indo ver Sra. Ivory agora, se";
 		mes "realmente deseja libertar";
 		mes "Curdie de suas algemas.^000000";
 		close;
@@ -3363,9 +3362,9 @@ que_thor,36,66,5	script	Pequena Curdie	941,{
 		mes "possa usar para criar uma chave.^000000";
 		next;
 		mes "[Pequena Curdie]";
-		mes "Irei...";
-		mes "Irei eu estar sempre";
-		mes "presa aqui?";
+		mes "Será que...";
+		mes "Será que vou ficar";
+		mes "presa aqui para sempre?";
 		mes "Eu... Eu quero minha mãe...";
 		next;
 		mes "["+strcharinfo(0)+"]";
@@ -3513,7 +3512,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "O cheiro de puro";
 		mes "o álcool flutua ao seu redor.";
 		mes "Há uma certa beleza";
-		mes "para sua miséria desgrenhada.^000000";
+		mes "em sua miséria desgrenhada.^000000";
 		close;
 	}
 	else if (rachel_camel == 4) {
@@ -3522,7 +3521,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "Com licença...?";
 			next;
 			mes "[Chaveiro Lockenlock]";
-			mes "Huh? Arrrgh...";
+			mes "Hã? Arrrgh...";
 			mes "Minha cabeça... O que";
 			mes "você quer?";
 			next;
@@ -3566,7 +3565,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "Eu sou um expert em lidar com";
 			mes "chaves e cadeados. Meus cadeados";
 			mes "são fortes o suficiente para suportar";
-			mes "um dragão, você sabia disto? Saiba";
+			mes "um dragão, você sabia disso? Saiba";
 			mes "que o exército de Rachel";
 			mes "é um de meus melhores clientes~";
 			next;
@@ -3604,7 +3603,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "ou algo assim, está?";
 			next;
 			mes "["+strcharinfo(0)+"]";
-			mes "Não, não é nada disto!";
+			mes "Não, não é nada disso!";
 			mes "É que a fechadura está em";
 			mes "um lugar muito perigoso.";
 			mes "Isto é realmente importante...";
@@ -3656,7 +3655,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "Este homem deve ser o";
 			mes "Sr. Lockenlock que você procurava.";
 			mes "É melhor você seguir o conselho";
-			mes "de toby e trazer para este homem";
+			mes "de Toby e trazer para este homem";
 			mes "uma Poção Amarela primeiro.^000000";
 			close;
 		}
@@ -3687,7 +3686,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "["+strcharinfo(0)+"]";
 		mes "Espera... Eu deveria estar";
 		mes "Levando todos os ingredientes";
-		mes "do sabão para a Srta. Ivory.";
+		mes "do sabão para a Sra. Ivory.";
 		mes "Quais eram eles mesmo...?";
 		next;
 		mes "["+strcharinfo(0)+"]";
@@ -3754,7 +3753,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "Bem... Eu econtrei o";
 		mes "camelo. Agora eu preciso conseguir";
 		mes "todos os ingredientes para o sabão.";
-		mes "Quanto mais cedo eu fizer isto,";
+		mes "Quanto mais cedo eu fizer isso,";
 		mes "mais cedo eu irei ajudar Curdie.";
 		close;
 	}
@@ -3772,14 +3771,14 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "blocos de estrume.";
 		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
-		mes "depois ir até a Srta. Ivory.";
+		mes "depois ir até a Sra. Ivory.";
 		close;
 	}
 	else if (rachel_camel == 18) {
 		mes "["+strcharinfo(0)+"]";
 		mes "Vamos ver...";
 		mes "Eu não deveria estar indo";
-		mes "ver a Srta. Ivory agora?";
+		mes "ver a Sra. Ivory agora?";
 		close;
 	}
 	else if (rachel_camel == 19) {
@@ -3859,7 +3858,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "não é totalmente perfeita, mas";
 		mes "Eu devo ser capaz de moldar";
 		mes "uma chave para esta fechadura. Aah...";
-		mes "Tem outra coisa também sabe o que?";
+		mes "Tem outra coisa também sabe o quê?";
 		mes "Eu não tenho nenhum material comigo.";
 		next;
 		mes "[Chaveiro Lockenlock]";
@@ -3867,7 +3866,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "as chaves e cadeados para esta";
 		mes "cidade, então ninguém me";
 		mes "me enviou mais materiais.";
-		mes "Por isto, eu não tenho";
+		mes "Por isso, eu não tenho";
 		mes "materiais em mão. Desculpe-me.";
 		next;
 		mes "[Chaveiro Lockenlock]";
@@ -3912,7 +3911,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "fechadura das algemas que";
 			mes "Eu tenho feito em";
 			mes "em ordens do Exército de Rachel.";
-			mes "Eu tenho a chave mestra para isto.";
+			mes "Eu tenho a chave mestra para isso.";
 			next;
 			mes "[Chaveiro Lockenlock]";
 			mes "Estas algemas só podem";
@@ -3935,7 +3934,7 @@ veins,181,166,3	script	Lockenlock	900,{
 			mes "Vo-Você... Não pode.";
 			mes "Você não está mentindo. Isto...";
 			mes "Lamento. Você não deveria ter";
-			mes "se envolvido com isto, mas...";
+			mes "se envolvido, mas...";
 			next;
 			mes "[Chaveiro Lockenlock]";
 			mes "Oh céus!";
@@ -3953,9 +3952,9 @@ veins,181,166,3	script	Lockenlock	900,{
 			next;
 			mes "[Chaveiro Lockenlock]";
 			mes "A minha consciência não permitirá";
-			mes "que eles façam algo como";
-			mes "isto. Resgate esta criança, e";
-			mes "depois jogue esta chave fora";
+			mes "que eles façam algo assim.";
+			mes "Resgate esta criança, e";
+			mes "depois jogue fora esta chave";
 			mes "em algum lugar quando você terminar.";
 			next;
 			mes "[Chaveiro Lockenlock]";
@@ -4059,7 +4058,7 @@ veins,181,166,3	script	Lockenlock	900,{
 		mes "...Zzz...";
 		next;
 		mes "^3355FFEle está bêbado e";
-		mes "roncando.^000000";
+		mes "dormindo profundamente.^000000";
 		close;
 	}
 }
@@ -4125,7 +4124,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "[Produtora de Sabão Orgânico Ivory]";
 		mes "Se você realmente precisa dele";
 		mes "neste momento, posso ainda";
-		mes "fazer isto para você se você me";
+		mes "fazer isso para você se você me";
 		mes "trouxer todos os ingredientes.";
 		mes "Embora... Eles possam ser um";
 		mes "pouco difíceis de se conseguir.";
@@ -4276,7 +4275,7 @@ veins,227,127,5	script	Ivory	940,{
 		mes "Bem... Eu encontrei o";
 		mes "camelo. Agora eu preciso conseguir";
 		mes "todos os ingredientes para o sabão.";
-		mes "Quanto mais cedo eu fizer isto,";
+		mes "Quanto mais cedo eu fizer isso,";
 		mes "mais cedo eu irei ajudar Curdie.";
 		close;
 	}
@@ -4294,24 +4293,24 @@ veins,227,127,5	script	Ivory	940,{
 		mes "blocos de estrume.";
 		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
-		mes "e depois ir até a Srta. Ivory.";
+		mes "e depois ir até a Sra. Ivory.";
 		close;
 	}
 	else if (rachel_camel == 18) {
 		mes "[Produtora de Sabão Orgânico Ivory]";
 		mes "Hm, Soony por acaso lhe causou";
 		mes "algum problema? Eu estou achando";
-		mes "que sim, por isto você demorou";
+		mes "que sim, por isso você demorou";
 		mes "tanto para conseguir estes";
 		mes "blocos de estrume de camelo.";
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Parece que foi um grande";
 		mes "incômodo... Mas felizmente,";
-		mes "tudo isto vai valer a pena.";
+		mes "tudo isso vai valer a pena.";
 		mes "De qualquer forma, pegue este bloco de";
 		mes "estrume. Não quero mexer";
-		mes "muito com isto.";
+		mes "muito com isso.";
 		next;
 		mes "[Produtora de Sabão Orgânico Ivory]";
 		mes "Sim, Eu posso entender.";
@@ -4397,14 +4396,14 @@ veins,115,59,5	script	Saraman	847,{
 	else if (rachel_camel == 7) {
 		mes "["+strcharinfo(0)+"]";
 		mes "Com licença. Olá~";
-		mes "A Srta. Ivory me enviou";
+		mes "A Sra. Ivory me enviou";
 		mes "aqui com estes ingredientes";
 		mes "de sabão? Ela disse que";
 		mes "Eu tinha de vir até você se";
 		mes "eu quiser que ela faça um para mim.";
 		next;
 		mes "[Fazendeiro Saraman]";
-		mes "Sabão, eh? Oh, Entendi.";
+		mes "Sabão, né? Oh, Entendi.";
 		mes "Você deve estar aqui para pegar";
 		mes "alguns blocos frescos de estrume de camelo.";
 		next;
@@ -4441,9 +4440,9 @@ veins,115,59,5	script	Saraman	847,{
 		next;
 		mes "[Fazendeiro Saraman]";
 		mes "Infelizmente, Camelas de Veludo";
-		mes "estão quase extintas, por isto";
+		mes "estão quase extintas, por isso";
 		mes "só temos uma nesta fazenda. Este é o";
-		mes "porque de nós termos um contrato especial com a Srta. Ivory para que ela possa fazer seu sabão.";
+		mes "porque de nós termos um contrato especial com a Sra. Ivory para que ela possa fazer seu sabão.";
 		next;
 		mes "[Fazendeiro Saraman]";
 		mes "Digo... Eu não estava esperando";
@@ -4474,10 +4473,10 @@ veins,115,59,5	script	Saraman	847,{
 		mes "na frente dela, ela não irá comer.";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "O que? Não há nada";
+		mes "O quê? Não há nada";
 		mes "que possamos fazer?";
 		mes "Quero dizer, isto se trata de";
-		mes "um caso de Vida ou Morte!";
+		mes "um caso de vida ou morte!";
 		next;
 		mes "[Fazendeiro Saraman]";
 		mes "*Suspiro* ...Isso não é bom... Ok então, vamos fazer isso.";
@@ -4515,7 +4514,7 @@ veins,115,59,5	script	Saraman	847,{
 			mes "Você trouxe tudo?";
 			mes "Agora, Primeiro Eu preciso misturar";
 			mes "tudo junto antes que você";
-			mes "possa alimentar minha camela com isto.";
+			mes "possa alimentar minha camela com isso.";
 			mes "Só um minuto...";
 			next;
 			mes "^3355FFSaraman misturou";
@@ -4544,7 +4543,7 @@ veins,115,59,5	script	Saraman	847,{
 			mes "estrume de camelo com estes";
 			mes "ingredientes. Esta é uma boa";
 			mes "quantia de acordo com o";
-			mes "que a Srta. Ivory ordenou.";
+			mes "que a Sra. Ivory ordenou.";
 			delitem 528,5; //Monster's_Feed
 			delitem 503,1; //Yellow_Potion
 			delitem 619,1; //Unripe_Apple
@@ -4591,7 +4590,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "estrume de camelo com estes";
 		mes "ingredientes. Esta é uma boa";
 		mes "quantia de acordo com o";
-		mes "que a Srta. Ivory ordenou.";
+		mes "que a Sra. Ivory ordenou.";
 		close;
 	}
 	else if (rachel_camel == 10) {
@@ -4613,7 +4612,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "Minha preciosa Camela de";
 		mes "Veludo... É o meu maior";
 		mes "investimento em negócios! Eu estou";
-		mes "arruinado com isto! Por favor...";
+		mes "arruinado com isso! Por favor...";
 		mes "Eu irei lhe recompensar se você";
 		mes "encontrar minha camela para mim!";
 		next;
@@ -4655,7 +4654,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "Bem... Eu encontrei o";
 		mes "camelo. Agora eu preciso conseguir";
 		mes "todos os ingredientes para o sabão.";
-		mes "Quanto mais cedo eu fizer isto,";
+		mes "Quanto mais cedo eu fizer isso,";
 		mes "mais cedo eu irei ajudar Curdie.";
 		close;
 	}
@@ -4670,7 +4669,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "[Fazendeiro Saraman]";
 		mes "Oh, é você!";
 		mes "Você encontrou minha";
-		mes "Soony? Onde está ela?";
+		mes "Soony? Onde ela está?";
 		mes "O que aconteceu com ela?";
 		mes "Oh Deus, Eu não sei o que";
 		mes "iria fazer sem minha Camela!";
@@ -4711,7 +4710,7 @@ veins,115,59,5	script	Saraman	847,{
 		mes "["+strcharinfo(0)+"]";
 		mes "Vamos ver...";
 		mes "Eu não deveria estar indo";
-		mes "ver a Srta. Ivory agora?";
+		mes "ver a Sra. Ivory agora?";
 		close;
 	}
 	else if (rachel_camel > 18 && rachel_camel < 24) {
@@ -4845,7 +4844,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 				if (rachel_camel == 12) {
 					mes "Agora tudo de que preciso";
 					mes "são mais 4";
-					mes "destes blocos de estrumes.";
+					mes "destes blocos de estrume.";
 					set rachel_camel, 13;
 					changequest 3071,3072;
 				}
@@ -4929,7 +4928,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 				mes "se não nunca vou conseguir algum";
 				mes "estrume dela. Vamos ver, os itens";
 				mes "que o Sr Saraman mencionou que";
-				mes "a Srta. Ivory me pediram para alimentar";
+				mes "a Sra. Ivory me pediram para alimentar";
 				mes "a camela. Eu tenho que ter...";
 			}
 			else {
@@ -4958,7 +4957,7 @@ ve_fild07,235,42,3	script	Camela de Veludo	938,{
 		mes "blocos de estrume.";
 		mes "Eu tenho que voltar ao Sr. Saraman para";
 		mes "dizer a ele onde está o seu camelo,";
-		mes "e depois ir até a Srta. Ivory.";
+		mes "e depois ir até a Sra. Ivory.";
 		close;
 	}
 	else {
@@ -4993,7 +4992,7 @@ veins,221,120,5	script	Jovem Nativo	943,{
 		mes "e também em Rachel.";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "Sr. Lockenlock, eh?";
+		mes "Sr. Lockenlock, né?";
 		mes "Mas aonde eu posso encontrá-lo?";
 		next;
 		mes "[Toby]";
@@ -5023,7 +5022,7 @@ veins,221,120,5	script	Jovem Nativo	943,{
 		mes "["+strcharinfo(0)+"]";
 		mes "...Anh...?";
 		next;
-		mes "^3355FFEncontre o Sr.Lockenlock";
+		mes "^3355FFEncontre o Sr. Lockenlock";
 		mes "na Rua do Mercado, e";
 		mes "leve a ele uma Poção Amarela.^000000";
 		changequest 3062,3063;
@@ -5038,7 +5037,7 @@ veins,221,120,5	script	Jovem Nativo	943,{
 		mes "["+strcharinfo(0)+"]";
 		mes "...Anh...?";
 		next;
-		mes "^3355FFEncontre o Sr.Lockenlock";
+		mes "^3355FFEncontre o Sr. Lockenlock";
 		mes "na Rua do Mercado, e";
 		mes "leve a ele uma Poção Amarela.^000000";
 		close;
@@ -5114,7 +5113,7 @@ ra_temin,87,133,1	script	Soldado de Rachel#vol1	934,5,2,{
 		next;
 		mes "[Soldado Karlum]";
 		mes "Uma mensagem para mim?";
-		mes "É por isto que você está";
+		mes "É por isso que você está";
 		mes "andando por aqui? Bem,";
 		mes "qual é a mensagem. Eu não posso";
 		mes "ficar muito tempo fora do meu trabalho...";
@@ -5130,7 +5129,7 @@ ra_temin,87,133,1	script	Soldado de Rachel#vol1	934,5,2,{
 		mes "Rápido, fale logo!";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "Não, não é nada disto.";
+		mes "Não, não é nada disso.";
 		mes "Ela só me disse que tinha";
 		mes "algo importante para";
 		mes "lhe dizer, e que você deve ir";
@@ -5144,7 +5143,7 @@ ra_temin,87,133,1	script	Soldado de Rachel#vol1	934,5,2,{
 		mes "vocês dois?";
 		next;
 		mes "[Soldado Karlum]";
-		mes "...Eu não acredito nisto.";
+		mes "...Eu não acredito nisso.";
 		mes "Finalmente. Depois de todos estes";
 		mes "anos. Ela sente por mim o mesmo";
 		mes "que eu sinto por ela! Minha serenata";
@@ -5171,7 +5170,7 @@ ra_temin,87,133,1	script	Soldado de Rachel#vol1	934,5,2,{
 		mes "Eu sou fácil de ser enganado?";
 		next;
 		mes "["+strcharinfo(0)+"]";
-		mes "O que? Foi isto que";
+		mes "O quê? Foi isto que";
 		mes "aconteceu? Eu poderia";
 		mes "jurar qu--Aaah. Eu entendi agora.";
 		mes "Ela deve estar dando uma de";
@@ -5180,7 +5179,7 @@ ra_temin,87,133,1	script	Soldado de Rachel#vol1	934,5,2,{
 		next;
 		mes "[Soldado Karlum]";
 		mes "Ah! Isto faz bastante";
-		mes "sentido! Então é por isto que ela me";
+		mes "sentido! Então é por isso que ela me";
 		mes "trata deste jeito! Hahaha! Eu já";
 		mes "devia ter percebido isto antes!";
 		mes "Pois bem, devo ir até ela";
@@ -5459,7 +5458,7 @@ ra_temin,85,118,3	script	Gaveta#vol3	111,{
 			mes "["+strcharinfo(0)+"]";
 			mes "Ooh...";
 			mes "Isto deve ser o";
-			mes "eu estava procurando.";
+			mes "que eu estava procurando.";
 			next;
 			mes "^3355FFVocê pega o relatório";
 			mes "etiquetado com ''Instituto de Pesquisas";
@@ -5555,7 +5554,7 @@ OnTouch:
 		mes "Apesar do nome do remetente";
 		mes "não estar nesta carta,";
 		mes "Eu posso adivinhar quem escreveu esta.";
-		mes "Falando nisto...";
+		mes "Falando nisso...";
 		mes "Aonde está o Geólogo?";
 		set aru_vol,7;
 		close;
@@ -5585,7 +5584,7 @@ veins,159,171,3	script	Cidadão#vol	945,{
 	mes "paquerar mulheres o dia";
 	mes "todo. Eu pensei que estudiosos,";
 	mes "gostavam de ler, estudar";
-	mes "e descobrir coisas, você sabe.";
+	mes "e descobrir coisas, sabe?";
 	close;
 }
 
@@ -5601,7 +5600,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 	}
 	if (aru_vol < 7) {
 		mes "[Homem Bêbado]";
-		mes "Então... ^333333*Urp*^000000";
+		mes "Então... ^333333*Arroto*^000000";
 		mes "Então eu disse...";
 		next;
 		mes "[Homem Bêbado]";
@@ -5631,7 +5630,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 	}
 	else if (aru_vol == 7) {
 		mes "[Homem Bêbado]";
-		mes "Então... ^333333*Urp*^000000";
+		mes "Então... ^333333*Arroto*^000000";
 		mes "Então eu disse...";
 		next;
 		mes "[Homem Bêbado]";
@@ -5809,7 +5808,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		mes "Oh, certo! quando lhe";
 		mes "perguntarem sobre a temperatura";
 		mes "do vulcão quando for apresentar";
-		mes "o relátorio no campo";
+		mes "o relatório no campo";
 		mes "geológico diga qualquer coisa.";
 		mes "Mas tenha certeza de que soe mal!";
 		next;
@@ -5957,7 +5956,7 @@ ve_in,233,116,3	script	Homem Bêbado#vol	901,{
 		close;
 	}
 	mes "[Homem Bêbado]";
-	mes "Então... ^333333*Urp*^000000";
+	mes "Então... ^333333*Arroto*^000000";
 	mes "Então eu disse...";
 	next;
 	mes "[Homem Bêbado]";
@@ -6266,7 +6265,7 @@ que_thor,145,66,3	script	Guarda#vol::VeinsGuard	939,{
 		mes "[Guarda]";
 		mes "Suas ferramentas quebraram";
 		mes "na primeira vez? Ok, ok,";
-		mes "Eu posso entender isto.";
+		mes "Eu posso entender isso.";
 		mes "Tudo bem, você pode passar.";
 		close2;
 		warp "thor_camp",248,190;
@@ -6309,12 +6308,12 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		next;
 		mes "["+strcharinfo(0)+"]";
 		mes "Um, Gio está doente agora,";
-		mes "então por isto ele me pediu";
+		mes "então por isso ele me pediu";
 		mes "para preencher este formulário de";
 		mes "de relatório e apresentá-lo a vocês, para ele.";
 		next;
 		mes "[Sahedi]";
-		mes "Ah, então por isto que";
+		mes "Ah, então por isso que";
 		mes "o relatório está atrasado desta vez,";
 		mes "Lamento em escutar isto.";
 		mes "E eu pensando que ele";
@@ -6416,7 +6415,7 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		}
 		emotion ET_HUK;
 		mes "[Sahedi]";
-		mes "Huh? Você está falando sério?";
+		mes "Hã? Você está falando sério?";
 		mes "O Vulcão de Thor irá entrar em";
 		mes "erupção?! Nós-nós temos que";
 		mes "dar o fora daqui!";
@@ -6444,7 +6443,7 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		mes "próximos 30 dias.";
 		next;
 		mes "[Sahedi]";
-		mes "O que?! Nós devemos relatar";
+		mes "O quê?! Nós devemos relatar";
 		mes "isto ao sumo sacerdote";
 		mes "imediatamente! Aitra!";
 		next;
@@ -6461,7 +6460,7 @@ thor_camp,250,104,3	script	Sahedi#vol	934,{
 		mes "as suas coisas antes de sair.";
 		next;
 		mes "[Aitra]";
-		mes "Huh?";
+		mes "Hã?";
 		mes "...Sim, senhor.";
 		next;
 		disablenpc "Aitra#vol";
@@ -6502,7 +6501,7 @@ OnTouch:
 		mes "[Coronel Vito]";
 		mes "Olhe para você. Você ainda";
 		mes "não colocou seu uniforme.";
-		mes "Ainda é um novato, eh?";
+		mes "Ainda é um novato, né?";
 		mes "Parece que eu vou ter de";
 		mes "treinar você pessoalmente como";
 		mes "um de nossos cavaleiros sagrados!";
@@ -6557,7 +6556,7 @@ OnTouch:
 		mes "[Coronel Vito]";
 		mes "Olhe para você. Você ainda";
 		mes "não colocou seu uniforme.";
-		mes "Ainda é um novato, eh?";
+		mes "Ainda é um novato, né?";
 		mes "Parece que eu vou ter de";
 		mes "treinar você pessoalmente como";
 		mes "um de nossos cavaleiros sagrados!";
@@ -6881,7 +6880,7 @@ thor_camp,159,74,3	script	Coronel Vito#3	946,{
 		mes "o fim de sua mão";
 		mes "como uma lâmina. Como";
 		mes "você se juntou ao exército";
-		mes "sem saber isto?";
+		mes "sem saber disso?";
 		next;
 		mes "[Coronel Vito]";
 		mes "Foque sua energia em";
@@ -7046,7 +7045,7 @@ thor_camp,150,65,3	script	Boneco#1::VeinsDummy	111,{
 		mes "Eles realmente odeiam";
 		mes "o Reino de Rune-Midgard...";
 		mes "(^333333Tecnicamente, eu não deveria";
-		mes "esta fazendo isto. Será que isto";
+		mes "esta fazendo isso. Será que isso";
 		mes "não é considerado como traição?^000000)";
 		next;
 		mes "[Coronel Vito]";
